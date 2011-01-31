@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+Douglas DC3/C47
+January 2011 BARANGER Emmanuel
+************************************************************************
+-->
+
+<PropertyList include="dc-3-base.xml">
+
+  <sim>
+
+    <description>Douglas DC-3/C-47 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>dc-3-yasim</aero>
+
+  </sim>
+    
+</PropertyList>

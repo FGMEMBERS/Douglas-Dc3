@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList> 
+
+  <path>pilot-seat.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>acoudoir</object-name>
+    <object-name>structure</object-name>
+    <object-name>coussin</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>

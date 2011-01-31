@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+   <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>panel2</object-name>
+    <object-name>centre</object-name>
+    <object-name>cache</object-name>
+    <object-name>volantG</object-name>
+    <object-name>volantD</object-name>
+    <object-name>volantTrim</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>mancheD</object-name>
+    <object-name>overhead</object-name>
+    <object-name>tourpanel</object-name>
+    <object-name>pedaleGG</object-name>
+    <object-name>pedaleGD</object-name>
+    <object-name>pedaleDG</object-name>
+    <object-name>pedaleDD</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.006 </x-m>
+      <y-m> -0.539 </y-m>
+      <z-m>  0.410 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> 0.006 </x-m>
+      <y-m> 0.340 </y-m>
+      <z-m> 0.410 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.410 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.007 </x-m>
+      <y-m> 0.440 </y-m>
+      <z-m> 0.410 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VOR -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vor/vor.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.342 </y-m>
+      <z-m>  0.410 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vor/vor.xml</path>
+    <offsets>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.538 </y-m>
+      <z-m> 0.410 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.539 </y-m>
+      <z-m>  0.305 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.341 </y-m>
+      <z-m> 0.305 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.305 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.440 </y-m>
+      <z-m> 0.305 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RADIO COMPASS -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.342 </y-m>
+      <z-m>  0.305 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.538 </y-m>
+      <z-m> 0.305 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.181 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.440 </y-m>
+      <z-m>  0.181 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.000 </x-m>
+      <y-m> -0.342 </y-m>
+      <z-m>  0.181 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.000 </x-m>
+      <y-m>  0.538 </y-m>
+      <z-m>  0.181 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
