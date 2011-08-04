@@ -35,9 +35,9 @@
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -8.193 </x-m>
-      <y-m> -0.474 </y-m>
-      <z-m> -0.111 </z-m>
+      <x-m> -8.19 </x-m>
+      <y-m> -0.424 </y-m>
+      <z-m> -0.15 </z-m>
       <roll-deg>    0 </roll-deg>
       <pitch-deg>   0 </pitch-deg>
       <heading-deg> 0 </heading-deg>
@@ -57,15 +57,7 @@
     </offsets>
   </model>
 
-  <!-- Tableau de bord -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/all-seats.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
-  </model>
+
 
   <!-- Animation des portes -->
   <animation>
@@ -130,53 +122,15 @@
   </animation>
 
   <!-- Les sièges -->
-  <!-- Pilote -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/pilot-seat.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/all-seats.xml</path>
     <offsets>
-      <x-m> -7.830 </x-m>
-      <y-m> -0.500 </y-m>
-      <z-m> -0.220 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
-  <!-- Copilote -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/pilot-seat.xml</path>
-    <offsets>
-      <x-m> -7.830 </x-m>
-      <y-m>  0.500 </y-m>
-      <z-m> -0.220 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Passagers -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/seat.xml</path>
-    <offsets>
-      <x-m> -5.250 </x-m>
-      <y-m> -0.838 </y-m>
-      <z-m> -0.470 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/seat.xml</path>
-    <offsets>
-      <x-m> -5.250 </x-m>
-      <y-m>  0.259 </y-m>
-      <z-m> -0.470 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/seat.xml</path>
-    <offsets>
-      <x-m> -5.250 </x-m>
-      <y-m>  0.799 </y-m>
-      <z-m> -0.470 </z-m>
-    </offsets>
-  </model>
 
 </PropertyList>
 

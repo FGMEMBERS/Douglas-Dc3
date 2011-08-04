@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-************************************************************************
-Douglas DC3/C47
-January 2011 BARANGER Emmanuel
-************************************************************************
+
+<!-- 
+     ************************************************************************
+      Douglas DC3/C47
+      January 2011 BARANGER Emmanuel
+     ************************************************************************
 -->
 
 <PropertyList include="dc-3-base.xml">
 
   <sim>
-
     <description>Douglas DC-3/C-47 (YASim)</description>
     <flight-model>yasim</flight-model>
     <aero>dc-3-yasim</aero>
 
+    <startup>
+      <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/Douglas-Dc3/Models/dc-3.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <sound>
+      <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>
+    </sound>
   </sim>
+
+  <!-- ############################### -->
+  <!-- ######## DUAL CONTROL ######### -->
+  <nasal>
+    <dual_control_tools>
+      <file>Aircraft/Douglas-Dc3/Nasal/dual-control-tools.nas</file>
+    </dual_control_tools>
+    <aircraft_dual_control>
+      <file>Aircraft/Douglas-Dc3/Nasal/dc-3-dual-control.nas</file>
+    </aircraft_dual_control>
+    <dual_control>
+      <file>Aircraft/Douglas-Dc3/Nasal/pilot-dual-control.nas</file>
+    </dual_control>
+  </nasal>
+  <!-- ######## DUAL CONTROL ######### -->
+  <!-- ############################### -->
     
 </PropertyList>

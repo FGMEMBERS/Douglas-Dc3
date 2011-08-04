@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+   <path>center_console.ac</path>
+
+ <animation>
+        <type>rotate</type>
+        <object-name>Throt_G</object-name>
+        <object-name>Throt_D</object-name>
+        <property>controls/engines/engine/throttle</property>
+        <factor>70</factor>
+        <center>
+            <x-m>0.334</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.11</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+	
+	<animation>
+        <type>rotate</type>
+        <object-name>Prop_G</object-name>
+        <object-name>Prop_D</object-name>
+        <property>controls/engines/engine/propeller-pitch</property>
+        <factor>80</factor>
+        <center>
+            <x-m>0.334</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.11</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+	
+	<animation>
+        <type>rotate</type>
+        <object-name>Mixt_G</object-name>
+        <object-name>Mixt_D</object-name>
+		<object-name>levierM_D</object-name>
+		<object-name>levierM_G</object-name>
+		<object-name>Tube</object-name>
+		<object-name>Tube.001</object-name>
+        <property>controls/engines/engine/mixture</property>
+        <factor>80p</factor>
+        <center>
+            <x-m>0.334</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.11</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+ 
+
+</PropertyList>
+

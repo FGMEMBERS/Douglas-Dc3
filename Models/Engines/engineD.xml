@@ -34,7 +34,7 @@
   <animation>
     <name>LowPoly</name>
     <object-name>bol</object-name>
-    <object-name>echappes</object-name>
+    <object-name>moteurlow</object-name>
   </animation>
 
   <animation>
@@ -42,11 +42,6 @@
     <object-name>bol</object-name>
     <property>engines/engine[1]/rpm</property>
     <factor> 1 </factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>

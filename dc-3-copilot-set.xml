@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="dc-3-copilot-jsbsim-cnf.xml"> -->
+<PropertyList include="dc-3-copilot-yasim-cnf.xml">
+
+  <sim>
+    <description>Douglas DC-3/C4-7</description>
+    <author>BARANGER Emmanuel</author>
+  </sim>
+
+</PropertyList>
+

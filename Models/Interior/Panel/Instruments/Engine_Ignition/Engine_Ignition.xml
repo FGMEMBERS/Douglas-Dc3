@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Engine_Ignition.ac</path>
+
+  <animation>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>boutton</object-name>
+    <object-name>ignitiationface</object-name>
+    <object-name>fondL</object-name>
+    <object-name>keyL</object-name>
+    <object-name>fondR</object-name>
+    <object-name>keyR</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>keyL</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <step>1</step>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>keyL</object-name>
+    <action>
+      <button>1</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>keyR</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <step>1</step>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>keyR</object-name>
+    <action>
+      <button>1</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <step> -1 </step>
+        <min>   0 </min>
+        <max>   3 </max>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/sound/click</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>keyL</object-name>
+    <property>controls/engines/engine[0]/magnetos</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.031 </y-m>
+      <z-m> -0.007 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>keyR</object-name>
+    <property>controls/engines/engine[1]/magnetos</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.031 </y-m>
+      <z-m> -0.007 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

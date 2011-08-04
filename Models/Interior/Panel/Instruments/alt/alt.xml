@@ -48,15 +48,10 @@
     <object-name>alt-Needle1</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>
-    <center> 
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
     <axis> 
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -65,15 +60,10 @@
     <object-name>alt-Needle2</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.036</factor>
-    <center> 
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
     <axis> 
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -82,16 +72,12 @@
     <object-name>alt-Needle3</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.0036</factor>
-    <center> 
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </center>
     <axis> 
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
 </PropertyList>
+

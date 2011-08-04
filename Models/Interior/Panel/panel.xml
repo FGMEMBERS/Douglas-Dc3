@@ -25,22 +25,64 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- Console Centrale -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Pedestal/center_console.xml</path>
+    <offsets>
+      <x-m> -0.06 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -0.00 </z-m> 
+    </offsets>
+  </model>  
+
+  <!-- Manche -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Handle/handle.xml</path>
+    <offsets>
+      <x-m> -0.1 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m> 
+    </offsets>
+  </model>
+  
+  <!-- Pédales Pilote -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> 0     </x-m>
+      <y-m>-0.378 </y-m>
+      <z-m>-0.354 </z-m> 
+    </offsets>
+  </model>  
+ 
+  <!-- Pédales Copilote -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> 0     </x-m>
+      <y-m> 0.378 </y-m>
+      <z-m>-0.354 </z-m>  
+    </offsets>
+  </model>  
+ 
+
   <!-- ASI -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m>  0.006 </x-m>
-      <y-m> -0.539 </y-m>
-      <z-m>  0.410 </z-m>
+      <y-m> -0.590 </y-m>
+      <z-m>  0.380 </z-m>
     </offsets>
   </model>
-
+  
+  <!-- ALT -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m> 0.006 </x-m>
-      <y-m> 0.340 </y-m>
-      <z-m> 0.410 </z-m>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.488 </y-m>
+      <z-m>  0.380 </z-m>
     </offsets>
   </model>
 
@@ -48,18 +90,9 @@
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.007 </x-m>
-      <y-m> -0.440 </y-m>
-      <z-m>  0.410 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/ai/ai.xml</path>
-    <offsets>
-      <x-m> 0.007 </x-m>
-      <y-m> 0.440 </y-m>
-      <z-m> 0.410 </z-m>
+      <x-m>  0.010 </x-m>
+      <y-m> -0.319  </y-m>
+      <z-m>  0.400 </z-m>
     </offsets>
   </model>
 
@@ -68,74 +101,8 @@
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vor/vor.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.342 </y-m>
-      <z-m>  0.410 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vor/vor.xml</path>
-    <offsets>
-      <x-m> 0.008 </x-m>
-      <y-m> 0.538 </y-m>
-      <z-m> 0.410 </z-m>
-    </offsets>
-  </model>
-
-  <!-- ALT -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m> -0.539 </y-m>
-      <z-m>  0.305 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
-    <offsets>
-      <x-m> 0.005 </x-m>
-      <y-m> 0.341 </y-m>
-      <z-m> 0.305 </z-m>
-    </offsets>
-  </model>
-
-  <!-- COMPASS -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/compass/compass.xml</path>
-    <offsets>
-      <x-m>  0.008 </x-m>
-      <y-m> -0.440 </y-m>
-      <z-m>  0.305 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/compass/compass.xml</path>
-    <offsets>
-      <x-m> 0.008 </x-m>
-      <y-m> 0.440 </y-m>
-      <z-m> 0.305 </z-m>
-    </offsets>
-  </model>
-
-  <!-- RADIO COMPASS -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
-    <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m> -0.342 </y-m>
-      <z-m>  0.305 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
-    <offsets>
-      <x-m> 0.005 </x-m>
-      <y-m> 0.538 </y-m>
-      <z-m> 0.305 </z-m>
+      <y-m> -0.590 </y-m>
+      <z-m>  0.270 </z-m>
     </offsets>
   </model>
 
@@ -143,37 +110,264 @@
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m> -0.002 </x-m>
-      <y-m> -0.440 </y-m>
-      <z-m>  0.181 </z-m>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.488 </y-m>
+      <z-m>  0.270 </z-m>
     </offsets>
   </model>
 
+
+  <!-- RADIO COMPASS -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
     <offsets>
-      <x-m> -0.002 </x-m>
-      <y-m>  0.440 </y-m>
-      <z-m>  0.181 </z-m>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.590 </y-m>
+      <z-m>  0.179 </z-m>
     </offsets>
   </model>
-
+  
   <!-- VSI -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m> -0.000 </x-m>
-      <y-m> -0.342 </y-m>
-      <z-m>  0.181 </z-m>
+      <x-m>  0.004 </x-m>
+      <y-m> -0.358 </y-m>
+      <z-m>  0.269 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Manifold -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/manifold/manifold.xml</path>
+    <offsets>
+      <x-m>  0.004 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.004 </x-m>
+      <y-m> -0.044 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Oil pressure -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/oil/oil.xml</path>
+    <offsets>
+      <x-m>  0.004 </x-m>
+      <y-m>  0.044 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Fuel pressure -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/fuelpress/fuelpress.xml</path>
+    <offsets>
+      <x-m>  0.004 </x-m>
+      <y-m>  0.130 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Pilot auto sterry mark III-->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/sperry/sperry.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.020 </y-m>
+      <z-m>  0.419 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Panel copilote -->
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.330 </y-m>
+      <z-m>  0.420 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- tempérture air extérieur -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/temp/temp.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.450 </y-m>
+      <z-m>  0.420 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.570 </y-m>
+      <z-m>  0.420 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- oil temp -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.330 </y-m>
+      <z-m>  0.329 </z-m>
+    </offsets>
+  </model>
+
+  <!-- tempérture cylindre -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/cyl/cyl.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.450 </y-m>
+      <z-m>  0.329 </z-m>
+    </offsets>
+  </model>
+
+  <!-- tempérture carb -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/carb/carb.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.570 </y-m>
+      <z-m>  0.329 </z-m>
+    </offsets>
+  </model>
+
+  <!-- gauges fuel -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m>  0.015 </x-m>
+      <y-m>  0.330 </y-m>
+      <z-m>  0.210 </z-m>
+    </offsets>
+  </model>
+  
+  <!--overhead Panneau Cockpit Supérieur-->
+  <!--Switchs Right-->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/switch/Engine_Starter_1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.152 </y-m>
+      <z-m>  0.924 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    30.669 </pitch-deg>
+      <heading-deg> -32.160 </heading-deg>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/switch/Engine_Starter_2.xml</path>
     <offsets>
-      <x-m> -0.000 </x-m>
-      <y-m>  0.538 </y-m>
-      <z-m>  0.181 </z-m>
+      <x-m>  0.020 </x-m>
+      <y-m>  0.177 </y-m>
+      <z-m>  0.924 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    30.669 </pitch-deg>
+      <heading-deg> -32.160 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/switch/Cockpit_Lights.xml</path>
+    <offsets>
+      <x-m>  0.063 </x-m>
+      <y-m>  0.196 </y-m>
+      <z-m>  0.965 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    30.669 </pitch-deg>
+      <heading-deg> -32.160 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--Switchs Left-->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/switch/Batterie_Master.xml</path>
+    <offsets>
+      <x-m>  0.145 </x-m>
+      <y-m> -0.354 </y-m>
+      <z-m>  0.924 </z-m>
+      <roll-deg>       0.000 </roll-deg>
+      <pitch-deg>   -332.916 </pitch-deg>
+      <heading-deg>  394.946 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--Center-->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/Engine_Ignition/Engine_Ignition.xml</path>
+    <offsets>
+      <x-m> -0.037 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.924 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    19.265 </pitch-deg>
+      <heading-deg>   0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!--Right-->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/DCVolts/DCVoltsL.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.340 </y-m>
+      <z-m>  0.938 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    26.914 </pitch-deg>
+      <heading-deg> -34.726 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/DCVolts/DCVoltsR.xml</path>
+    <offsets>
+      <x-m>  0.173 </x-m>
+      <y-m>  0.383 </y-m>
+      <z-m>  0.938 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    26.914 </pitch-deg>
+      <heading-deg> -34.726 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/Lamps/Voltmeter_Light.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m>  0.358 </y-m>
+      <z-m>  0.966 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    28.849 </pitch-deg>
+      <heading-deg> -33.241 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/Lamps/Recognition_Light.xml</path>
+    <offsets>
+      <x-m>  0.061 </x-m>
+      <y-m>  0.244 </y-m>
+      <z-m>  0.918 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    25.785 </pitch-deg>
+      <heading-deg> -35.675 </heading-deg>
     </offsets>
   </model>
 

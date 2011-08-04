@@ -5,7 +5,7 @@
   <chase-distance-m type="double" archive="y"> -30 </chase-distance-m>
 
   <view n="100">
-    <name>Co pilote</name>
+    <name>Copilot View</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
     <config>
@@ -39,6 +39,22 @@
   </view>
 
   <view n="102">
+    <name>Cockpit View</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">  0.000 </x-offset-m> <!--Right-->
+      <y-offset-m archive="y">  0.503 </y-offset-m> <!--Up-->
+      <z-offset-m archive="y"> -7.126 </z-offset-m> <!--Back-->
+      <pitch-offset-deg> -15 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 60 </default-field-of-view-deg>
+    </config>
+  </view>
+
+  <view n="103">
     <name>Tail Camera View</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>

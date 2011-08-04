@@ -10,37 +10,6 @@
    
     <fuel-fraction>0.8</fuel-fraction>
   
-    <startup>
-      <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
-    </startup>
-
-    <model>
-      <path>Aircraft/Douglas-Dc3/Models/dc-3.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
-    </model>
-
-    <sound>
-      <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>
-    </sound>
-
-    <multiplay>
-      <chat_display>1</chat_display>
-      <generic> 
-        <int type="int">0</int>  <!-- 0 immat -->
-        <int type="int">0</int>  <!-- 1 immat -->
-        <int type="int">0</int>  <!-- 2 immat -->
-        <int type="int">0</int>  <!-- 3 immat -->
-        <int type="int">0</int>  <!-- 4 immat -->
-        <int type="int">0</int>  <!-- 5 immat -->
-        <int type="bool">0</int> <!-- 6 smoke -->
-        <int type="int">0</int>  <!-- 7 color -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-      </generic>
-    </multiplay>
-
     <flaps>
       <setting>0.00</setting>
       <setting>0.25</setting>
@@ -67,6 +36,33 @@
 
     <menubar include="Dialogs/dc-3-menu.xml"/>
 
+    <!-- ############################### -->
+    <!-- ######## DUAL CONTROL ######### -->
+    <remote>
+     <pilot-callsign type="string"></pilot-callsign>
+    </remote>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+	      <int type="int">  0 </int>  <!-- 0 immat -->
+        <int type="int">  0 </int>  <!-- 1 immat -->
+        <int type="int">  0 </int>  <!-- 2 immat -->
+        <int type="int">  0 </int>  <!-- 3 immat -->
+        <int type="int">  0 </int>  <!-- 4 immat -->
+        <int type="int">  0 </int>  <!-- 5 immat -->
+        <int type="bool"> 0 </int>  <!-- 6 smoke -->
+        <int type="int">  0 </int>  <!-- 7 color -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+	      <float n="5" alias="/controls/flight/rudder"/>
+	      <float n="6" alias="/controls/flight/elevator"/>
+	      <float n="7" alias="/controls/flight/aileron"/>
+	      <float n="8" alias="/controls/engines/engine/throttle"/>
+      </generic>
+    </multiplay>
+    <!-- ######## DUAL CONTROL ######### -->
+    <!-- ############################### -->
   </sim>
 
   <controls>
@@ -102,6 +98,8 @@
       <file>Aircraft/Douglas-Dc3/Nasal/doors.nas</file>
     </doors>
     <dc-3>
+      <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>
     </dc-3>
