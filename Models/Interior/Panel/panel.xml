@@ -31,40 +31,40 @@
     <offsets>
       <x-m> -0.06 </x-m>
       <y-m>  0.00 </y-m>
-      <z-m> -0.00 </z-m> 
+      <z-m> -0.00 </z-m>
     </offsets>
-  </model>  
+  </model>
 
   <!-- Manche -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Handle/handle.xml</path>
     <offsets>
       <x-m> -0.1 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m> 
+      <y-m>  0.0 </y-m>
+      <z-m>  0.0 </z-m>
     </offsets>
   </model>
-  
+
   <!-- Pédales Pilote -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Pedals/pedals.xml</path>
     <offsets>
-      <x-m> 0     </x-m>
-      <y-m>-0.378 </y-m>
-      <z-m>-0.354 </z-m> 
+      <x-m>-0.100 </x-m>
+      <y-m>-0.430 </y-m>
+      <z-m>-0.354 </z-m>
     </offsets>
-  </model>  
- 
+  </model>
+
   <!-- Pédales Copilote -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Pedals/pedals.xml</path>
     <offsets>
-      <x-m> 0     </x-m>
-      <y-m> 0.378 </y-m>
-      <z-m>-0.354 </z-m>  
+      <x-m> -0.100  </x-m>
+      <y-m>  0.430 </y-m>
+      <z-m> -0.354 </z-m>
     </offsets>
-  </model>  
- 
+  </model>
+
 
   <!-- ASI -->
   <model>
@@ -75,7 +75,7 @@
       <z-m>  0.380 </z-m>
     </offsets>
   </model>
-  
+
   <!-- ALT -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
@@ -257,7 +257,7 @@
       <z-m>  0.210 </z-m>
     </offsets>
   </model>
-  
+
   <!--overhead Panneau Cockpit Supérieur-->
   <!--Switchs Right-->
   <model>

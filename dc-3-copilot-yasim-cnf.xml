@@ -10,7 +10,7 @@
 <PropertyList include="copilot-base.xml">
 
   <sim>
-    <description>Douglas DC-3/C-47 (YASim)</description>
+    <description>Douglas DC-3/C-47 copilot (YASim)</description>
     <flight-model>null</flight-model>
 
     <startup>

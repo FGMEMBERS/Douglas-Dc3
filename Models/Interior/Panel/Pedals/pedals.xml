@@ -2,114 +2,108 @@
 
 <PropertyList>
 
-  <path>pedals.ac</path>
+   <path>pedals.ac</path>
 
-  <animation>
-    <object-name>PedaleG</object-name>
-    <object-name>PedaleD</object-name>
-    <object-name>AxeD</object-name>
-    <object-name>AxeG</object-name>
-  </animation>
-
-  <animation>
-    <name>PedaleGauche</name>
-    <object-name>PedaleG</object-name>
-    <object-name>AxeG</object-name>
-  </animation>
+ <animation>
+        <object-name>PedaleG</object-name>
+        <object-name>PedaleF</object-name>
+        <object-name>AxeD</object-name>
+        <object-name>AxeG</object-name>
+ </animation>
  
-  <animation>
-    <name>PedaleDroite</name>
-    <object-name>PedaleD</object-name>
-    <object-name>AxeD</object-name>
-  </animation>
- 
-  <animation>
-    <type>rotate</type>
-    <object-name>PedaleGauche</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> 20 </factor>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
+
+
+ <animation>
+   <type>rotate</type>
+        <object-name>PedaleG</object-name>
+        <object-name>AxeG</object-name>
+   <property>controls/flight/rudder</property>
+   <factor>15</factor>
+   <axis>
+     <x> 0</x>
+     <y>-1</y>
+     <z> 0</z>
+   </axis>
   </animation>
 
-  <animation>
-    <type>rotate</type>
-    <object-name>PedaleGauche</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> 20 </factor>
-    <center>
-       <x-m> -0.094 </x-m>
-       <y-m>  0.000 </y-m>
-       <z-m>  0.259 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+ <animation>
+   <type>rotate</type>
+        <object-name>PedaleG</object-name>
+		<object-name>PedaleG</object-name>
+   <property>controls/flight/rudder</property>
+   <factor>15</factor>
+   <center>
+      <x-m>-0.094 </x-m>
+      <y-m> 0     </y-m>
+      <z-m> 0.259 </z-m>
+   </center>
+   <axis>
+     <x> 0</x>
+     <y> 1</y>
+     <z> 0</z>
+   </axis>
   </animation>
 
-  <animation>
-    <type>rotate</type>
-    <object-name>PedaleDroite</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> 20 </factor>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+ <animation>
+   <type>rotate</type>
+        <object-name>PedaleD</object-name>
+        <object-name>AxeD</object-name>
+   <property>controls/flight/rudder</property>
+   <factor>15</factor>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+      <z>0</z>
+   </axis>
   </animation>
 
-  <animation>
-    <type>rotate</type>
-    <object-name>PedaleDroite</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> 20 </factor>
-    <center>
-      <x-m> -0.094 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.259 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
+ <animation>
+  <type>rotate</type>
+       <object-name>PedaleD</object-name>
+  <property>controls/flight/rudder</property>
+  <factor>15</factor>
+  <center>
+     <x-m>-0.094 </x-m>
+     <y-m> 0     </y-m>
+     <z-m> 0.259 </z-m>
+  </center>
+  <axis>
+     <x> 0</x>
+     <y> -1</y>
+     <z> 0</z>
+  </axis>
+ </animation>
 
-  <animation>
-    <type>pick</type>
-    <object-name>PedaleGauche</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/controls/flight/rudder</property>
-        <step>0.05</step>
-      </binding>
-    </action>
-  </animation>
+ <animation>
+  <type>pick</type>
+        <object-name>PedaleG</object-name>
+        <object-name>AxeG</object-name>
+  <visible>true</visible>
+  <action>
+        <button>0</button>
+        <repeatable>true</repeatable>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/flight/rudder</property>
+          <step>0.05</step>
+        </binding>
+  </action>
+ </animation>
 
-  <animation>
-    <type>pick</type>
-    <object-name>PedaleDroite</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/controls/flight/rudder</property>
-        <step>-0.05</step>
-      </binding>
-    </action>
-  </animation>
+ <animation>
+   <type>pick</type>
+        <object-name>PedaleD</object-name>
+        <object-name>AxeD</object-name>
+   <visible>true</visible>
+   <action>
+        <button>0</button>
+        <repeatable>true</repeatable>
+        <binding>
+          <command>property-adjust</command>
+          <property>/controls/flight/rudder</property>
+          <step>-0.05</step>
+        </binding>
+   </action>
+ </animation>
 
 </PropertyList>
-
