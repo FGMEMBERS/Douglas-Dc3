@@ -4,7 +4,7 @@
 <PropertyList include="dc-3-yasim-cnf.xml">
 
   <sim>
-    <description>Douglas DC-3/C4-7 (YASim)</description>
+    <description>Douglas DC-3/C4-7</description>
     <author>BARANGER Emmanuel</author>
   </sim>
 

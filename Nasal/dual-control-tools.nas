@@ -373,7 +373,7 @@ TDMEncoder.new = func (inputs, dest) {
                                          func (msg) {
                                            print("This should not happen!");
                                          }),
-          MIN_INT   : 0.25,
+          MIN_INT   : 0.005,
           last_time : 0,
           next_item : 0,
           old       : [] };

@@ -10,6 +10,14 @@
    
     <fuel-fraction>0.8</fuel-fraction>
 
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.50</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </flaps>
+
     <help>
       <title>Douglas DC-3/C4-7</title>
       <key>
@@ -26,11 +34,6 @@
       </key>
     </help>
 
-    <multiplay>
-      <generic> 
-      </generic>
-    </multiplay>
-
     <presets>
       <onground type="bool">false</onground>
       <altitude-agl-ft type="double">30</altitude-agl-ft>
@@ -38,6 +41,45 @@
 
     <menubar include="Dialogs/copilot-menu.xml"/>
 
+    <!-- ############################### -->
+    <!-- ######## DUAL CONTROL ######### -->
+    <remote>
+     <pilot-callsign type="string"></pilot-callsign>
+    </remote>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+	<int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
+	<int n="1" type="int">  0 </int>  <!-- 0 immat -->
+        <int n="2" type="int">  0 </int>  <!-- 1 immat -->
+        <int n="3" type="int">  0 </int>  <!-- 2 immat -->
+        <int n="4" type="int">  0 </int>  <!-- 3 immat -->
+        <int n="5" type="int">  0 </int>  <!-- 4 immat -->
+        <int n="6" type="int">  0 </int>  <!-- 5 immat -->
+        <int n="7" type="bool"> 0 </int>  <!-- 6 smoke -->
+        <int n="8" type="int">  0 </int>  <!-- 7 color -->
+	<int n="9" alias="/controls/engines/engine[0]/magnetos"/>
+	<int n="10" alias="/controls/engines/engine[1]/magnetos"/>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <!-- <float n="2" alias="/position/gear-agl-m">  0 </float>  11 altitude for MP shadow -->
+	<float n="3" alias="/controls/flight/flaps"/>
+	<float n="4" alias="/controls/flight/elevator-trim"/>
+        <float n="5" alias="/controls/flight/rudder"/>
+	<float n="6" alias="/controls/flight/elevator"/>
+	<float n="7" alias="/controls/flight/aileron"/>
+	<float n="8" alias="/controls/engines/engine[0]/throttle"/>
+	<float n="9" alias="/controls/engines/engine[1]/throttle"/>
+	<float n="10" alias="/controls/engines/engine[0]/mixture"/>
+	<float n="11" alias="/controls/engines/engine[1]/mixture"/>
+	<float n="12" alias="/controls/engines/engine[0]/propeller-pitch"/>
+	<float n="13" alias="/controls/engines/engine[1]/propeller-pitch"/>
+        <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
+      </generic>
+    </multiplay>
+    <!-- ######## DUAL CONTROL ######### -->
+    <!-- ############################### -->
   </sim>
 
   <controls>
@@ -64,6 +106,42 @@
     </engine>
   </engines>
 
+  <dual-control>
+    <pilot>
+      <controls>
+        <flight>
+          <flaps>0</flaps>
+          <elevator-trim>0</elevator-trim>
+          <aileron>0</aileron>
+          <elevator>0</elevator>
+          <rudder>0</rudder>
+        </flight>
+        <electric>
+          <battery-switch></battery-switch>
+        </electric>
+        <lighting>
+          <instrument-lights></instrument-lights>
+        </lighting>
+        <engines>
+          <engine n="0">
+            <throttle>0</throttle>
+            <magnetos></magnetos>
+            <mixture></mixture>
+            <propeller-pitch></propeller-pitch>
+            <starter></starter>
+          </engine>
+          <engine n="1">
+            <throttle>0</throttle>
+            <magnetos></magnetos>
+            <mixture></mixture>
+            <propeller-pitch></propeller-pitch>
+            <starter></starter>
+          </engine>
+        </engines>
+      </controls>
+    </pilot>
+  </dual-control>
+
   <input>
     <keyboard include="Nasal/dc-3-keyboard.xml"/>
   </input>
@@ -73,6 +151,8 @@
       <file>Aircraft/Douglas-Dc3/Nasal/doors.nas</file>
     </doors>
     <dc-3>
+      <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>
     </dc-3>

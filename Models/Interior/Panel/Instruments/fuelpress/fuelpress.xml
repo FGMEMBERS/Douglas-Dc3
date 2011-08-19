@@ -40,7 +40,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle1</object-name>
-    <property>engines/engine/mp-osi</property>
+    <property>engines/engine[0]/mp-osi</property>
     <interpolation>
       <entry><ind>  0  </ind><dep>   0  </dep></entry>
       <entry><ind>  15 </ind><dep> 165  </dep></entry>
@@ -56,7 +56,7 @@
     <animation>
     <type>rotate</type>
     <object-name>needle2</object-name>
-    <property>engines/engine[0]/mp-osi</property>
+    <property>engines/engine[1]/mp-osi</property>
     <interpolation>
       <entry><ind>  0  </ind><dep>   0  </dep></entry>
       <entry><ind>  15 </ind><dep> 165  </dep></entry>

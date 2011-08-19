@@ -42,12 +42,12 @@
   <animation> 
     <type>rotate</type>
     <object-name>needleL</object-name>
-    <property>/engines/engine/oil-temperature-degf</property>
+    <property>/engines/engine[0]/oil-temperature-degf</property>
     <interpolation>
       <entry><ind> -50 </ind><dep>  -10 </dep></entry>
       <entry><ind>   0 </ind><dep>  -45 </dep></entry>
       <entry><ind>  50 </ind><dep>  -90 </dep></entry>
-	    <entry><ind> 150 </ind><dep> -154 </dep></entry>
+      <entry><ind> 150 </ind><dep> -154 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.0015 </x-m>
@@ -64,12 +64,12 @@
   <animation> 
     <type>rotate</type>
     <object-name>needleR</object-name>
-    <property>/engines/engine[0]/oil-temperature-degf</property>
+    <property>/engines/engine[1]/oil-temperature-degf</property>
     <interpolation>
       <entry><ind> -50 </ind><dep>  10 </dep></entry>
       <entry><ind>   0 </ind><dep>  45 </dep></entry>
       <entry><ind>  50 </ind><dep>  90 </dep></entry>
-	    <entry><ind> 150 </ind><dep> 154 </dep></entry>
+      <entry><ind> 150 </ind><dep> 154 </dep></entry>
     </interpolation>
     <center>
       <x-m> 0.0015 </x-m>

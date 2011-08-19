@@ -43,7 +43,7 @@
   <animation> 
     <type>rotate</type>
     <object-name>needleTF</object-name>
-    <property>/engines/engine/oil-temperature-degf</property>
+    <property>/engines/engine[0]/oil-temperature-degf</property>
     <interpolation>
       <entry><ind> -50 </ind><dep>  -10 </dep></entry>
       <entry><ind>   0 </ind><dep>  -45 </dep></entry>
@@ -65,7 +65,7 @@
   <animation> 
     <type>rotate</type>
     <object-name>needleFS</object-name>
-    <property>/engines/engine[0]/oil-temperature-degf</property>
+    <property>/engines/engine[1]/oil-temperature-degf</property>
     <interpolation>
       <entry><ind> -50 </ind><dep>  10 </dep></entry>
       <entry><ind>   0 </ind><dep>  45 </dep></entry>
