@@ -1,0 +1,89 @@
+######################################################################
+##                          Douglas DC3-C47                         ##
+##                                                                  ## 
+##                        Contributors file                         ##
+##  http://equipe-flightgear.forumactif.com/t527-douglas-dc-3-c-47  ##
+##          http://wiki.flightgear.org/Fr/Douglas_DC-3-C47          ##
+##                                                                  ##
+######################################################################
+######################################################################
+
+# 29/08/2011 ==> (Helijah)
+- Ajout de la version amphibie
+- Séparation de la cabine du reste de l'intérieur
+
+######################################################################
+
+# 23/08/2011 ==> (F-JJTH)
+- Suppression du réglage sonore de l'appareil
+- Ajout de 4 passagers en MP
+- Amélioration du Dual Control
+- Amélioration du système de parachutisme
+- Ajout du copilote lorsqu'il est connecté
+
+######################################################################
+
+# 18/08/2011 ==> (F-JJTH)
+- Amélioration du Dual Control
+- Ajout de l'ombre en MP
+- Amélioration des xml d'instruments
+
+######################################################################
+
+# 13/08/2011 ==> (F-JJTH)
+- Amélioration du Dual Control
+
+######################################################################
+
+# 07/08/2011 ==> (Alexis)
+- Animation du pilote
+
+######################################################################
+
+# 03/08/2011 ==> (Alexis)
+- Suppression de siège en double
+- Amélioration des manches et des palonniers
+
+######################################################################
+
+# 02/08/2011 ==> (F-JJTH)
+- Ajout du Dual Control
+
+######################################################################
+
+# 01/08/2011 ==> (Helijah)
+- Amélioration des instruments du tableau de bord
+
+######################################################################
+
+# 27/07/2011 ==> (Alexis)
+- Création d'instruments sur la tableau de bord
+- Création de l'instrument d'autopilotage
+
+######################################################################
+
+# 27/07/2011 ==> (F-Sig)
+- Création de la console centrale
+
+######################################################################
+
+# 23/06/2011 ==> (F-JJTH)
+- Amélioration du système électrique
+- Amélioration des switch du panneau supérieur
+
+######################################################################
+
+# 10/06/2011 ==> (Baboon)
+- Ajout des switchs du panneau supérieur (batterie, démarreur, panel light)
+- Création des switch de magnetos
+- Création des voltmètres
+- Ajout d'un système électrique
+- Création de la lampe de décharge batterie
+- Création des sons
+
+######################################################################
+
+# 08/06/2011 ==> (Patten)
+- Création d'une livery "Linux"
+
+######################################################################

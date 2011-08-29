@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="dc-3A-jsbsim-cnf.xml"> -->
+<PropertyList include="dc-3A-yasim-cnf.xml">
+
+  <sim>
+    <author>BARANGER Emmanuel</author>
+  </sim>
+
+</PropertyList>
+

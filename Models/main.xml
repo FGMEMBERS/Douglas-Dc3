@@ -48,24 +48,13 @@
     <object-name>cargoB</object-name>
     <object-name>antennes</object-name>
 
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeG3</object-name>
-    <object-name>axeG4</object-name>
-    <object-name>roueG</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
-    <object-name>axeD3</object-name>
-    <object-name>axeD4</object-name>
-    <object-name>roueD</object-name>
-    <object-name>axeA</object-name>
-    <object-name>roueA</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
     <object-name>sorties</object-name>
     <object-name>trous</object-name>
 
     <!-- Objets transparents -->
+    <object-name>cables</object-name>
     <object-name>vitres</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscG</object-name>
@@ -94,18 +83,6 @@
     <object-name>cargoB</object-name>
     <object-name>antennes</object-name>
 
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeG3</object-name>
-    <object-name>axeG4</object-name>
-    <object-name>roueG</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
-    <object-name>axeD3</object-name>
-    <object-name>axeD4</object-name>
-    <object-name>roueD</object-name>
-    <object-name>axeA</object-name>
-    <object-name>roueA</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
     <object-name>sorties</object-name>
@@ -176,17 +153,13 @@
 
   <animation>
     <type>noshadow</type>
+    <object-name>cables</object-name>
     <object-name>vitres</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
     <object-name>propdiscD</object-name>
   </animation>
-
-  <!-- Une ombre pour OSG -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/shadow.xml</path>
-  </model>
 
   <!-- Intérieur -->
   <model>
@@ -233,37 +206,6 @@
       <x-m> -6.040 </x-m>
       <y-m>  2.814 </y-m>
       <z-m> -1.195 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Effets sur le sol -->
-  <!-- Roue gauche -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/ground/ground0.xml</path>
-    <offsets>
-      <x-m> -4.250 </x-m>
-      <y-m> -2.814 </y-m>
-      <z-m> -3.582 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Roue droite -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/ground/ground1.xml</path>
-    <offsets>
-      <x-m> -4.250 </x-m>
-      <y-m>  2.814 </y-m>
-      <z-m> -3.582 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Roulette de queue -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/ground/ground2.xml</path>
-    <offsets>
-      <x-m>  7.264 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -1.252 </z-m>
     </offsets>
   </model>
 
@@ -547,256 +489,6 @@
       <x2-m> -1.214 </x2-m>
       <y2-m>  3.484 </y2-m>
       <z2-m> -1.476 </z2-m>
-    </axis>
-  </animation>
-
-  <!-- Sortie/Rentrée des trains -->
-  <animation>
-    <name>TrainGauche</name>
-    <object-name>roueG</object-name>
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeG3</object-name>
-    <object-name>axeG4</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>TrainGauche</object-name>
-    <property>gear/gear[0]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> 95 </dep></entry>
-      <entry><ind> 1 </ind><dep>  0 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m> -2.814 </y-m>
-      <z-m> -1.248 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <name>SousTrainGauche</name>
-    <object-name>roueG</object-name>
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeG4</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>SousTrainGauche</object-name>
-    <property>gear/gear[0]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> -135 </dep></entry>
-      <entry><ind> 1 </ind><dep>    0 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m> -2.814 </y-m>
-      <z-m> -2.281 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>axeG4</object-name>
-    <property>gear/gear[0]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> 79.50 </dep></entry>
-      <entry><ind> 1 </ind><dep>  0.00 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m> -2.814 </y-m>
-      <z-m> -3.011 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <name>TrainDroit</name>
-    <object-name>roueD</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
-    <object-name>axeD3</object-name>
-    <object-name>axeD4</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>TrainDroit</object-name>
-    <property>gear/gear[1]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> 95 </dep></entry>
-      <entry><ind> 1 </ind><dep>  0 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m>  2.814 </y-m>
-      <z-m> -1.248 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <name>SousTrainDroit</name>
-    <object-name>roueD</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
-    <object-name>axeD4</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>SousTrainDroit</object-name>
-    <property>gear/gear[1]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> -135 </dep></entry>
-      <entry><ind> 1 </ind><dep>    0 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m>  2.814 </y-m>
-      <z-m> -2.281 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>axeD4</object-name>
-    <property>gear/gear[1]/position-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> 79.50 </dep></entry>
-      <entry><ind> 1 </ind><dep>  0.00 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m> -2.814 </y-m>
-      <z-m> -3.011 </z-m>
-    </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <!-- Compression -->
-  <animation>
-    <name>RoueGauche</name>
-    <object-name>roueG</object-name>
-    <object-name>axeG1</object-name>
-  </animation>
-
-  <animation>
-    <type>translate</type>
-    <object-name>RoueGauche</object-name>
-    <property>gear/gear[0]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 1 </ind><dep>  0.12 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <name>RoueDroite</name>
-    <object-name>roueD</object-name>
-    <object-name>axeD1</object-name>
-  </animation>
-
-  <animation>
-    <type>translate</type>
-    <object-name>RoueDroite</object-name>
-    <property>gear/gear[1]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 1 </ind><dep>  0.12 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-
-  <!-- Rotation des roues lors du roulage -->
-  <animation>
-    <type>spin</type>
-    <object-name>roueG</object-name>
-    <property>gear/gear[0]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m> -2.814 </y-m>
-      <z-m> -3.011 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>spin</type>
-    <object-name>roueD</object-name>
-    <property>gear/gear[1]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -4.250 </x-m>
-      <y-m>  2.814 </y-m>
-      <z-m> -3.011 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>spin</type>
-    <object-name>roueA</object-name>
-    <property>gear/gear[2]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m>  7.264 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.972 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
     </axis>
   </animation>
 

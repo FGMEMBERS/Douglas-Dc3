@@ -9,7 +9,6 @@ var time = props.globals.getNode("sim/time/elapsed-sec");
 var last_change = 0;
 
 setlistener("/sim/signals/fdm-initialized", func{
-  setprop("/sim/sound/volume",1.0);
   settimer(update_system, 1);
   setprop("/controls/gear/brake-parking",1);
   setprop("/instrumentation/doors/crew/position-norm",0);

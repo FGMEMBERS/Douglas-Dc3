@@ -2,27 +2,6 @@
 
 <PropertyList>
 
-  <!-- Les sièges -->
-  <!-- Pilote -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/pilot-seat.xml</path>
-    <offsets>
-      <x-m> -7.830 </x-m>
-      <y-m> -0.500 </y-m>
-      <z-m> -0.220 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Copilote -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Interior/seats/pilot-seat.xml</path>
-    <offsets>
-      <x-m> -7.830 </x-m>
-      <y-m>  0.500 </y-m>
-      <z-m> -0.220 </z-m>
-    </offsets>
-  </model>
-
   <!-- Passagers -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/seats/seat.xml</path>

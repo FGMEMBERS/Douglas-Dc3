@@ -33,7 +33,6 @@
 
   <animation>
     <name>LowPoly</name>
-    <object-name>bol</object-name>
     <object-name>moteurlow</object-name>
   </animation>
 

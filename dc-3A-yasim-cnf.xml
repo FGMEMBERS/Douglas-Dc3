@@ -10,23 +10,23 @@
 <PropertyList include="dc-3-base.xml">
 
   <sim>
-    <description>Douglas DC-3/C-47 (YASim)</description>
+    <description>Douglas DC-3/C-47 Amphibius (YASim)</description>
     <flight-model>yasim</flight-model>
-    <aero>dc-3-yasim</aero>
+    <aero>dc-3A-yasim</aero>
 
     <startup>
       <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
     </startup>
 
     <model>
-      <path>Aircraft/Douglas-Dc3/Models/dc-3W.xml</path>
+      <path>Aircraft/Douglas-Dc3/Models/dc-3A.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
     </model>
 
     <sound>
-      <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/dc-3A-sound.xml</path>
     </sound>
   </sim>
 
