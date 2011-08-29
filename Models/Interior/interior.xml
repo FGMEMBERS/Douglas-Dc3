@@ -44,6 +44,19 @@
     </offsets>
   </model>
 
+  <!-- Copilote -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Pilot/copilot.xml</path>
+    <offsets>
+      <x-m> -8.19 </x-m>
+      <y-m>  0.424 </y-m>
+      <z-m> -0.15 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
   <!-- Tableau de bord -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Panel/panel.xml</path>

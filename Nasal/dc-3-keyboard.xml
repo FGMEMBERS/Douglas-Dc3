@@ -33,8 +33,8 @@
     <name>Ctrl-j</name>
     <desc>Jump signal</desc>
     <binding>
-      <command>property-assign</command>
-      <property>controls/jump-signal</property>
+      <command>property-toggle</command>
+      <property>controls/paratroopers/jump-signal</property>
       <value>true</value>
     </binding>
   </key>

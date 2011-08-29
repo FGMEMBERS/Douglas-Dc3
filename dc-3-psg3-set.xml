@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="dc-3-copilot-jsbsim-cnf.xml"> -->
+<PropertyList include="psg-base.xml">
+
+  <sim include="Nasal/psg3-views.xml">
+    <description>Douglas DC-3/C-47 Passenger 3</description>
+    <author>BARANGER Emmanuel</author>
+    <flight-model>null</flight-model>
+
+    <startup>
+      <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Douglas-Dc3/Models/dc-3-psg3.xml</path>
+      <variant type="int"> 0 </variant>
+    </model>
+  </sim>
+
+  <!-- ############################### -->
+  <!-- ######## DUAL CONTROL ######### -->
+  <nasal>
+    <dual_control_tools>
+      <file>Aircraft/Douglas-Dc3/Nasal/dual-control-tools.nas</file>
+    </dual_control_tools>
+    <aircraft_dual_control>
+      <file>Aircraft/Douglas-Dc3/Nasal/passenger-dual-control.nas</file>
+    </aircraft_dual_control>
+    <dual_control>
+      <file>Aircraft/Douglas-Dc3/Nasal/copilot-dual-control.nas</file>
+    </dual_control>
+  </nasal>
+  <!-- ######## DUAL CONTROL ######### -->
+  <!-- ############################### -->
+
+</PropertyList>

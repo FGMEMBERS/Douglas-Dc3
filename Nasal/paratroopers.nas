@@ -1,57 +1,15 @@
-# set the paratroopers weight
-loaded = props.globals.getNode("controls/paratroopers", 1);
-
-set_paratroopers_weight = func() {
-	para = getprop("controls/paratroopers");
-
-	if (para)
-	{
-		setprop("/consumables/fuel/tank[9]/level-gal_us[0]",200);
-	}
-	if (!para)
-	{
-		setprop("/consumables/fuel/tank[9]/level-gal_us[0]",0);
-	}	
-}
-
-setlistener( loaded , set_paratroopers_weight );
-
-# remove the paratroopers weight after they jump
-signal = props.globals.getNode("controls/jump-signal", 1);
-
-rm_paratroopers_weight = func() {
-	para = getprop("controls/paratroopers");
-
-	if ( para )
-	{
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",4096) }, 0);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",2048) }, 1);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",1024) }, 2);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",512) }, 3);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",256) }, 4);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",128) }, 5);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",96) }, 6);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",64) }, 7);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",32) }, 8);
-		settimer(func {setprop("/consumables/fuel/tank[9]/level-gal_us[0]",0) }, 9);
-	}
-}
-
-setlistener( signal , rm_paratroopers_weight );
-
-#setlistener( gw , monitor_weight );
-
-#monitor the jump signal
-signal = props.globals.getNode("controls/signal", 1);
-
-monitor_jumpsignal = func() {
-	para = getprop("controls/paratroopers");
-
-	if (para)
-	{
-		setprop("controls/jump-signal",1);
-	}
-}
-
-setlistener( signal , monitor_jumpsignal );
-
+var jumper = aircraft.light.new("controls/paratroopers/trigger", [2,3.5], "controls/paratroopers/jump-signal");         # Création du signal qui larguera les parachutistes toutes les 3.5 secondes
+setlistener("controls/paratroopers/trigger/state", func(state){
+  if(state.getValue()){                                                  # Si un parachutiste saute
+    var nb_para = getprop("controls/paratroopers/paratroopers") - 1;     # On calcul combien il reste de parachutiste
+    setprop("controls/paratroopers/paratroopers", nb_para);              # On attribut le nombre de parachutiste à la propriété
+    var weight = getprop("controls/paratroopers/weight") - 120;          # On calcul le poids des parachutistes restant
+    setprop("controls/paratroopers/weight", weight);                     # On attribut le poids restant à la propriété
+    if(getprop("controls/paratroopers/paratroopers") > 0){               # Si il reste encore des parachutistes
+      setprop("sim/messages/copilot", getprop("controls/paratroopers/paratroopers")~" Paratroopers remaining");  # On indique le nombre de parachutistes restant  
+    }else{                                                               # Sinon
+      jumper.switch(0);                                                  # On arrête le signal de saut
+      setprop("sim/messages/copilot", "Paratroopers are all out");       # On indique qu'il n'y a plus de parachutistes
+    }
+  }
+});

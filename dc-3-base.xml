@@ -48,14 +48,14 @@
     <!-- ############################### -->
     <!-- ######## DUAL CONTROL ######### -->
     <remote>
-     <pilot-callsign type="string"></pilot-callsign>
+     <pilot-callsign type="string"/>
     </remote>
 
     <multiplay>
       <chat_display>1</chat_display>
       <generic>
-        <int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
-        <int n="1" type="int">  0 </int>  <!-- 0 immat -->
+	<int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
+	<int n="1" type="int">  0 </int>  <!-- 0 immat -->
         <int n="2" type="int">  0 </int>  <!-- 1 immat -->
         <int n="3" type="int">  0 </int>  <!-- 2 immat -->
         <int n="4" type="int">  0 </int>  <!-- 3 immat -->
@@ -63,22 +63,23 @@
         <int n="6" type="int">  0 </int>  <!-- 5 immat -->
         <int n="7" type="bool"> 0 </int>  <!-- 6 smoke -->
         <int n="8" type="int">  0 </int>  <!-- 7 color -->
-        <int n="9" alias="/controls/engines/engine[0]/magnetos"/>
-        <int n="10" alias="/controls/engines/engine[1]/magnetos"/>
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m">  0 </float>  <!-- 11 altitude for MP shadow -->
-        <float n="3" alias="/controls/flight/flaps"/>
-        <float n="4" alias="/controls/flight/elevator-trim"/>
+	<float n="3" alias="/surface-positions/flap-pos-norm"/>
+	<float n="4" alias="/controls/flight/elevator-trim"/>
         <float n="5" alias="/controls/flight/rudder"/>
-        <float n="6" alias="/controls/flight/elevator"/>
-        <float n="7" alias="/controls/flight/aileron"/>
-        <float n="8" alias="/controls/engines/engine[0]/throttle"/>
-        <float n="9" alias="/controls/engines/engine[1]/throttle"/>
-        <float n="10" alias="/controls/engines/engine[0]/mixture"/>
-        <float n="11" alias="/controls/engines/engine[1]/mixture"/>
-        <float n="12" alias="/controls/engines/engine[0]/propeller-pitch"/>
-        <float n="13" alias="/controls/engines/engine[1]/propeller-pitch"/>
+	<float n="6" alias="/controls/flight/elevator"/>
+	<float n="7" alias="/controls/flight/aileron"/>
+	<float n="8" alias="/controls/engines/engine[0]/throttle"/>
+	<float n="9" alias="/controls/engines/engine[1]/throttle"/>
+	<float n="10" alias="/controls/engines/engine[0]/mixture"/>
+	<float n="11" alias="/controls/engines/engine[1]/mixture"/>
+	<float n="12" alias="/controls/engines/engine[0]/propeller-pitch"/>
+	<float n="13" alias="/controls/engines/engine[1]/propeller-pitch"/>
+	<float n="14" alias="/controls/gear/brake-left"/>
+	<float n="15" alias="/controls/gear/brake-right"/>
+        <float n="16" alias="/gear/gear[0]/position-norm"/>
         <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
       </generic>
     </multiplay>
@@ -95,6 +96,10 @@
         <magnetos>0</magnetos>
       </engine>
     </engines>
+    <paratroopers>
+      <paratroopers type="float">26</paratroopers>
+      <weight type="float">3120</weight>
+    </paratroopers>
   </controls>
 
   <engines>
@@ -110,54 +115,61 @@
     </engine>
   </engines>
 
+  <!-- ############################### -->
+  <!-- ######## DUAL CONTROL ######### -->
   <dual-control>
     <copilot>
       <controls>
         <flight>
-          <flaps>0</flaps>
-          <elevator-trim>0</elevator-trim>
-          <aileron>0</aileron>
-          <elevator>0</elevator>
-          <rudder>0</rudder>
+          <flaps type="float"/>
+          <elevator-trim type="float"/>
+          <aileron type="float"/>
+          <elevator type="float"/>
+          <rudder type="float"/>
         </flight>
+        <gear>
+          <brake-parking type="bool"/>
+          <brake-left type="float"/>
+          <brake-right type="float"/>
+          <gear-down type="bool"/>
+        </gear>
         <electric>
-          <battery-switch></battery-switch>
+          <battery-switch type="bool"/>
         </electric>
         <lighting>
-          <instrument-lights></instrument-lights>
+          <instrument-lights type="bool"/>
         </lighting>
         <engines>
           <engine n="0">
-            <throttle>0</throttle>
-            <magnetos></magnetos>
-            <mixture></mixture>
-            <propeller-pitch></propeller-pitch>
-            <starter></starter>
+            <throttle type="float"/>
+            <magnetos type="int"/>
+            <mixture type="float"/>
+            <propeller-pitch type="float"/>
+            <starter type="bool"/>
           </engine>
           <engine n="1">
-            <throttle>0</throttle>
-            <magnetos></magnetos>
-            <mixture></mixture>
-            <propeller-pitch></propeller-pitch>
-            <starter></starter>
+            <throttle type="float"/>
+            <magnetos type="int"/>
+            <mixture type="float"/>
+            <propeller-pitch type="float"/>
+            <starter type="bool"/>
           </engine>
         </engines>
-        <gear>
-          <gear-down/>
-        </gear>
       </controls>
       <engines>
         <engine n="0">
-          <running></running>
-          <cranking></cranking>
+          <running type="bool"/>
+          <cranking type="bool"/>
         </engine>
         <engine n="1">
-          <running></running>
-          <cranking></cranking>        
+          <running type="bool"/>
+          <cranking type="bool"/>
         </engine>
       </engines>
     </copilot>
   </dual-control>
+  <!-- ######## DUAL CONTROL ######### -->
+  <!-- ############################### -->
 
   <input>
     <keyboard include="Nasal/dc-3-keyboard.xml"/>

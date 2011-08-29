@@ -29,7 +29,8 @@ var throttle        = ["sim/multiplay/generic/float[8]", "sim/multiplay/generic/
 var mixture         = ["sim/multiplay/generic/float[10]", "sim/multiplay/generic/float[11]"];
 var propeller       = ["sim/multiplay/generic/float[12]", "sim/multiplay/generic/float[13]"];
 var rpm             = ["engines/engine[0]/rpm", "engines/engine[1]/rpm"];
-var magnetos        = ["sim/multiplay/generic/int[9]", "sim/multiplay/generic/int[10]"];
+var brake           = ["sim/multiplay/generic/float[14]", "sim/multiplay/generic/float[15]"];
+var gear            = "sim/multiplay/generic/float[16]";
 var switch_mpp      = "sim/multiplay/generic/int[0]";
 var TDM_mpp         = "sim/multiplay/generic/string[0]";
 
@@ -47,6 +48,8 @@ var mixture_cmd       = ["controls/engines/engine[0]/mixture", "controls/engines
 var propeller_cmd     = ["controls/engines/engine[0]/propeller-pitch", "controls/engines/engine[1]/propeller-pitch"];
 var magnetos_cmd      = ["controls/engines/engine[0]/magnetos", "controls/engines/engine[1]/magnetos"];
 var rpm_cmd           = ["engines/engine[0]/rpm", "engines/engine[1]/rpm"];
+var brake_cmd         = ["controls/gear/brake-left", "controls/gear/brake-right"];
+var gear_cmd          = "controls/gear/gear-down";
 
 # Switch controls
 var battery_switch          = "controls/electric/battery-switch";
@@ -56,7 +59,8 @@ var light_instrument_switch = "controls/lighting/instrument-lights";
 # Boolean properties
 var running        = ["engines/engine[0]/running", "engines/engine[1]/running"];
 var cranking       = ["engines/engine[0]/cranking", "engines/engine[1]/cranking"];
-var gear           = "controls/gear/gear-down";
+#var gear_pos          = "gear/gear[0]/position-norm";
+var brake_parking  = "controls/gear/brake-parking";
 
 var l_dual_control    = "dual-control/active";
 
@@ -93,12 +97,6 @@ var pilot_connect_copilot = func (copilot) {
       DCT.Translator.new
         (copilot.getNode(throttle[1]),
 	 props.globals.getNode("dual-control/copilot/"~throttle_cmd[1])),
-#      DCT.Translator.new
-#        (copilot.getNode(magnetos[0]),
-#	 props.globals.getNode("dual-control/copilot/"~magnetos_cmd[0])),
-#      DCT.Translator.new
-#        (copilot.getNode(magnetos[1]),
-#	 props.globals.getNode("dual-control/copilot/"~magnetos_cmd[1])),
       DCT.Translator.new
         (copilot.getNode(mixture[0]),
 	 props.globals.getNode("dual-control/copilot/"~mixture_cmd[0])),
@@ -111,6 +109,12 @@ var pilot_connect_copilot = func (copilot) {
       DCT.Translator.new
         (copilot.getNode(propeller[1]),
 	 props.globals.getNode("dual-control/copilot/"~propeller_cmd[1])),
+      DCT.Translator.new
+        (copilot.getNode(brake[0]),
+	 props.globals.getNode("dual-control/copilot/"~brake_cmd[0])),
+      DCT.Translator.new
+        (copilot.getNode(brake[1]),
+	 props.globals.getNode("dual-control/copilot/"~brake_cmd[1])),
 
       ##################################################
       # Switch Encoder
@@ -129,7 +133,8 @@ var pilot_connect_copilot = func (copilot) {
           props.globals.getNode(running[1]),
           props.globals.getNode(cranking[0]),
           props.globals.getNode(cranking[1]),
-          props.globals.getNode(gear),
+          props.globals.getNode(gear_cmd),
+          props.globals.getNode(brake_parking),
          ], props.globals.getNode(switch_mpp)),
 
       ##################################################
@@ -138,11 +143,9 @@ var pilot_connect_copilot = func (copilot) {
         (copilot.getNode(TDM_mpp), 
         [func(v){
            props.globals.getNode("dual-control/copilot/"~magnetos_cmd[0]).setValue(v);
-#           props.globals.getNode(magnetos_cmd[0]).setValue(v);
         },
          func(v){
            props.globals.getNode("dual-control/copilot/"~magnetos_cmd[1]).setValue(v);
-#           props.globals.getNode(magnetos_cmd[1]).setValue(v);
         },]),
       DCT.SwitchDecoder.new
         (copilot.getNode(switch_mpp),
@@ -171,7 +174,10 @@ var pilot_connect_copilot = func (copilot) {
            props.globals.getNode("dual-control/copilot/"~cranking[1]).setValue(b);
         },
          func(b){
-           props.globals.getNode("dual-control/copilot/"~gear).setValue(b);
+           props.globals.getNode("dual-control/copilot/"~gear_cmd).setValue(b);
+        },
+         func(b){
+           props.globals.getNode("dual-control/copilot/"~brake_parking).setValue(b);
         },]),
 
       ##################################################      
@@ -185,7 +191,7 @@ var pilot_connect_copilot = func (copilot) {
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~elevator_trim_cmd), props.globals.getNode(elevator_trim_cmd), props.globals.getNode(elevator_trim_cmd), 0.000001),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~flaps_cmd), props.globals.getNode(flaps_cmd), props.globals.getNode(flaps_cmd), 0.1),
+        (props.globals.getNode("dual-control/copilot/"~flaps_cmd), props.globals.getNode(flaps_cmd), props.globals.getNode(flaps_cmd), 0.01),
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~throttle_cmd[0]), props.globals.getNode(throttle_cmd[0]), props.globals.getNode(throttle_cmd[0]), 0.000001),
       DCT.MostRecentSelector.new
@@ -199,27 +205,33 @@ var pilot_connect_copilot = func (copilot) {
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~propeller_cmd[1]), props.globals.getNode(propeller_cmd[1]), props.globals.getNode(propeller_cmd[1]), 0.000001),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[0]), props.globals.getNode(magnetos_cmd[0]), props.globals.getNode(magnetos_cmd[0]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[0]), props.globals.getNode(magnetos_cmd[0]), props.globals.getNode(magnetos_cmd[0]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[1]), props.globals.getNode(magnetos_cmd[1]), props.globals.getNode(magnetos_cmd[1]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[1]), props.globals.getNode(magnetos_cmd[1]), props.globals.getNode(magnetos_cmd[1]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~battery_switch), props.globals.getNode(battery_switch), props.globals.getNode(battery_switch), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~battery_switch), props.globals.getNode(battery_switch), props.globals.getNode(battery_switch), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~starter_switch[0]), props.globals.getNode(starter_switch[0]), props.globals.getNode(starter_switch[0]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~starter_switch[0]), props.globals.getNode(starter_switch[0]), props.globals.getNode(starter_switch[0]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~starter_switch[1]), props.globals.getNode(starter_switch[1]), props.globals.getNode(starter_switch[1]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~starter_switch[1]), props.globals.getNode(starter_switch[1]), props.globals.getNode(starter_switch[1]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~light_instrument_switch), props.globals.getNode(light_instrument_switch), props.globals.getNode(light_instrument_switch), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~light_instrument_switch), props.globals.getNode(light_instrument_switch), props.globals.getNode(light_instrument_switch), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~running[0]), props.globals.getNode(running[0]), props.globals.getNode(running[0]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~running[0]), props.globals.getNode(running[0]), props.globals.getNode(running[0]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~running[1]), props.globals.getNode(running[1]), props.globals.getNode(running[1]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~running[1]), props.globals.getNode(running[1]), props.globals.getNode(running[1]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~cranking[0]), props.globals.getNode(cranking[0]), props.globals.getNode(cranking[0]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~cranking[0]), props.globals.getNode(cranking[0]), props.globals.getNode(cranking[0]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~cranking[1]), props.globals.getNode(cranking[1]), props.globals.getNode(cranking[1]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~cranking[1]), props.globals.getNode(cranking[1]), props.globals.getNode(cranking[1]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~gear), props.globals.getNode(gear), props.globals.getNode(gear), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~gear_cmd), props.globals.getNode(gear_cmd), props.globals.getNode(gear_cmd), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~brake_parking), props.globals.getNode(brake_parking), props.globals.getNode(brake_parking), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~brake_cmd[0]), props.globals.getNode(brake_cmd[0]), props.globals.getNode(brake_cmd[0]), 0.000001),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~brake_cmd[1]), props.globals.getNode(brake_cmd[1]), props.globals.getNode(brake_cmd[1]), 0.000001),
 
   ];
 }
@@ -276,11 +288,11 @@ var copilot_connect_pilot = func (pilot) {
         (pilot.getNode(propeller[1]),
 	 props.globals.getNode("dual-control/pilot/"~propeller_cmd[1])),
       DCT.Translator.new
-        (pilot.getNode(magnetos[0]),
-	 props.globals.getNode("dual-control/pilot/"~magnetos_cmd[0])),
+        (pilot.getNode(brake[0]),
+	 props.globals.getNode("dual-control/pilot/"~brake_cmd[0])),
       DCT.Translator.new
-        (pilot.getNode(magnetos[1]),
-	 props.globals.getNode("dual-control/pilot/"~magnetos_cmd[1])),
+        (pilot.getNode(brake[1]),
+	 props.globals.getNode("dual-control/pilot/"~brake_cmd[1])),
 
       ##################################################
       # Switch Encoder
@@ -299,7 +311,8 @@ var copilot_connect_pilot = func (pilot) {
           props.globals.getNode(running[1]),
           props.globals.getNode(cranking[0]),
           props.globals.getNode(cranking[1]),
-          props.globals.getNode(gear),
+          props.globals.getNode(gear_cmd),
+          props.globals.getNode(brake_parking),
          ], props.globals.getNode(switch_mpp)),
 
       ##################################################
@@ -345,9 +358,11 @@ var copilot_connect_pilot = func (pilot) {
            props.globals.getNode(cranking[1]).setValue(b);
         },
          func(b){
-           props.globals.getNode(gear).setValue(b);
+           props.globals.getNode(gear_cmd).setValue(b);
+        },
+         func(b){
+           props.globals.getNode(brake_parking).setValue(b);
         },]),
-
 
       ##################################################
       # Enable animation for copilot
@@ -384,12 +399,12 @@ var copilot_connect_pilot = func (pilot) {
       DCT.Translator.new
         (pilot.getNode(rpm[1]),
 	 props.globals.getNode(rpm_cmd[1])),
-#      DCT.Translator.new
-#        (pilot.getNode(magnetos[0]),
-#	 props.globals.getNode(magnetos_cmd[0])),
-#      DCT.Translator.new
-#        (pilot.getNode(magnetos[1]),
-#	 props.globals.getNode(magnetos_cmd[1])),
+      DCT.Translator.new
+        (pilot.getNode(flaps),
+	 props.globals.getNode("surface-positions/flap-pos-norm")),
+      DCT.Translator.new
+        (pilot.getNode(gear),
+	 props.globals.getNode("gear/gear[0]/position-norm")),
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/pilot/"~flaps_cmd), props.globals.getNode(flaps_cmd), props.globals.getNode(flaps_cmd), 0.1),
       DCT.MostRecentSelector.new
