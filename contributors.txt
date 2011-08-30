@@ -8,6 +8,12 @@
 ######################################################################
 ######################################################################
 
+# 30/08/2011 ==> (Helijah)
+- Modification de la flotabilité de la version amphibie.
+- Correction des animations vue de l'intérieur.
+
+######################################################################
+
 # 29/08/2011 ==> (Helijah)
 - Ajout de la version amphibie
 - Séparation de la cabine du reste de l'intérieur

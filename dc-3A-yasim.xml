@@ -238,7 +238,7 @@
 
   <!-- Flotteurs -->
   <!-- Avant 4/5 -->
-  <gear x="9.608" y="2.668" z="-4.010"
+  <gear x="9.608" y="2.668" z="-3.80"
         compression="1.5" 
         spring = "15" 
         sfric = "0.85" 
@@ -251,7 +251,7 @@
         spring-factor-not-planing="0.25">
   </gear>
 
-  <gear x="9.608" y="-2.668" z="-4.010"
+  <gear x="9.608" y="-2.668" z="-3.80"
         compression="1.5" 
         spring = "15" 
         sfric = "0.85"
@@ -265,7 +265,7 @@
   </gear>
 
   <!-- Central 6/7 -->
-  <gear x="2.560" y="2.668" z="-4.183" 
+  <gear x="2.560" y="2.668" z="-3.40" 
         compression="1.2" 
         spring = "15" 
         sfric = "0.8" 
@@ -278,7 +278,7 @@
         spring-factor-not-planing="0.4">
   </gear>
 
-  <gear x="2.60" y="-2.668" z="-4.183" 
+  <gear x="2.60" y="-2.668" z="-3.40" 
         compression="1.2" 
         spring = "15" 
         sfric = "0.8" 
@@ -292,7 +292,7 @@
   </gear>
  
   <!-- Arriere 8/9 -->
-  <gear x="3.296" y="2.668" z="-3.038" 
+  <gear x="3.296" y="2.668" z="-2.00" 
         compression="1.8" 
         spring = "8" 
         sfric = "0.9" 
@@ -305,7 +305,7 @@
         spring-factor-not-planing="0.85">
   </gear>
 
-  <gear x="-3.296" y="-2.668" z="-3.038" 
+  <gear x="-3.296" y="-2.668" z="-2.00" 
         compression="1.8" 
         spring = "8" 
         sfric = "0.9" 
