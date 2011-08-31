@@ -12,13 +12,14 @@ setlistener("/sim/signals/fdm-initialized", func{
   settimer(update_system, 1);
   setprop("/controls/gear/brake-parking",1);
   setprop("/instrumentation/doors/crew/position-norm",0);
+  print("Aircraft Systems ... OK");
 });
 
-setlistener("/sim/current-view/view-number", func(vw) {
-    var nm = vw.getValue();
-    setprop("sim/model/sound/volume", 1.0);
-    if(nm == 0 or nm == 7)setprop("sim/model/sound/volume", 0.5);
-},1,0);
+#setlistener("/sim/current-view/view-number", func(vw) {
+#    var nm = vw.getValue();
+#    setprop("sim/model/sound/volume", 1.0);
+#    if(nm == 0 or nm == 7)setprop("sim/model/sound/volume", 0.5);
+#},1,0);
 
 setlistener("controls/flight/flaps", func(flaps){
   var flaps_current = flaps.getValue() / 0.25;
@@ -87,7 +88,55 @@ var Shutdown = func{
 ###############################################
 ###############################################
 
-var update_system = func{
+#tire rotation per minute by circumference/groundspeed#
+TireSpeed = {
+    new : func(number){
+        m = { parents : [TireSpeed] };
+            m.num=number;
+            m.circumference=[];
+            m.tire=[];
+            m.rpm=[];
+            for(var i=0; i<m.num; i+=1) {
+                var diam =arg[i];
+                var circ=diam * math.pi;
+                append(m.circumference,circ);
+                append(m.tire,props.globals.initNode("gear/gear["~i~"]/tire-rpm",0,"DOUBLE"));
+                append(m.rpm,0);
+            }
+        m.count = 0;
+        return m;
+    },
+    #### calculate and write rpm ###########
+    get_rotation: func (fdm1){
+        var speed=0;
+        if(fdm1=="yasim"){ 
+            speed =getprop("gear/gear["~me.count~"]/rollspeed-ms") or 0;
+            speed=speed*60;
+            }elsif(fdm1=="jsb"){
+                speed =getprop("fdm/jsbsim/gear/unit["~me.count~"]/wheel-speed-fps") or 0;
+                speed=speed*18.288;
+            }
+        var wow = getprop("gear/gear["~me.count~"]/wow");
+        if(wow){
+            me.rpm[me.count] = speed / me.circumference[me.count];
+        }else{
+            if(me.rpm[me.count] > 0) me.rpm[me.count]=me.rpm[me.count]*0.95;
+        }
+        me.tire[me.count].setValue(me.rpm[me.count]);
+        me.count+=1;
+        if(me.count>=me.num)me.count=0;
+    },
+};
 
+
+#var tire=TireSpeed.new(# of gear,diam[0],diam[1],diam[2], ...);
+var tire=TireSpeed.new(3, 1.143, 1.143, 0.560);
+
+###############################################
+###############################################
+###############################################
+
+var update_system = func{
+  tire.get_rotation("yasim");
   settimer(update_system, 0);
 }

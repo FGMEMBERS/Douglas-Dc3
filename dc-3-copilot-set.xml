@@ -4,7 +4,11 @@
 <PropertyList include="dc-3-copilot-yasim-cnf.xml">
 
   <sim>
+
     <author>BARANGER Emmanuel</author>
+
+    <mode type="string">wheels</mode>
+
   </sim>
 
 </PropertyList>

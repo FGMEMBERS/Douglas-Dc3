@@ -29,6 +29,13 @@
           </script>
         </binding>
       </item>
+      <item>
+        <label>Toggle quality</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/high-quality</property>
+        </binding>
+      </item>
     </menu>
   </default>
 

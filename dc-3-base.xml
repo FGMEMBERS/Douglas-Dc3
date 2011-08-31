@@ -43,6 +43,10 @@
       </key>
     </help>
 
+    <model>
+      <high-quality type="bool">false</high-quality>
+    </model>
+
     <menubar include="Dialogs/dc-3-menu.xml"/>
 
     <!-- ############################### -->
@@ -51,9 +55,9 @@
      <pilot-callsign type="string"/>
     </remote>
 
-    <multiplay>
+    <multiplay n="0">
       <chat_display>1</chat_display>
-      <generic>
+      <generic n="0">
 	<int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
 	<int n="1" type="int">  0 </int>  <!-- 0 immat -->
         <int n="2" type="int">  0 </int>  <!-- 1 immat -->
@@ -81,6 +85,7 @@
 	<float n="15" alias="/controls/gear/brake-right"/>
         <float n="16" alias="/gear/gear[0]/position-norm"/>
         <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
+        <!-- <string n="1" type"string"/> RESERVED FOR MODE WHEELS/AMPHIBIOUS -->
       </generic>
     </multiplay>
     <!-- ######## DUAL CONTROL ######### -->

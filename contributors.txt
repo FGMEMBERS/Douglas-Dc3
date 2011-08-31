@@ -8,6 +8,17 @@
 ######################################################################
 ######################################################################
 
+# 31/08/2011 ==> (F-JJTH)
+- Amélioration de la rotation des roues
+- Correction du Dual Control
+- Amélioration de l'ombre
+- Correction du message d'erreur au lancement de la versino à roue
+- Ajout d'un menu pour la selection de la qualité de l'appareil
+- Ajout d'une texture haute qualité pour la cabine
+- Amélioration de Models/Interior/Cabine/cabine.ac
+
+######################################################################
+
 # 30/08/2011 ==> (Helijah)
 - Modification de la flotabilité de la version amphibie.
 - Correction des animations vue de l'intérieur.

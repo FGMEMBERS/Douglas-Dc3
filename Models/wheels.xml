@@ -302,8 +302,8 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>gear/gear[0]/rollspeed-ms</property>
-    <factor> 30 </factor>
+    <property>gear/gear[0]/tire-rpm</property>
+    <!--<factor> 30 </factor>-->
     <center>
       <x-m> -4.250 </x-m>
       <y-m> -2.814 </y-m>
@@ -319,8 +319,8 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>gear/gear[1]/rollspeed-ms</property>
-    <factor> 30 </factor>
+    <property>gear/gear[1]/tire-rpm</property>
+    <!--<factor> 30 </factor>-->
     <center>
       <x-m> -4.250 </x-m>
       <y-m>  2.814 </y-m>
@@ -336,8 +336,8 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>gear/gear[2]/rollspeed-ms</property>
-    <factor> 30 </factor>
+    <property>gear/gear[2]/tire-rpm</property>
+    <!--<factor> 30 </factor>-->
     <center>
       <x-m>  7.264 </x-m>
       <y-m>  0.000 </y-m>

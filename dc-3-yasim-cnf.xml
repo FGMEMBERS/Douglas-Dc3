@@ -14,18 +14,22 @@
     <flight-model>yasim</flight-model>
     <aero>dc-3-yasim</aero>
 
-    <type type="string">seaplane</type>
-
     <startup>
       <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
     </startup>
 
     <model>
-      <path>Aircraft/Douglas-Dc3/Models/dc-3W.xml</path>
+      <path>Aircraft/Douglas-Dc3/Models/dc-3.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
     </model>
+
+    <multiplay n="0">
+      <generic n="0">
+        <string n="1" type="string">wheels</string>
+      </generic>
+    </multiplay>
 
     <sound>
       <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>

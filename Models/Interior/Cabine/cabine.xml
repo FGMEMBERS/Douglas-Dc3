@@ -26,6 +26,34 @@
     <object-name>cab-intvitres</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>cab-interieur</object-name>
+    <object-name>cab-inttour</object-name>
+    <object-name>cab-planchet</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>true</value>
+      </equals>
+    </condition>
+    <texture>colorsHigh.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>cab-interieur</object-name>
+    <object-name>cab-inttour</object-name>
+    <object-name>cab-planchet</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>false</value>
+      </equals>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Pilot/pilot.xml</path>
