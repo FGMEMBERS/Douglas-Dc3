@@ -59,6 +59,7 @@
         <int n="6" type="int">  0 </int>  <!-- 5 immat -->
         <int n="7" type="bool"> 0 </int>  <!-- 6 smoke -->
         <int n="8" type="int">  0 </int>  <!-- 7 color -->
+	<int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <!-- <float n="2" alias="/position/gear-agl-m">  0 </float>  11 altitude for MP shadow -->
@@ -85,34 +86,47 @@
   <controls>
     <engines>
       <engine n="0">
-        <magnetos>0</magnetos>
+        <magnetos type="int" value="0" />
+        <oil-dilution type="bool" value="0" />
       </engine>
       <engine n="1">
-        <magnetos>0</magnetos>
+        <magnetos type="int" value="0" />
+        <oil-dilution type="bool" value="0" />
       </engine>
     </engines>
+    <lighting>
+      <passing-lights type="bool" value="0" />
+      <running-lights type="bool" value="0" />
+      <tail-lights type="bool" value="0" />
+      <cabin-lights type="bool" value="0" />
+      <recognition-lights n="0" type="bool" value="0" />
+      <recognition-lights n="1" type="bool" value="0" />
+      <recognition-lights n="2" type="bool" value="0" />
+      <compass-lights type="bool" value="0" />
+      <formation-lights type="bool" value="0" />
+    </lighting>
   </controls>
 
   <surface-positions>
-    <flap-pos-norm type="float"/>
+    <flap-pos-norm type="float" value="0"/>
   </surface-positions>
 
   <engines>
     <engine n="0">
-      <engine-num type="int">0</engine-num>
+      <engine-num type="int" value="0" />
       <rpm>500</rpm>
-      <running>0</running>
-      <cranking>0</cranking>
+      <running type="bool" value="0" />
+      <cranking type="bool" value="0" />
     </engine>
     <engine n="1">
-      <engine-num type="int">1</engine-num>
+      <engine-num type="int" value="1" />
       <rpm>500</rpm>
-      <running>false</running>
-      <cranking>0</cranking>
+      <running type="bool" value="0" />
+      <cranking type="bool" value="0" />
     </engine>
   </engines>
 
-  <dual-control>
+ <!-- <dual-control>
     <pilot>
       <controls>
         <flight>
@@ -151,7 +165,7 @@
         </engines>
       </controls>
     </pilot>
-  </dual-control>
+  </dual-control>-->
 
   <input>
     <keyboard include="Nasal/dc-3-keyboard.xml"/>

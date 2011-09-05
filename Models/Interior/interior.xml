@@ -31,6 +31,54 @@
     <object-name>intvitres</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intporteA</object-name>
+    <object-name>intporteB</object-name>
+    <object-name>intcargoA</object-name>
+    <object-name>intcargoB</object-name>
+    <object-name>planchet</object-name>
+    <object-name>cloisons</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>true</value>
+      </equals>
+    </condition>
+    <texture>colorsHigh.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intporteA</object-name>
+    <object-name>intporteB</object-name>
+    <object-name>intcargoA</object-name>
+    <object-name>intcargoB</object-name>
+    <object-name>planchet</object-name>
+    <object-name>cloisons</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>false</value>
+      </equals>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+  <!--overhead Panneau Cockpit Supérieur-->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Overhead/overhead.xml</path>
+    <offsets>
+      <x-m> -8.455 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.333 </z-m>
+    </offsets>
+  </model>
+
   <!-- Cabine -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Cabine/cabine.xml</path>

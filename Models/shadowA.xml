@@ -13,7 +13,7 @@
 
   <animation>
     <type>noshadow</type>
-    <object-name>shadow</object-name>
+    <object-name>shadowA</object-name>
   </animation>
 
   <!-- Une ombre pour OSG en attendant mieux ;) basé sur l'ombre du DC 3-->

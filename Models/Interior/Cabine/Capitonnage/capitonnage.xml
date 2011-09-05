@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>capitonnage.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>capitonnage</object-name>
+    <object-name>structure</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>capitonnage</object-name>
+    <object-name>structure</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>true</value>
+      </equals>
+    </condition>
+    <texture>colorsHigh.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>capitonnage</object-name>
+    <object-name>structure</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>false</value>
+      </equals>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+</PropertyList>
+

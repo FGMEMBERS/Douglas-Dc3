@@ -3,7 +3,22 @@
 <PropertyList>
 
   <path>center_console.ac</path>
+  
+ 
+ <animation>
+		<object-name>volantTrim</object-name>
+		<type>material</type>
+		<emission>
+			<!--<factor-prop>instrumentation/mfd/emission</factor-prop>-->
+			<red>0.5</red>
+			<green>0.9</green>
+			<blue>0.2</blue>
+		</emission>
+	</animation>
+ 
 
+  
+<!--Throttle-->
   <animation>
     <type>rotate</type>
     <object-name>Throt_G</object-name>
@@ -38,6 +53,7 @@
     </axis>
   </animation>
   
+  <!--Prop-pitch-->
   <animation>
     <type>rotate</type>
     <object-name>Prop_G</object-name>
@@ -72,6 +88,7 @@
     </axis>
   </animation>
 	
+<!--Mixture-->	
   <animation>
     <type>rotate</type>
     <object-name>Mixt_G</object-name>
@@ -110,4 +127,113 @@
     </axis>
   </animation>
 
+  <!--Elevator-trim-->
+  <animation>
+    <type>rotate</type>    
+    <object-name>volantTrim</object-name>    
+    <property>controls/flight/elevator-trim</property>
+    <factor> 400 </factor>
+    <center>
+      <x-m> 0.346 </x-m>
+      <y-m> -0.116 </y-m>
+      <z-m> 0.114 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+ <animation>
+    <type>translate</type>    
+    <object-name>elev_trim_index</object-name>    
+    <property>controls/flight/elevator-trim</property>
+    <factor> 0.045 </factor>
+    <center>
+      <x-m> 0.394 </x-m>
+      <y-m> -0.088 </y-m>
+      <z-m> 0.106 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> 0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation> 
+  
+ <!--Aileron-trim-->
+  <animation>
+    <type>rotate</type>    
+    <object-name>Aileron_trim</object-name>    
+    <property>controls/flight/aileron-trim</property>
+    <factor> 3000 </factor>
+    <center>
+      <x-m> 0.271 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m> -0.040 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+ <animation>
+    <type>rotate</type>    
+    <object-name>Ail_trim_needle</object-name>    
+    <property>controls/flight/aileron-trim</property>
+    <factor> 90 </factor>
+    <center>
+      <x-m> 0.262 </x-m>
+      <y-m> -0.095 </y-m>
+      <z-m> -0.081 </z-m>
+    </center>
+    <axis>
+      <x>  1 </x>
+      <y> 0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>  
+  
+  <!--Rudder-trim-->
+  <animation>
+    <type>rotate</type>    
+    <object-name>Rudder_trim</object-name>    
+    <property>controls/flight/rudder-trim</property>
+    <factor> 3000 </factor>
+    <center>
+      <x-m> 0.271 </x-m>
+      <y-m> 0.142 </y-m>
+      <z-m> -0.040 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+ <animation>
+    <type>rotate</type>    
+    <object-name>Rud_trim_needle</object-name>    
+    <property>controls/flight/rudder-trim</property>
+    <factor> 90 </factor>
+    <center>
+      <x-m> 0.262 </x-m>
+      <y-m> 0.102 </y-m>
+      <z-m> -0.081 </z-m>
+    </center>
+    <axis>
+      <x>  1 </x>
+      <y> 0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation> 
+  
+  
+  
+  
+  
 </PropertyList>

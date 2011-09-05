@@ -105,9 +105,9 @@ Alternator = {
     }
 };
 
-var battery = Battery.new(24.0, 90.0, 120.0, 1.0, 90.0); 					# Définition des caractéristiques de la batterie
-var alternator_L = Alternator.new("/engines/engine[0]/rpm", 1200.0, 24.0, 120.0);		# Définition des caractéristiques de l'alternateur
-var alternator_R = Alternator.new("/engines/engine[1]/rpm", 1200.0, 24.0, 120.0);		# Définition des caractéristiques de l'alternateur
+var battery = Battery.new(28.0, 90.0, 120.0, 1.0, 90.0); 					# Définition des caractéristiques de la batterie
+var alternator_L = Alternator.new("/engines/engine[0]/rpm", 700.0, 28.0, 120.0);		# Définition des caractéristiques de l'alternateur
+var alternator_R = Alternator.new("/engines/engine[1]/rpm", 700.0, 28.0, 120.0);		# Définition des caractéristiques de l'alternateur
 
 ############################################################################
 ############# Définition des proppriétés à l'initialisation ################
@@ -133,7 +133,7 @@ setlistener("/sim/signals/fdm-initialized", func {
     props.globals.getNode("/controls/lighting/wing-lights",1).setBoolValue(0);
     props.globals.getNode("/controls/lighting/strobe",1).setBoolValue(0);
     props.globals.getNode("/controls/lighting/instrument-lights",1).setBoolValue(1);
-    props.globals.getNode("/controls/lighting/instruments-norm",1).setBoolValue(1);
+    props.globals.getNode("/controls/lighting/instruments-norm",1).setBoolValue(0);
     props.globals.getNode("/controls/lighting/taxi-light",1).setBoolValue(0);
     props.globals.getNode("/controls/cabin/fan",1).setBoolValue(0);
     props.globals.getNode("/controls/cabin/heat",1).setBoolValue(0);
@@ -257,7 +257,9 @@ var update_virtual_bus = func(dt) {
 ############################################################################
 
 var electrical_bus = func(bus_volts){
-    #load = 0.0;
+    var load = 0.0;
+    var starter_voltsL = 0.0;
+    var starter_voltsR = 0.0;
 
     if(props.globals.getNode("/controls/lighting/landing-lights").getBoolValue()){
         OutPuts.getNode("landing-lights",1).setValue(bus_volts);
@@ -309,18 +311,16 @@ var electrical_bus = func(bus_volts){
     }
 
     if (props.globals.getNode("/controls/engines/engine[0]/starter").getBoolValue()){
-        OutPuts.getNode("starter[0]",1).setValue(bus_volts);
-        load += 5.0;
-    } else {
-        OutPuts.getNode("starter[0]",1).setValue(0.0);
+        starter_voltsL = bus_volts;
+        load += 8.0;
     }
 
     if (props.globals.getNode("/controls/engines/engine[1]/starter").getBoolValue()){
-        OutPuts.getNode("starter[1]",1).setValue(bus_volts);
-        load += 5.0;
-    } else {
-        OutPuts.getNode("starter[1]",1).setValue(0.0);
+        starter_voltsR = bus_volts;
+        load += 8.0;
     }
+    OutPuts.getNode("starter",1).setValue(starter_voltsL);
+    OutPuts.getNode("starter[1]",1).setValue(starter_voltsR);
 
     return load;
 }
@@ -333,7 +333,9 @@ var avionics_bus = func(bus_volts) {
     #load = 0.0;
 
     if (props.globals.getNode("/controls/lighting/instrument-lights").getBoolValue() and props.globals.getNode("/controls/circuit-breakers/instrument-lights").getBoolValue()){
-        OutPuts.getNode("instrument-lights",1).setValue((bus_volts));
+        var instr_norm = props.globals.getNode("/controls/lighting/instruments-norm").getValue();
+        var v = instr_norm * bus_volts;
+        OutPuts.getNode("instrument-lights",1).setValue(v);
         #load += 0.025;
     } else {
         OutPuts.getNode("instrument-lights",1).setValue(0.0);

@@ -54,6 +54,16 @@
     <texture>colors.png</texture>
   </animation>
 
+  <!-- Capitonnage
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/Cabine/Capitonnage/capitonnage.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model> -->
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Pilot/pilot.xml</path>

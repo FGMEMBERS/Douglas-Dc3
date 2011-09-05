@@ -144,10 +144,11 @@
                             turbo-mul="1.5"
                             displacement="1829.4">
                             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+                            <control-input axis="/engines/engine[0]/cranking" control="STARTER"/>
                             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
                             <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
                             <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
+                            <control-input axis="/controls/engines/engine[0]/propeller-feather" control="PROPFEATHER"/>
              </piston-engine>
   </propeller>
 
@@ -170,10 +171,11 @@
                             turbo-mul="1.5"
                             displacement="1829.4">
                             <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
+                            <control-input axis="/engines/engine[1]/cranking" control="STARTER"/>
                             <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
                             <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
                             <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
+                            <control-input axis="/controls/engines/engine[1]/propeller-feather" control="PROPFEATHER"/>
              </piston-engine>
   </propeller>
 
@@ -206,13 +208,11 @@
   <!-- Tail wheel -->
   <gear x="-7.264" y="0.000" z="-1.252"
         compression="0.1" 
-        retract-time="7" 
+        castering="1" 
         spring="1" 
         damp="2">
         <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.8" dst1="-0.8"/>
-        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-        <control-speed control="EXTEND" transition-time="5"/>
-        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+        <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING" />
   </gear>
 
   <tank x="1.756" y=" 6" z="-0.880" capacity="2466"/>

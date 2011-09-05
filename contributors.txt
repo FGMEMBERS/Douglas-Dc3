@@ -8,14 +8,56 @@
 ######################################################################
 ######################################################################
 
+# 05/09/2011 ==> (F-JJTH)
+- Correction du systËme Èlectrique
+- UV Map de la cabine refait
+- Switch de l'overhead en position basse quand Èteind
+
+######################################################################
+
+# 03/09/2011 ==> (F-JJTH)
+- ImplÈmentation des nouveaux switchs de l'Overhead pour le Dual Control
+- Portes clickable
+- Prise en compte de la roue folle dans le FDM
+- Prise en compte du feathering dans le FDM
+- Optimisation des textes OSG
+- Remplissage de la partie "Help"
+
+######################################################################
+
+# 03/09/2011 ==> (patten)
+- AmÈlioration de la texture des si√®ges
+- AmÈlioration de la texture haute qualit√© de la cabine
+
+######################################################################
+
+# 02/09/2011 ==> (patten)
+- AmÈioration de la texture haute qualitÈ de la cabine
+
+######################################################################
+
+# 02/09/2011 ==> (F-Sig)
+- Ajout d'objets sur la console centrale
+- Animation du trim
+
+######################################################################
+
+# 02/09/2011 ==> (F-JJTH)
+- Refonte complËte de l'Overhead
+- Ajout des switchs de l'Overhead
+- Modification de l'organisation des dossiers (pour l'intÈgration de l'Overhead)
+- Ajout des textes Overlay (Ctrl + c) sur l'Overhead
+
+######################################################################
+
 # 31/08/2011 ==> (F-JJTH)
-- Am√©lioration de la rotation des roues
+- AmÈlioration de la rotation des roues
 - Correction du Dual Control
-- Am√©lioration de l'ombre
-- Correction du message d'erreur au lancement de la versino √† roue
+- AmÈlioration de l'ombre
+- Correction du message d'erreur au lancement de la versino ‡ roue
 - Ajout d'un menu pour la selection de la qualit√© de l'appareil
-- Ajout d'une texture haute qualit√© pour la cabine
-- Am√©lioration de Models/Interior/Cabine/cabine.ac
+- Ajout d'une texture haute qualitÈ pour la cabine
+- AmÈlioration de Models/Interior/Cabine/cabine.ac
 
 ######################################################################
 

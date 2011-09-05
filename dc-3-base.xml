@@ -41,6 +41,61 @@
         <name>Ctrl-j</name>
         <desc>Parachutist</desc>
       </key>
+      <text>=== Description des interrupteurs du panneau superieur ===
+
+:: Gauche ::
+Parachute signal -> Larguage des parachutistes (25 au total)
+Master battery -> Interrupteur electrique general
+Passing light -> Eclairage
+Left landing light -> Phare d'atterrissage gauche
+Right landing light -> Phare d'atterrissage droit
+Running light -> Eclairage
+Tail light -> Eclairage exterieur de queue
+Window de-icer -> Degivrage du pare-prise
+Left pitot de-icer -> Degivrage de la sonde pitot gauche
+Right pitot de-icer -> Degivrage de la sonde pitot droite
+Left oil dilution -> 
+Right oil dilution -> 
+Compass light -> Eclairage du compas
+Left propeller feather -> En cas de panne actionnez ce bouton pour mettre l'helice gauche en drapeau (pas d'helice minimum pour un minimum de trainee)
+Instrument light -> Fait varier l'intensite lumineuse des instruments
+Propeller de-icer -> Degivrage des helices
+
+:: Center ::
+Left magneto -> Magneto du moteur gauche
+Right magneto -> Magneto du moteur droit
+
+:: Droite ::
+Left engine starter -> Demarreur du moteur gauche
+Right engine starter -> Demarreur du moteur droit
+Left booster pump -> Booster de pompe a essence gauche
+Right booster pump -> Booster de pompe a essence droite
+Recognition -> Temoin de circuit de reconnaissance
+Recognition 1, 2 et 3 -> Eclairage exterieur de reconnaissance
+Carburator de-icer -> Degivrage des carburateurs
+Cockpit light -> Eclairage interieur du cockpit
+unused -> Interrupteur non utilise
+Right propeller feather -> En cas de panne actionnez ce bouton pour mettre l'helice droite en drapeau (pas d'helice minimum pour un minimum de trainee)
+Formation light -> Eclairage exterieur permettant de mieux se reperer lors de deplacement en formation
+Voltmeter light -> 
+Left voltmeter -> 
+Right voltmeter -> 
+
+
+=== Demarrage ===
+1 - Master battery -> ON
+2 - Left magneto -> BOTH
+3 - Right magneto -> BOTH
+4 - Left engine starter -> Moteur gauche demarre
+5 - Right engine starter -> Moteur droit demarre
+
+
+=== Arret ===
+1 - Left magneto -> OFF
+2 - Right magneto -> OFF
+3 - Master battery -> OFF
+
+      </text>
     </help>
 
     <model>
@@ -67,6 +122,7 @@
         <int n="6" type="int">  0 </int>  <!-- 5 immat -->
         <int n="7" type="bool"> 0 </int>  <!-- 6 smoke -->
         <int n="8" type="int">  0 </int>  <!-- 7 color -->
+	<int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m">  0 </float>  <!-- 11 altitude for MP shadow -->
@@ -105,6 +161,17 @@
       <paratroopers type="float">26</paratroopers>
       <weight type="float">3120</weight>
     </paratroopers>
+    <lighting>
+      <passing-lights type="bool" value="0" />
+      <running-lights type="bool" value="0" />
+      <tail-lights type="bool" value="0" />
+      <cabin-lights type="bool" value="0" />
+      <recognition-lights n="0" type="bool" value="0" />
+      <recognition-lights n="1" type="bool" value="0" />
+      <recognition-lights n="2" type="bool" value="0" />
+      <compass-lights type="bool" value="0" />
+      <formation-lights type="bool" value="0" />
+    </lighting>
   </controls>
 
   <engines>
@@ -122,7 +189,7 @@
 
   <!-- ############################### -->
   <!-- ######## DUAL CONTROL ######### -->
-  <dual-control>
+<!--  <dual-control>
     <copilot>
       <controls>
         <flight>
@@ -172,7 +239,7 @@
         </engine>
       </engines>
     </copilot>
-  </dual-control>
+  </dual-control>-->
   <!-- ######## DUAL CONTROL ######### -->
   <!-- ############################### -->
 

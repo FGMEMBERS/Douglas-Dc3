@@ -144,10 +144,11 @@
                             turbo-mul="1.5"
                             displacement="1829.4">
                             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+                            <control-input axis="/engines/engine[0]/cranking" control="STARTER"/>
                             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
                             <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
                             <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
+                            <control-input axis="/controls/engines/engine[0]/propeller-feather" control="PROPFEATHER"/>
              </piston-engine>
   </propeller>
 
@@ -170,10 +171,11 @@
                             turbo-mul="1.5"
                             displacement="1829.4">
                             <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
-                            <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
+                            <control-input axis="/engines/engine[1]/cranking" control="STARTER"/>
                             <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
                             <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
                             <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
+                            <control-input axis="/controls/engines/engine[1]/propeller-feather" control="PROPFEATHER"/>
              </piston-engine>
   </propeller>
 
