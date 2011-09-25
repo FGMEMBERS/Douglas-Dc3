@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>propeller.ac</path>
+ 
+  <animation>
+    <object-name>bol</object-name>   
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+  </animation>   
+
+  <model>
+    <name>Blade1</name>
+    <path>Aircraft/Douglas-Dc3/Models/Engines/Propeller/bladeL.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade2</name>
+    <path>Aircraft/Douglas-Dc3/Models/Engines/Propeller/bladeL.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <roll-deg> 120 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade3</name>
+    <path>Aircraft/Douglas-Dc3/Models/Engines/Propeller/bladeL.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <roll-deg> 240 </roll-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <name>helice</name>
+    <object-name>bol</object-name>   
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+    <object-name>Blade1</object-name>
+    <object-name>Blade2</object-name>   
+    <object-name>Blade3</object-name>
+  </animation>   
+
+  <!-- Mise en place des pales par défaut -->
+  <animation>
+    <type>select</type>
+    <object-name>Blade1</object-name>
+    <object-name>Blade2</object-name>   
+    <object-name>Blade3</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>1000</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <!-- Sélection Pales/disque en fonction de "RPM" -->
+  <animation>
+    <type>select</type>
+    <object-name>propdisc</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>1000</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblur</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>400.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>1000.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <!-- Rotation de l'hélice -->
+  <animation>
+    <type>spin</type>
+    <object-name>helice</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor> -0.479 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

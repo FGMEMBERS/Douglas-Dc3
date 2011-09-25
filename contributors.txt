@@ -8,6 +8,20 @@
 ######################################################################
 ######################################################################
 
+# 17/09/2011 ==> (Helijah)
+- Ajout des hélices à pas variable
+
+######################################################################
+
+# 07/09/2011 ==> (F-JJTH)
+- Ajout de phares d'atterrissage
+- Ajout de nav-lights
+- Ajout de strob
+- Ajout d'un anti-colision
+- Amélioration du Dual Control
+
+######################################################################
+
 # 05/09/2011 ==> (F-JJTH)
 - Correction du système électrique
 - UV Map de la cabine refait
@@ -26,8 +40,8 @@
 ######################################################################
 
 # 03/09/2011 ==> (patten)
-- Amélioration de la texture des siÃ¨ges
-- Amélioration de la texture haute qualitÃ© de la cabine
+- Amélioration de la texture des sièges
+- Amélioration de la texture haute qualité de la cabine
 
 ######################################################################
 
@@ -62,35 +76,35 @@
 ######################################################################
 
 # 30/08/2011 ==> (Helijah)
-- Modification de la flotabilitÃ© de la version amphibie.
-- Correction des animations vue de l'intÃ©rieur.
+- Modification de la flotabilité de la version amphibie.
+- Correction des animations vue de l'intérieur.
 
 ######################################################################
 
 # 29/08/2011 ==> (Helijah)
 - Ajout de la version amphibie
-- SÃ©paration de la cabine du reste de l'intÃ©rieur
+- SÃ©paration de la cabine du reste de l'intérieur
 
 ######################################################################
 
 # 23/08/2011 ==> (F-JJTH)
-- Suppression du rÃ©glage sonore de l'appareil
+- Suppression du réglage sonore de l'appareil
 - Ajout de 4 passagers en MP
-- AmÃ©lioration du Dual Control
-- AmÃ©lioration du systÃ¨me de parachutisme
-- Ajout du copilote lorsqu'il est connectÃ©
+- Amélioration du Dual Control
+- Amélioration du systÃ¨me de parachutisme
+- Ajout du copilote lorsqu'il est connecté
 
 ######################################################################
 
 # 18/08/2011 ==> (F-JJTH)
-- AmÃ©lioration du Dual Control
+- Amélioration du Dual Control
 - Ajout de l'ombre en MP
-- AmÃ©lioration des xml d'instruments
+- Amélioration des xml d'instruments
 
 ######################################################################
 
 # 13/08/2011 ==> (F-JJTH)
-- AmÃ©lioration du Dual Control
+- Amélioration du Dual Control
 
 ######################################################################
 
@@ -100,8 +114,8 @@
 ######################################################################
 
 # 03/08/2011 ==> (Alexis)
-- Suppression de siÃ¨ge en double
-- AmÃ©lioration des manches et des palonniers
+- Suppression de siège en double
+- Amélioration des manches et des palonniers
 
 ######################################################################
 

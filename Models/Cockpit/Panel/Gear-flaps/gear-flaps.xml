@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+   <path>gear-flaps.ac</path>
+
+ <animation>
+   <object-name>sol_cent</object-name>
+   <object-name>sol_ext</object-name>
+   <object-name>gear-lev</object-name>
+   <object-name>gear-lev2</object-name>
+   <object-name>flap-lev</object-name>
+ </animation>
+
+<!--GEAR-->
+<!--verrouillage (levier au sol) --> 
+ <animation>
+    <type>rotate</type>
+    <object-name>gear-lev</object-name>	
+    <property>gear/gear/position-norm</property>    
+	<interpolation>
+      <entry><ind>1.0</ind><dep>0</dep></entry>
+	  <entry><ind>0.85</ind><dep>60</dep></entry>
+      <entry><ind>0.2</ind><dep>35</dep></entry>
+      <entry><ind>0.0</ind><dep>25</dep></entry>
+	</interpolation>
+    <center>
+      <x-m>  0.580 </x-m>
+      <y-m> -0.109 </y-m>
+      <z-m> -0.364 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation> 
+  
+<!-- Levier vanne hydraulique -->  
+<!-- up -->
+ <animation>
+    <type>rotate</type>
+    <object-name>gear-lev2</object-name>
+    <condition>
+	<not>
+	  <property>controls/gear/gear-down</property>
+	</not>  
+    </condition>	
+    <property>gear/gear/position-norm</property>
+    <interpolation>
+      <entry><ind>1.0</ind><dep>0</dep></entry>
+	  <entry><ind>0.85</ind><dep>0</dep></entry>
+	  <entry><ind>0.8</ind><dep>30</dep></entry>
+      <entry><ind>0.15</ind><dep>30</dep></entry>	  
+      <entry><ind>0.0</ind><dep>0</dep></entry>
+	</interpolation>	
+    <center>
+      <x-m>  0.865 </x-m>
+      <y-m>  0.274 </y-m>
+      <z-m> -0.226 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ <!-- down --> 
+  <animation>
+    <type>rotate</type>
+    <object-name>gear-lev2</object-name>
+    <condition>	
+	  <property>controls/gear/gear-down</property>	
+    </condition>	
+    <property>gear/gear/position-norm</property>
+    <interpolation>
+      <entry><ind>0.0</ind><dep>0</dep></entry>
+	  <entry><ind>0.15</ind><dep>0</dep></entry>
+	  <entry><ind>0.2</ind><dep>30</dep></entry>
+      <entry><ind>0.85</ind><dep>30</dep></entry>
+      <entry><ind>1.0</ind><dep>0</dep></entry>
+	</interpolation>	
+    <center>
+      <x-m>  0.865 </x-m>
+      <y-m>  0.274 </y-m>
+      <z-m> -0.226 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+ <!-- commutation par bt-souris-gauche -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>gear-lev</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/gear-down</property>
+      </binding>
+    </action>
+  </animation> 
+
+  <!--FLAPS-->
+ <animation>
+    <type>rotate</type>
+    <object-name>flap-lev</object-name>
+    <object-name>flap-in</object-name>
+	<object-name>flap-out</object-name>
+    <property>controls/flight/flaps</property>
+    <factor> 30 </factor>
+    <center>
+     <x-m>  0.865 </x-m>
+     <y-m>  0.274 </y-m>
+     <z-m> -0.057 </z-m> 
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation> 
+  
+ <!--Ajustage par bt-souris-gauche-->
+<!--sortie--> 
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>flap-out</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>        
+        <command>property-adjust</command>
+        <property>controls/flight/flaps</property>
+        <step>0.25</step>
+		<max>1</max>
+      </binding>
+    </action>
+    </animation>
+<!--rentrée-->
+<animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>flap-in</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>        
+        <command>property-adjust</command>
+        <property>controls/flight/flaps</property>
+        <step>-0.25</step>
+		<min>0</min>
+      </binding>
+    </action>
+    </animation>	
+  
+</PropertyList>

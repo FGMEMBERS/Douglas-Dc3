@@ -7,7 +7,6 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>bloc</object-name>
-    <object-name>bol</object-name>
     <object-name>caches</object-name>
     <object-name>cames</object-name>
     <object-name>pistons</object-name>
@@ -21,7 +20,6 @@
   <animation>
     <name>HighPoly</name>
     <object-name>bloc</object-name>
-    <object-name>bol</object-name>
     <object-name>caches</object-name>
     <object-name>cames</object-name>
     <object-name>pistons</object-name>
@@ -36,17 +34,14 @@
     <object-name>moteurlow</object-name>
   </animation>
 
-  <animation>
-    <type>spin</type>
-    <object-name>bol</object-name>
-    <property>engines/engine[1]/rpm</property>
-    <factor> 1 </factor>
-    <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Engines/Propeller/propellerR.xml</path>
+    <offsets>
+      <x-m> -0.610 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
 
   <animation>
     <type>range</type>
@@ -63,3 +58,4 @@
   </animation>
 
 </PropertyList>
+

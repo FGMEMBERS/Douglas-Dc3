@@ -121,7 +121,7 @@ StableTrigger.new = func (src, action) {
           old          : 0,
           stable_since : 0,
           wait         : 0,
-          MIN_STABLE   : 0.01 };
+          MIN_STABLE   : 0.2 };
   # Error checking.
   var bad = (obj.src == nil) or (action = nil);
 

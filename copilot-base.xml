@@ -62,7 +62,7 @@
 	<int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-        <!-- <float n="2" alias="/position/gear-agl-m">  0 </float>  11 altitude for MP shadow -->
+        <!-- <float n="2" alias="/position/gear-agl-m">  0 </float>  altitude for MP shadow -->
 	<float n="3" alias="/controls/flight/flaps"/>
 	<float n="4" alias="/controls/flight/elevator-trim"/>
         <float n="5" alias="/controls/flight/rudder"/>
@@ -76,6 +76,9 @@
 	<float n="13" alias="/controls/engines/engine[1]/propeller-pitch"/>
 	<float n="14" alias="/controls/gear/brake-left"/>
 	<float n="15" alias="/controls/gear/brake-right"/>
+        <!-- <float n="16" alias="/gear/gear[0]/position-norm"/> RESERVED FOR DUAL CONTROL (gear position) -->
+	<float n="17" alias="/controls/flight/rudder-trim"/>
+	<float n="18" alias="/controls/flight/aileron-trim"/>
         <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
       </generic>
     </multiplay>

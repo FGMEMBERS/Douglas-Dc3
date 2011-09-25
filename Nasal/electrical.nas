@@ -117,24 +117,15 @@ setlistener("/sim/signals/fdm-initialized", func {
     foreach(var a; props.globals.getNode("/systems/electrical/outputs").getChildren()){
        a.setValue(0);
     }
-    foreach(var a; props.globals.getNode("/controls/switches").getChildren()){
-       a.setBoolValue(0);
-    }
     foreach(var a; props.globals.getNode("/controls/circuit-breakers").getChildren()){
        a.setBoolValue(1);
     }
+    foreach(var a; props.globals.getNode("/controls/lighting").getChildren()){
+       a.setValue(0);
+    }
+    props.globals.getNode("/controls/lighting/instrument-lights",1).setBoolValue(1);
     props.globals.getNode("/controls/anti-ice/prop-heat",1).setBoolValue(0);
     props.globals.getNode("/controls/anti-ice/pitot-heat",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/landing-lights[0]",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/landing-lights[1]",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/beacon",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/nav-lights",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/cabin-lights",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/wing-lights",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/strobe",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/instrument-lights",1).setBoolValue(1);
-    props.globals.getNode("/controls/lighting/instruments-norm",1).setBoolValue(0);
-    props.globals.getNode("/controls/lighting/taxi-light",1).setBoolValue(0);
     props.globals.getNode("/controls/cabin/fan",1).setBoolValue(0);
     props.globals.getNode("/controls/cabin/heat",1).setBoolValue(0);
     props.globals.getNode("/controls/electric/external-power",1).setBoolValue(0);
@@ -144,16 +135,12 @@ setlistener("/sim/signals/fdm-initialized", func {
     props.globals.getNode("/instrumentation/kt76a/mode",1).setValue("0");
       #### ENGINE[0] ####
     props.globals.getNode("/controls/electric/engine[0]/generator",1).setBoolValue(1);
-    props.globals.getNode("/controls/engines/engine[0]/magnetos",1).setBoolValue(0);
-    props.globals.getNode("controls/engines/engine[0]/throttle",1).setValue("0");
     props.globals.getNode("controls/engines/engine[0]/fuel-pump",1).setBoolValue(1);
     props.globals.getNode("/engines/engine[0]/amp-v",1).setDoubleValue(0);
     props.globals.getNode("/controls/engines/engine[0]/master-alt",1).setBoolValue(0);
     props.globals.getNode("/controls/engines/engine[0]/master-bat",1).setBoolValue(0);
       #### ENGINE[1] ####
     props.globals.getNode("/controls/electric/engine[1]/generator",1).setBoolValue(1);
-    props.globals.getNode("/controls/engines/engine[1]/magnetos",1).setBoolValue(0);
-    props.globals.getNode("controls/engines/engine[1]/throttle",1).setValue("0");
     props.globals.getNode("controls/engines/engine[1]/fuel-pump",1).setBoolValue(1);
     props.globals.getNode("/engines/engine[1]/amp-v",1).setDoubleValue(0);
     props.globals.getNode("/controls/engines/engine[1]/master-alt",1).setBoolValue(0);
@@ -263,35 +250,69 @@ var electrical_bus = func(bus_volts){
 
     if(props.globals.getNode("/controls/lighting/landing-lights").getBoolValue()){
         OutPuts.getNode("landing-lights",1).setValue(bus_volts);
-        #load += 1.2;
+        load += 0.004;
     } else {
         OutPuts.getNode("landing-lights",1).setValue(0.0);
     }
-
-    if(props.globals.getNode("/controls/lighting/nav-lights").getBoolValue() and props.globals.getNode("/controls/circuit-breakers/strobe-lights").getBoolValue()){
-        OutPuts.getNode("nav-lights",1).setValue(bus_volts);
-        #load += 0.2;
+    if(props.globals.getNode("/controls/lighting/landing-lights[1]").getBoolValue()){
+        OutPuts.getNode("landing-lights[1]",1).setValue(bus_volts);
+        load += 0.004;
     } else {
-        OutPuts.getNode("nav-lights",1).setValue(0.0);
+        OutPuts.getNode("landing-lights[1]",1).setValue(0.0);
     }
 
-    if(props.globals.getNode("/controls/lighting/taxi-light").getBoolValue()){
-        OutPuts.getNode("taxi-light",1).setValue(bus_volts);
-        #load += 1.2;
+    if(props.globals.getNode("/controls/lighting/running-lights").getBoolValue()){
+        OutPuts.getNode("running-lights",1).setValue(bus_volts);
+        load += 0.00002;
     } else {
-        OutPuts.getNode("taxi-light",1).setValue(0.0);
+        OutPuts.getNode("running-lights",1).setValue(0.0);
     }
 
-    if(props.globals.getNode("/controls/lighting/beacon").getBoolValue() and props.globals.getNode("/controls/circuit-breakers/strobe-lights").getBoolValue()){
-        OutPuts.getNode("beacon",1).setValue(bus_volts);
-        load += 0.0003;
+    if(props.globals.getNode("/controls/lighting/passing-lights").getBoolValue()){
+        OutPuts.getNode("passing-lights",1).setValue(bus_volts);
+        load += 0.00006;
     } else {
-        OutPuts.getNode("beacon",1).setValue(0.0);
+        OutPuts.getNode("passing-lights",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/lighting/recognition-lights").getBoolValue()){
+        OutPuts.getNode("recognition-lights",1).setValue(bus_volts);
+        load += 0.00006;
+    } else {
+        OutPuts.getNode("recognition-lights",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/lighting/recognition-lights[1]").getBoolValue()){
+        OutPuts.getNode("recognition-lights[1]",1).setValue(bus_volts);
+        load += 0.00006;
+    } else {
+        OutPuts.getNode("recognition-lights[1]",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/lighting/recognition-lights[2]").getBoolValue()){
+        OutPuts.getNode("recognition-lights[2]",1).setValue(bus_volts);
+        load += 0.00006;
+    } else {
+        OutPuts.getNode("recognition-lights[2]",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/lighting/formation-lights").getBoolValue()){
+        OutPuts.getNode("formation-lights",1).setValue(bus_volts);
+        load += 0.00006;
+    } else {
+        OutPuts.getNode("formation-lights",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/lighting/tail-lights").getBoolValue()){
+        OutPuts.getNode("tail-lights",1).setValue(bus_volts);
+        load += 0.00002;
+    } else {
+        OutPuts.getNode("tail-lights",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/cabin-lights").getBoolValue()){
         OutPuts.getNode("cabin-lights",1).setValue(bus_volts);
-        #load += 0.6;
+        load += 0.0002;
     } else {
         OutPuts.getNode("cabin-lights",1).setValue(0.0);
     }

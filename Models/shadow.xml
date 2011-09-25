@@ -16,6 +16,14 @@
     <object-name>shadow</object-name>
   </animation>
 
+  <animation>
+     <type>select</type>
+    <object-name>shadow</object-name>
+    <condition>
+      <not><property>sim/freeze/replay-state</property></not>
+    </condition>
+  </animation>
+
   <!-- Une ombre pour OSG en attendant mieux ;) basé sur l'ombre du DC 3-->
   <!-- pitch -->
   <animation>
@@ -23,7 +31,12 @@
     <object-name>shadow</object-name>
     <property>orientation/pitch-deg</property>
     <factor> -1 </factor>
-    <axis>
+   <center>
+      <x>-4.3</x>
+      <y>0</y>
+      <z>0</z>
+    </center>
+   <axis>
       <x> 0 </x>
       <y> 1 </y>
       <z> 0 </z>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>cowl-flaps.ac</path>
+
+  <animation>     
+    <object-name>plaque</object-name>
+    <object-name>vanne</object-name>
+    <object-name>LH</object-name>
+    <object-name>RH</object-name>
+  </animation>
+
+</PropertyList>

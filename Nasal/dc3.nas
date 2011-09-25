@@ -225,6 +225,14 @@ setlistener("/controls/fuel/tank[1]/boost-pump", func(v) {
   }
 });
 
+setlistener("/controls/fuel/long-range", func(v) {
+  if(v.getValue()){
+    interpolate("/controls/fuel/long-range-pos", 1, 0.25);
+  }else{
+    interpolate("/controls/fuel/long-range-pos", 0, 0.25);
+  }
+});
+
 setlistener("/controls/anti-ice/engine/carb-heat", func(v) {
   if(v.getValue()){
     interpolate("/controls/anti-ice/engine/carb-heat-pos", 1, 0.25);
@@ -313,6 +321,37 @@ setlistener("/controls/lighting/formation-lights", func(v) {
   }
 });
 
+setlistener("/controls/gear/brake-parking", func(v) {
+  if(v.getValue()){
+    interpolate("/controls/gear/brake-parking-pos", 1, 0.25);
+  }else{
+    interpolate("/controls/gear/brake-parking-pos", 0, 0.25);
+  }
+});
+
+setlistener("/controls/gear/tailwheel-lock", func(v) {
+  if(v.getValue()){
+    interpolate("/controls/gear/tailwheel-lock-pos", 1, 0.25);
+  }else{
+    interpolate("/controls/gear/tailwheel-lock-pos", 0, 0.25);
+  }
+});
+
+setlistener("/controls/engines/engine/magnetos", func(v) {
+    interpolate("/controls/engines/engine/magnetos-pos", v.getValue(), 0.25);
+});
+
+setlistener("/controls/engines/engine[1]/magnetos", func(v) {
+    interpolate("/controls/engines/engine[1]/magnetos-pos", v.getValue(), 0.25);
+});
+
+setlistener("/controls/fuel/left-valve", func(v) {
+    interpolate("/controls/fuel/left-valve-pos", v.getValue(), 0.25);
+});
+setlistener("/controls/fuel/right-valve", func(v) {
+    interpolate("/controls/fuel/right-valve-pos", v.getValue(), 0.25);
+});
+
 ##############################################
 ################ TIRE SYSTEM #################
 ##############################################
@@ -367,13 +406,13 @@ var tire=TireSpeed.new(3, 1.143, 1.143, 0.560);
 
 var update_system = func{
 
-  if(getprop("/systems/electrical/outputs/starter") > 11){
+  if(getprop("/systems/electrical/outputs/starter") > 8){
     setprop("/engines/engine[0]/cranking",1);
   }else{
     setprop("/engines/engine[0]/cranking",0);
   }
 
-  if(getprop("/systems/electrical/outputs/starter[1]") > 11){
+  if(getprop("/systems/electrical/outputs/starter[1]") > 8){
     setprop("/engines/engine[1]/cranking",1);
   }else{
     setprop("/engines/engine[1]/cranking",0);

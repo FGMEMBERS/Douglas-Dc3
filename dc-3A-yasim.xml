@@ -138,6 +138,7 @@
              cruise-alt="13120">
              <actionpt x="7.070" y="2.814" z="-1.194"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+             <control-input axis="/controls/engines/engine[0]/propeller-feather" control="PROPFEATHER"/>
              <piston-engine eng-power="1200"
                             eng-rpm="2700"
                             compression="6.7"
@@ -148,7 +149,6 @@
                             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
                             <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
                             <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
-                            <control-input axis="/controls/engines/engine[0]/propeller-feather" control="PROPFEATHER"/>
              </piston-engine>
   </propeller>
 
@@ -165,6 +165,7 @@
              cruise-alt="13120">
              <actionpt x="7.070" y="-2.814" z="-1.194"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
+             <control-input axis="/controls/engines/engine[1]/propeller-feather" control="PROPFEATHER"/>
              <piston-engine eng-power="1200"
                             eng-rpm="2700"
                             compression="6.7"
@@ -175,7 +176,6 @@
                             <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
                             <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
                             <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
-                            <control-input axis="/controls/engines/engine[1]/propeller-feather" control="PROPFEATHER"/>
              </piston-engine>
   </propeller>
 

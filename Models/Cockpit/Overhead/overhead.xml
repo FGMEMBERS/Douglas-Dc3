@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>overhead.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>overhead</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>true</value>
+      </equals>
+    </condition>
+    <texture>colors_high.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>overhead</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/high-quality</property>
+        <value>false</value>
+      </equals>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/left_overhead.xml</path>
+    <offsets>
+      <x-m>  0.132 </x-m>
+      <y-m> -0.351 </y-m>
+      <z-m>  0.907 </z-m>
+      <roll-deg>     0.0 </roll-deg>
+      <pitch-deg>   29.0 </pitch-deg>
+      <heading-deg> 35.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/center_overhead.xml</path>
+    <offsets>
+      <x-m> -0.037 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.924 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    19.265 </pitch-deg>
+      <heading-deg>   0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/right_overhead.xml</path>
+    <offsets>
+      <x-m> -0.000 </x-m>
+      <y-m>  0.153 </y-m>
+      <z-m>  0.917 </z-m>
+      <roll-deg>      0.0 </roll-deg>
+      <pitch-deg>    28.5 </pitch-deg>
+      <heading-deg> -35.0 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

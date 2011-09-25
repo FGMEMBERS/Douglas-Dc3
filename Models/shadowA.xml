@@ -16,6 +16,14 @@
     <object-name>shadowA</object-name>
   </animation>
 
+  <animation>
+     <type>select</type>
+    <object-name>shadowA</object-name>
+    <condition>
+      <not><property>sim/freeze/replay-state</property></not>
+    </condition>
+  </animation>
+
   <!-- Une ombre pour OSG en attendant mieux ;) basé sur l'ombre du DC 3-->
   <!-- pitch -->
   <animation>
