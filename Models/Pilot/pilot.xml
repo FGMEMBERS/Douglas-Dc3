@@ -17,11 +17,32 @@
     <object-name>cuisseG</object-name>
     <object-name>cuisseD</object-name>
     <object-name>jambeG</object-name>
-    <object-name>jambed</object-name>
+    <object-name>jambeD</object-name>
     <object-name>piedG</object-name>
     <object-name>piedD</object-name>
 
     <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>tete</object-name>
+    <object-name>visiere</object-name>
+    <object-name>corps</object-name>
+    <object-name>brasG</object-name>
+    <object-name>brasD</object-name>
+    <object-name>avantbrasG</object-name>
+    <object-name>avantbrasD</object-name>
+    <object-name>manche</object-name>
+    <object-name>cuisseG</object-name>
+    <object-name>cuisseD</object-name>
+    <object-name>jambeG</object-name>
+    <object-name>jambeD</object-name>
+    <object-name>piedG</object-name>
+    <object-name>piedD</object-name>
+    <condition>
+      <property>sim/model/config/show-pilot</property>
+    </condition>
   </animation>
 
   <animation>

@@ -2,12 +2,37 @@
 
 <PropertyList>
 
+  <key n="103">
+    <name>g</name>
+    <desc>Landing Gear Up</desc>
+    <binding>
+      <command>nasal</command>
+      <script>
+        setprop("controls/gear/gear-down-lock", 0);
+        setprop("controls/gear/gear-down-cmd", 0);
+      </script>
+    </binding>
+  </key>
+
   <key n="100">
     <name>d</name>
     <desc>Crew door</desc>
     <binding>
       <command>nasal</command>
       <script>doors.doorsystem.crewexport();</script>
+    </binding>
+  </key>
+
+  <key n="71">
+    <name>G</name>
+    <desc>Landing Gear Down</desc>
+    <binding>
+      <command>nasal</command>
+      <script>
+        setprop("controls/gear/gear-down-lock", 0);
+        setprop("controls/gear/gear-down-cmd", 1);
+
+      </script>
     </binding>
   </key>
 

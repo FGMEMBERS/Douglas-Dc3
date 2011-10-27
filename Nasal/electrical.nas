@@ -106,8 +106,8 @@ Alternator = {
 };
 
 var battery = Battery.new(28.0, 90.0, 120.0, 1.0, 90.0); 					# Définition des caractéristiques de la batterie
-var alternator_L = Alternator.new("/engines/engine[0]/rpm", 700.0, 28.0, 120.0);		# Définition des caractéristiques de l'alternateur
-var alternator_R = Alternator.new("/engines/engine[1]/rpm", 700.0, 28.0, 120.0);		# Définition des caractéristiques de l'alternateur
+var alternator_L = Alternator.new("/engines/engine[0]/rpm", 950.0, 28.0, 120.0);		# Définition des caractéristiques de l'alternateur
+var alternator_R = Alternator.new("/engines/engine[1]/rpm", 950.0, 28.0, 120.0);		# Définition des caractéristiques de l'alternateur
 
 ############################################################################
 ############# Définition des proppriétés à l'initialisation ################
@@ -130,18 +130,15 @@ setlistener("/sim/signals/fdm-initialized", func {
     props.globals.getNode("/controls/cabin/heat",1).setBoolValue(0);
     props.globals.getNode("/controls/electric/external-power",1).setBoolValue(0);
     props.globals.getNode("/controls/electric/battery-switch",1).setBoolValue(0);
-    props.globals.getNode("/controls/electric/key",1).setValue(0);
     props.globals.getNode("/sim/failure-manager/instrumentation/comm/serviceable",1).setBoolValue(1);
     props.globals.getNode("/instrumentation/kt76a/mode",1).setValue("0");
       #### ENGINE[0] ####
     props.globals.getNode("/controls/electric/engine[0]/generator",1).setBoolValue(1);
-    props.globals.getNode("controls/engines/engine[0]/fuel-pump",1).setBoolValue(1);
     props.globals.getNode("/engines/engine[0]/amp-v",1).setDoubleValue(0);
     props.globals.getNode("/controls/engines/engine[0]/master-alt",1).setBoolValue(0);
     props.globals.getNode("/controls/engines/engine[0]/master-bat",1).setBoolValue(0);
       #### ENGINE[1] ####
     props.globals.getNode("/controls/electric/engine[1]/generator",1).setBoolValue(1);
-    props.globals.getNode("controls/engines/engine[1]/fuel-pump",1).setBoolValue(1);
     props.globals.getNode("/engines/engine[1]/amp-v",1).setDoubleValue(0);
     props.globals.getNode("/controls/engines/engine[1]/master-alt",1).setBoolValue(0);
     props.globals.getNode("/controls/engines/engine[1]/master-bat",1).setBoolValue(0);
@@ -317,19 +314,41 @@ var electrical_bus = func(bus_volts){
         OutPuts.getNode("cabin-lights",1).setValue(0.0);
     }
 
-    if(props.globals.getNode("/controls/engines/engine[0]/fuel-pump").getBoolValue()){
-        OutPuts.getNode("fuel-pump[0]",1).setValue(bus_volts);
-        load += 0.00002;
+    if(props.globals.getNode("/controls/anti-ice/engine/carb-heat").getBoolValue()){
+        OutPuts.getNode("carb-heat",1).setValue(bus_volts);
+        load += 0.0002;
     } else {
-        OutPuts.getNode("fuel-pump[0]",1).setValue(0.0);
+        OutPuts.getNode("carb-heat",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/fuel/tank/boost-pump").getBoolValue()){
+        OutPuts.getNode("boost-pump",1).setValue(bus_volts);
+        load += 0.00006;
+    } else {
+        OutPuts.getNode("boost-pump",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/fuel/tank[1]/boost-pump").getBoolValue()){
+        OutPuts.getNode("boost-pump[1]",1).setValue(bus_volts);
+        load += 0.00006;
+    } else {
+        OutPuts.getNode("boost-pump[1]",1).setValue(0.0);
+    }
+
+    if(props.globals.getNode("/controls/engines/engine/fuel-pump").getBoolValue()){
+        OutPuts.getNode("fuel-pump",1).setValue(bus_volts);
+        load += 0.00006;
+    } else {
+        OutPuts.getNode("fuel-pump",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/engines/engine[1]/fuel-pump").getBoolValue()){
         OutPuts.getNode("fuel-pump[1]",1).setValue(bus_volts);
-        load += 0.00002;
+        load += 0.00006;
     } else {
         OutPuts.getNode("fuel-pump[1]",1).setValue(0.0);
     }
+
 
     if (props.globals.getNode("/controls/engines/engine[0]/starter").getBoolValue()){
         starter_voltsL = bus_volts;
@@ -347,7 +366,7 @@ var electrical_bus = func(bus_volts){
 }
 
 ############################################################################
-############# Mesure des charge du bus avionique (Instruments) #############
+############# Mesure des charges du bus avionique (Instruments) ############
 ############################################################################
 
 var avionics_bus = func(bus_volts) {
@@ -357,23 +376,51 @@ var avionics_bus = func(bus_volts) {
         var instr_norm = props.globals.getNode("/controls/lighting/instruments-norm").getValue();
         var v = instr_norm * bus_volts;
         OutPuts.getNode("instrument-lights",1).setValue(v);
-        #load += 0.025;
+        load += 0.00025;
     } else {
         OutPuts.getNode("instrument-lights",1).setValue(0.0);
     }
 
-    if (props.globals.getNode("/instrumentation/comm/serviceable").getBoolValue() and props.globals.getNode("/sim/failure-manager/instrumentation/comm/serviceable").getBoolValue()){
-        OutPuts.getNode("comm",1).setValue(bus_volts);
-        load += 0.00015;
-    } else {
-        OutPuts.getNode("comm",1).setValue(0.0);
-    }
+#    if (props.globals.getNode("/instrumentation/comm/serviceable").getBoolValue() and props.globals.getNode("/sim/failure-manager/instrumentation/comm/serviceable").getBoolValue()){
+#        OutPuts.getNode("comm",1).setValue(bus_volts);
+#        load += 0.00015;
+#    } else {
+#        OutPuts.getNode("comm",1).setValue(0.0);
+#    }
+#
+#    if (props.globals.getNode("/instrumentation/kt76a/mode").getValue() > 0 and props.globals.getNode("/controls/switches/transponder").getBoolValue()){
+#        OutPuts.getNode("transponder",1).setValue(bus_volts);
+#        load += 0.00015;
+#    } else {
+#        OutPuts.getNode("transponder",1).setValue(0.0);
+#    }
 
-    if (props.globals.getNode("/instrumentation/kt76a/mode").getValue() > 0 and props.globals.getNode("/controls/switches/transponder").getBoolValue()){
-        OutPuts.getNode("transponder",1).setValue(bus_volts);
+    if (props.globals.getNode("/instrumentation/nav/serviceable").getBoolValue() ){
+        OutPuts.getNode("nav",1).setValue(bus_volts);
         load += 0.00015;
     } else {
-        OutPuts.getNode("transponder",1).setValue(0.0);
+        OutPuts.getNode("nav",1).setValue(0.0);
+    }
+   
+   if (props.globals.getNode("/instrumentation/nav[1]/serviceable").getBoolValue() ){
+        OutPuts.getNode("nav[1]",1).setValue(bus_volts);
+        load += 0.00015;
+    } else {
+        OutPuts.getNode("nav[1]",1).setValue(0.0);
+    }   
+   
+   if (props.globals.getNode("/instrumentation/adf/serviceable").getBoolValue() ){
+        OutPuts.getNode("adf",1).setValue(bus_volts);
+        load += 0.00015;
+    } else {
+        OutPuts.getNode("adf",1).setValue(0.0);
+    }
+   
+   if (props.globals.getNode("/instrumentation/turn-indicator/serviceable").getBoolValue() ){
+        OutPuts.getNode("turn-coordinator",1).setValue(bus_volts);
+        load += 0.00015;
+    } else {
+        OutPuts.getNode("turn-coordinator",1).setValue(0.0);
     }
 
     return load;

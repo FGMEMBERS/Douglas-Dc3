@@ -149,6 +149,11 @@
     <object-name>vitres</object-name>
   </animation>
 
+  <!-- Immatriculatoin -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Immat/immat.xml</path>
+  </model>
+
   <!-- Cabine -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cabine/cabine.xml</path>
@@ -229,7 +234,7 @@
 
   <!-- Ailettes -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/ailettes.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/ailettesL.xml</path>
     <offsets>
       <x-m> -6.040 </x-m>
       <y-m> -2.814 </y-m>
@@ -238,7 +243,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/ailettes.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/ailettesR.xml</path>
     <offsets>
       <x-m> -6.040 </x-m>
       <y-m>  2.814 </y-m>

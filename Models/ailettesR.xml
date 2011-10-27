@@ -48,19 +48,7 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
 
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
@@ -72,11 +60,6 @@
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -102,15 +85,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette1</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.131 </y1-m>
@@ -124,15 +100,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette2</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.256 </y1-m>
@@ -146,15 +115,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette3</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.473 </y1-m>
@@ -168,15 +130,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette4</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.618 </y1-m>
@@ -190,15 +145,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette5</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.669 </y1-m>
@@ -212,15 +160,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette6</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.618 </y1-m>
@@ -234,15 +175,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette7</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.473 </y1-m>
@@ -256,15 +190,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette8</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m> -0.256 </y1-m>
@@ -278,15 +205,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette9</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.000 </y1-m>
@@ -300,15 +220,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette10</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.256 </y1-m>
@@ -322,15 +235,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette11</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.473 </y1-m>
@@ -344,15 +250,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette12</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.618 </y1-m>
@@ -366,15 +265,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette13</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.669 </y1-m>
@@ -388,15 +280,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette14</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.618 </y1-m>
@@ -410,15 +295,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette15</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.473 </y1-m>
@@ -432,15 +310,8 @@
   <animation>
     <type>rotate</type>
     <object-name>ailette16</object-name>
-    <property>velocities/airspeed-kt</property>
-    <interpolation>
-      <entry><ind>    0 </ind><dep> 30 </dep></entry>
-      <entry><ind>   80 </ind><dep> 25 </dep></entry>
-      <entry><ind>   90 </ind><dep> 15 </dep></entry>
-      <entry><ind>  100 </ind><dep>  5 </dep></entry>
-      <entry><ind>  130 </ind><dep>  3 </dep></entry>
-      <entry><ind> 1000 </ind><dep>  3 </dep></entry>
-    </interpolation>
+    <property>sim/multiplay/generic/float[15]</property>
+    <factor>40</factor>
     <axis>
       <x1-m> -0.100 </x1-m>
       <y1-m>  0.256 </y1-m>
@@ -450,6 +321,5 @@
       <z2-m>  0.657 </z2-m>
     </axis>
   </animation>
-
 </PropertyList>
 

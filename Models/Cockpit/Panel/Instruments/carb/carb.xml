@@ -34,23 +34,23 @@
     <object-name>needleL</object-name>
     <object-name>needleR</object-name>
     <emission>
-    <factor-prop>controls/lighting/instruments-norm</factor-prop>
-    <red>0.8</red>
-    <green>0.4</green>
-    <blue>0.2</blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
-<!--
   <animation> 
     <type>rotate</type>
-    <object-name>needleTF</object-name>
-    <property></property>
+    <object-name>needleL</object-name>
+    <property>engines/engine/carb-temp-degc</property>
     <interpolation>
-      <entry><ind> -50 </ind><dep>  -10 </dep></entry>
-      <entry><ind>   0 </ind><dep>  -45 </dep></entry>
-      <entry><ind>  50 </ind><dep>  -90 </dep></entry>
-	    <entry><ind> 150 </ind><dep> -154 </dep></entry>
+      <entry><ind> -50 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>   0 </ind><dep>  26.5 </dep></entry>
+      <entry><ind>  50 </ind><dep>  56.8 </dep></entry>
+      <entry><ind> 100 </ind><dep>  89.2 </dep></entry>
+      <entry><ind> 150 </ind><dep> 114.0 </dep></entry>
     </interpolation>
     <center>
       <x-m> -0.004 </x-m>
@@ -58,21 +58,22 @@
       <z-m> -0.001 </z-m>  
     </center>
     <axis> 
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
   <animation> 
     <type>rotate</type>
-    <object-name>needleFS</object-name>
-    <property></property>
+    <object-name>needleR</object-name>
+    <property>engines/engine[1]/carb-temp-degc</property>
     <interpolation>
-      <entry><ind> -50 </ind><dep>  10 </dep></entry>
-      <entry><ind>   0 </ind><dep>  45 </dep></entry>
-      <entry><ind>  50 </ind><dep>  90 </dep></entry>
-      <entry><ind> 150 </ind><dep> 154 </dep></entry>
+      <entry><ind> -50 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>   0 </ind><dep>  26.5 </dep></entry>
+      <entry><ind>  50 </ind><dep>  56.8 </dep></entry>
+      <entry><ind> 100 </ind><dep>  89.2 </dep></entry>
+      <entry><ind> 150 </ind><dep> 114.0 </dep></entry>
     </interpolation>
     <center>
       <x-m> 0.004 </x-m>
@@ -85,7 +86,6 @@
       <z>  0 </z>
     </axis>
   </animation>
--->
 
 </PropertyList>
 

@@ -18,7 +18,7 @@
     <object-name>structure</object-name>
     <condition>
       <equals>
-        <property>sim/model/high-quality</property>
+        <property>sim/model/config/textures-high</property>
         <value>true</value>
       </equals>
     </condition>
@@ -31,7 +31,7 @@
     <object-name>structure</object-name>
     <condition>
       <equals>
-        <property>sim/model/high-quality</property>
+        <property>sim/model/config/textures-high</property>
         <value>false</value>
       </equals>
     </condition>

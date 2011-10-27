@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/aloha-airline-prop.png</texture>
+        <texture>Liveries/propeller.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

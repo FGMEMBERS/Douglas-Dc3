@@ -16,14 +16,16 @@
         </binding>
       </item>
       <item>
-        <label>Toggle quality</label>
+        <label>Show/Hide Copilot</label>
         <binding>
           <command>property-toggle</command>
-          <property>sim/model/high-quality</property>
+          <property>sim/model/config/show-copilot</property>
         </binding>
       </item>
     </menu>
   </default>
 
 </PropertyList>
+
+
 

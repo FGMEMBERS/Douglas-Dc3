@@ -32,14 +32,14 @@
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/systems/electrical/outputs/bus</property>
+    <property>systems/electrical/outputs/volts</property>
     <interpolation>
       <entry><ind>  0 </ind><dep>  44.45 </dep></entry>
       <entry><ind> 30 </ind><dep> -45.44 </dep></entry>
@@ -54,17 +54,6 @@
       <y>  0 </y>
       <z>  0 </z>
     </axis>
-  </animation>
-
-  <animation>
-    <type>select</type>
-    <object-name>needle</object-name>
-    <condition>
-      <equals>
-        <property>/systems/electrical/outputs/bus</property>
-        <value> 1 </value>
-      </equals>
-    </condition>
   </animation>
 
 </PropertyList>

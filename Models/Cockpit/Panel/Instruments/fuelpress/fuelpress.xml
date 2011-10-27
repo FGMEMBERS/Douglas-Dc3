@@ -31,21 +31,23 @@
     <object-name>needle1</object-name>
     <object-name>needle2</object-name>
     <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-      <red>   0.8 </red>
-      <green> 0.4 </green>
-      <blue>  0.2 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>needle1</object-name>
-    <property>engines/engine/est-fuelpress</property>
+    <property>engines/engine/fuel-psi-norm</property>
     <interpolation>
-      <entry><ind>  0  </ind><dep>   0 </dep></entry>
-      <entry><ind>  15 </ind><dep> 177 </dep></entry>
-      <entry><ind>  25 </ind><dep> 302 </dep></entry>
+      <entry><ind>  0  </ind><dep> 0 </dep></entry>
+      <entry><ind>  2  </ind><dep> 0 </dep></entry>
+      <entry><ind>  10  </ind><dep> 118 </dep></entry>
+      <entry><ind>  14  </ind><dep> 179 </dep></entry>
+      <entry><ind>  16 </ind><dep> 193 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
@@ -57,11 +59,13 @@
     <animation>
     <type>rotate</type>
     <object-name>needle2</object-name>
-    <property>engines/engine[1]/est-fuelpress</property>
+    <property>engines/engine[1]/fuel-psi-norm</property>
     <interpolation>
-      <entry><ind>  0  </ind><dep>   0 </dep></entry>
-      <entry><ind>  15 </ind><dep> 177 </dep></entry>
-      <entry><ind>  25 </ind><dep> 302 </dep></entry>
+      <entry><ind>  0  </ind><dep> 0 </dep></entry>
+      <entry><ind>  2  </ind><dep> 0 </dep></entry>
+      <entry><ind>  10  </ind><dep> 118 </dep></entry>
+      <entry><ind>  14  </ind><dep> 179 </dep></entry>
+      <entry><ind>  16 </ind><dep> 193 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>

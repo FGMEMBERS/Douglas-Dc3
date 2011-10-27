@@ -33,7 +33,7 @@
     <object-name>cab-planchet</object-name>
     <condition>
       <equals>
-        <property>sim/model/high-quality</property>
+        <property>sim/model/config/textures-high</property>
         <value>true</value>
       </equals>
     </condition>
@@ -47,7 +47,7 @@
     <object-name>cab-planchet</object-name>
     <condition>
       <equals>
-        <property>sim/model/high-quality</property>
+        <property>sim/model/config/textures-high</property>
         <value>false</value>
       </equals>
     </condition>
@@ -111,6 +111,27 @@
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
       <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Essuies glace -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/wipers/wipersL.xml</path>
+    <offsets>
+      <x-m> -0.1130 </x-m>
+      <y-m> -0.2940 </y-m>
+      <z-m>  0.0732 </z-m>
+      <heading-deg> 35 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/wipers/wipersR.xml</path>
+    <offsets>
+      <x-m> -0.1130 </x-m>
+      <y-m>  0.2940 </y-m>
+      <z-m>  0.0732 </z-m>
+      <heading-deg>  -35 </heading-deg>
     </offsets>
   </model>
 

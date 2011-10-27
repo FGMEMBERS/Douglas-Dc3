@@ -8,12 +8,28 @@
     <object-name>mancheD</object-name>
     <object-name>ecrousD</object-name>
     <object-name>mancheG</object-name>
-    <object-name>ecrousD</object-name>
+    <object-name>ecrousG</object-name>
     <object-name>volantGG</object-name>
     <object-name>volantGD</object-name>
     <object-name>volantDD</object-name>
     <object-name>volantDG</object-name>
     <object-name>clicelevator</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>mancheD</object-name>
+    <object-name>ecrousD</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>ecrousG</object-name>
+    <object-name>volantGG</object-name>
+    <object-name>volantGD</object-name>
+    <object-name>volantDD</object-name>
+    <object-name>volantDG</object-name>
+    <object-name>clicelevator</object-name>
+    <condition>
+      <property>sim/model/config/show-yokes</property>
+    </condition>
   </animation>
  
   <animation>
@@ -25,7 +41,7 @@
   <animation>
     <name>VolantD</name>
     <object-name>volantDD</object-name>
-		<object-name>volantDG</object-name>
+    <object-name>volantDG</object-name>
   </animation>
 
   <animation>

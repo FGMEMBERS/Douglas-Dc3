@@ -34,6 +34,7 @@
     <object-name>intvitres</object-name>
   </animation>
 
+  <!-- Civilian version -->
   <animation>
     <type>material</type>
     <object-name>interieur</object-name>
@@ -48,10 +49,16 @@
     <object-name>bagageG</object-name>
     <object-name>bagageD</object-name>
     <condition>
-      <equals>
-        <property>sim/model/high-quality</property>
-        <value>true</value>
-      </equals>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>true</value>
+        </equals>
+      </and>
     </condition>
     <texture>colorsHigh.png</texture>
   </animation>
@@ -70,23 +77,104 @@
     <object-name>bagageG</object-name>
     <object-name>bagageD</object-name>
     <condition>
-      <equals>
-        <property>sim/model/high-quality</property>
-        <value>false</value>
-      </equals>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>false</value>
+        </equals>
+      </and>
     </condition>
     <texture>colors.png</texture>
   </animation>
 
+  <!-- Civilian version -->
+  <animation>
+    <type>material</type>
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intporteA</object-name>
+    <object-name>intporteB</object-name>
+    <object-name>intcargoA</object-name>
+    <object-name>intcargoB</object-name>
+    <object-name>planchet</object-name>
+    <object-name>cloisons</object-name>
+
+    <object-name>bagageG</object-name>
+    <object-name>bagageD</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>military</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>true</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colorsHigh_paras.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intporteA</object-name>
+    <object-name>intporteB</object-name>
+    <object-name>intcargoA</object-name>
+    <object-name>intcargoB</object-name>
+    <object-name>planchet</object-name>
+    <object-name>cloisons</object-name>
+
+    <object-name>bagageG</object-name>
+    <object-name>bagageD</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>military</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors_paras.png</texture>
+  </animation>
+
   <!-- Les détails -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Cabine/Details/details.xml</path>
+    <name>AllDetails</name>
+    <path>Aircraft/Douglas-Dc3/Models/Cabine/Details/all-details.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/Cabine/Details/all-poigneesportes.xml</path>
   </model>
 
   <!-- Les sièges -->
   <model>
+    <name>AllSeats</name>
     <path>Aircraft/Douglas-Dc3/Models/Cabine/seats/all-seats.xml</path>
   </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>AllDetails</object-name>
+    <object-name>AllSeats</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian</value>
+      </equals>
+    </condition>
+  </animation>
 
   <!-- Animation des portes -->
   <animation>

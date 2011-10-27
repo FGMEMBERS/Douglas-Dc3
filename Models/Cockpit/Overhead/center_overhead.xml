@@ -14,10 +14,10 @@
   <text>
     <name>magnetoL</name>
     <type type="string">literal</type>
-    <text type="string">Left magneto     -     +</text>
+    <text type="string">  Left magneto        -     +</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -29,18 +29,18 @@
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.006 </x-m>
-      <y-m> -0.035 </y-m>
-      <z-m>  0.025 </z-m>
+      <y-m> -0.032 </y-m>
+      <z-m>  0.013 </z-m>
     </offsets>
   </text>
 
   <text>
     <name>magnetoR</name>
     <type type="string">literal</type>
-    <text type="string">Right magneto     +    -</text>
+    <text type="string">Right magneto  +    -</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -52,8 +52,8 @@
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.006 </x-m>
-      <y-m>  0.035 </y-m>
-      <z-m>  0.025 </z-m>
+      <y-m>  0.032 </y-m>
+      <z-m>  0.013 </z-m>
     </offsets>
   </text>
 

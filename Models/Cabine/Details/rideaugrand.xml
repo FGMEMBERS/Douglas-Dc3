@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>rideaugrand.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>rideaugrand</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>
+

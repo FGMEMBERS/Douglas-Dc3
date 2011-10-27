@@ -20,41 +20,49 @@ var copilot_type = "Aircraft/Douglas-Dc3/Models/dc-3-copilot.xml";
 #####
 # pilot properties
 ##
-var flaps           = "sim/multiplay/generic/float[3]";
-var elevator_trim   = "sim/multiplay/generic/float[4]";
-var rudder_trim     = "sim/multiplay/generic/float[17]";
-var aileron_trim    = "sim/multiplay/generic/float[18]";
-var rudder          = "sim/multiplay/generic/float[5]";
-var elevator        = "sim/multiplay/generic/float[6]";
-var aileron         = "sim/multiplay/generic/float[7]";
-var throttle        = ["sim/multiplay/generic/float[8]", "sim/multiplay/generic/float[9]"];
-var mixture         = ["sim/multiplay/generic/float[10]", "sim/multiplay/generic/float[11]"];
-var propeller       = ["sim/multiplay/generic/float[12]", "sim/multiplay/generic/float[13]"];
-var rpm             = ["engines/engine[0]/rpm", "engines/engine[1]/rpm"];
-var brake           = ["sim/multiplay/generic/float[14]", "sim/multiplay/generic/float[15]"];
-var gear            = "sim/multiplay/generic/float[16]";
-var switch_mpp      = "sim/multiplay/generic/int[0]";
-var lights_mpp      = "sim/multiplay/generic/int[9]";
-var TDM_mpp         = "sim/multiplay/generic/string[0]";
+var flaps            = "surface-positions/flap-pos-norm";
+var rudder           = "surface-positions/rudder-pos-norm";
+var copilot_rudder   = "sim/multiplay/generic/float[15]";
+var elevator         = "surface-positions/elevator-pos-norm";
+var copilot_elevator = "sim/multiplay/generic/float[14]";
+var aileron          = "surface-positions/left-aileron-pos-norm";
+var copilot_aileron  = "sim/multiplay/generic/float[16]";
+var rpm              = ["engines/engine[0]/rpm", "engines/engine[1]/rpm"];
+var gear             = "gear/gear[0]/position-norm";
+var elevator_trim    = "sim/multiplay/generic/float[3]";
+var rudder_trim      = "sim/multiplay/generic/float[4]";
+var aileron_trim     = "sim/multiplay/generic/float[5]";
+var throttle         = ["sim/multiplay/generic/float[6]", "sim/multiplay/generic/float[7]"];
+var mixture          = ["sim/multiplay/generic/float[8]", "sim/multiplay/generic/float[9]"];
+var propeller        = ["sim/multiplay/generic/float[10]", "sim/multiplay/generic/float[11]"];
+var brake            = ["sim/multiplay/generic/float[12]", "sim/multiplay/generic/float[13]"];
+var switch_mpp       = "sim/multiplay/generic/int[0]";
+var lights_mpp       = "sim/multiplay/generic/int[9]";
+var TDM_mpp          = "sim/multiplay/generic/string[0]";
 
 ######################################################################
 # Useful instrument related property paths.
 
 # Flight controls
-var rudder_cmd        = "controls/flight/rudder";
 var elevator_cmd      = "controls/flight/elevator";
+var rudder_cmd        = "controls/flight/rudder";
 var aileron_cmd       = "controls/flight/aileron";
+var flaps_cmd         = "controls/flight/flaps-cmd";
 var elevator_trim_cmd = "controls/flight/elevator-trim";
 var rudder_trim_cmd   = "controls/flight/rudder-trim";
 var aileron_trim_cmd  = "controls/flight/aileron-trim";
-var flaps_cmd         = "controls/flight/flaps";
+
+# Engine controls
 var throttle_cmd      = ["controls/engines/engine[0]/throttle", "controls/engines/engine[1]/throttle"];
 var mixture_cmd       = ["controls/engines/engine[0]/mixture", "controls/engines/engine[1]/mixture"];
 var propeller_cmd     = ["controls/engines/engine[0]/propeller-pitch", "controls/engines/engine[1]/propeller-pitch"];
 var magnetos_cmd      = ["controls/engines/engine[0]/magnetos", "controls/engines/engine[1]/magnetos"];
 var rpm_cmd           = ["engines/engine[0]/rpm", "engines/engine[1]/rpm"];
+
+# Other controls
+var cowl_flaps_cmd    = ["controls/engines/engine/cowl-flaps-cmd", "controls/engines/engine[1]/cowl-flaps-cmd"];
+var fuel_cmd          = ["controls/fuel/left-valve", "controls/fuel/right-valve"];
 var brake_cmd         = ["controls/gear/brake-left", "controls/gear/brake-right"];
-var gear_cmd          = "controls/gear/gear-down";
 var instrument_lights = "controls/lighting/instruments-norm";
 
 # Switch controls
@@ -69,13 +77,15 @@ var prop_heat               = "controls/anti-ice/prop-heat";
 var running_lights          = "controls/lighting/running-lights";
 var tail_lights             = "controls/lighting/tail-lights";
 var window_heat             = "controls/anti-ice/window-heat";
-var boost_pump              = ["controls/fuel/tank/boost-pump", "controls/fuel/tank[1]/boost-pump"];
+var boost_pump              = ["controls/fuel/tank[0]/boost-pump", "controls/fuel/tank[1]/boost-pump"];
 var carb_heat               = ["controls/anti-ice/engine/carb-heat", "controls/anti-ice/engine[1]/carb-heat"];
 var cabin_lights            = "controls/lighting/cabin-lights";
 var recognition_lights      = ["controls/lighting/recognition-lights", "controls/lighting/recognition-lights[1]", "controls/lighting/recognition-lights[2]"];
 var prop_feather            = ["controls/engines/engine/propeller-feather", "controls/engines/engine[1]/propeller-feather"];
 var compass_lights          = "controls/lighting/compass-lights";
 var formation_lights        = "controls/lighting/formation-lights";
+var gear_lock_cmd           = "controls/gear/gear-down-lock";
+var gear_down_cmd           = "controls/gear/gear-down-cmd";
 
 # Boolean properties
 var running        = ["engines/engine[0]/running", "engines/engine[1]/running"];
@@ -98,19 +108,29 @@ var pilot_connect_copilot = func (copilot) {
       ##################################################
       # Map copilot properties to buffer properties
 
-      DCT.StableTrigger.new(copilot.getNode(rudder), func(v){props.globals.getNode(rudder_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(aileron), func(v){props.globals.getNode(aileron_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(elevator), func(v){props.globals.getNode(elevator_cmd, 1).setValue(v);}),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(copilot_rudder), props.globals.getNode(rudder_cmd), props.globals.getNode(rudder_cmd), 0.0001),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(copilot_aileron), props.globals.getNode(aileron_cmd), props.globals.getNode(aileron_cmd), 0.0001),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(copilot_elevator), props.globals.getNode(elevator_cmd), props.globals.getNode(elevator_cmd), 0.0001),
+
+      DCT.MostRecentSelector.new
+        (copilot.getNode(throttle[0]), props.globals.getNode(throttle_cmd[0]), props.globals.getNode(throttle_cmd[0]), 0.0001),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(throttle[1]), props.globals.getNode(throttle_cmd[1]), props.globals.getNode(throttle_cmd[1]), 0.0001),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(mixture[0]), props.globals.getNode(mixture_cmd[0]), props.globals.getNode(mixture_cmd[0]), 0.0001),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(mixture[1]), props.globals.getNode(mixture_cmd[1]), props.globals.getNode(mixture_cmd[1]), 0.0001),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(propeller[0]), props.globals.getNode(propeller_cmd[0]), props.globals.getNode(propeller_cmd[0]), 0.0001),
+      DCT.MostRecentSelector.new
+        (copilot.getNode(propeller[1]), props.globals.getNode(propeller_cmd[1]), props.globals.getNode(propeller_cmd[1]), 0.0001),
+
       DCT.StableTrigger.new(copilot.getNode(elevator_trim), func(v){props.globals.getNode(elevator_trim_cmd, 1).setValue(v);}),
       DCT.StableTrigger.new(copilot.getNode(rudder_trim), func(v){props.globals.getNode(rudder_trim_cmd, 1).setValue(v);}),
       DCT.StableTrigger.new(copilot.getNode(aileron_trim), func(v){props.globals.getNode(aileron_trim_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(flaps), func(v){props.globals.getNode(flaps_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(throttle[0]), func(v){props.globals.getNode(throttle_cmd[0], 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(throttle[1]), func(v){props.globals.getNode(throttle_cmd[1], 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(mixture[0]), func(v){props.globals.getNode(mixture_cmd[0], 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(mixture[1]), func(v){props.globals.getNode(mixture_cmd[1], 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(propeller[0]), func(v){props.globals.getNode(propeller_cmd[0], 1).setValue(v);}),
-      DCT.StableTrigger.new(copilot.getNode(propeller[1]), func(v){props.globals.getNode(propeller_cmd[1], 1).setValue(v);}),
       DCT.StableTrigger.new(copilot.getNode(brake[0]), func(v){props.globals.getNode(brake_cmd[0], 1).setValue(v);}),
       DCT.StableTrigger.new(copilot.getNode(brake[1]), func(v){props.globals.getNode(brake_cmd[1], 1).setValue(v);}),
 
@@ -120,7 +140,12 @@ var pilot_connect_copilot = func (copilot) {
         ([
           props.globals.getNode(instrument_lights),
           props.globals.getNode(magnetos_cmd[0]),
-          props.globals.getNode(magnetos_cmd[1])
+          props.globals.getNode(magnetos_cmd[1]),
+          props.globals.getNode(fuel_cmd[0]),
+          props.globals.getNode(fuel_cmd[1]),
+          props.globals.getNode(cowl_flaps_cmd[0]),
+          props.globals.getNode(cowl_flaps_cmd[1]),
+          props.globals.getNode(flaps_cmd)
          ], props.globals.getNode(TDM_mpp)),
       DCT.SwitchEncoder.new
         ([
@@ -144,9 +169,10 @@ var pilot_connect_copilot = func (copilot) {
           props.globals.getNode(running[1]),
           props.globals.getNode(cranking[0]),
           props.globals.getNode(cranking[1]),
-          props.globals.getNode(gear_cmd),
           props.globals.getNode(brake_parking),
           props.globals.getNode(lock_wheel),
+          props.globals.getNode(gear_lock_cmd),
+          props.globals.getNode(gear_down_cmd),
          ], props.globals.getNode(switch_mpp)),
       DCT.SwitchEncoder.new
         ([
@@ -170,6 +196,11 @@ var pilot_connect_copilot = func (copilot) {
         [func(v){props.globals.getNode("dual-control/copilot/"~instrument_lights, 1).setValue(v);},
          func(v){props.globals.getNode("dual-control/copilot/"~magnetos_cmd[0], 1).setValue(v);},
          func(v){props.globals.getNode("dual-control/copilot/"~magnetos_cmd[1], 1).setValue(v);},
+         func(v){props.globals.getNode("dual-control/copilot/"~fuel_cmd[0], 1).setValue(v);},
+         func(v){props.globals.getNode("dual-control/copilot/"~fuel_cmd[1], 1).setValue(v);},
+         func(v){props.globals.getNode("dual-control/copilot/"~cowl_flaps_cmd[0], 1).setValue(v);},
+         func(v){props.globals.getNode("dual-control/copilot/"~cowl_flaps_cmd[1], 1).setValue(v);},
+         func(v){props.globals.getNode("dual-control/copilot/"~flaps_cmd, 1).setValue(v);},
         ]),
 
       DCT.SwitchDecoder.new
@@ -194,9 +225,10 @@ var pilot_connect_copilot = func (copilot) {
          func(b){props.globals.getNode("dual-control/copilot/"~running[1], 1).setValue(b);},
          func(b){props.globals.getNode("dual-control/copilot/"~cranking[0], 1).setValue(b);},
          func(b){props.globals.getNode("dual-control/copilot/"~cranking[1], 1).setValue(b);},
-         func(b){props.globals.getNode("dual-control/copilot/"~gear_cmd, 1).setValue(b);},
          func(b){props.globals.getNode("dual-control/copilot/"~brake_parking, 1).setValue(b);},
          func(b){props.globals.getNode("dual-control/copilot/"~lock_wheel, 1).setValue(b);},
+         func(b){props.globals.getNode("dual-control/copilot/"~gear_lock_cmd, 1).setValue(b);},
+         func(b){props.globals.getNode("dual-control/copilot/"~gear_down_cmd, 1).setValue(b);},
         ]),
 
       DCT.SwitchDecoder.new
@@ -216,14 +248,14 @@ var pilot_connect_copilot = func (copilot) {
 
       ##################################################      
       # Map the most recent value between pilot and copilot to pilot properties
+
+      ##### BOOLEAN PROPERTIES #####
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[0], 1), props.globals.getNode(magnetos_cmd[0]), props.globals.getNode(magnetos_cmd[0]), 0.1),
+        (props.globals.getNode("dual-control/copilot/"~gear_lock_cmd, 1), props.globals.getNode(gear_lock_cmd), props.globals.getNode(gear_lock_cmd), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[1], 1), props.globals.getNode(magnetos_cmd[1]), props.globals.getNode(magnetos_cmd[1]), 0.1),
+        (props.globals.getNode("dual-control/copilot/"~gear_down_cmd, 1), props.globals.getNode(gear_down_cmd), props.globals.getNode(gear_down_cmd), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~brake_cmd[0], 1), props.globals.getNode(brake_cmd[0]), props.globals.getNode(brake_cmd[0]), 0.000001),
-      DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~brake_cmd[1], 1), props.globals.getNode(brake_cmd[1]), props.globals.getNode(brake_cmd[1]), 0.000001),
+        (props.globals.getNode("dual-control/copilot/"~lock_wheel, 1), props.globals.getNode(lock_wheel), props.globals.getNode(lock_wheel), 0.1),
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~battery_switch, 1), props.globals.getNode(battery_switch), props.globals.getNode(battery_switch), 0.1),
       DCT.MostRecentSelector.new
@@ -265,11 +297,31 @@ var pilot_connect_copilot = func (copilot) {
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~cranking[1], 1), props.globals.getNode(cranking[1]), props.globals.getNode(cranking[1]), 0.1),
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~gear_cmd, 1), props.globals.getNode(gear_cmd), props.globals.getNode(gear_cmd), 0.1),
-      DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~brake_parking, 1), props.globals.getNode(brake_parking), props.globals.getNode(brake_parking), 0.1),
+
+
+      ##### OTHERS #####
       DCT.MostRecentSelector.new
-        (props.globals.getNode("dual-control/copilot/"~lock_wheel, 1), props.globals.getNode(lock_wheel), props.globals.getNode(lock_wheel), 0.1),
+        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[0], 1), props.globals.getNode(magnetos_cmd[0]), props.globals.getNode(magnetos_cmd[0]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~magnetos_cmd[1], 1), props.globals.getNode(magnetos_cmd[1]), props.globals.getNode(magnetos_cmd[1]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~fuel_cmd[0], 1), props.globals.getNode(fuel_cmd[0]), props.globals.getNode(fuel_cmd[0]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~fuel_cmd[1], 1), props.globals.getNode(fuel_cmd[1]), props.globals.getNode(fuel_cmd[1]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~cowl_flaps_cmd[0], 1), props.globals.getNode(cowl_flaps_cmd[0]), props.globals.getNode(cowl_flaps_cmd[0]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~cowl_flaps_cmd[1], 1), props.globals.getNode(cowl_flaps_cmd[1]), props.globals.getNode(cowl_flaps_cmd[1]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~brake_cmd[0], 1), props.globals.getNode(brake_cmd[0]), props.globals.getNode(brake_cmd[0]), 0.000001),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~brake_cmd[1], 1), props.globals.getNode(brake_cmd[1]), props.globals.getNode(brake_cmd[1]), 0.000001),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/copilot/"~flaps_cmd, 1), props.globals.getNode(flaps_cmd), props.globals.getNode(flaps_cmd), 0.1),
+
+
+      ##### LIGHTING #####
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~landing_lights[0], 1), props.globals.getNode(landing_lights[0]), props.globals.getNode(landing_lights[0]), 0.1),
       DCT.MostRecentSelector.new
@@ -294,6 +346,7 @@ var pilot_connect_copilot = func (copilot) {
         (props.globals.getNode("dual-control/copilot/"~formation_lights, 1), props.globals.getNode(formation_lights), props.globals.getNode(formation_lights), 0.1),
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/copilot/"~instrument_lights, 1), props.globals.getNode(instrument_lights), props.globals.getNode(instrument_lights), 0.001),
+
   ];
 }
 
@@ -311,25 +364,52 @@ var copilot_connect_pilot = func (pilot) {
   # Make sure dual-control is activated in the FDM FCS.
   print("Copilot section");
   setprop(l_dual_control, 1);
+  pilot.getNode("sim/model/config/show-yokes", 1).setBoolValue(1);
+  pilot.getNode("sim/model/config/show-pilot", 1).setBoolValue(1);
+  pilot.getNode("sim/model/config/show-copilot", 1).setBoolValue(1);
+
   return [
       ##################################################
       # Map pilot properties to buffer properties
 
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(rudder), props.globals.getNode(rudder_cmd), props.globals.getNode(rudder_cmd), 0.0001),
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(aileron), props.globals.getNode(aileron_cmd), props.globals.getNode(aileron_cmd), 0.0001),
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(elevator), props.globals.getNode(elevator_cmd), props.globals.getNode(elevator_cmd), 0.0001),
+
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(throttle[0]), props.globals.getNode(throttle_cmd[0]), props.globals.getNode(throttle_cmd[0]), 0.0001),
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(throttle[1]), props.globals.getNode(throttle_cmd[1]), props.globals.getNode(throttle_cmd[1]), 0.0001),
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(mixture[0]), props.globals.getNode(mixture_cmd[0]), props.globals.getNode(mixture_cmd[0]), 0.0001),
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(mixture[1]), props.globals.getNode(mixture_cmd[1]), props.globals.getNode(mixture_cmd[1]), 0.0001),
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(propeller[0]), props.globals.getNode(propeller_cmd[0]), props.globals.getNode(propeller_cmd[0]), 0.0001),
+#      DCT.MostRecentSelector.new
+#        (pilot.getNode(propeller[1]), props.globals.getNode(propeller_cmd[1]), props.globals.getNode(propeller_cmd[1]), 0.0001),
+
       DCT.StableTrigger.new(pilot.getNode(rudder), func(v){props.globals.getNode(rudder_cmd, 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(aileron), func(v){props.globals.getNode(aileron_cmd, 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(elevator), func(v){props.globals.getNode(elevator_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(pilot.getNode(elevator_trim), func(v){props.globals.getNode(elevator_trim_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(pilot.getNode(rudder_trim), func(v){props.globals.getNode(rudder_trim_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(pilot.getNode(aileron_trim), func(v){props.globals.getNode(aileron_trim_cmd, 1).setValue(v);}),
-      DCT.StableTrigger.new(pilot.getNode(flaps), func(v){props.globals.getNode(flaps_cmd, 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(throttle[0]), func(v){props.globals.getNode(throttle_cmd[0], 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(throttle[1]), func(v){props.globals.getNode(throttle_cmd[1], 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(mixture[0]), func(v){props.globals.getNode(mixture_cmd[0], 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(mixture[1]), func(v){props.globals.getNode(mixture_cmd[1], 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(propeller[0]), func(v){props.globals.getNode(propeller_cmd[0], 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(propeller[1]), func(v){props.globals.getNode(propeller_cmd[1], 1).setValue(v);}),
+
+
+      DCT.StableTrigger.new(pilot.getNode(elevator_trim), func(v){props.globals.getNode(elevator_trim_cmd, 1).setValue(v);}),
+      DCT.StableTrigger.new(pilot.getNode(rudder_trim), func(v){props.globals.getNode(rudder_trim_cmd, 1).setValue(v);}),
+      DCT.StableTrigger.new(pilot.getNode(aileron_trim), func(v){props.globals.getNode(aileron_trim_cmd, 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(brake[0]), func(v){props.globals.getNode(brake_cmd[0], 1).setValue(v);}),
       DCT.StableTrigger.new(pilot.getNode(brake[1]), func(v){props.globals.getNode(brake_cmd[1], 1).setValue(v);}),
+      DCT.Translator.new(pilot.getNode(rpm[0]), props.globals.getNode(rpm_cmd[0], 1)),
+      DCT.Translator.new(pilot.getNode(rpm[1]), props.globals.getNode(rpm_cmd[1], 1)),
 
 
 
@@ -339,7 +419,12 @@ var copilot_connect_pilot = func (pilot) {
         ([
           props.globals.getNode(instrument_lights),
           props.globals.getNode(magnetos_cmd[0]),
-          props.globals.getNode(magnetos_cmd[1])
+          props.globals.getNode(magnetos_cmd[1]),
+          props.globals.getNode(fuel_cmd[0]),
+          props.globals.getNode(fuel_cmd[1]),
+          props.globals.getNode(cowl_flaps_cmd[0]),
+          props.globals.getNode(cowl_flaps_cmd[1]),
+          props.globals.getNode(flaps_cmd),
          ], props.globals.getNode(TDM_mpp)),
       DCT.SwitchEncoder.new
         ([
@@ -363,9 +448,10 @@ var copilot_connect_pilot = func (pilot) {
           props.globals.getNode(running[1]),
           props.globals.getNode(cranking[0]),
           props.globals.getNode(cranking[1]),
-          props.globals.getNode(gear_cmd),
           props.globals.getNode(brake_parking),
           props.globals.getNode(lock_wheel),
+          props.globals.getNode(gear_lock_cmd),
+          props.globals.getNode(gear_down_cmd),
          ], props.globals.getNode(switch_mpp)),
       DCT.SwitchEncoder.new
         ([
@@ -386,9 +472,14 @@ var copilot_connect_pilot = func (pilot) {
       # Switch decoder
       DCT.TDMDecoder.new
         (pilot.getNode(TDM_mpp), 
-        [func(v){pilot.getNode(instrument_lights).setValue(v); props.globals.getNode("dual-control/pilot/"~instrument_lights, 1).setValue(v);},
-         func(v){pilot.getNode(magnetos_cmd[0]~"-pos").setValue(v); props.globals.getNode("dual-control/pilot/"~magnetos_cmd[0], 1).setValue(v);},
-         func(v){pilot.getNode(magnetos_cmd[1]~"-pos").setValue(v); props.globals.getNode("dual-control/pilot/"~magnetos_cmd[1], 1).setValue(v);},
+        [func(v){pilot.getNode(instrument_lights, 1).setValue(v); props.globals.getNode("dual-control/pilot/"~instrument_lights, 1).setValue(v);},
+         func(v){pilot.getNode(magnetos_cmd[0]~"-pos", 1).setValue(v); props.globals.getNode("dual-control/pilot/"~magnetos_cmd[0], 1).setValue(v);},
+         func(v){pilot.getNode(magnetos_cmd[1]~"-pos", 1).setValue(v); props.globals.getNode("dual-control/pilot/"~magnetos_cmd[1], 1).setValue(v);},
+         func(v){pilot.getNode(fuel_cmd[0]~"-pos", 1).setValue(v); props.globals.getNode("dual-control/pilot/"~fuel_cmd[0], 1).setValue(v);},
+         func(v){pilot.getNode(fuel_cmd[1]~"-pos", 1).setValue(v); props.globals.getNode("dual-control/pilot/"~fuel_cmd[1], 1).setValue(v);},
+         func(v){pilot.getNode(cowl_flaps_cmd[0]~"-pos", 1).setValue(v); props.globals.getNode("dual-control/pilot/"~cowl_flaps_cmd[0], 1).setValue(v);},
+         func(v){pilot.getNode(cowl_flaps_cmd[1]~"-pos", 1).setValue(v); props.globals.getNode("dual-control/pilot/"~cowl_flaps_cmd[1], 1).setValue(v);},
+         func(v){pilot.getNode(flaps_cmd, 1).setValue(v); props.globals.getNode("dual-control/pilot/"~flaps_cmd, 1).setValue(v);},
         ]),
 
       DCT.SwitchDecoder.new
@@ -413,9 +504,10 @@ var copilot_connect_pilot = func (pilot) {
          func(b){props.globals.getNode(running[1]).setValue(b);},
          func(b){props.globals.getNode(cranking[0]).setValue(b);},
          func(b){props.globals.getNode(cranking[1]).setValue(b);},
-         func(b){props.globals.getNode(gear_cmd).setValue(b);},
          func(b){props.globals.getNode(brake_parking).setValue(b);},
          func(b){props.globals.getNode(lock_wheel).setValue(b);},
+         func(b){props.globals.getNode(gear_lock_cmd).setValue(b);},
+         func(b){props.globals.getNode(gear_down_cmd).setValue(b);},
         ]),
 
       DCT.SwitchDecoder.new
@@ -441,15 +533,12 @@ var copilot_connect_pilot = func (pilot) {
       DCT.Translator.new(pilot.getNode(elevator_trim), pilot.getNode(elevator_trim_cmd)),
       DCT.Translator.new(pilot.getNode(rudder_trim), pilot.getNode(rudder_trim_cmd)),
       DCT.Translator.new(pilot.getNode(aileron_trim), pilot.getNode(aileron_trim_cmd)),
-      DCT.Translator.new(pilot.getNode(flaps), pilot.getNode(flaps_cmd)),
-      DCT.Translator.new(pilot.getNode(throttle[0]), pilot.getNode(throttle_cmd[0])),
-      DCT.Translator.new(pilot.getNode(throttle[1]), pilot.getNode(throttle_cmd[1])),
-      DCT.Translator.new(pilot.getNode(mixture[0]), pilot.getNode(mixture_cmd[0])),
-      DCT.Translator.new(pilot.getNode(mixture[1]), pilot.getNode(mixture_cmd[1])),
-      DCT.Translator.new(pilot.getNode(propeller[0]), pilot.getNode(propeller_cmd[0])),
-      DCT.Translator.new(pilot.getNode(propeller[1]), pilot.getNode(propeller_cmd[1])),
-      DCT.Translator.new(pilot.getNode(rpm[0]), props.globals.getNode(rpm_cmd[0])),
-      DCT.Translator.new(pilot.getNode(rpm[1]), props.globals.getNode(rpm_cmd[1])),
+      DCT.Translator.new(props.globals.getNode(throttle[0]), pilot.getNode(throttle_cmd[0])),
+      DCT.Translator.new(props.globals.getNode(throttle[1]), pilot.getNode(throttle_cmd[1])),
+      DCT.Translator.new(props.globals.getNode(mixture[0]), pilot.getNode(mixture_cmd[0])),
+      DCT.Translator.new(props.globals.getNode(mixture[1]), pilot.getNode(mixture_cmd[1])),
+      DCT.Translator.new(props.globals.getNode(propeller[0]), pilot.getNode(propeller_cmd[0])),
+      DCT.Translator.new(props.globals.getNode(propeller[1]), pilot.getNode(propeller_cmd[1])),
       DCT.Translator.new(props.globals.getNode(battery_switch~"-pos", 1), pilot.getNode(battery_switch~"-pos")),
       DCT.Translator.new(props.globals.getNode(oil_dilution[0]~"-pos", 1), pilot.getNode(oil_dilution[0]~"-pos")),
       DCT.Translator.new(props.globals.getNode(oil_dilution[1]~"-pos", 1), pilot.getNode(oil_dilution[1]~"-pos")),
@@ -478,13 +567,33 @@ var copilot_connect_pilot = func (pilot) {
       DCT.Translator.new(props.globals.getNode(formation_lights~"-pos", 1), pilot.getNode(formation_lights~"-pos")),
       DCT.Translator.new(props.globals.getNode(brake_parking~"-pos", 1), pilot.getNode(brake_parking~"-pos")),
       DCT.Translator.new(props.globals.getNode(lock_wheel~"-pos", 1), pilot.getNode(lock_wheel~"-pos")),
+      DCT.Translator.new(props.globals.getNode(gear_lock_cmd~"-pos", 1), pilot.getNode(gear_lock_cmd~"-pos")),
+      DCT.Translator.new(props.globals.getNode(fuel_cmd[0]~"-pos", 1), pilot.getNode(fuel_cmd[0]~"-pos")),
+      DCT.Translator.new(props.globals.getNode(fuel_cmd[1]~"-pos", 1), pilot.getNode(fuel_cmd[1]~"-pos")),
+      DCT.Translator.new(props.globals.getNode("controls/engines/engine/cowl-flaps-pos", 1), pilot.getNode("controls/engines/engine/cowl-flaps-pos")),
+      DCT.Translator.new(props.globals.getNode("controls/engines/engine[1]/cowl-flaps-pos", 1), pilot.getNode("controls/engines/engine[1]/cowl-flaps-pos")),
+      DCT.Translator.new(props.globals.getNode("systems/hydraulics/flaps-down-psi"), pilot.getNode("systems/hydraulics/flaps-down-psi")),
+      DCT.Translator.new(props.globals.getNode("systems/hydraulics/flaps-up-psi"), pilot.getNode("systems/hydraulics/flaps-up-psi")),
+      DCT.Translator.new(props.globals.getNode(gear_down_cmd, 1), pilot.getNode(gear_down_cmd)),
+      DCT.Translator.new(props.globals.getNode("systems/hydraulics/landing-gear-psi"), pilot.getNode("systems/hydraulics/landing-gear-psi")),
 
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/pilot/"~magnetos_cmd[0], 1), props.globals.getNode(magnetos_cmd[0]), props.globals.getNode(magnetos_cmd[0]), 0.1),
       DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/pilot/"~magnetos_cmd[1], 1), props.globals.getNode(magnetos_cmd[1]), props.globals.getNode(magnetos_cmd[1]), 0.1),
       DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/pilot/"~fuel_cmd[0], 1), props.globals.getNode(fuel_cmd[0]), props.globals.getNode(fuel_cmd[0]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/pilot/"~fuel_cmd[1], 1), props.globals.getNode(fuel_cmd[1]), props.globals.getNode(fuel_cmd[1]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/pilot/"~cowl_flaps_cmd[0], 1), props.globals.getNode(cowl_flaps_cmd[0]), props.globals.getNode(cowl_flaps_cmd[0]), 0.1),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/pilot/"~cowl_flaps_cmd[1], 1), props.globals.getNode(cowl_flaps_cmd[1]), props.globals.getNode(cowl_flaps_cmd[1]), 0.1),
+      DCT.MostRecentSelector.new
         (props.globals.getNode("dual-control/pilot/"~instrument_lights, 1), props.globals.getNode(instrument_lights), props.globals.getNode(instrument_lights), 0.001),
+      DCT.MostRecentSelector.new
+        (props.globals.getNode("dual-control/pilot/"~flaps_cmd, 1), props.globals.getNode(flaps_cmd), props.globals.getNode(flaps_cmd), 0.1),
+
   ];
 }
 

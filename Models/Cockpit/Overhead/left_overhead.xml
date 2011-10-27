@@ -17,7 +17,7 @@
     <text type="string">Master Battery</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -55,14 +55,14 @@
   <text>
     <name>landing_light</name>
     <type type="string">literal</type>
-    <text type="string">Landing light         Left    Right</text>
+    <text type="string">Landing light  Left    Right</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
-    <max-width>0.05</max-width>
+    <max-width>0.045</max-width>
     <font-resolution>
       <width type="int">32</width>
       <height type="int">32</height>
@@ -96,10 +96,10 @@
   <text>
     <name>oil_dilution</name>
     <type type="string">literal</type>
-    <text type="string">Oil dilution          Left    Right</text>
+    <text type="string">  Oil dilution     Left    Right</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -131,7 +131,7 @@
     <text type="string">Parachute signal</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -163,7 +163,7 @@
     <text type="string">Passing light</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -201,10 +201,10 @@
   <text>
     <name>pitot_heater</name>
     <type type="string">literal</type>
-    <text type="string">Pitot de-icer         Left    Right</text>
+    <text type="string"> Pitot de-icer  Left    Right</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -236,7 +236,7 @@
     <text type="string">Propeller de-icer</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -268,7 +268,7 @@
     <text type="string">Running light</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -300,7 +300,7 @@
     <text type="string">Tail light</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -332,7 +332,7 @@
     <text type="string">Window de-icer</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -364,7 +364,7 @@
     <text type="string">Compass light</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -377,7 +377,7 @@
     <offsets>
       <x-m>  0 </x-m>
       <y-m>  0.025 </y-m>
-      <z-m>  0.091 </z-m>
+      <z-m>  0.081 </z-m>
     </offsets>
   </text>
 
@@ -393,10 +393,10 @@
   <text>
     <name>instrument_light</name>
     <type type="string">literal</type>
-    <text type="string">Instrument light         -     +</text>
+    <text type="string">  Instrument light  -     +</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -408,8 +408,8 @@
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0 </x-m>
-      <y-m>  0.135 </y-m>
-      <z-m>  0.086 </z-m>
+      <y-m>  0.137 </y-m>
+      <z-m>  0.077 </z-m>
     </offsets>
   </text>
 
@@ -428,7 +428,7 @@
     <text type="string">Left propeller feather</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>

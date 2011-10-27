@@ -10,9 +10,9 @@
 
     <condition>
       <and>
-        <property>/gear/gear[1]/wow</property>
+        <property>gear/gear[1]/wow</property>
         <greater-than>
-          <property>/gear/gear[1]/rollspeed-ms</property>
+          <property>gear/gear[1]/rollspeed-ms</property>
           <value>15</value>
         </greater-than>
       </and>

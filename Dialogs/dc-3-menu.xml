@@ -7,10 +7,10 @@
       <label>Douglas DC3/C47</label>
       <enabled type="bool">true</enabled>
       <item>
-        <label>Autostart</label>
+        <label>Options</label>
         <binding>
-          <command>property-toggle</command>
-          <property>sim/model/start-idling</property>
+          <command>nasal</command>
+          <script>dc3.config_dlg.open()</script>
         </binding>
       </item>
       <item>
@@ -27,13 +27,6 @@
           <script>
             dual_control_tools.copilot_dialog.show(aircraft_dual_control.copilot_type);
           </script>
-        </binding>
-      </item>
-      <item>
-        <label>Toggle quality</label>
-        <binding>
-          <command>property-toggle</command>
-          <property>sim/model/high-quality</property>
         </binding>
       </item>
     </menu>

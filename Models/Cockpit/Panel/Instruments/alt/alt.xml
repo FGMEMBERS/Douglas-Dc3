@@ -39,10 +39,10 @@
     <object-name>alt-Needle2</object-name>
     <object-name>alt-Needle3</object-name>
     <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-    <red>0.8</red>
-    <green>0.4</green>
-    <blue>0.2</blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -62,7 +62,7 @@
     <type>rotate</type>
     <object-name>alt-Needle2</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.036</factor>
+    <factor>0.0036</factor>
     <axis> 
       <x> -1 </x>
       <y>  0 </y>
@@ -74,7 +74,27 @@
     <type>rotate</type>
     <object-name>alt-Needle3</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.0036</factor>
+    <factor>0.036</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>ingh</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <interpolation>
+      <entry><ind>28.1</ind><dep>0.0</dep></entry>
+      <entry><ind>31.0</ind><dep>336.7</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.030 </y-m>
+      <z-m> -0.030 </z-m>  
+    </center>
     <axis> 
       <x> -1 </x>
       <y>  0 </y>
@@ -120,7 +140,7 @@
       <binding>
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
-        <step>-0.01</step>
+        <step>0.01</step>
         <min>26.0</min>
         <max>33.0</max>
         <wrap>false</wrap>
@@ -133,7 +153,7 @@
       <binding>
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
-        <step>0.01</step>
+        <step>-0.01</step>
         <min>26.0</min>
         <max>33.0</max>
         <wrap>false</wrap>
@@ -178,7 +198,7 @@
       <binding>
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
-        <step>-0.01</step>
+        <step>0.01</step>
         <min>26.0</min>
         <max>33.0</max>
         <wrap>false</wrap>
@@ -191,7 +211,7 @@
       <binding>
         <command>property-adjust</command>
         <property>/instrumentation/altimeter/setting-inhg</property>
-        <step>0.01</step>
+        <step>-0.01</step>
         <min>26.0</min>
         <max>33.0</max>
         <wrap>false</wrap>

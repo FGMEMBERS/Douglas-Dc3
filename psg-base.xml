@@ -127,8 +127,10 @@
     <dc-3>
       <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>
     </dc-3>
   </nasal>
 

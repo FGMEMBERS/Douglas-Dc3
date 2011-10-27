@@ -1,90 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
 <PropertyList>
 
+  <!-- OSG Particles -->
   <particlesystem>
-    <name>tyre-smoke-n</name>
-    <texture>smoke.png</texture>
-    <emissive>false</emissive>
-    <lighting>false</lighting>
+    <name>smoke</name>
 
     <offsets>
-      <x-m> -0.3 </x-m>
-      <y-m>  0.0 </y-m>
-      <z-m>  0.0 </z-m>
+      <x-m>  -0.3000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>  90.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
     </offsets>
 
+    <texture>smoke.png</texture>
+
     <condition>
-      <property>engines/engine/cranking</property>
+        <property>controls/engines/engine[0]/starter</property>
     </condition>
 
-    <attach>world</attach>
+    <emissive>false</emissive>
+    <lighting>false</lighting>
+    <align>billboard</align> <!-- billboard / fixed -->
+    <attach>world</attach> <!-- world / local-->
 
     <placer>
-      <type>point</type>
+      <type>point</type> <!-- sector / segments / point -->
     </placer>
 
     <shooter>
-      <theta-min-deg> 84.0 </theta-min-deg>
-      <theta-max-deg> 86.0 </theta-max-deg>
-      <phi-min-deg>   -1.5 </phi-min-deg>
-      <phi-max-deg>    1.5 </phi-max-deg>
+      <theta-min-deg>1</theta-min-deg>
+      <theta-max-deg>2</theta-max-deg>
+      <phi-min-deg>1</phi-min-deg>
+      <phi-max-deg>2</phi-max-deg>
       <speed-mps>
-        <value> 70 </value>
-        <spread> 0 </spread>
+        <value>50</value>
+        <spread>0.5</spread>
       </speed-mps>
       <rotation-speed>
-        <x-max-deg-sec>  5 </x-max-deg-sec>
-        <x-min-deg-sec>  5 </x-min-deg-sec>
-        <y-max-deg-sec>  5 </y-max-deg-sec>
-        <y-min-deg-sec> 25 </y-min-deg-sec>
-        <z-max-deg-sec> 25 </z-max-deg-sec>
-        <z-min-deg-sec> 25 </z-min-deg-sec>
+        <x-min-deg-sec>0</x-min-deg-sec>
+        <y-min-deg-sec>0</y-min-deg-sec>
+        <z-min-deg-sec>0</z-min-deg-sec>
+        <x-max-deg-sec>1</x-max-deg-sec>
+        <y-max-deg-sec>1</y-max-deg-sec>
+        <z-max-deg-sec>1</z-max-deg-sec>
       </rotation-speed>
     </shooter>
 
     <counter>
       <particles-per-sec>
-        <value>  120 </value>
-        <spread>   5 </spread>
+        <value>120</value>
+        <spread>0</spread>
       </particles-per-sec>
     </counter>
-
-    <align>billboard</align>
 
     <particle>
       <start>
         <color>
-          <red><value>   0.30 </value></red>
-          <green><value> 0.30 </value></green>
-          <blue><value>  0.30 </value></blue>
-          <alpha><value> 0.05 </value></alpha>
+          <red><value>1</value></red>
+          <green><value>1</value></green>
+          <blue><value>1</value></blue>
+          <alpha><value>1</value></alpha>
         </color>
-        <size><value> 0.01 </value></size>
+        <size>
+          <value>0.2</value>
+        </size>
       </start>
+
       <end>
         <color>
-          <red><value>   0.6 </value></red>
-          <green><value> 0.6 </value></green>
-          <blue><value>  0.6 </value></blue>
-          <alpha><value> 1 </value></alpha>
+          <red><value>1</value></red>
+          <green><value>1</value></green>
+          <blue><value>1</value></blue>
+          <alpha><value>0</value></alpha>
         </color>
-        <size><value> 0.50 </value></size>
+        <size>
+          <value>3.0</value>
+        </size>
       </end>
+
       <life-sec>
-        <value> 0.8 </value>
+        <value>17</value>
       </life-sec>
-      <mass-kg>  0.025 </mass-kg>
-      <radius-m> 0.175 </radius-m>
+       
+      <mass-kg>0.05</mass-kg>
+      <radius-m>0.1</radius-m>
     </particle>
-
+     
     <program>
-      <fluid>   air  </fluid>
-      <gravity> true </gravity>
-      <wind>    true </wind>
+      <fluid>air</fluid>         <!-- air / water -->
+      <gravity>false</gravity>
+      <wind>true</wind>
     </program>
-
+     
   </particlesystem>
 
 </PropertyList>
-

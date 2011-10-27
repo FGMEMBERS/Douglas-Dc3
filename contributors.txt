@@ -8,6 +8,17 @@
 ######################################################################
 ######################################################################
 
+# 21/10/2011 ==> Christian Thiriot (Patten)
+-Amélioration et nettoyage de la texture cabine passagers (colors, et colorsHigh)
+-Création d'une texture cabine "Paras" en vue de l'activation de l'option "Military"
+-Amélioration des sons: cycle de démarrage, son pompe de gavage...
+-Amélioration des effets de fumée due au cycle de démarrage + proche de la réalité (cranking).
+-Texturages divers: wipers, tablettes de sièges en conformité avec les coffres à bagage, texture "center-console" en vue de la version Military.
+-Création d'une texture "Paras-prop" pour les hélices de la livrée "Paras".
+-Retouches sur la livrée "Paras" roues, ect...
+
+######################################################################
+
 # 17/09/2011 ==> (Helijah)
 - Ajout des hélices à pas variable
 

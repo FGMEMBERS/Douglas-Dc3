@@ -33,28 +33,32 @@
     <object-name>needleL</object-name>
     <object-name>needleR</object-name>
     <emission>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
-    <red>0.8</red>
-    <green>0.4</green>
-    <blue>0.2</blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
   <animation> 
     <type>rotate</type>
     <object-name>needleL</object-name>
-    <property>/engines/engine[0]/est-cht</property>
+    <property>engines/engine/cyl-temp</property>
     <interpolation>
-      <entry><ind>   0 </ind><dep>    0 </dep></entry>
-	    <entry><ind> 572 </ind><dep> -120 </dep></entry>
+      <entry><ind>   0 </ind><dep>   0.00 </dep></entry>
+      <entry><ind>  50 </ind><dep>  12.75 </dep></entry>
+      <entry><ind> 100 </ind><dep>  28.00 </dep></entry>
+      <entry><ind> 200 </ind><dep>  60.00 </dep></entry>
+      <entry><ind> 300 </ind><dep>  95.50 </dep></entry>
+      <entry><ind> 400 </ind><dep> 124.00 </dep></entry>
     </interpolation>
     <center>
-      <x-m> 0.0015 </x-m>
-      <y-m> 0.0206 </y-m>
-      <z-m> 0.0037 </z-m>  
+      <x-m>  0.000 </x-m>
+      <y-m> -0.023 </y-m>
+      <z-m>  0.000 </z-m>  
     </center>
     <axis> 
-      <x> -1 </x>
+      <x> 1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
@@ -63,20 +67,24 @@
   <animation> 
     <type>rotate</type>
     <object-name>needleR</object-name>
-    <property>/engines/engine[1]/est-cht</property>
+    <property>engines/engine[1]/cyl-temp</property>
     <interpolation>
-      <entry><ind>   0 </ind><dep>   0 </dep></entry>
-	    <entry><ind> 572 </ind><dep> 120 </dep></entry>
+      <entry><ind>   0 </ind><dep>   0.00 </dep></entry>
+      <entry><ind>  50 </ind><dep>  12.75 </dep></entry>
+      <entry><ind> 100 </ind><dep>  28.00 </dep></entry>
+      <entry><ind> 200 </ind><dep>  60.00 </dep></entry>
+      <entry><ind> 300 </ind><dep>  95.50 </dep></entry>
+      <entry><ind> 400 </ind><dep> 124.00 </dep></entry>
     </interpolation>
     <center>
-      <x-m> -0.0015 </x-m>
-      <y-m> -0.0206 </y-m>
-      <z-m> -0.0037 </z-m> 
+      <x-m> 0.000 </x-m>
+      <y-m> 0.023 </y-m>
+      <z-m> 0.000 </z-m>  
     </center>
     <axis> 
       <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

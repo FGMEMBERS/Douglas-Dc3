@@ -17,6 +17,8 @@
     <object-name>axeD4</object-name>
     <object-name>roueD</object-name>
     <object-name>axeA</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>axeA3</object-name>
     <object-name>roueA</object-name>
   </animation>
 
@@ -33,6 +35,8 @@
     <object-name>axeD4</object-name>
     <object-name>roueD</object-name>
     <object-name>axeA</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>axeA3</object-name>
     <object-name>roueA</object-name>
 
     <property-base>sim/model/livery</property-base>
@@ -295,6 +299,33 @@
       <x> 0 </x>
       <y> 0 </y>
       <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>Roulette</name>
+    <object-name>axeA</object-name>
+    <object-name>axeA3</object-name>
+    <object-name>roueA</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Roulette</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  5 </dep></entry>
+      <entry><ind> 1 </ind><dep> -2 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  6.568 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.645 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

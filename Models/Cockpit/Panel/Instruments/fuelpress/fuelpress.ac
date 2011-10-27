@@ -2267,10 +2267,10 @@ refs 4
 88 0.341691225767 0.496516853571
 kids 0
 OBJECT poly
-name "needle1.001"
+name "needle2"
 loc 0.001364 -0.000166 -0.000006
 data 11
-needle1.001
+needle2
 texture "fuelpress.png"
 texrep 1 1
 numvert 128

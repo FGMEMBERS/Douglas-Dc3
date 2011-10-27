@@ -11,6 +11,8 @@
     <object-name>RudL</object-name>
     <object-name>RudR</object-name>
     <object-name>Ele</object-name>
+    <object-name>EleL</object-name>
+    <object-name>EleR</object-name>
     <object-name>Conserv</object-name>
     <object-name>ConservL</object-name>
     <object-name>ConservR</object-name>
@@ -18,6 +20,8 @@
     <object-name>sensitivity2</object-name>
     <object-name>sensitivity3</object-name>
     <object-name>Ail</object-name>
+    <object-name>AilL</object-name>
+    <object-name>AilR</object-name>
     <object-name>OnOff</object-name>
   </animation>
   
@@ -69,7 +73,7 @@
       <binding>
         <command>property-adjust</command>
         <property>autopilot/settings/heading-bug-deg</property>
-        <step>-1</step>
+        <step>1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
@@ -82,7 +86,7 @@
       <binding>
         <command>property-adjust</command>
         <property>autopilot/settings/heading-bug-deg</property>
-        <step>1</step>
+        <step>-1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
@@ -127,7 +131,7 @@
       <binding>
         <command>property-adjust</command>
         <property>autopilot/settings/heading-bug-deg</property>
-        <step>-1</step>
+        <step>1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
@@ -140,7 +144,7 @@
       <binding>
         <command>property-adjust</command>
         <property>autopilot/settings/heading-bug-deg</property>
-        <step>1</step>
+        <step>-1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
@@ -186,7 +190,7 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/heading-indicator/offset-deg</property>
-        <step>-1</step>
+        <step>1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
@@ -199,7 +203,7 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/heading-indicator/offset-deg</property>
-        <step>1</step>
+        <step>-1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
@@ -244,7 +248,7 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/heading-indicator/offset-deg</property>
-        <step>-1</step>
+        <step>1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
@@ -257,10 +261,255 @@
       <binding>
         <command>property-adjust</command>
         <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- AIL -->
+  <animation>
+    <type>pick</type>
+    <object-name>AilL</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>-5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small decrease (scrollwheel)</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
         <step>1</step>
         <min>0</min>
         <max>360</max>
         <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small increase (scrollwheel)</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>AilR</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small increase</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large increase</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>5</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small decrease (scrollwheel)</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small increase (scrollwheel)</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/heading-indicator/offset-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- ELE -->
+  <animation>
+    <type>pick</type>
+    <object-name>EleL</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>-0.1</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>-0.8</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small decrease</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>0.1</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large decrease</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>-0.1</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>EleR</object-name>
+    <visible>false</visible>
+    <action>
+      <name>small decrease</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>0.1</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>0.8</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small decrease</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>0.1</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>  
+    <action>
+      <name>large decrease</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/target-pitch-deg</property>
+        <step>-0.1</step>
+        <min>-10</min>
+        <max>10</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>OnOff</object-name>
+    <action>
+      <binding>
+        <command>property-toggle</command>
+        <property>autopilot/active</property>
       </binding>
     </action>
   </animation>

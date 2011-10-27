@@ -17,7 +17,7 @@
     <text type="string">Left voltmeter</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -49,7 +49,7 @@
     <text type="string">Right voltmeter</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -81,7 +81,7 @@
     <text type="string">Voltmeter light</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -113,7 +113,7 @@
     <text type="string">Recognition</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -151,10 +151,10 @@
   <text>
     <name>engine_starter</name>
     <type type="string">literal</type>
-    <text type="string">Engine starter        Left    Right</text>
+    <text type="string"> Engine starter   Left    Right</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -192,10 +192,10 @@
   <text>
     <name>booster_pump</name>
     <type type="string">literal</type>
-    <text type="string">Booster pump          Left    Right</text>
+    <text type="string">  Booster pump    Left    Right</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -227,7 +227,7 @@
     <text type="string">Carburator de-icer</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -259,7 +259,7 @@
     <text type="string">Right propeller feather</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -291,7 +291,7 @@
     <text type="string">Formation light</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -323,7 +323,7 @@
     <text type="string">Cockpit light</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -336,7 +336,7 @@
     <offsets>
       <x-m>  0 </x-m>
       <y-m>  0.076 </y-m>
-      <z-m>  0.073 </z-m>
+      <z-m>  0.0716 </z-m>
     </offsets>
   </text>
 
@@ -356,7 +356,7 @@
     <text type="string">unused</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -385,10 +385,10 @@
   <text>
     <name>recognition_1</name>
     <type type="string">literal</type>
-    <text type="string">Recognition light     1     2     3</text>
+    <text type="string">  Recognition light    1       2       3</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.007</character-size>
+    <character-size type="double">0.006</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
     <max-height>0.06</max-height>
@@ -401,7 +401,7 @@
     <offsets>
       <x-m>  0 </x-m>
       <y-m>  0.169 </y-m>
-      <z-m>  0.006 </z-m>
+      <z-m>  0.004 </z-m>
     </offsets>
   </text>
 

@@ -7,6 +7,29 @@
   Clément de L'Hamaide "F-JJTH"
   Christian Thiriot "Patten" 
   Septembre 2011
+  Séquence de démarrage modifiée le 18 Octobre 2011.
+     Liste des fichiers sons au 19 Octobre 2011:
+       Alarme_decrochage      
+       Alarme_trains.wav
+       Appel_hotesse.wav
+       Arret_moteur_ext1.wav
+       Arret_moteur_int1.wav
+       click.wav
+       Croisiere_ext_1.wav
+       Croisiere_ext_2.wav
+       Croisiere_int_1.wav
+       Croisiere_int_2.wav
+       Demarrage.wav
+       Freinage.wav
+       Lancement.wav
+       Pompe_gavage.wav
+       Ralenti.wav
+       Roulage.wav
+       Touche.wav
+       Trains.wav
+       Vent.wav
+       Verrouillage_trains.wav
+       Volets.wav
 
 -->
 
@@ -15,7 +38,7 @@
   <fx>
     <crank>
       <name>engstart1</name>
-      <path>Aircraft/Douglas-Dc3/Sounds/Cranking.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Lancement.wav</path>
       <property>/engines/engine[0]/cranking</property>
       <volume> 
         <property>/orientation/alpha-deg</property>
@@ -33,7 +56,7 @@
 
     <crank>
       <name>cough1</name>
-      <path>Aircraft/Douglas-Dc3/Sounds/starter.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Demarrage.wav</path>
       <property>/engines/engine[0]/running</property>
       <volume> 
         <property>/orientation/alpha-deg</property>
@@ -52,7 +75,7 @@
     <crank>
       <name>crank1</name>
       <mode>looped</mode>
-      <path>Aircraft/Douglas-Dc3/Sounds/Cranking.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Lancement.wav</path>
       <condition>
         <property>engines/engine[0]/cranking</property>
         <not>
@@ -68,7 +91,7 @@
 
     <engine>
       <name>engine early start1</name>
-      <path>Aircraft/Douglas-Dc3/Sounds/starter.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Demarrage.wav</path>
       <property>/engines/engine[0]/cranking</property>
       <condition>
         <less-than>
@@ -95,10 +118,48 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
+                       <!--Ralenti-->
+
+ <engine>
+        <name>engine1_idle</name>
+        <mode>looped</mode>
+        <path>Aircraft/Douglas-Dc3/Sounds/Ralenti.wav</path>
+        <condition>
+            <and>
+                <property>engines/engine[0]/running</property>
+                <less-than>
+                    <property>engines/engine[0]/rpm</property>
+                    <value>1700</value>
+                </less-than>
+            </and>
+        </condition>
+            <volume>
+                <property>engines/engine[0]/mp-osi</property>
+                <factor>0.009</factor>
+                <min>0.15</min>
+                <max>0.6</max>
+                <offset>0.15</offset>
+            </volume>
+            <pitch>
+                <property>engines/engine[0]/rpm</property>
+                <factor>0.0004</factor>
+                <min>0.1</min>
+                <max>2.0</max>
+                <offset>0.3</offset>
+            </pitch>
+        <position>
+            <x>-3.10</x>
+            <y>8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </engine>
+
 
   <stopext>
     <name>stopextLeft</name>
-    <path>Aircraft/Douglas-Dc3/Sounds/eng_stop_ext1.wav</path>
+    <path>Aircraft/Douglas-Dc3/Sounds/Arret_moteur_ext1.wav</path>
     <condition>
       <not>
         <property>/engines/engine[0]/running</property>
@@ -120,7 +181,7 @@
 
   <stop>
 	<name>stopLeft</name>
-	<path>Aircraft/Douglas-Dc3/Sounds/eng_stop_int1.wav</path>
+	<path>Aircraft/Douglas-Dc3/Sounds/Arret_moteur_int1.wav</path>
 	<condition>
 	   <not>
 	     <property>/engines/engine[0]/running</property>
@@ -140,10 +201,12 @@
      </position>
   </stop>
 
+
+
   <engine>
 	<name>engineLeft</name>
 	 <mode>looped</mode>
-	  <path>Aircraft/Douglas-Dc3/Sounds/eng_run_ext1_loop.wav</path>
+	  <path>Aircraft/Douglas-Dc3/Sounds/Croisiere_ext_1.wav</path>
 	<condition>
 	   <and>
 	    <property>/engines/engine[0]/running</property>
@@ -177,7 +240,7 @@
  <engine>
 	<name>engineextslowLeft</name>
 	  <mode>looped</mode>
-		<path>Aircraft/Douglas-Dc3/Sounds/eng_run_ext3_slow.wav</path>
+		<path>Aircraft/Douglas-Dc3/Sounds/Croisiere_ext_2.wav</path>
 	<condition>
 	  <and>
 		<property>/engines/engine[0]/running</property>
@@ -211,7 +274,7 @@
   <propellerhigh>
 			<name>propellerhighLeft</name>
 			<mode>looped</mode>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_run_int_4430.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Croisiere_int_1.wav</path>
 			<condition>
 				<and>
 					<property>/engines/engine[0]/running</property>
@@ -220,7 +283,7 @@
 			</condition>
 			<volume>
 				<property>engines/engine[0]/mp-osi</property>
-				<factor>0.00375</factor>
+				<factor>0.04</factor>
 				<min>0.5</min>
 				<max>2.0</max>
 			</volume>
@@ -254,7 +317,7 @@
 		<propellerlow>
 			<name>propellerlowLeft</name>
 			<mode>looped</mode>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_run_int_1340.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Croisiere_int_2.wav</path>
 			<condition>
 				<and>
 					<property>/engines/engine[0]/running</property>
@@ -263,7 +326,7 @@
 			</condition>
 			<volume>
 				<property>engines/engine[0]/mp-osi</property>
-				<factor>0.00375</factor>
+				<factor>0.4</factor>
 				<min>0.5</min>
 				<max>2.0</max>
 			</volume>
@@ -297,7 +360,7 @@
 
  <crank>
       <name>engstart2</name>
-      <path>Aircraft/Douglas-Dc3/Sounds/Cranking.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Lancement.wav</path>
       <property>/engines/engine[1]/cranking</property>
       <volume> 
         <property>/orientation/alpha-deg</property>
@@ -315,7 +378,7 @@
 
     <crank>
       <name>cough2</name>
-      <path>Aircraft/Douglas-Dc3/Sounds/starter.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Demarrage.wav</path>
       <property>/engines/engine[1]/running</property>
       <volume> 
         <property>/orientation/alpha-deg</property>
@@ -334,7 +397,7 @@
     <crank>
       <name>crank2</name>
       <mode>looped</mode>
-      <path>Aircraft/Douglas-Dc3/Sounds/Cranking.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Lancement.wav</path>
       <condition>
         <property>engines/engine[1]/cranking</property>
         <not>
@@ -350,7 +413,7 @@
 
     <engine>
       <name>engine early start2</name>
-      <path>Aircraft/Douglas-Dc3/Sounds/starter.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Demarrage.wav</path>
       <property>/engines/engine[1]/cranking</property>
       <condition>
         <less-than>
@@ -378,9 +441,45 @@
       <max-dist>1000</max-dist>
     </engine>
 
+<engine>
+        <name>engine2_idle</name>
+        <mode>looped</mode>
+        <path>Aircraft/Douglas-Dc3/Sounds/Ralenti.wav</path>
+        <condition>
+            <and>
+                <property>engines/engine[1]/running</property>
+                <less-than>
+                    <property>engines/engine[1]/rpm</property>
+                    <value>1700</value>
+                </less-than>
+            </and>
+        </condition>
+            <volume>
+                <property>engines/engine[1]/mp-osi</property>
+                <factor>0.009</factor>
+                <min>0.15</min>
+                <max>0.6</max>
+                <offset>0.15</offset>
+            </volume>
+            <pitch>
+                <property>engines/engine[1]/rpm</property>
+                <factor>0.0004</factor>
+                <min>0.1</min>
+                <max>2.0</max>
+                <offset>0.3</offset>
+            </pitch>
+        <position>
+            <x>-3.10</x>
+            <y>8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </engine>
+
 		<stopext>
 			<name>stopextRight</name>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_stop_int1.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Arret_moteur_ext1.wav</path>
 			<condition>
 				<not>
 					<property>/engines/engine[1]/running</property>
@@ -402,7 +501,7 @@
 
 		<stop>
 			<name>stopRight</name>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_stop_int1.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Arret_moteur_int1.wav</path>
 			<condition>
 				<not>
 					<property>/engines/engine[1]/running</property>
@@ -425,7 +524,7 @@
 		<engine>
 			<name>engineRight</name>
 			<mode>looped</mode>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_run_ext1_loop.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Croisiere_ext_1.wav</path>
 			<condition>
 				<and>
 					<property>/engines/engine[1]/running</property>
@@ -459,7 +558,7 @@
 		<engine>
 			<name>engineextslowRight</name>
 			<mode>looped</mode>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_run_ext3_slow.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Croisiere_ext_2.wav</path>
 			<condition>
 				<and>
 					<property>/engines/engine[1]/running</property>
@@ -493,7 +592,7 @@
 		<propellerhigh>
 			<name>propellerhighRight</name>
 			<mode>looped</mode>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_run_int_4430.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Croisiere_int_1.wav</path>
 			<condition>
 				<and>
 					<property>/engines/engine[1]/running</property>
@@ -536,7 +635,7 @@
 		<propellerlow>
 			<name>propellerlowRight</name>
 			<mode>looped</mode>
-			<path>Aircraft/Douglas-Dc3/Sounds/eng_run_int_1340.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Croisiere_int_2.wav</path>
 			<condition>
 				<and>
 					<property>/engines/engine[1]/running</property>
@@ -569,7 +668,7 @@
 		<rumble>
 			<name>rumble</name>
 			<mode>looped</mode>
-			<path>Aircraft/Douglas-Dc3/Sounds/rumble.wav</path>
+			<path>Aircraft/Douglas-Dc3/Sounds/Roulage.wav</path>
 			<condition>
 				<or>
 					<property>/gear/gear[0]/wow</property>
@@ -597,7 +696,7 @@
 
 		<squeal>
 			<name>squeal</name>
-			<path>Aircraft/Douglas-Dc3//Sounds/wow.wav</path>
+			<path>Aircraft/Douglas-Dc3//Sounds/Touche.wav</path>
 			<condition>
 				<or>
 					<property>/gear/gear[0]/wow</property>
@@ -632,71 +731,19 @@
  <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Aircraft/Douglas-Dc3/Sounds/flaps.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Volets.wav</path>
       <property>surface-positions/flap-pos-norm</property>
       <volume>
-        <factor>1</factor>
+        <max>1</max>
       </volume>
       <reference-dist>10.0</reference-dist>
       <max-dist>20.0</max-dist>
     </flap>
-       
-        <gear-warn>
-            <name>gear warning</name>
-            <mode>looped</mode>
-            <path>Aircraft/Douglas-Dc3/Sounds/gear-hrn.wav</path>
-            <condition>
-             <not>
-               <property>controls/electric/circuitbreaker/cb_0_6</property>
-             </not>
-             <or>
-              <and>
-                <property>gear/gear[1]/wow</property>
-                <not>
-                  <property>controls/gear/gear-down</property>
-                </not>
-              </and>
-              <and>
-                <or>
-                  <less-than>
-                    <property>gear/gear[0]/position-norm</property>
-                    <value>0.95</value>
-                  </less-than>
-                  <less-than>
-                    <property>gear/gear[1]/position-norm</property>
-                    <value>0.95</value>
-                  </less-than>
-                  <less-than>
-                    <property>gear/gear[2]/position-norm</property>
-                    <value>0.95</value>
-                  </less-than>
-                </or>
-                <or>
-                  <less-than>
-                    <property>engines/engine/mp-inhg</property>
-                    <value>2</value>
-                  </less-than>
-                  <less-than>
-                    <property>engines/engine[1]/mp-inhg</property>
-                    <value>1</value>
-                  </less-than>
-                </or>
-              </and>
-             </or>
-            </condition>
-            <position>
-              <x>-2.0</x>
-              <y>0.40</y>
-              <z>1.40</z>
-            </position>
-            <reference-dist>2.0</reference-dist>
-            <max-dist>5.0</max-dist>
-        </gear-warn>
 
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Aircraft/Douglas-Dc3/Sounds/gear.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Trains.wav</path>
       <property>gear/gear[0]/position-norm</property>
       <volume>
         <max>1</max>
@@ -705,7 +752,7 @@
 
     <gear-lock>
       <name>gear-lock</name>
-      <path>Sounds/gear-lck.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Verrouillage_trains.wav</path>
       <condition>
         <equals>
           <property>gear/gear[0]/position-norm</property>
@@ -716,10 +763,10 @@
       <max-dist>20.0</max-dist>
     </gear-lock>
 
-    <!--Toucher du sol -->
+   
     <squeal>
       <name>squeal</name>
-      <path>Aircraft/Douglas-Dc3/Sounds/squeal.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Freinage.wav</path>
       <condition>
         <or>
           <property>gear/gear[0]/wow</property>
@@ -751,7 +798,7 @@
     <wind>
       <name>wind</name>
       <mode>looped</mode>
-      <path>Aircraft/Douglas-Dc3/Sounds/wind.wav</path>
+      <path>Aircraft/Douglas-Dc3/Sounds/Vent.wav</path>
       <property>/velocities/airspeed-kt</property>
       <volume>
 				<property>/position/altitude-ft</property>
@@ -772,8 +819,7 @@
 				<offset>1.25</offset>
 			</pitch>
 		</wind>
-
-		<!--                  Toggle Switches  -->                     
+                     
 		<click>
       <name>clickOn</name>
       <path>Aircraft/Douglas-Dc3/Sounds/click.wav</path>
@@ -796,6 +842,181 @@
       </volume>
     </click>
 
+<pump>
+        <name>fuel pumpL</name>
+        <mode>looped</mode>
+        <path>Aircraft/Douglas-Dc3/Sounds/Pompe_gavage.wav</path>
+        <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/boost-pump</property>
+                <value>0.1</value>
+            </greater-than>
+        </condition>
+        <volume>
+            <offset>0.5</offset>
+        </volume>
+        <position>
+            <x>-0.5</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>0.5</reference-dist>
+        <max-dist>1.0</max-dist>
+    </pump>
+<pump>
+        <name>fuel pumpR</name>
+        <mode>looped</mode>
+        <path>Aircraft/Douglas-Dc3/Sounds/Pompe_gavage.wav</path>
+        <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/boost-pump[1]</property>
+                <value>0.1</value>
+            </greater-than>
+        </condition>
+        <volume>
+            <offset>0.5</offset>
+        </volume>
+        <position>
+            <x>-0.5</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>0.5</reference-dist>
+        <max-dist>1.0</max-dist>
+    </pump>
+                                          <!-- A tester et a régler
+ <gear-warn>
+            <name>gear warning</name>
+            <mode>looped</mode>
+            <path>Aircraft/Douglas-Dc3/Sounds/Alarme_Trains.wav</path>
+            <condition>
+             <not>
+               <property>controls/electric/circuitbreaker/cb_0_6</property>
+             </not>
+             <or>
+              <and>
+                <property>gear/gear[1]/wow</property>
+                <not>
+                  <property>controls/gear/gear-down</property>
+                </not>
+              </and>
+              <and>
+                <or>
+                  <less-than>
+                    <property>gear/gear[0]/position-norm</property>
+                    <value>0</value>
+                  </less-than>
+                  <less-than>
+                    <property>gear/gear[1]/position-norm</property>
+                    <value>0</value>
+                  </less-than>
+                  <less-than>
+                    <property>gear/gear[2]/position-norm</property>
+                    <value>0</value>
+                  </less-than>
+                </or>
+                <or>
+                  <less-than>
+                    <property>engines/engine/mp-inhg</property>
+                    <value>15</value>
+                  </less-than>
+                  <less-than>
+                    <property>engines/engine[1]/mp-inhg</property>
+                    <value>15</value>
+                  </less-than>
+                </or>
+              </and>
+             </or>
+            </condition>
+            <position>
+              <x>-2.0</x>
+              <y>0.40</y>
+              <z>1.40</z>
+            </position>
+            <reference-dist>2.0</reference-dist>
+            <max-dist>5.0</max-dist>
+        </gear-warn>
+                            -->     <!-- A tester et à régler
+<stall>
+            <name>stall</name>
+            <path>Aircraft/Douglas-Dc3/Sounds/Alarme_decrochage.wav</path>
+            <condition>
+              <not>
+                <property>gear/gear[0]/wow</property>
+              </not>
+            </condition>
+            <property>sim/alarms/stall-warning</property>
+            <volume>
+                <property>velocities/airspeed-kt</property>
+                <min>90.0</min>
+            </volume>
+            <reference-dist>10.0</reference-dist>
+            <max-dist>20.0</max-dist>
+        </stall>
+                                                                            -->                           
+<!--stall>
+			<name>stall</name>
+			<mode>looped</mode>
+			<path>Aircraft/Douglas-Dc3/Sounds/Alarme_Trains.wav</path>
+				<condition>
+					<and>
+							<property>controls/electric/battery-switch</property>
+						<less-than>
+							<property>velocities/airspeed-kt</property>
+								<value>80</value>
+						</less-than>
+					<not>
+							<property>/gear/gear[0]/wow</property>
+							<property>/gear/gear[1]/wow</property>
+							<property>/gear/gear[2]/wow</property>
+					</not>
+					</and>
+				</condition>
+				<volume>
+							<property>/sim/model/sound/volume</property>
+				</volume>
+			<reference-dist>4.0</reference-dist>
+			<max-dist>10.0</max-dist>
+		</stall>                            
+-->
+                                                       <!-- a venir avec l'hotesse :-)
+ <seatbelt>
+        <name>Seatbelt sign</name>
+        <path>Aircraft/Douglas-Dc3/Sounds/Appel_hotesse.wav</path>
+        <mode>once</mode>
+        <condition>
+            <property>sim/sound/seatbelt-sign</property>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0.00</x>
+            <y>0.00</y>
+            <z>0.00</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>100.0</max-dist>
+    </seatbelt>
+    <nosmoke>
+        <name>No smoking sign</name>
+        <path>Aircraft/Douglas-Dc3/Sounds/Appel_hotesse.wav</path>
+        <mode>once</mode>
+        <condition>
+            <property>sim/sound/no-smoking-sign</property>
+        </condition>
+        <volume>
+            <property>sim/sound/effects/volume</property>
+        </volume>
+        <position>
+            <x>0.00</x>
+            <y>0.00</y>
+            <z>0.00</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>100.0</max-dist>
+    </nosmoke>
+                           -->
 	</fx>
 
 </PropertyList>

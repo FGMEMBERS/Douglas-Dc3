@@ -18,27 +18,30 @@
   <approach speed="70" aoa="4" fuel="0.2">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.57"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.9"/>
     <control-setting axis="/controls/engines/engine[0]/boost" value="0"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.4"/>
+
     <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.57"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.9"/>
     <control-setting axis="/controls/engines/engine[1]/boost" value="0"/>
     <control-setting axis="/controls/flight/flaps" value="1"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
   <cruise speed="130" alt="15000" fuel="0.5">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/throttle" value=".75"/>
+
     <control-setting axis="/controls/engines/engine[0]/mixture" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.9"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.8"/>
     <control-setting axis="/controls/engines/engine[0]/boost" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value=".75"/>
     <control-setting axis="/controls/engines/engine[1]/mixture" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.9"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.8"/>
     <control-setting axis="/controls/engines/engine[1]/boost" value="1"/>
     <control-setting axis="/controls/flight/flaps" value="0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
+
   </cruise>
 
   <cockpit x="7.931" y="0.407" z="0.431"/>
@@ -62,6 +65,7 @@
   </mstab>
 
   <!-- Wing -->
+
   <wing x="2.784" y="3.444" z="-1.255"
         chord="4.415"
         length="11.245"
@@ -70,7 +74,7 @@
         dihedral="8"
         camber="0.2">
         <stall aoa="16" width="6" peak="2.0"/>
-        <flap0 start="0.00" end="0.26" lift="1.6" drag="1.6"/>
+        <flap0 start="0.00" end="0.26" lift="1.35" drag="2.5"/> <!-- 1.6 1.6 -->
         <flap1 start="0.26" end="0.93" lift="1.6" drag="1.5"/>
 
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
@@ -91,6 +95,7 @@
          length="4.123"
          taper="0.5"
          sweep="12">
+
          <stall aoa="14" width="4" peak="2.5"/>
          <flap0 start="0.1" end="1.0" lift="1.6" drag="1.5"/>
 
@@ -101,7 +106,16 @@
   </hstab>
 
   <!-- Ruder -->
-  <vstab x="-7.841" y="0" z="-0.020"
+
+  <vstab x="-4.3" y="0" z="-0.020"
+         chord="4.5"
+         length="1.24"
+         sweep="1"
+         taper="1">
+         <stall aoa="12" width="4" peak="1.5"/>
+</vstab>
+
+   <vstab x="-7.841" y="0" z="-0.020"
          chord="4.019"
          length="3.620"
          sweep="10"
@@ -130,19 +144,20 @@
              mass="1250"
              moment="5"
              radius="1.7785"
-             min-rpm="250"
+             min-rpm="600"
              max-rpm="2700" 
              cruise-speed="130"
              cruise-rpm="2325"
-             cruise-power="700"
+             cruise-power="800"
              cruise-alt="13120">
              <actionpt x="7.070" y="2.814" z="-1.194"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <control-input axis="/controls/engines/engine[0]/propeller-feather" control="PROPFEATHER"/>
+
              <piston-engine eng-power="1200"
                             eng-rpm="2700"
                             compression="6.7"
-                            turbo-mul="1.5"
+                            turbo-mul="2.5"
                             displacement="1829.4">
                             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
                             <control-input axis="/engines/engine[0]/cranking" control="STARTER"/>
@@ -157,11 +172,11 @@
              mass="1250"
              moment="5"
              radius="1.7785"
-             min-rpm="250"
+             min-rpm="600"
              max-rpm="2700" 
              cruise-speed="130"
              cruise-rpm="2325"
-             cruise-power="700"
+             cruise-power="800"
              cruise-alt="13120">
              <actionpt x="7.070" y="-2.814" z="-1.194"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
@@ -169,7 +184,7 @@
              <piston-engine eng-power="1200"
                             eng-rpm="2700"
                             compression="6.7"
-                            turbo-mul="1.5"
+                            turbo-mul="2.5"
                             displacement="1829.4">
                             <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
                             <control-input axis="/engines/engine[1]/cranking" control="STARTER"/>
@@ -185,8 +200,9 @@
         retract-time="7"
         spring="1" 
         damp="2">
-        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-left-apply" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-speed control="EXTEND" transition-time="5.1"/>
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
@@ -198,8 +214,9 @@
         retract-time="7"
         spring="1" 
         damp="2">
-        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-right-apply" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-speed control="EXTEND" transition-time="5.2"/>
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
@@ -213,15 +230,16 @@
         damp="2">
         <!--dst0="0.8" dst1="-0.8"-->
         <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.2" dst1="-0.2"/>
-        <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING" />
+        <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING"/>
   </gear>
 
-  <tank x="1.756" y=" 6" z="-0.880" capacity="2466"/>
-  <tank x="1.756" y="-6" z="-0.880" capacity="2466"/>
+  <tank x="1.756" y=" 6" z="-0.880" capacity="1206"/> <!-- Tank Aux Right -->
+  <tank x="1.756" y="-6" z="-0.880" capacity="1260"/> <!-- Tank Main Right -->
+  <tank x="1.756" y=" 6" z="-0.880" capacity="1260"/> <!-- Tank Main Left -->
+  <tank x="1.756" y="-6" z="-0.880" capacity="1206"/> <!-- Tank Aux Left -->
 
   <!-- CG placement -->
-  <ballast x="7" y="0" z="-4" mass="2000"/>
-  <ballast x="-7" y="0" z="4" mass="-2000"/>
+  <!--<ballast x="7" y="0" z="-4" mass="2000"/>
+  <ballast x="-7" y="0" z="4" mass="-2000"/>-->
 
 </airplane>
-

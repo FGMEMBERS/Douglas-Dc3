@@ -3,6 +3,8 @@
 <PropertyList>
 
   <sim include="Nasal/views.xml">
+
+    <tutorials include="Tutorials/dc-3-tutorials.xml"/>
  
     <author>BARANGER Emmanuel (3D)</author>
     <aircraft-version>0.1</aircraft-version>
@@ -99,7 +101,15 @@ Right voltmeter ->
     </help>
 
     <model>
-      <high-quality type="bool">false</high-quality>
+      <start-idling type="bool">false</start-idling>
+      <config>
+        <show-yokes type="bool">true</show-yokes>
+        <show-pilot type="bool">true</show-pilot>
+        <show-copilot type="bool">true</show-copilot>
+        <textures-high type="bool">false</textures-high>
+        <details-high type="bool">false</details-high>
+        <version type="string">civilian</version>
+      </config>
     </model>
 
     <menubar include="Dialogs/dc-3-menu.xml"/>
@@ -109,6 +119,10 @@ Right voltmeter ->
     <remote>
      <pilot-callsign type="string"/>
     </remote>
+
+    <freeze>
+      <fuel type="bool">true</fuel>
+    </freeze>
 
     <multiplay n="0">
       <chat_display>1</chat_display>
@@ -136,22 +150,19 @@ Right voltmeter ->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m">  0 </float>  <!-- 11 altitude for MP shadow -->
-	<float n="3" alias="/surface-positions/flap-pos-norm"/>
-	<float n="4" alias="/controls/flight/elevator-trim"/>
-        <float n="5" alias="/controls/flight/rudder"/>
-	<float n="6" alias="/controls/flight/elevator"/>
-	<float n="7" alias="/controls/flight/aileron"/>
-	<float n="8" alias="/controls/engines/engine[0]/throttle"/>
-	<float n="9" alias="/controls/engines/engine[1]/throttle"/>
-	<float n="10" alias="/controls/engines/engine[0]/mixture"/>
-	<float n="11" alias="/controls/engines/engine[1]/mixture"/>
-	<float n="12" alias="/controls/engines/engine[0]/propeller-pitch"/>
-	<float n="13" alias="/controls/engines/engine[1]/propeller-pitch"/>
-	<float n="14" alias="/controls/gear/brake-left"/>
-	<float n="15" alias="/controls/gear/brake-right"/>
-        <float n="16" alias="/gear/gear[0]/position-norm"/>
-	<float n="17" alias="/controls/flight/rudder-trim"/>
-	<float n="18" alias="/controls/flight/aileron-trim"/>
+	<float n="3" alias="/controls/flight/elevator-trim"/>
+	<float n="4" alias="/controls/flight/rudder-trim"/>
+	<float n="5" alias="/controls/flight/aileron-trim"/>
+	<float n="6" alias="/controls/engines/engine[0]/throttle"/>
+	<float n="7" alias="/controls/engines/engine[1]/throttle"/>
+	<float n="8" alias="/controls/engines/engine[0]/mixture"/>
+	<float n="9" alias="/controls/engines/engine[1]/mixture"/>
+	<float n="10" alias="/controls/engines/engine[0]/propeller-pitch"/>
+	<float n="11" alias="/controls/engines/engine[1]/propeller-pitch"/>
+	<float n="12" alias="/controls/gear/brake-left"/>
+	<float n="13" alias="/controls/gear/brake-right"/>
+	<float n="14" alias="/controls/engines/engine/cowl-flaps-norm"> 0 </float>
+	<float n="15" alias="/controls/engines/engine[1]/cowl-flaps-norm"> 0 </float>
         <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
         <!-- <string n="1" type"string"/> RESERVED FOR MODE WHEELS/AMPHIBIOUS -->
       </generic>
@@ -163,111 +174,93 @@ Right voltmeter ->
   <controls>
     <engines>
       <engine n="0">
-        <magnetos>0</magnetos>
+        <magnetos type="int">0</magnetos>
+        <boost type="bool">true</boost>
+        <oil-dilution type="bool">false</oil-dilution>
+        <cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+        <cowl-flaps-norm type="double">1</cowl-flaps-norm>
+        <cowl-flaps-pos type="double">1</cowl-flaps-pos>
       </engine>
       <engine n="1">
-        <magnetos>0</magnetos>
+        <magnetos type="int">0</magnetos>
+        <boost type="bool">true</boost>
+        <oil-dilution type="bool">false</oil-dilution>
+        <cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+        <cowl-flaps-norm type="double">1</cowl-flaps-norm>
+        <cowl-flaps-pos type="double">1</cowl-flaps-pos>
       </engine>
-	  <throttle-select type="bool" value="0" />
-	  <prop-pitch-select type="bool" value="0" />
-	  <mixture-select type="bool" value="0" />
+      <throttle-select type="bool">false</throttle-select>
+      <prop-pitch-select type="bool">false</prop-pitch-select>
+      <mixture-select type="bool">false</mixture-select>
     </engines>
+    <fuel>
+      <tank-gauge type="int">0</tank-gauge>
+      <left-valve type="int">0</left-valve>
+      <right-valve type="int">0</right-valve>
+      <long-range type="bool">false</long-range>
+    </fuel>
     <paratroopers>
       <paratroopers type="float">26</paratroopers>
       <weight type="float">3120</weight>
     </paratroopers>
     <lighting>
-      <passing-lights type="bool" value="0" />
-      <running-lights type="bool" value="0" />
-      <tail-lights type="bool" value="0" />
-      <cabin-lights type="bool" value="0" />
-      <recognition-lights n="0" type="bool" value="0" />
-      <recognition-lights n="1" type="bool" value="0" />
-      <recognition-lights n="2" type="bool" value="0" />
-      <compass-lights type="bool" value="0" />
-      <formation-lights type="bool" value="0" />
+      <passing-lights type="bool">false</passing-lights>
+      <running-lights type="bool">false</running-lights>
+      <tail-lights type="bool">false</tail-lights>
+      <cabin-lights type="bool">false</cabin-lights>
+      <landing-lights n="0" type="bool">false</landing-lights>
+      <landing-lights n="1" type="bool">false</landing-lights>
+      <recognition-lights n="0" type="bool">false</recognition-lights>
+      <recognition-lights n="1" type="bool">false</recognition-lights>
+      <recognition-lights n="2" type="bool">false</recognition-lights>
+      <compass-lights type="bool">false</compass-lights>
+      <formation-lights type="bool">false</formation-lights>
     </lighting>
     <gear>
-      <tailwheel-lock type="bool" value="0" />
+      <tailwheel-lock type="bool">true</tailwheel-lock>
+      <tailwheel-lock-pos type="double">1</tailwheel-lock-pos>
+      <brake-parking type="bool">true</brake-parking>
+      <brake-parking-pos type="double">1</brake-parking-pos>
+      <gear-down-cmd type="int">1</gear-down-cmd>
+      <gear-down-lock type="bool">true</gear-down-lock>
+      <gear-down-lock-pos type="double">1</gear-down-lock-pos>
     </gear>
+    <flight>
+      <flaps-cmd type="int">0</flaps-cmd>
+    </flight>
   </controls>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <unusable-gal_us>5.0</unusable-gal_us>
+      </tank>
+      <tank n="1">
+        <unusable-gal_us>5.0</unusable-gal_us>
+      </tank>
+      <tank n="2">
+        <unusable-gal_us>5.0</unusable-gal_us>
+      </tank>
+      <tank n="3">
+        <unusable-gal_us>5.0</unusable-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
 
   <engines>
     <engine n="0">
       <engine-num type="int">0</engine-num>
-      <rpm>500</rpm>
-      <running>false</running>
+      <running type="bool">false</running>
     </engine>
     <engine n="1">
       <engine-num type="int">1</engine-num>
-      <rpm>500</rpm>
-      <running>false</running>
+      <running type="bool">false</running>
     </engine>
   </engines>
-
-  <!-- ############################### -->
-  <!-- ######## DUAL CONTROL ######### -->
-<!--  <dual-control>
-    <copilot>
-      <controls>
-        <flight>
-          <flaps type="float"/>
-          <elevator-trim type="float"/>
-          <aileron type="float"/>
-          <elevator type="float"/>
-          <rudder type="float"/>
-        </flight>
-        <gear>
-          <brake-parking type="bool"/>
-          <brake-left type="float"/>
-          <brake-right type="float"/>
-          <gear-down type="bool"/>
-        </gear>
-        <electric>
-          <battery-switch type="bool"/>
-        </electric>
-        <lighting>
-          <instrument-lights type="bool"/>
-        </lighting>
-        <engines>
-          <engine n="0">
-            <throttle type="float"/>
-            <magnetos type="int"/>
-            <mixture type="float"/>
-            <propeller-pitch type="float"/>
-            <starter type="bool"/>
-          </engine>
-          <engine n="1">
-            <throttle type="float"/>
-            <magnetos type="int"/>
-            <mixture type="float"/>
-            <propeller-pitch type="float"/>
-            <starter type="bool"/>
-          </engine>
-        </engines>
-      </controls>
-      <engines>
-        <engine n="0">
-          <running type="bool"/>
-          <cranking type="bool"/>
-        </engine>
-        <engine n="1">
-          <running type="bool"/>
-          <cranking type="bool"/>
-        </engine>
-      </engines>
-    </copilot>
-  </dual-control>-->
-  <!-- ######## DUAL CONTROL ######### -->
-  <!-- ############################### -->
 
   <input>
     <keyboard include="Nasal/dc-3-keyboard.xml"/>
   </input>
- 
-  <gear>
-    <tailwheel-lock type="bool" value="0" />
-  </gear>
 
   <nasal>
     <doors>
@@ -276,12 +269,17 @@ Right voltmeter ->
     <para>
       <file>Aircraft/Douglas-Dc3/Nasal/paratroopers.nas</file>
     </para>
-    <dc-3>
+    <dc3>
       <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>
-    </dc-3>
+      <file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/fuel.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/hydraulic.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/wipers.nas</file>
+    </dc3>
   </nasal>
 
 </PropertyList>

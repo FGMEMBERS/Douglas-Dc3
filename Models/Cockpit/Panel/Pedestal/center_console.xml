@@ -75,8 +75,8 @@
     <object-name>fuel_left_cw</object-name>
     <object-name>fuel_right_ccw</object-name>
     <object-name>fuel_right_cw</object-name>
-	<object-name>tailwheel_lock</object-name>
-	<object-name>plaque-tw</object-name>
+    <object-name>tailwheel_lock</object-name>
+    <object-name>plaque-tw</object-name>
   </animation>
   
   <!--juste un essai!-->
@@ -496,7 +496,7 @@
           <not><property>controls/engines/prop-pitch-select</property></not>
         </condition>
         <command>property-adjust</command>
-        <property>controls/engines/engine[1]/throttle</property>
+        <property>controls/engines/engine[1]/propeller-pitch</property>
         <step>0.02</step>	   
       </binding>
       <binding>
