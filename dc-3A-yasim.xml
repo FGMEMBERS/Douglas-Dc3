@@ -347,8 +347,10 @@
         <control-input axis="/controls/gear/water-rudder-pos" control="STEER" invert="true" square="true"/>
   </gear>
 
-  <tank x="1.756" y=" 6" z="-0.880" capacity="2466"/>
-  <tank x="1.756" y="-6" z="-0.880" capacity="2466"/>
+  <tank x="1.756" y=" 6" z="-0.880" capacity="1206"/> <!-- Tank Aux Right -->
+  <tank x="1.756" y="-6" z="-0.880" capacity="1260"/> <!-- Tank Main Right -->
+  <tank x="1.756" y=" 6" z="-0.880" capacity="1260"/> <!-- Tank Main Left -->
+  <tank x="1.756" y="-6" z="-0.880" capacity="1206"/> <!-- Tank Aux Left -->
 
   <!-- CG placement -->
   <ballast x="9" y="0" z="-5" mass="3000"/>
