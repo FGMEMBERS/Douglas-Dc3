@@ -145,21 +145,21 @@ var Hydraulic = {
     ########## SETUP ANIMATION ##########
 
     if(me.LandingGearPsi.getValue() > 900){
-      controls.gearDown(1);
+      dc3.gearDown(1);
     }
     if(me.LandingGearPsi.getValue() < 200){
-      controls.gearDown(-1);
+      dc3.gearDown(-1);
     }
     if(me.FlapsDownPsi.getValue() > 900 and me.FlapsUpPsi.getValue() < 200){
       interpolate(me.FlapsDownPsi, 0, 0.2);
-      controls.flapsDown(1);
-      controls.flapsDown(0);
+      dc3.flapsDown(-1);
+      dc3.flapsDown(0);
       gui.popupTip(sprintf("Flaps: %d deg", 30*getprop("/controls/flight/flaps")+0.1));      
     }
     if(me.FlapsUpPsi.getValue() > 900 and me.FlapsDownPsi.getValue() < 200){
       interpolate(me.FlapsUpPsi, 0, 0.2);
-      controls.flapsDown(-1);
-      controls.flapsDown(0);
+      dc3.flapsDown(1);
+      dc3.flapsDown(0);
       gui.popupTip(sprintf("Flaps: %d deg", 30*getprop("/controls/flight/flaps")+0.1));      
     }
     if(me.CowlFlapsLeftOpenPsi.getValue() > 900 and me.CowlFlapsLeftClosePsi.getValue() < 200){

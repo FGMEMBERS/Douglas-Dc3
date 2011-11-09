@@ -254,7 +254,7 @@
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/cranking.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/crankingL.xml</path>
     <offsets>
       <x-m> -4.873 </x-m>
       <y-m> -3.393 </y-m>
@@ -266,7 +266,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/cranking.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/crankingR.xml</path>
     <offsets>
       <x-m> -4.873 </x-m>
       <y-m>  3.393 </y-m>
@@ -484,7 +484,7 @@
       <button>0</button>
       <binding>
         <command>nasal</command>
-        <script>doors.doorsystem.crewexport();</script>
+        <script>dc3.CrewDoor.toggle();</script>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -500,7 +500,7 @@
       <button>0</button>
       <binding>
         <command>nasal</command>
-        <script>doors.doorsystem.passengerexport();</script>
+        <script>dc3.PassengerDoor.toggle();</script>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -517,7 +517,7 @@
       <button>0</button>
       <binding>
         <command>nasal</command>
-        <script>doors.doorsystem.cargoexport();</script>
+        <script>dc3.CargoDoor.toggle();</script>
       </binding>
       <binding>
         <command>property-toggle</command>

@@ -52,7 +52,6 @@
       <checkbox>
         <halign>left</halign>
         <label>Show Yokes</label>
-        <name>yokes</name>
         <property>sim/model/config/show-yokes</property>
         <binding>
           <command>property-toggle</command>
@@ -63,7 +62,6 @@
       <checkbox>
         <halign>left</halign>
         <label>Show Pilot</label>
-        <name>yokes</name>
         <property>sim/model/config/show-pilot</property>
         <binding>
           <command>property-toggle</command>
@@ -74,7 +72,6 @@
       <checkbox>
         <halign>left</halign>
         <label>Show Copilot</label>
-        <name>yokes</name>
         <property>sim/model/config/show-copilot</property>
         <binding>
           <command>property-toggle</command>
@@ -85,7 +82,6 @@
       <checkbox>
         <halign>left</halign>
         <label>Textures High</label>
-        <name>yokes</name>
         <property>sim/model/config/textures-high</property>
         <binding>
           <command>property-toggle</command>
@@ -96,11 +92,30 @@
       <checkbox>
         <halign>left</halign>
         <label>Details High</label>
-        <name>yokes</name>
         <property>sim/model/config/details-high</property>
         <binding>
           <command>property-toggle</command>
           <property>sim/model/config/details-high</property>
+        </binding>
+      </checkbox>
+
+      <!--<checkbox>
+        <halign>left</halign>
+        <label>Glass reflection</label>
+        <property>sim/model/config/glass-reflection</property>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/config/glass-reflection</property>
+        </binding>
+      </checkbox>-->
+
+      <checkbox>
+        <halign>left</halign>
+        <label>Landing light cone</label>
+        <property>sim/model/config/light-cone</property>
+        <binding>
+          <command>property-toggle</command>
+          <property>sim/model/config/light-cone</property>
         </binding>
       </checkbox>
     </group>

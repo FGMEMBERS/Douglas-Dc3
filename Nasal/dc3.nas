@@ -22,6 +22,47 @@ setlistener("controls/flight/flaps", func(flaps){
   setprop("controls/flight/flaps", flaps);
 });
 
+controls.gearDown = func(v) {
+    if (v < 0) {
+      setprop("controls/gear/gear-down-lock", 0);
+      setprop("controls/gear/gear-down-cmd", 0);
+      settimer(func{setprop("controls/gear/gear-down-lock", 1);}, 6);
+    } elsif (v > 0) {
+      setprop("controls/gear/gear-down-lock", 0);
+      setprop("controls/gear/gear-down-cmd", 1);
+      settimer(func{setprop("controls/gear/gear-down-lock", 1);}, 6);
+    }
+}
+
+var gearDown = func(v) {
+    if (v < 0) {
+      setprop("/controls/gear/gear-down", 0);
+    } elsif (v > 0) {
+      setprop("/controls/gear/gear-down", 1);
+    }
+}
+
+controls.flapsDown = func(step) {
+  if(step != 0){
+    setprop("controls/flight/flaps-cmd", step);
+  }
+}
+
+var flapsDown = func(step) {
+  if(step == 0) return;
+  if(props.globals.getNode("/sim/flaps") != nil) {
+    controls.stepProps("/controls/flight/flaps", "/sim/flaps", step);
+    return;
+  }
+  # Hard-coded flaps movement in 3 equal steps:
+  var val = 0.3333334 * step + getprop("/controls/flight/flaps");
+  setprop("/controls/flight/flaps", val > 1 ? 1 : val < 0 ? 0 : val);
+}
+
+var CrewDoor = aircraft.door.new("instrumentation/doors/crew", 8.0);
+var CargoDoor = aircraft.door.new("instrumentation/doors/cargo", 10.0);
+var PassengerDoor = aircraft.door.new("instrumentation/doors/passenger", 10.0);
+
 var config_dlg = gui.Dialog.new("/sim/gui/dialogs/config/dialog", "Aircraft/Douglas-Dc3/Dialogs/config.xml");
 
 ##############################################
@@ -253,6 +294,10 @@ var update_system = func{
     if(getprop("/engines/engine[1]/rpm") < 15){
       setprop("/engines/engine[1]/rpm", 0);
     }
+  }
+
+  if(PassengerDoor.getpos() > 0 and CargoDoor.getpos() > 0){
+    PassengerDoor.close();
   }
 
   tire.get_rotation("yasim");

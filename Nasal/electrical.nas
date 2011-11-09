@@ -247,104 +247,104 @@ var electrical_bus = func(bus_volts){
 
     if(props.globals.getNode("/controls/lighting/landing-lights").getBoolValue()){
         OutPuts.getNode("landing-lights",1).setValue(bus_volts);
-        load += 0.004;
+        load += 0.0004;
     } else {
         OutPuts.getNode("landing-lights",1).setValue(0.0);
     }
     if(props.globals.getNode("/controls/lighting/landing-lights[1]").getBoolValue()){
         OutPuts.getNode("landing-lights[1]",1).setValue(bus_volts);
-        load += 0.004;
+        load += 0.0004;
     } else {
         OutPuts.getNode("landing-lights[1]",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/running-lights").getBoolValue()){
         OutPuts.getNode("running-lights",1).setValue(bus_volts);
-        load += 0.00002;
+        load += 0.000002;
     } else {
         OutPuts.getNode("running-lights",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/passing-lights").getBoolValue()){
         OutPuts.getNode("passing-lights",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("passing-lights",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/recognition-lights").getBoolValue()){
         OutPuts.getNode("recognition-lights",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("recognition-lights",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/recognition-lights[1]").getBoolValue()){
         OutPuts.getNode("recognition-lights[1]",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("recognition-lights[1]",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/recognition-lights[2]").getBoolValue()){
         OutPuts.getNode("recognition-lights[2]",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("recognition-lights[2]",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/formation-lights").getBoolValue()){
         OutPuts.getNode("formation-lights",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("formation-lights",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/tail-lights").getBoolValue()){
         OutPuts.getNode("tail-lights",1).setValue(bus_volts);
-        load += 0.00002;
+        load += 0.000002;
     } else {
         OutPuts.getNode("tail-lights",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/lighting/cabin-lights").getBoolValue()){
         OutPuts.getNode("cabin-lights",1).setValue(bus_volts);
-        load += 0.0002;
+        load += 0.00002;
     } else {
         OutPuts.getNode("cabin-lights",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/anti-ice/engine/carb-heat").getBoolValue()){
         OutPuts.getNode("carb-heat",1).setValue(bus_volts);
-        load += 0.0002;
+        load += 0.00002;
     } else {
         OutPuts.getNode("carb-heat",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/fuel/tank/boost-pump").getBoolValue()){
         OutPuts.getNode("boost-pump",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("boost-pump",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/fuel/tank[1]/boost-pump").getBoolValue()){
         OutPuts.getNode("boost-pump[1]",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("boost-pump[1]",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/engines/engine/fuel-pump").getBoolValue()){
         OutPuts.getNode("fuel-pump",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("fuel-pump",1).setValue(0.0);
     }
 
     if(props.globals.getNode("/controls/engines/engine[1]/fuel-pump").getBoolValue()){
         OutPuts.getNode("fuel-pump[1]",1).setValue(bus_volts);
-        load += 0.00006;
+        load += 0.000006;
     } else {
         OutPuts.getNode("fuel-pump[1]",1).setValue(0.0);
     }
@@ -352,12 +352,12 @@ var electrical_bus = func(bus_volts){
 
     if (props.globals.getNode("/controls/engines/engine[0]/starter").getBoolValue()){
         starter_voltsL = bus_volts;
-        load += 8.0;
+        load += 0.01;
     }
 
     if (props.globals.getNode("/controls/engines/engine[1]/starter").getBoolValue()){
         starter_voltsR = bus_volts;
-        load += 8.0;
+        load += 0.01;
     }
     OutPuts.getNode("starter",1).setValue(starter_voltsL);
     OutPuts.getNode("starter[1]",1).setValue(starter_voltsR);
@@ -376,7 +376,7 @@ var avionics_bus = func(bus_volts) {
         var instr_norm = props.globals.getNode("/controls/lighting/instruments-norm").getValue();
         var v = instr_norm * bus_volts;
         OutPuts.getNode("instrument-lights",1).setValue(v);
-        load += 0.00025;
+        load += 0.000025;
     } else {
         OutPuts.getNode("instrument-lights",1).setValue(0.0);
     }
@@ -404,21 +404,21 @@ var avionics_bus = func(bus_volts) {
    
    if (props.globals.getNode("/instrumentation/nav[1]/serviceable").getBoolValue() ){
         OutPuts.getNode("nav[1]",1).setValue(bus_volts);
-        load += 0.00015;
+        load += 0.000015;
     } else {
         OutPuts.getNode("nav[1]",1).setValue(0.0);
     }   
    
    if (props.globals.getNode("/instrumentation/adf/serviceable").getBoolValue() ){
         OutPuts.getNode("adf",1).setValue(bus_volts);
-        load += 0.00015;
+        load += 0.000015;
     } else {
         OutPuts.getNode("adf",1).setValue(0.0);
     }
    
    if (props.globals.getNode("/instrumentation/turn-indicator/serviceable").getBoolValue() ){
         OutPuts.getNode("turn-coordinator",1).setValue(bus_volts);
-        load += 0.00015;
+        load += 0.000015;
     } else {
         OutPuts.getNode("turn-coordinator",1).setValue(0.0);
     }

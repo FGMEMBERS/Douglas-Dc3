@@ -108,6 +108,8 @@ Right voltmeter ->
         <show-copilot type="bool">true</show-copilot>
         <textures-high type="bool">false</textures-high>
         <details-high type="bool">false</details-high>
+        <glass-reflection type="bool">true</glass-reflection>
+        <light-cone type="bool">true</light-cone>
         <version type="string">civilian</version>
       </config>
     </model>
@@ -127,8 +129,8 @@ Right voltmeter ->
     <multiplay n="0">
       <chat_display>1</chat_display>
       <generic n="0">
-	<int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
-	<int n="1" type="int">  0 </int>  <!-- 0 immat -->
+        <int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
+        <int n="1" type="int">  0 </int>  <!-- 0 immat -->
         <int n="2" type="int">  0 </int>  <!-- 1 immat -->
         <int n="3" type="int">  0 </int>  <!-- 2 immat -->
         <int n="4" type="int">  0 </int>  <!-- 3 immat -->
@@ -136,7 +138,7 @@ Right voltmeter ->
         <int n="6" type="int">  0 </int>  <!-- 5 immat -->
         <int n="7" type="bool"> 0 </int>  <!-- 6 smoke -->
         <int n="8" type="int">  0 </int>  <!-- 7 color -->
-	<int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
+        <int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
         <int n="10" alias="/sim/model/lights/running/state"/>
         <int n="11" alias="/sim/model/lights/passing/state"/>
         <int n="12" alias="/sim/model/lights/tail/state"/>
@@ -146,29 +148,87 @@ Right voltmeter ->
         <int n="16" alias="/sim/model/lights/formation/state"/>
         <int n="17" alias="/controls/lighting/landing-lights"/>
         <int n="18" alias="/controls/lighting/landing-lights[1]"/>
-        <int n="19" alias="/controls/lighting/cabin-lights"/> <!-- Don't work because FlightGear is limited at 18 MP properties :( -->
+        <!-- Don't work because FlightGear is limited at 18 MP properties :( -->
+        <int n="19" alias="/controls/lighting/cabin-lights"/>
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m">  0 </float>  <!-- 11 altitude for MP shadow -->
-	<float n="3" alias="/controls/flight/elevator-trim"/>
-	<float n="4" alias="/controls/flight/rudder-trim"/>
-	<float n="5" alias="/controls/flight/aileron-trim"/>
-	<float n="6" alias="/controls/engines/engine[0]/throttle"/>
-	<float n="7" alias="/controls/engines/engine[1]/throttle"/>
-	<float n="8" alias="/controls/engines/engine[0]/mixture"/>
-	<float n="9" alias="/controls/engines/engine[1]/mixture"/>
-	<float n="10" alias="/controls/engines/engine[0]/propeller-pitch"/>
-	<float n="11" alias="/controls/engines/engine[1]/propeller-pitch"/>
-	<float n="12" alias="/controls/gear/brake-left"/>
-	<float n="13" alias="/controls/gear/brake-right"/>
-	<float n="14" alias="/controls/engines/engine/cowl-flaps-norm"> 0 </float>
-	<float n="15" alias="/controls/engines/engine[1]/cowl-flaps-norm"> 0 </float>
+        <float n="3" alias="/controls/flight/elevator-trim"/>
+        <float n="4" alias="/controls/flight/rudder-trim"/>
+        <float n="5" alias="/controls/flight/aileron-trim"/>
+        <float n="6" alias="/controls/engines/engine[0]/throttle"/>
+        <float n="7" alias="/controls/engines/engine[1]/throttle"/>
+        <float n="8" alias="/controls/engines/engine[0]/mixture"/>
+        <float n="9" alias="/controls/engines/engine[1]/mixture"/>
+        <float n="10" alias="/controls/engines/engine[0]/propeller-pitch"/>
+        <float n="11" alias="/controls/engines/engine[1]/propeller-pitch"/>
+        <float n="12" alias="/controls/gear/brake-left"/>
+        <float n="13" alias="/controls/gear/brake-right"/>
+        <float n="14" alias="/controls/engines/engine/cowl-flaps-norm"> 0 </float>
+        <float n="15" alias="/controls/engines/engine[1]/cowl-flaps-norm"> 0 </float>
         <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
         <!-- <string n="1" type"string"/> RESERVED FOR MODE WHEELS/AMPHIBIOUS -->
       </generic>
     </multiplay>
     <!-- ######## DUAL CONTROL ######### -->
     <!-- ############################### -->
+
+    <weight n="0">
+      <name>Compartiment A</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>600</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Compartiment B</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>800</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Compartiment C</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>1000</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="3">
+      <name>Compartiment D</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>3000</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="4">
+      <name>Compartiment E</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>3000</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="5">
+      <name>Compartiment F</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>2400</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <!--
+    <weight n="6">
+      <weight-lb>0</weight-lb>
+      <max-lb>1300</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="7">
+      <weight-lb>0</weight-lb>
+      <max-lb>350</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+    -->
+
   </sim>
 
   <controls>

@@ -63,9 +63,25 @@
   <!-- Left Landing Light -->
   <model>
     <name>landingL</name>
+    <condition>
+      <property>sim/model/config/light-cone</property>
+    </condition>
     <path>Aircraft/Douglas-Dc3/Models/Light/LandingLightL.xml</path>
     <offsets>
       <x-m> -4.316 </x-m>
+      <y-m> -5.594 </y-m>
+      <z-m> -0.908 </z-m>
+      <pitch-deg> -14 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <condition>
+      <not><property>sim/model/config/light-cone</property></not>
+    </condition>
+    <path>Aircraft/Douglas-Dc3/Models/Light/LandingLightPlateL.xml</path>
+    <offsets>
+      <x-m> -4.606 </x-m>
       <y-m> -5.594 </y-m>
       <z-m> -0.908 </z-m>
       <pitch-deg> -14 </pitch-deg>
@@ -87,9 +103,25 @@
   <!-- Right Landing Light -->
   <model>
     <name>landingR</name>
+    <condition>
+      <property>sim/model/config/light-cone</property>
+    </condition>
     <path>Aircraft/Douglas-Dc3/Models/Light/LandingLightR.xml</path>
     <offsets>
       <x-m> -4.316 </x-m>
+      <y-m>  5.594 </y-m>
+      <z-m> -0.908 </z-m>
+      <pitch-deg> -14 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <condition>
+      <not><property>sim/model/config/light-cone</property></not>
+    </condition>
+    <path>Aircraft/Douglas-Dc3/Models/Light/LandingLightPlateR.xml</path>
+    <offsets>
+      <x-m> -4.606 </x-m>
       <y-m>  5.594 </y-m>
       <z-m> -0.908 </z-m>
       <pitch-deg> -14 </pitch-deg>

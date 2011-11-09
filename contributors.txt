@@ -8,6 +8,13 @@
 ######################################################################
 ######################################################################
 
+# 09/11/2011 ==> Pat
+- Amélioration du FDM
+#            ==> Alexis
+- Ajout des masses de chargement
+
+######################################################################
+
 # 21/10/2011 ==> Christian Thiriot (Patten)
 -Amélioration et nettoyage de la texture cabine passagers (colors, et colorsHigh)
 -Création d'une texture cabine "Paras" en vue de l'activation de l'option "Military"

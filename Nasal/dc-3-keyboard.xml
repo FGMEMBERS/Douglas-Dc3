@@ -10,6 +10,7 @@
       <script>
         setprop("controls/gear/gear-down-lock", 0);
         setprop("controls/gear/gear-down-cmd", 0);
+        settimer(func{setprop("controls/gear/gear-down-lock", 1);}, 6);
       </script>
     </binding>
   </key>
@@ -19,7 +20,7 @@
     <desc>Crew door</desc>
     <binding>
       <command>nasal</command>
-      <script>doors.doorsystem.crewexport();</script>
+      <script>dc3.CrewDoor.toggle();</script>
     </binding>
   </key>
 
@@ -31,7 +32,7 @@
       <script>
         setprop("controls/gear/gear-down-lock", 0);
         setprop("controls/gear/gear-down-cmd", 1);
-
+        settimer(func{setprop("controls/gear/gear-down-lock", 1);}, 6);
       </script>
     </binding>
   </key>
@@ -41,7 +42,7 @@
     <desc>Passanger door</desc>
     <binding>
       <command>nasal</command>
-      <script>doors.doorsystem.passengerexport();</script>
+      <script>dc3.PassengerDoor.toggle();</script>
     </binding>
   </key>
 
@@ -50,7 +51,7 @@
     <desc>Cargo door</desc>
     <binding>
       <command>nasal</command>
-      <script>doors.doorsystem.cargoexport();</script>
+      <script>dc3.CargoDoor.toggle();</script>
     </binding>
   </key>
 
