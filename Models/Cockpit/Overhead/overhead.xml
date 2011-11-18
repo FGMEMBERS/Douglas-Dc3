@@ -4,28 +4,78 @@
 
   <path>overhead.ac</path>
 
+  <!-- Civilian red version -->
   <animation>
     <type>material</type>
     <object-name>overhead</object-name>
     <condition>
-      <equals>
-        <property>sim/model/config/textures-high</property>
-        <value>true</value>
-      </equals>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-red</value>
+        </equals> 
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>true</value>
+        </equals>
+      </and>
     </condition>
-    <texture>colors_high.png</texture>
+    <texture>colorsHigh.png</texture>
   </animation>
 
   <animation>
     <type>material</type>
     <object-name>overhead</object-name>
     <condition>
-      <equals>
-        <property>sim/model/config/textures-high</property>
-        <value>false</value>
-      </equals>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-red</value>
+        </equals> 
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>false</value>
+        </equals>
+      </and>
     </condition>
     <texture>colors.png</texture>
+  </animation>
+
+  <!-- Civilian gray version -->
+  <animation>
+    <type>material</type>
+    <object-name>overhead</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-gray</value>
+        </equals> 
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>true</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colorsHigh_gray.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>overhead</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-gray</value>
+        </equals> 
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors_gray.png</texture>
   </animation>
 
   <model>

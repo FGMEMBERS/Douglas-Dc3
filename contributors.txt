@@ -6,12 +6,29 @@
 ##          http://wiki.flightgear.org/Fr/Douglas_DC-3-C47          ##
 ##                                                                  ##
 ######################################################################
+
+######################################################################
+# 18/11/2011 ==> Helijah
+- Mise en fonction des gouvernails via la touche "l"
+- Modification du système d'ombre, merci à Bibi :)
+#            ==> Pat
+- Amélioration du FDM
+
 ######################################################################
 
 # 09/11/2011 ==> Pat
 - Amélioration du FDM
 #            ==> Alexis
 - Ajout des masses de chargement
+
+######################################################################
+
+#07/11/2011 ==> Christian Thiriot (Patten)
+-Version civile
+-Habillage total de l'intérieur dans des tons gris.
+-Cockpit
+-Cabine
+-Rajout de plaques vers les pieds des pilotes.
 
 ######################################################################
 

@@ -284,17 +284,17 @@ var update_system = func{
     setprop("/engines/engine[1]/cranking",0);
   }
 
-  if(!getprop("engines/engine/running")){
-    if(getprop("/engines/engine/rpm") < 15){
-      setprop("/engines/engine/rpm", 0);
-    }
-  }
+#  if(!getprop("engines/engine/running")){
+#    if(getprop("/engines/engine/rpm") < 15){
+#      setprop("/engines/engine/rpm", 0);
+#    }
+#  }
 
-  if(!getprop("engines/engine[1]/running")){
-    if(getprop("/engines/engine[1]/rpm") < 15){
-      setprop("/engines/engine[1]/rpm", 0);
-    }
-  }
+#  if(!getprop("engines/engine[1]/running")){
+#    if(getprop("/engines/engine[1]/rpm") < 15){
+#      setprop("/engines/engine[1]/rpm", 0);
+#    }
+#  }
 
   if(PassengerDoor.getpos() > 0 and CargoDoor.getpos() > 0){
     PassengerDoor.close();

@@ -19,7 +19,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>Light</object-name>
+    <object-name>LHLNDlight</object-name>
     <emission>
       <red>   0.027 </red>
       <green> 0.027 </green>

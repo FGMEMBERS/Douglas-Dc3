@@ -11,5 +11,31 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- Civilian red version -->
+  <animation>
+    <type>material</type>
+    <object-name>tringle</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-red</value>
+      </equals>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+  <!-- Civilian gray version -->
+  <animation>
+    <type>material</type>
+    <object-name>tringle</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-gray</value>
+      </equals>
+    </condition>
+    <texture>colors_gray.png</texture>
+  </animation>
+
 </PropertyList>
 

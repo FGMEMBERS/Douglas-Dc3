@@ -7,7 +7,7 @@ OBJECT poly
 name "boutton"
 data 7
 boutton
-texture "contacteur.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -568,7 +568,7 @@ OBJECT poly
 name "fondL"
 data 5
 fondL
-texture "contacteur.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -951,7 +951,7 @@ OBJECT poly
 name "fondR"
 data 5
 fondR
-texture "contacteur.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 49
@@ -1334,7 +1334,7 @@ OBJECT poly
 name "ignitiationcadre"
 data 16
 ignitiationcadre
-texture "contacteur.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 192
@@ -2208,7 +2208,7 @@ OBJECT poly
 name "ignitiationface"
 data 15
 ignitiationface
-texture "contacteur.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 9
@@ -2313,7 +2313,7 @@ OBJECT poly
 name "keyL"
 data 4
 keyL
-texture "contacteur.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 73
@@ -2682,7 +2682,7 @@ OBJECT poly
 name "keyR"
 data 4
 keyR
-texture "contacteur.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 73

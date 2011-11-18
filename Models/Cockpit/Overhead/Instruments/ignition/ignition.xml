@@ -19,6 +19,54 @@
     <object-name>decreaseR</object-name>
   </animation>
 
+  <!-- Civilian red version -->
+  <animation>
+    <type>material</type>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>boutton</object-name>
+    <object-name>ignitiationface</object-name>
+    <object-name>fondL</object-name>
+    <object-name>keyL</object-name>
+    <object-name>fondR</object-name>
+    <object-name>keyR</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>decreaseL</object-name>
+    <object-name>increaseR</object-name>
+    <object-name>decreaseR</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-red</value>
+      </equals>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+  <!-- Civilian gray version -->
+  <animation>
+    <type>material</type>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>boutton</object-name>
+    <object-name>ignitiationface</object-name>
+    <object-name>fondL</object-name>
+    <object-name>keyL</object-name>
+    <object-name>fondR</object-name>
+    <object-name>keyR</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>decreaseL</object-name>
+    <object-name>increaseR</object-name>
+    <object-name>decreaseR</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-gray</value>
+      </equals>
+    </condition>
+    <texture>colors_gray.png</texture>
+  </animation>
+
   <animation>
     <type>pick</type>
     <visible>false</visible>

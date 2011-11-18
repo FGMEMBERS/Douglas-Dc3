@@ -7,7 +7,7 @@ OBJECT poly
 name "accoudoirs"
 data 10
 accoudoirs
-texture "seat.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 88
@@ -659,7 +659,7 @@ OBJECT poly
 name "reposetete"
 data 10
 reposetete
-texture "seat.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 35
@@ -872,7 +872,7 @@ OBJECT poly
 name "siege"
 data 5
 siege
-texture "seat.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 185
@@ -2359,7 +2359,7 @@ OBJECT poly
 name "tablette"
 data 8
 tablette
-texture "seat.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8

@@ -102,7 +102,7 @@ var fuel_update = func{
   var fuelQty = props.globals.getNode("consumables/fuel/tank["~n~"]/level-gal_us").getValue();
   interpolate("consumables/fuel/needle-gauge", fuelQty, 0.25);
 
-  settimer(fuel_update, 0.7);
+  settimer(fuel_update, 0.9);
 }
 
 setlistener("/sim/signals/fdm-initialized", func{

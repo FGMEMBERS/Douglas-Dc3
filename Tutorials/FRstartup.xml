@@ -96,12 +96,6 @@ Ce tutoriel va vous apprendre a demarrer les moteurs du DC-3.
       <z-offset-m>-8.18</z-offset-m>
       <field-of-view>45</field-of-view>
     </view>
-<!--	<marker>
-		<x-m>-8.3656</x-m>
-		<y-m>-0.146</y-m>
-		<z-m>-0.2815</z-m>
-		<scale>1</scale>
-	</marker>-->
 	<error>
 	<message>Placez l'interrupteur sur la position Main LH</message>
       <condition>

@@ -7,8 +7,41 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>siege</object-name>
+    <object-name>accoudoirs</object-name>
+    <object-name>reposetete</object-name>
+    <object-name>tablette</object-name>
 
     <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>siege</object-name>
+    <object-name>accoudoirs</object-name>
+    <object-name>reposetete</object-name>
+    <object-name>tablette</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-red</value>
+      </equals>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>siege</object-name>
+    <object-name>accoudoirs</object-name>
+    <object-name>reposetete</object-name>
+    <object-name>tablette</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-gray</value>
+      </equals>
+    </condition>
+    <texture>colors_gray.png</texture>
   </animation>
 
 </PropertyList>

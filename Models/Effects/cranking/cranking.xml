@@ -7,7 +7,7 @@
     <name>smoke</name>
 
     <offsets>
-      <x-m>  -0.3000 </x-m>
+      <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.000 </z-m>
       <roll-deg>    0.000 </roll-deg>
@@ -51,8 +51,8 @@
 
     <counter>
       <particles-per-sec>
-        <value>120</value>
-        <spread>0</spread>
+        <value>10</value>
+        <spread>1</spread>
       </particles-per-sec>
     </counter>
 
@@ -82,7 +82,7 @@
       </end>
 
       <life-sec>
-        <value>17</value>
+        <value>20</value>
       </life-sec>
        
       <mass-kg>0.05</mass-kg>

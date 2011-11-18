@@ -38,7 +38,7 @@ name "ecrousD"
 loc 0.328869 -0.175714 0.689789
 data 7
 ecrousD
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 2856
 0.003144 0.000069 -1.378084
@@ -21384,7 +21384,7 @@ name "ecrousG"
 loc 0.328869 -0.175714 0.689789
 data 7
 ecrousG
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 2856
 0.003144 0.000069 -0.001494
@@ -42730,7 +42730,7 @@ name "mancheD"
 loc 0 0 -0
 data 7
 mancheD
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 509
 0.329164 -0.35802 -0.649358
@@ -46269,7 +46269,7 @@ name "mancheG"
 loc 0 0 -0
 data 7
 mancheG
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 516
 0.329164 -0.35802 0.649809
@@ -49850,7 +49850,7 @@ name "volantDD"
 loc 0 0 -0
 data 8
 volantDD
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 526
 0.334842 0.372426 -0.377838
@@ -53402,7 +53402,7 @@ name "volantDG"
 loc 0 0 -0
 data 8
 volantDG
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 532
 0.323626 0.236651 -0.372947
@@ -56997,7 +56997,7 @@ name "volantGD"
 loc 0 0 -0
 data 8
 volantGD
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 500
 0.334842 0.384122 0.360786
@@ -60287,7 +60287,7 @@ name "volantGG"
 loc 0 0 -0
 data 8
 volantGG
-texture "handle.png"
+texture "colors.png"
 texrep 1 1
 numvert 574
 0.325127 0.236651 0.375642

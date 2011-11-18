@@ -4,7 +4,18 @@
 <PropertyList include="dc-3A-yasim-cnf.xml">
 
   <sim>
-    <author>BARANGER Emmanuel</author>
+
+    <description>Douglas Dc 3/C47 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM) / PAF Team (3D/System/FDM/</author>
+    <status>beta production</status>
+
+    <rating>
+     <FDM type="int">     4 </FDM>
+     <systems type="int"> 4 </systems>
+     <cockpit type="int"> 4 </cockpit>
+     <model type="int">   4 </model>
+    </rating>
+
   </sim>
 
 </PropertyList>

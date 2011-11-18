@@ -11,6 +11,42 @@
     <object-name>AxeG</object-name>
   </animation>
 
+  <!-- Civilian red version -->
+  <animation>
+    <type>material</type>
+    <object-name>PedaleG</object-name>
+    <object-name>PedaleF</object-name>
+    <object-name>AxeD</object-name>
+    <object-name>AxeG</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-red</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+  <!-- Civilian gray version -->
+  <animation>
+    <type>material</type>
+    <object-name>PedaleG</object-name>
+    <object-name>PedaleF</object-name>
+    <object-name>AxeD</object-name>
+    <object-name>AxeG</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-gray</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors_gray.png</texture>
+  </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>PedaleG</object-name>
@@ -19,7 +55,7 @@
     <factor>15</factor>
     <axis>
       <x>  0 </x>
-      <y> -1 </y>
+      <y>  1 </y>
       <z>  0 </z>
     </axis>
   </animation>
@@ -27,7 +63,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PedaleG</object-name>
-		<object-name>PedaleG</object-name>
+    <object-name>PedaleG</object-name>
     <property>controls/flight/rudder</property>
     <factor>15</factor>
     <center>
@@ -37,7 +73,7 @@
     </center>
     <axis>
       <x> 0 </x>
-      <y> 1 </y>
+      <y>-1 </y>
       <z> 0 </z>
     </axis>
   </animation>
@@ -50,7 +86,7 @@
     <factor>15</factor>
     <axis>
       <x> 0 </x>
-      <y> 1 </y>
+      <y>-1 </y>
       <z> 0 </z>
     </axis>
   </animation>
@@ -67,7 +103,7 @@
     </center>
     <axis>
       <x>  0 </x>
-      <y> -1 </y>
+      <y>  1 </y>
       <z>  0 </z>
     </axis>
   </animation>

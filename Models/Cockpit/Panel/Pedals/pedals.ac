@@ -7,7 +7,7 @@ name "AxeD"
 loc 0 -0.001182 -0
 data 4
 AxeD
-texture "pedals.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000001
 numvert 72
@@ -277,7 +277,7 @@ name "AxeG"
 loc 0 -0.001182 -0
 data 4
 AxeG
-texture "pedals.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000001
 numvert 66
@@ -527,7 +527,7 @@ name "PedaleD"
 loc 0 -0.001182 -0
 data 7
 PedaleD
-texture "pedals.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000001
 numvert 160
@@ -1164,7 +1164,7 @@ name "PedaleG"
 loc 0 -0.001182 -0
 data 7
 PedaleG
-texture "pedals.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000001
 numvert 180

@@ -4,17 +4,17 @@ OBJECT world
 kids 1
 OBJECT poly
 name "shadowA"
-loc 0 -1.407247 -0
+loc 0 0 -0
 data 7
 shadowA
 texture "shadowA.png"
 texrep 1 1
 crease 30.000001
 numvert 4
-9.85 -2.801906 -14.499991
-9.85 -2.801906 14.499999
--9.85 -2.801906 14.499995
--9.849997 -2.801906 -14.499999
+9.849999 0 -14.499992
+9.849999 0 14.499998
+-9.850001 0 14.499994
+-9.849998 0 -14.5
 numsurf 1
 SURF 0x10
 mat 0

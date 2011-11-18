@@ -99,7 +99,7 @@
         </binding>
       </checkbox>
 
-      <!--<checkbox>
+      <checkbox>
         <halign>left</halign>
         <label>Glass reflection</label>
         <property>sim/model/config/glass-reflection</property>
@@ -107,7 +107,7 @@
           <command>property-toggle</command>
           <property>sim/model/config/glass-reflection</property>
         </binding>
-      </checkbox>-->
+      </checkbox>
 
       <checkbox>
         <halign>left</halign>
@@ -150,10 +150,11 @@
       <group>
         <layout>hbox</layout>
         <combo>
-          <width>200</width>
+          <width>600</width>
           <height>25</height>
           <property>sim/model/config/version</property>
-          <value>civilian</value>
+          <value>civilian-gray</value>
+          <value>civilian-red</value>
           <value>military</value>
           <binding>
             <command>dialog-apply</command>

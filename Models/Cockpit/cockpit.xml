@@ -15,6 +15,17 @@
   </animation>
 
   <animation>
+    <type>select</type>
+    <object-name>cab-intvitres</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/glass-reflection</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
     <type>noshadow</type>
     <object-name>cab-intvitres</object-name>
   </animation>
@@ -26,16 +37,23 @@
     <object-name>cab-intvitres</object-name>
   </animation>
 
+  <!-- Civilian red version -->
   <animation>
     <type>material</type>
     <object-name>cab-interieur</object-name>
     <object-name>cab-inttour</object-name>
     <object-name>cab-planchet</object-name>
     <condition>
-      <equals>
-        <property>sim/model/config/textures-high</property>
-        <value>true</value>
-      </equals>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-red</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>true</value>
+        </equals>
+      </and>
     </condition>
     <texture>colorsHigh.png</texture>
   </animation>
@@ -46,12 +64,59 @@
     <object-name>cab-inttour</object-name>
     <object-name>cab-planchet</object-name>
     <condition>
-      <equals>
-        <property>sim/model/config/textures-high</property>
-        <value>false</value>
-      </equals>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-red</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>false</value>
+        </equals>
+      </and>
     </condition>
     <texture>colors.png</texture>
+  </animation>
+
+  <!-- Civilian gray version -->
+  <animation>
+    <type>material</type>
+    <object-name>cab-interieur</object-name>
+    <object-name>cab-inttour</object-name>
+    <object-name>cab-planchet</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-gray</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>true</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colorsHigh_gray.png</texture>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>cab-interieur</object-name>
+    <object-name>cab-inttour</object-name>
+    <object-name>cab-planchet</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-gray</value>
+        </equals>
+        <equals>
+          <property>sim/model/config/textures-high</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors_gray.png</texture>
   </animation>
 
   <!--overhead Panneau Cockpit Supérieur-->

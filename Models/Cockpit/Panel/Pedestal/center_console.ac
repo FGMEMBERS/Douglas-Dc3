@@ -8,7 +8,7 @@ OBJECT poly
 name "Ail_trim_needle"
 data 15
 Ail_trim_needle
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -259,7 +259,7 @@ OBJECT poly
 name "Aileron_trim"
 data 12
 Aileron_trim
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 409
@@ -3365,7 +3365,7 @@ OBJECT poly
 name "Grad_mixt"
 data 9
 Grad_mixt
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -3754,7 +3754,7 @@ OBJECT poly
 name "Mixt_D"
 data 6
 Mixt_D
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 140
@@ -4921,7 +4921,7 @@ OBJECT poly
 name "Mixt_G"
 data 6
 Mixt_G
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 141
@@ -6096,7 +6096,7 @@ OBJECT poly
 name "Prop_D"
 data 6
 Prop_D
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 181
@@ -7616,7 +7616,7 @@ OBJECT poly
 name "Prop_G"
 data 6
 Prop_G
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 179
@@ -9125,7 +9125,7 @@ OBJECT poly
 name "Rud_trim_needle"
 data 15
 Rud_trim_needle
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -9376,7 +9376,7 @@ OBJECT poly
 name "Rudder_trim"
 data 11
 Rudder_trim
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 409
@@ -12482,7 +12482,7 @@ OBJECT poly
 name "Throt_D"
 data 7
 Throt_D
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 143
@@ -12772,6 +12772,7 @@ refs 3
 39 0.977687001228 0.957177996635
 24 0.977694988251 0.956833004951
 SURF 0x10
+
 mat 1
 refs 3
 24 0.977694988251 0.956833004951
@@ -13666,7 +13667,7 @@ OBJECT poly
 name "Throt_G"
 data 7
 Throt_G
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 143
@@ -14888,7 +14889,7 @@ OBJECT poly
 name "aileron"
 data 7
 aileron
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -14909,7 +14910,7 @@ OBJECT poly
 name "aileron-trim"
 data 12
 aileron-trim
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -15344,7 +15345,7 @@ OBJECT poly
 name "axe"
 data 3
 axe
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -15462,7 +15463,7 @@ OBJECT poly
 name "brake_parking"
 data 13
 brake_parking
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 248
@@ -17688,7 +17689,7 @@ OBJECT poly
 name "brake_throttle"
 data 14
 brake_throttle
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 304
@@ -20242,7 +20243,7 @@ OBJECT poly
 name "carter-trim"
 data 11
 carter-trim
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 103
@@ -21040,7 +21041,7 @@ OBJECT poly
 name "cons_bas"
 data 9
 panel.001
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 76
@@ -21560,7 +21561,7 @@ OBJECT poly
 name "corps-haut"
 data 10
 corps-haut
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 196
@@ -22764,7 +22765,7 @@ OBJECT poly
 name "corps-milieu"
 data 12
 corps-milieu
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -22956,7 +22957,7 @@ OBJECT poly
 name "elev_trim"
 data 9
 elev_trim
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -23016,7 +23017,7 @@ OBJECT poly
 name "elev_trim_index"
 data 15
 elev_trim_index
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -23094,7 +23095,7 @@ OBJECT poly
 name "fuel_left"
 data 9
 fuel_left
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -23810,7 +23811,7 @@ OBJECT poly
 name "fuel_right"
 data 10
 fuel_right
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -24526,7 +24527,7 @@ OBJECT poly
 name "guideM"
 data 6
 guideM
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 84
@@ -25151,7 +25152,7 @@ OBJECT poly
 name "guideM2"
 data 7
 guideM2
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 84
@@ -25776,7 +25777,7 @@ OBJECT poly
 name "guideP"
 data 6
 guideP
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -25976,7 +25977,7 @@ OBJECT poly
 name "guideP2"
 data 7
 guideP2
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -26176,7 +26177,7 @@ OBJECT poly
 name "guideT"
 data 6
 guideT
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -26465,7 +26466,7 @@ OBJECT poly
 name "guideT2"
 data 7
 guideT2
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -26754,7 +26755,7 @@ OBJECT poly
 name "lev1"
 data 4
 lev1
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -27427,7 +27428,7 @@ OBJECT poly
 name "levierM_D"
 data 9
 levierM_D
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 112
@@ -28531,7 +28532,7 @@ OBJECT poly
 name "levierM_G"
 data 9
 levierM_G
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 110
@@ -29635,7 +29636,7 @@ OBJECT poly
 name "manette1"
 data 8
 manette1
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 149
@@ -30874,7 +30875,7 @@ OBJECT poly
 name "manette2"
 data 8
 manette2
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 149
@@ -32123,7 +32124,7 @@ OBJECT poly
 name "manette3"
 data 8
 manette3
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 151
@@ -32553,6 +32554,7 @@ mat 1
 refs 4
 33 0.752825021744 0.957192003727
 34 0.750905990601 0.961866974831
+
 44 0.757049977779 0.962363004684
 45 0.757529973984 0.957571983337
 SURF 0x10
@@ -34406,7 +34408,7 @@ OBJECT poly
 name "onoff"
 data 5
 onoff
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 13
@@ -34501,7 +34503,7 @@ OBJECT poly
 name "plaque _tw"
 data 9
 Plane.001
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35588,7 +35590,7 @@ OBJECT poly
 name "rudder"
 data 6
 rudder
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -35609,7 +35611,7 @@ OBJECT poly
 name "rudder-trim"
 data 11
 rudder-trim
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -36044,7 +36046,7 @@ OBJECT poly
 name "souslevierM_D"
 data 13
 souslevierM_D
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 63
@@ -36564,7 +36566,7 @@ OBJECT poly
 name "souslevierM_G"
 data 13
 souslevierM_G
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -37081,7 +37083,7 @@ OBJECT poly
 name "support"
 data 7
 support
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 86
@@ -37569,7 +37571,7 @@ OBJECT poly
 name "tailwheel_lock"
 data 16
 Aileron_trim.001
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 238
@@ -39460,7 +39462,7 @@ OBJECT poly
 name "textmanL"
 data 8
 textmanL
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 19
@@ -39597,7 +39599,7 @@ OBJECT poly
 name "textmanR"
 data 8
 textmanR
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 19
@@ -40762,7 +40764,7 @@ OBJECT poly
 name "volantTrim"
 data 10
 volantTrim
-texture "center-console.png"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 570
@@ -40987,6 +40989,7 @@ numvert 570
 0.345301 0.10478 0.127188
 0.343845 0.105192 0.127188
 0.341304 0.106818 0.127188
+
 0.339581 0.109294 0.127188
 0.339111 0.110734 0.127188
 0.338936 0.112239 0.127188

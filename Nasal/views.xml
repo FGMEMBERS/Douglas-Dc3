@@ -76,8 +76,11 @@
       <x-offset-m archive="y"> -0.475 </x-offset-m> <!-- Right -->
       <y-offset-m archive="y">  0.434 </y-offset-m> <!-- Up    -->
       <z-offset-m archive="y"> -7.965 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -20 </pitch-offset-deg>
+      <pitch-offset-deg> -20 </pitch-offset-deg>-->
       <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      <limits>
+        <enabled type="bool">false</enabled>
+      </limits>
     </config>
   </view>
 

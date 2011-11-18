@@ -31,6 +31,52 @@
       <property>sim/model/config/show-yokes</property>
     </condition>
   </animation>
+
+  <!-- Civilian red version -->
+  <animation>
+    <type>material</type>
+    <object-name>mancheD</object-name>
+    <object-name>ecrousD</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>ecrousG</object-name>
+    <object-name>volantGG</object-name>
+    <object-name>volantGD</object-name>
+    <object-name>volantDD</object-name>
+    <object-name>volantDG</object-name>
+    <object-name>clicelevator</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-red</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+
+  <!-- Civilian gray version -->
+  <animation>
+    <type>material</type>
+    <object-name>mancheD</object-name>
+    <object-name>ecrousD</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>ecrousG</object-name>
+    <object-name>volantGG</object-name>
+    <object-name>volantGD</object-name>
+    <object-name>volantDD</object-name>
+    <object-name>volantDG</object-name>
+    <object-name>clicelevator</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-gray</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors_gray.png</texture>
+  </animation>
  
   <animation>
     <name>VolantG</name>
