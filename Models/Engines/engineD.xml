@@ -14,6 +14,7 @@
     <object-name>bougies</object-name>
     <object-name>tuyaux</object-name>
     <object-name>echappes</object-name>
+    <object-name>souflets</object-name>
     <object-name>moteurlow</object-name>
   </animation>
 
@@ -26,6 +27,7 @@
     <object-name>ecrous</object-name>
     <object-name>bougies</object-name>
     <object-name>tuyaux</object-name>
+    <object-name>souflets</object-name>
     <object-name>echappes</object-name>
   </animation>
 
