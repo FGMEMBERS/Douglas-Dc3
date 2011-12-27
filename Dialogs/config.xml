@@ -150,8 +150,7 @@
       <group>
         <layout>hbox</layout>
         <combo>
-          <width>600</width>
-          <height>25</height>
+          <pref-width>110</pref-width>
           <property>sim/model/config/version</property>
           <value>civilian-gray</value>
           <value>civilian-red</value>

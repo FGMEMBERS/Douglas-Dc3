@@ -132,7 +132,7 @@
   -->
   <propeller x="6.351" y="2.814" z="-1.194"
              mass="1250"
-             moment="100"
+             moment="20"
              radius="1.7785"
              min-rpm="320"
              max-rpm="2700"
@@ -163,7 +163,7 @@
 
   <propeller x="6.351" y="-2.814" z="-1.194"
              mass="1250"
-             moment="100"
+             moment="20"
              radius="1.7785"
              min-rpm="320"
              max-rpm="2700"
