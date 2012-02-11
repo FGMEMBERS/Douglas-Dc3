@@ -2,10 +2,16 @@
 
 <PropertyList>
 
-  <sim include="Nasal/copilot-views.xml">
- 
-    <author>BARANGER Emmanuel (3D)</author>
-    <aircraft-version>0.1</aircraft-version>
+<!-- 
+     ************************************************************************
+     Douglas DC-3 C47
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     ************************************************************************
+-->
+
+  <sim> 
+    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D,FDM)</author>
+    <aircraft-version>1.0</aircraft-version>
     <status>Alpha</status>
    
     <fuel-fraction>0.8</fuel-fraction>
@@ -49,7 +55,13 @@
 
     <model>
       <config>
+        <show-yokes type="bool">true</show-yokes>
+        <show-pilot type="bool">true</show-pilot>
         <show-copilot type="bool">true</show-copilot>
+        <details-high type="bool">false</details-high>
+        <glass-reflection type="bool">true</glass-reflection>
+        <light-cone type="bool">true</light-cone>
+        <version type="string">civilian-red</version>
       </config>
     </model>
 
@@ -77,6 +89,42 @@
     </multiplay>
     <!-- ######## DUAL CONTROL ######### -->
     <!-- ############################### -->
+
+    <chase-distance-m type="double" archive="y"> -30 </chase-distance-m>
+
+    <view n="0">
+      <name>Copilot Views</name>
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y">  0.475 </x-offset-m> <!-- Right -->
+        <y-offset-m archive="y">  0.434 </y-offset-m> <!-- Up    -->
+        <z-offset-m archive="y"> -7.965 </z-offset-m> <!-- Back  -->
+        <pitch-offset-deg> -20 </pitch-offset-deg>
+        <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      </config>
+    </view>
+
+    <view n="1">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="102">
+      <name>Tail Camera View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+        <x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
+        <y-offset-m archive="y"> 3.600 </y-offset-m> <!--Up-->
+        <z-offset-m archive="y"> 8.290 </z-offset-m> <!--Back-->
+        <pitch-offset-deg> -5 </pitch-offset-deg>
+        <default-field-of-view-deg type="double"> 50 </default-field-of-view-deg>
+      </config>
+    </view>
   </sim>
 
   <controls>
@@ -134,6 +182,10 @@
       <gear-down-lock type="bool">true</gear-down-lock>
       <gear-down-lock-pos type="double">1</gear-down-lock-pos>
     </gear>
+    <throttle-coupled type="bool">1</throttle-coupled>
+    <mixture-coupled type="bool">1</mixture-coupled>
+    <prop-coupled type="bool">1</prop-coupled>
+    <movement-scale>0.025</movement-scale>
   </controls>
 
   <surface-positions>
@@ -168,7 +220,7 @@
     </para>-->
     <dc3>
       <!--<file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>-->
-      <!--<file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>-->
+      <file>Aircraft/Douglas-Dc3/Nasal/dc3-copilot.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/hydraulic.nas</file>
       <!--<file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>-->

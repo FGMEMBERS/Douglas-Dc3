@@ -1,3 +1,7 @@
+##########################################################
+#      DE L'HAMAIDE Clément for Douglas DC-3 C47         #
+##########################################################
+
 var passingLight = aircraft.light.new("/sim/model/lights/passing", [0.04, 0.7, 0.5, 2], "/controls/lighting/passing-lights");
 var tailLight = aircraft.light.new("/sim/model/lights/tail", [0], "/controls/lighting/tail-lights");
 var navLight = aircraft.light.new("/sim/model/lights/running", [0], "/controls/lighting/running-lights");

@@ -44,7 +44,7 @@
     <type>rotate</type>
     <object-name>PoigneePorteArriere</object-name>
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> -170 </factor>
+    <factor>  100 </factor>
     <axis>
       <x1-m>  2.037 </x1-m>
       <y1-m> -1.294 </y1-m>

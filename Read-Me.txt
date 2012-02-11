@@ -9,7 +9,7 @@ A little history
 Douglas DC-3/C-47
 =================
 
-Manufacturer                  :
+Manufacturer                  : 
 Type                          :
 Year                          :
 Powerplant                    :
@@ -22,16 +22,21 @@ Crew                          :
 
 Some useful keys:
 =================
+l = Lock / Unlock tail wheel
 
 Thanks
 ======
+PAF team
 
 ===============
 BARANGER Emmanuel
-January, 29, 2011. 
-
+January, 29, 2011
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
+
+PAF team
+January, 14, 2012
+http://equipe-flightgear.forumactif.com
 
 
 [Français]
@@ -57,14 +62,19 @@ Equipage                      :
 
 Quelques touches utiles :
 =========================
+l = Blocage / Déblocage de roue folle
 
 Remerciements
 =============
+Team de la PAF
 
 ===============
 BARANGER Emmanuel
-29 Janvier 2011.
-
+January, 29, 2011
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
+
+PAF team
+January, 14, 2012
+http://equipe-flightgear.forumactif.com
 

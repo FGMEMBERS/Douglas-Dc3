@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 6
 OBJECT poly
@@ -1908,12 +1908,12 @@ numvert 4
 0.002256 -0.014128 0.000217
 numsurf 1
 SURF 0x20
-mat 0
+mat 1
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 0.0 0.0
+3 0.0 0.0
+2 0.0 0.0
+1 0.0 0.0
 kids 0
 OBJECT poly
 name "fuelR"
@@ -1927,12 +1927,12 @@ numvert 4
 0.002256 -0.014128 -0.024383
 numsurf 1
 SURF 0x20
-mat 0
+mat 1
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 0.0 0.0
+3 0.0 0.0
+2 0.0 0.0
+1 0.0 0.0
 kids 0
 OBJECT poly
 name "knob"

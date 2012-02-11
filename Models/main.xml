@@ -114,6 +114,9 @@
 -->
   </animation>
 
+<!--
+    <inherits-from>Aircraft/Douglas-Dc3/Models/Effects/model-reflect</inherits-from>
+-->
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
@@ -435,7 +438,7 @@
     <type>rotate</type>
     <object-name>porteB</object-name>
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> -170 </factor>
+    <factor>  100 </factor>
     <axis>
       <x1-m>  2.037 </x1-m>
       <y1-m> -1.294 </y1-m>

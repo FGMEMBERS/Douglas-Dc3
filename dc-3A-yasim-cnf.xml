@@ -2,8 +2,9 @@
 
 <!-- 
      ************************************************************************
-      Douglas DC3/C47
-      January 2011 BARANGER Emmanuel
+     Douglas DC-3 C47
+     January 2011 BARANGER Emmanuel
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
      ************************************************************************
 -->
 
@@ -42,13 +43,13 @@
   <!-- ######## DUAL CONTROL ######### -->
   <nasal>
     <dual_control_tools>
-      <file>Aircraft/Douglas-Dc3/Nasal/dual-control-tools.nas</file>
+      <file>Aircraft/Douglas-Dc3/DualControl/dual-control-tools.nas</file>
     </dual_control_tools>
     <aircraft_dual_control>
-      <file>Aircraft/Douglas-Dc3/Nasal/dc-3-dual-control.nas</file>
+      <file>Aircraft/Douglas-Dc3/DualControl/dc-3-dual-control.nas</file>
     </aircraft_dual_control>
     <dual_control>
-      <file>Aircraft/Douglas-Dc3/Nasal/pilot-dual-control.nas</file>
+      <file>Aircraft/Douglas-Dc3/DualControl/pilot-dual-control.nas</file>
     </dual_control>
   </nasal>
   <!-- ######## DUAL CONTROL ######### -->

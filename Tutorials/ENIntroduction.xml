@@ -4,13 +4,15 @@
 
 <PropertyList>
 
+<!-- 
+     ************************************************************************
+     Douglas DC-3 C47
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     ************************************************************************
+-->
+
   <name>EN-1-Introduction</name>
-
-  <description>
-Here is a presentation of the Douglas DC3 C47
-  </description>
-
-
+  <description>Here is a presentation of the Douglas DC3 C47</description>
 
   <init>
     <set>

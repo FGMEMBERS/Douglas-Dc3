@@ -14,6 +14,13 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- LoD -->
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>32</max-m>
+  </animation>
+
   <animation>
     <type>material</type>
     <object-name>siege</object-name>
@@ -41,7 +48,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>colors_gray.png</texture>
+    <texture>Liveries/colors_gray.png</texture>
   </animation>
 
 </PropertyList>

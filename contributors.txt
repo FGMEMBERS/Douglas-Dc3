@@ -5,7 +5,34 @@
 ##  http://equipe-flightgear.forumactif.com/t527-douglas-dc-3-c-47  ##
 ##          http://wiki.flightgear.org/Fr/Douglas_DC-3-C47          ##
 ##                                                                  ##
+##                        Thanks to PAF team                        ##
+##                                                                  ##
 ######################################################################
+
+# 11/02/2012 ==> (Helijah)
+
+- Correction de plusieurs erreurs (normales inversÃ©es, textures avec canal alpha etc...)
+- RÃ© organisation des livrÃ©es suplÃ©mentaires dans des dossiers "Liveries"
+- Ajout du systÃ¨me de notation
+
+######################################################################
+
+# 13/01/2012 ==> (Patten)
+- Optimisation et texturage des 3 versions du cockpit sélectionnables (Red, Gray, Military), ainsi que tous les éléments qui vont avec (Cockpit, Pedals, handle, overhead, seats, pilots, etc...)
+
+
+# 21/11/2011 ==> (F-Sig)
+- Nouveau manche
+
+######################################################################
+
+# 21/11/2011 ==> (F-JJTH)
+- Création d'une boite de dialogue pour les options du DC-3
+- Correction électrique
+- Correction du bug de démarrage
+- Création du système hydraulique complet
+- Cowl Flaps visible en MP
+- Correction d'ouverture des portes cargo / para
 
 ######################################################################
 # 18/11/2011 ==> Helijah
@@ -23,23 +50,23 @@
 
 ######################################################################
 
-#07/11/2011 ==> Christian Thiriot (Patten)
--Version civile
--Habillage total de l'intérieur dans des tons gris.
--Cockpit
--Cabine
--Rajout de plaques vers les pieds des pilotes.
+# 07/11/2011 ==> Christian Thiriot (Patten)
+- Version civile
+- Habillage total de l'intérieur dans des tons gris.
+- Cockpit
+- Cabine
+- Rajout de plaques vers les pieds des pilotes.
 
 ######################################################################
 
 # 21/10/2011 ==> Christian Thiriot (Patten)
--Amélioration et nettoyage de la texture cabine passagers (colors, et colorsHigh)
--Création d'une texture cabine "Paras" en vue de l'activation de l'option "Military"
--Amélioration des sons: cycle de démarrage, son pompe de gavage...
--Amélioration des effets de fumée due au cycle de démarrage + proche de la réalité (cranking).
--Texturages divers: wipers, tablettes de sièges en conformité avec les coffres à bagage, texture "center-console" en vue de la version Military.
--Création d'une texture "Paras-prop" pour les hélices de la livrée "Paras".
--Retouches sur la livrée "Paras" roues, ect...
+- Amélioration et nettoyage de la texture cabine passagers (colors, et colorsHigh)
+- Création d'une texture cabine "Paras" en vue de l'activation de l'option "Military"
+- Amélioration des sons: cycle de démarrage, son pompe de gavage...
+- Amélioration des effets de fumée due au cycle de démarrage + proche de la réalité (cranking).
+- Texturages divers: wipers, tablettes de sièges en conformité avec les coffres à bagage, texture "center-console" en vue de la version Military.
+- Création d'une texture "Paras-prop" pour les hélices de la livrée "Paras".
+- Retouches sur la livrée "Paras" roues, ect...
 
 ######################################################################
 

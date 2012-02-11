@@ -149,8 +149,8 @@
     <property alias="../../params/nav-radial-selected"/>
     <center>
       <x-m>  0.000 </x-m>
-      <y-m> -0.030 </y-m>
-      <z-m> -0.030 </z-m>
+      <y-m> -0.0432 </y-m>
+      <z-m> -0.0437 </z-m>
     </center>
     <axis>
       <x> -1 </x>

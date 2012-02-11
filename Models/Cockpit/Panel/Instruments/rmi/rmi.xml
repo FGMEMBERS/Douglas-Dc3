@@ -45,31 +45,42 @@
     <type>rotate</type>
     <object-name>face</object-name>
     <property>orientation/heading-magnetic-deg</property>
-    <factor>-1</factor>
+    <factor>1</factor>
     <axis>
-      <x> -1 </x>
+      <x> 1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
   </animation>
 
-  <!-- Needle 1 -->
+  <!-- Needle 1 VOR -->
   <animation>
     <type>rotate</type>
     <object-name>RMI.Needle1</object-name>
-    <property>instrumentation/rmi-needle[0]/value</property>
+    <property>orientation/heading-deg</property>
     <axis>
-      <x> -1 </x>
+      <x> 1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
   </animation>
+  
+ <animation>
+        <type>rotate</type>
+        <object-name>RMI.Needle1</object-name>
+        <property>instrumentation/nav[1]/heading-deg</property>
+        <axis>
+            <x>-1.0</x>
+            <y>0</y>
+            <z>0.0</z>
+        </axis>
+    </animation> 
 
-  <!-- Needle 2 -->
+  <!-- Needle 2 ADF -->
   <animation>
     <type>rotate</type>
     <object-name>RMI.Needle2</object-name>
-    <property>instrumentation/rmi-needle[1]/value</property>
+    <property>instrumentation/adf/indicated-bearing-deg</property>
     <axis >
       <x> -1 </x>
       <y>  0 </y>

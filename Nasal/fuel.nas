@@ -1,3 +1,7 @@
+##########################################################
+#      DE L'HAMAIDE Clément for Douglas DC-3 C47         #
+##########################################################
+
 var TANKS = props.globals.getNode("consumables/fuel").getChildren("tank");
 
 var fuel_pressure = func(tank, engine){

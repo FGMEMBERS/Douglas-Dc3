@@ -1,18 +1,21 @@
 ##########################################################
-######### BACON Guillaume for Douglas DC-3 C47 ##########
+#         BACON Guillaume for Douglas DC-3 C47           #
+#         Modified by DE L'HAMAIDE Clément               #
 ##########################################################
+
+var mousex =0;
+var msx = 0;
+var msxa = 0;
+var mousey = 0;
+var msy = 0;
+var msya=0;
 
 setlistener("/sim/signals/fdm-initialized", func{
   setprop("/instrumentation/doors/crew/position-norm",0);
   settimer(update_system, 2);
+  settimer(mouse_accel, 1);
   print("Aircraft System ... OK");
 });
-
-#setlistener("/sim/current-view/view-number", func(vw) {
-#    var nm = vw.getValue();
-#    setprop("sim/model/sound/volume", 1.0);
-#    if(nm == 0 or nm == 7)setprop("sim/model/sound/volume", 0.5);
-#},1,0);
 
 setlistener("controls/flight/flaps", func(flaps){
   var flaps_current = flaps.getValue() / 0.25;
@@ -64,6 +67,40 @@ var CargoDoor = aircraft.door.new("instrumentation/doors/cargo", 10.0);
 var PassengerDoor = aircraft.door.new("instrumentation/doors/passenger", 10.0);
 
 var config_dlg = gui.Dialog.new("/sim/gui/dialogs/config/dialog", "Aircraft/Douglas-Dc3/Dialogs/config.xml");
+
+var mouse_accel=func{
+  msx=getprop("devices/status/mice/mouse/x") or 0;
+  mousex=msx-msxa;
+  mousex*=0.5;
+  msxa=msx;
+  msy=getprop("devices/status/mice/mouse/y") or 0;
+  mousey=msya-msy;
+  mousey*=0.5;
+  msya=msy;
+  settimer(mouse_accel, 0);
+}
+
+var set_levers = func(type,num,min,max){
+  var ctrl=[];
+  var cpld=-1;
+  if(type == "throttle"){
+    ctrl = ["controls/engines/engine[0]/throttle","controls/engines/engine[1]/throttle"];
+    cpld = "controls/throttle-coupled";
+  }elsif(type == "prop"){
+    ctrl = ["controls/engines/engine[0]/propeller-pitch","controls/engines/engine[1]/propeller-pitch"];
+    cpld = "controls/prop-coupled";
+  }elsif(type == "mixture"){
+    ctrl = ["controls/engines/engine[0]/mixture","controls/engines/engine[1]/mixture"];
+    cpld ="controls/mixture-coupled";
+  }
+
+  var amnt =mousey* getprop("controls/movement-scale");
+  var ttl = getprop(ctrl[num]) + amnt;
+  if(ttl > max) ttl = max;
+  if(ttl<min)ttl=min;
+  setprop(ctrl[num],ttl);
+  if(getprop(cpld))setprop(ctrl[1-num],ttl);
+}
 
 ##############################################
 ######### AUTOSTART / AUTOSHUTDOWN ###########
@@ -283,18 +320,6 @@ var update_system = func{
   }else{
     setprop("/engines/engine[1]/cranking",0);
   }
-
-#  if(!getprop("engines/engine/running")){
-#    if(getprop("/engines/engine/rpm") < 15){
-#      setprop("/engines/engine/rpm", 0);
-#    }
-#  }
-
-#  if(!getprop("engines/engine[1]/running")){
-#    if(getprop("/engines/engine[1]/rpm") < 15){
-#      setprop("/engines/engine[1]/rpm", 0);
-#    }
-#  }
 
   if(PassengerDoor.getpos() > 0 and CargoDoor.getpos() > 0){
     PassengerDoor.close();

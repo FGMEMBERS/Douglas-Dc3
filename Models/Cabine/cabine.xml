@@ -54,15 +54,13 @@
           <property>sim/model/config/version</property>
           <value>civilian-red</value>
         </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>true</value>
-        </equals>
+        <not><property>sim/model/config/details-high</property></not>
       </and>
     </condition>
-    <texture>colorsHigh.png</texture>
+    <texture>colors.png</texture>
   </animation>
 
+  <!-- Civilian red version -->
   <animation>
     <type>material</type>
     <object-name>interieur</object-name>
@@ -82,13 +80,10 @@
           <property>sim/model/config/version</property>
           <value>civilian-red</value>
         </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>false</value>
-        </equals>
+        <property>sim/model/config/details-high</property>
       </and>
     </condition>
-    <texture>colors.png</texture>
+    <texture>Liveries/colors_details.png</texture>
   </animation>
 
   <!-- Civilian gray version -->
@@ -111,15 +106,13 @@
           <property>sim/model/config/version</property>
           <value>civilian-gray</value>
         </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>true</value>
-        </equals>
+        <not><property>sim/model/config/details-high</property></not>
       </and>
     </condition>
-    <texture>colorsHigh_gray.png</texture>
+    <texture>Liveries/colors_gray.png</texture>
   </animation>
 
+  <!-- Civilian gray version -->
   <animation>
     <type>material</type>
     <object-name>interieur</object-name>
@@ -139,13 +132,10 @@
           <property>sim/model/config/version</property>
           <value>civilian-gray</value>
         </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>false</value>
-        </equals>
+        <property>sim/model/config/details-high</property>
       </and>
     </condition>
-    <texture>colors_gray.png</texture>
+    <texture>Liveries/colors_gray_details.png</texture>
   </animation>
 
   <!-- Military version -->
@@ -163,46 +153,12 @@
     <object-name>bagageG</object-name>
     <object-name>bagageD</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>military</value>
-        </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>true</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>military</value>
+      </equals>
     </condition>
-    <texture>colorsHigh_paras.png</texture>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>interieur</object-name>
-    <object-name>inttour</object-name>
-    <object-name>intporteA</object-name>
-    <object-name>intporteB</object-name>
-    <object-name>intcargoA</object-name>
-    <object-name>intcargoB</object-name>
-    <object-name>planchet</object-name>
-    <object-name>cloisons</object-name>
-
-    <object-name>bagageG</object-name>
-    <object-name>bagageD</object-name>
-    <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>military</value>
-        </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>false</value>
-        </equals>
-      </and>
-    </condition>
-    <texture>colors_paras.png</texture>
+    <texture>Liveries/colors_paras.png</texture>
   </animation>
 
   <!-- Les détails -->
@@ -212,8 +168,30 @@
   </model>
 
   <model>
+    <name>AllPoignees</name>
     <path>Aircraft/Douglas-Dc3/Models/Cabine/Details/all-poigneesportes.xml</path>
   </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>AllDetails</object-name>
+    <object-name>AllPoignees</object-name>
+    <condition>
+      <and>
+        <or>
+          <equals>
+            <property>sim/model/config/version</property>
+            <value>civilian-red</value>
+          </equals>
+          <equals>
+            <property>sim/model/config/version</property>
+            <value>civilian-gray</value>
+          </equals>
+        </or>
+        <property>sim/model/config/details-high</property>
+      </and>
+    </condition>
+  </animation>
 
   <!-- Les sièges -->
   <model>
@@ -223,7 +201,6 @@
 
   <animation>
     <type>select</type>
-    <object-name>AllDetails</object-name>
     <object-name>AllSeats</object-name>
     <condition>
       <or>
@@ -259,7 +236,7 @@
     <type>rotate</type>
     <object-name>intporteB</object-name>
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> -170 </factor>
+    <factor>  100 </factor>
     <axis>
       <x1-m>  2.037 </x1-m>
       <y1-m> -1.294 </y1-m>

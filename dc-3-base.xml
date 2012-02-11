@@ -2,15 +2,23 @@
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
+<!-- 
+     ***************************************************************************************
+     Douglas DC-3 C47
+     January  2011 generate by helijah  : http://helijah.free.fr / http://embaranger.free.fr
+     January  2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     February 2012 modified Helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     ***************************************************************************************
+-->
 
-    <tutorials include="Tutorials/dc-3-tutorials.xml"/>
- 
-    <author>BARANGER Emmanuel (3D)</author>
-    <aircraft-version>0.1</aircraft-version>
+  <sim> 
+    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D,FDM)</author>
+    <aircraft-version>1.0</aircraft-version>
     <status>Alpha</status>
    
     <fuel-fraction>0.8</fuel-fraction>
+
+    <tutorials include="Tutorials/dc-3-tutorials.xml"/>
   
     <flaps>
       <setting>0.00</setting>
@@ -24,9 +32,64 @@
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/Douglas-Dc3/Models/Effects/Submodels/submodels.xml</path>
     </submodels>
+    
+    <weight n="0">
+      <name>Compartiment A</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>600</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Compartiment B</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>800</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Compartiment C</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>1000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+
+    <weight n="3">
+      <name>Compartiment D</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>3000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="4">
+      <name>Compartiment E</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>3000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="5">
+      <name>Compartiment F</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>2400</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <!--<weight n="6">
+        <weight-lb>0</weight-lb>
+        <max-lb>1300</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="7">
+        <weight-lb>0</weight-lb>
+        <max-lb>350</max-lb>
+        <min-lb>0</min-lb>
+    </weight>-->
 
     <help>
-      <title>Douglas DC-3/C4-7</title>
+      <title>Douglas DC-3 C47</title>
       <key>
         <name>d</name>
         <desc>Open/Close crew door</desc>
@@ -43,61 +106,57 @@
         <name>Ctrl-j</name>
         <desc>Parachutist</desc>
       </key>
-      <text>=== Description des interrupteurs du panneau superieur ===
-
-:: Gauche ::
-Parachute signal -> Larguage des parachutistes (25 au total)
-Master battery -> Interrupteur electrique general
-Passing light -> Eclairage
-Left landing light -> Phare d'atterrissage gauche
-Right landing light -> Phare d'atterrissage droit
-Running light -> Eclairage
-Tail light -> Eclairage exterieur de queue
-Window de-icer -> Degivrage du pare-prise
-Left pitot de-icer -> Degivrage de la sonde pitot gauche
-Right pitot de-icer -> Degivrage de la sonde pitot droite
-Left oil dilution -> 
-Right oil dilution -> 
-Compass light -> Eclairage du compas
-Left propeller feather -> En cas de panne actionnez ce bouton pour mettre l'helice gauche en drapeau (pas d'helice minimum pour un minimum de trainee)
-Instrument light -> Fait varier l'intensite lumineuse des instruments
-Propeller de-icer -> Degivrage des helices
-
-:: Center ::
-Left magneto -> Magneto du moteur gauche
-Right magneto -> Magneto du moteur droit
-
-:: Droite ::
-Left engine starter -> Demarreur du moteur gauche
-Right engine starter -> Demarreur du moteur droit
-Left booster pump -> Booster de pompe a essence gauche
-Right booster pump -> Booster de pompe a essence droite
-Recognition -> Temoin de circuit de reconnaissance
-Recognition 1, 2 et 3 -> Eclairage exterieur de reconnaissance
-Carburator de-icer -> Degivrage des carburateurs
-Cockpit light -> Eclairage interieur du cockpit
-unused -> Interrupteur non utilise
-Right propeller feather -> En cas de panne actionnez ce bouton pour mettre l'helice droite en drapeau (pas d'helice minimum pour un minimum de trainee)
-Formation light -> Eclairage exterieur permettant de mieux se reperer lors de deplacement en formation
-Voltmeter light -> 
-Left voltmeter -> 
-Right voltmeter -> 
-
-
-=== Demarrage ===
-1 - Master battery -> ON
-2 - Left magneto -> BOTH
-3 - Right magneto -> BOTH
-4 - Left engine starter -> Moteur gauche demarre
-5 - Right engine starter -> Moteur droit demarre
-
-
-=== Arret ===
-1 - Left magneto -> OFF
-2 - Right magneto -> OFF
-3 - Master battery -> OFF
-
-      </text>
+        <line/>
+        <line>========== Engines Start Checklist ==========</line>
+        <line>1 - Left tank selector -> LH</line>
+        <line>2 - Right tank selector -> RH</line>
+        <line>3 - Master battery -> ON</line>
+        <line>4 - Left booster pump -> ON (Fuel Pressure increase over 12 PSI)</line>
+        <line>5 - Right booster pump -> ON (Fuel Pressure increase over 12 PSI)</line>
+        <line>6 - Mixture -> Full Rich</line>
+        <line>7 - Throttle -> 10%</line>
+        <line>8 - Propeller-pitch -> 100%</line>
+        <line>9 - Left magneto -> BOTH</line>
+        <line>10- Right magneto -> BOTH</line>
+        <line>11- Left engine starter -> Left engine start</line>
+        <line>12- Right engine starter -> Right engine start</line>
+        <line>13- Left booster pump -> OFF</line>
+        <line>14- Right booster pump -> OFF</line>
+        <line/>
+        <line>========== Engines Autostart ==========</line>
+        <line>1 - Open Douglas DC-3 C47 dialog (Douglas DC-3 C47 > Options)</line>
+        <line>2 - Click on Autostart button</line>
+        <line>3 - Press key "s"</line>
+        <line/>
+        <line>========== Engines Stop Checklist ==========</line>
+        <line>1 - Mixture -> IDLE - CUT OFF</line>
+        <line>2 - Left magneto -> OFF</line>
+        <line>3 - Right magneto -> OFF</line>
+        <line>4 - Master battery -> OFF</line>
+        <line/>
+        <line>========== Procedures ==========</line>
+        <line>Takeoff -> no flaps, rotate at 75 KIAS</line>
+        <line>Climbout -> no flaps, 80 KIAS</line>
+        <line>Cruise -> trim down, 165 KIAS</line>
+        <line>Landing -> full flaps, 75 KIAS</line>
+        <line>Landing gear handle -> unlock* Gear Lock, pull/push Gear Handle, lock* Gear Lock</line>
+        <line>*: click on it</line>
+        <line/>
+        <line>========== Dual Control ==========</line>
+        <line>For a best experience, pilot and copilot need to be connected on the same server</line>
+        <line>=== Pilot select copilot ===</line>
+        <line>1 - Open Pilot dialog (Douglas DC-3 C47 > Select MP-copilot)</line>
+        <line>2 - Select one copilot available</line>
+        <line>3 - Close Pilot dialog</line>
+        <line>=== Copilot select pilot ===</line>
+        <line>1 - Open Copilot dialog (Douglas DC-3 C47 > Select MP-pilot)</line>
+        <line>2 - Select one pilot available</line>
+        <line>3 - Close Copilot dialog</line>
+        <line/>
+        <line>========== HowTo use engines handle ==========</line>
+        <line>Hold Left Mouse Button on engine handle and up/down your mouse in order to adjust setting of 2 engines</line>
+        <line>Hold Scrool mouse Button on engine handle and up/down your mouse in order to adjust setting of 1 engine</line>
+        <line/>
     </help>
 
     <model>
@@ -106,13 +165,22 @@ Right voltmeter ->
         <show-yokes type="bool">true</show-yokes>
         <show-pilot type="bool">true</show-pilot>
         <show-copilot type="bool">true</show-copilot>
-        <textures-high type="bool">false</textures-high>
         <details-high type="bool">false</details-high>
         <glass-reflection type="bool">true</glass-reflection>
         <light-cone type="bool">true</light-cone>
-        <version type="string">civilian</version>
+        <version type="string">civilian-red</version>
       </config>
     </model>
+
+    <rendering>
+      <static-lod>
+        <ai-detailed>1500</ai-detailed>
+      </static-lod>
+    </rendering>
+
+    <freeze>
+      <fuel type="bool">true</fuel>
+    </freeze>
 
     <menubar include="Dialogs/dc-3-menu.xml"/>
 
@@ -122,15 +190,11 @@ Right voltmeter ->
      <pilot-callsign type="string"/>
     </remote>
 
-    <freeze>
-      <fuel type="bool">true</fuel>
-    </freeze>
-
     <multiplay n="0">
       <chat_display>1</chat_display>
       <generic n="0">
-        <int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
-        <int n="1" type="int">  0 </int>  <!-- 0 immat -->
+	<int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
+	<int n="1" type="int">  0 </int>  <!-- 0 immat -->
         <int n="2" type="int">  0 </int>  <!-- 1 immat -->
         <int n="3" type="int">  0 </int>  <!-- 2 immat -->
         <int n="4" type="int">  0 </int>  <!-- 3 immat -->
@@ -138,7 +202,7 @@ Right voltmeter ->
         <int n="6" type="int">  0 </int>  <!-- 5 immat -->
         <int n="7" type="bool"> 0 </int>  <!-- 6 smoke -->
         <int n="8" type="int">  0 </int>  <!-- 7 color -->
-        <int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
+	<int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
         <int n="10" alias="/sim/model/lights/running/state"/>
         <int n="11" alias="/sim/model/lights/passing/state"/>
         <int n="12" alias="/sim/model/lights/tail/state"/>
@@ -148,24 +212,23 @@ Right voltmeter ->
         <int n="16" alias="/sim/model/lights/formation/state"/>
         <int n="17" alias="/controls/lighting/landing-lights"/>
         <int n="18" alias="/controls/lighting/landing-lights[1]"/>
-        <!-- Don't work because FlightGear is limited at 18 MP properties :( -->
-        <int n="19" alias="/controls/lighting/cabin-lights"/>
+        <int n="19" alias="/controls/lighting/cabin-lights"/> <!-- Don't work because FlightGear is limited at 18 MP properties :( -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m">  0 </float>  <!-- 11 altitude for MP shadow -->
-        <float n="3" alias="/controls/flight/elevator-trim"/>
-        <float n="4" alias="/controls/flight/rudder-trim"/>
-        <float n="5" alias="/controls/flight/aileron-trim"/>
-        <float n="6" alias="/controls/engines/engine[0]/throttle"/>
-        <float n="7" alias="/controls/engines/engine[1]/throttle"/>
-        <float n="8" alias="/controls/engines/engine[0]/mixture"/>
-        <float n="9" alias="/controls/engines/engine[1]/mixture"/>
-        <float n="10" alias="/controls/engines/engine[0]/propeller-pitch"/>
-        <float n="11" alias="/controls/engines/engine[1]/propeller-pitch"/>
-        <float n="12" alias="/controls/gear/brake-left"/>
-        <float n="13" alias="/controls/gear/brake-right"/>
-        <float n="14" alias="/controls/engines/engine/cowl-flaps-norm"> 0 </float>
-        <float n="15" alias="/controls/engines/engine[1]/cowl-flaps-norm"> 0 </float>
+	<float n="3" alias="/controls/flight/elevator-trim"/>
+	<float n="4" alias="/controls/flight/rudder-trim"/>
+	<float n="5" alias="/controls/flight/aileron-trim"/>
+	<float n="6" alias="/controls/engines/engine[0]/throttle"/>
+	<float n="7" alias="/controls/engines/engine[1]/throttle"/>
+	<float n="8" alias="/controls/engines/engine[0]/mixture"/>
+	<float n="9" alias="/controls/engines/engine[1]/mixture"/>
+	<float n="10" alias="/controls/engines/engine[0]/propeller-pitch"/>
+	<float n="11" alias="/controls/engines/engine[1]/propeller-pitch"/>
+	<float n="12" alias="/controls/gear/brake-left"/>
+	<float n="13" alias="/controls/gear/brake-right"/>
+	<float n="14" alias="/controls/engines/engine/cowl-flaps-norm"> 0 </float>
+	<float n="15" alias="/controls/engines/engine[1]/cowl-flaps-norm"> 0 </float>
         <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
         <!-- <string n="1" type"string"/> RESERVED FOR MODE WHEELS/AMPHIBIOUS -->
       </generic>
@@ -173,62 +236,123 @@ Right voltmeter ->
     <!-- ######## DUAL CONTROL ######### -->
     <!-- ############################### -->
 
-    <weight n="0">
-      <name>Compartiment A</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>600</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
+    <chase-distance-m type="double" archive="y"> -30 </chase-distance-m>
 
-    <weight n="1">
-      <name>Compartiment B</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>800</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
+    <view n="100">
+      <name>Passenger</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+        <pitch-offset-deg>-5</pitch-offset-deg>
+        <x-offset-m archive="y">  0.274 </x-offset-m> <!-- Right -->
+        <y-offset-m archive="y">  0.198 </y-offset-m> <!-- Up    -->
+        <z-offset-m archive="y"> -3.367 </z-offset-m> <!-- Back  -->
+        <pitch-offset-deg> 0 </pitch-offset-deg>
+        <default-field-of-view-deg> 55 </default-field-of-view-deg>
+      </config>
+    </view>
 
-    <weight n="2">
-      <name>Compartiment C</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>1000</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
+    <view n="101">
+      <name>Copilot View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+        <pitch-offset-deg>-5</pitch-offset-deg>
+        <x-offset-m archive="y">  0.475 </x-offset-m> <!-- Right -->
+        <y-offset-m archive="y">  0.434 </y-offset-m> <!-- Up    -->
+        <z-offset-m archive="y"> -7.965 </z-offset-m> <!-- Back  -->
+        <pitch-offset-deg> -20 </pitch-offset-deg>
+        <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      </config>
+    </view>
 
-    <weight n="3">
-      <name>Compartiment D</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>3000</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
+    <view n="102">
+      <name>Tail Camera View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+        <x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
+        <y-offset-m archive="y"> 3.600 </y-offset-m> <!--Up-->
+        <z-offset-m archive="y"> 8.290 </z-offset-m> <!--Back-->
+        <pitch-offset-deg> -5 </pitch-offset-deg>
+        <default-field-of-view-deg type="double"> 50 </default-field-of-view-deg>
+      </config>
+    </view>
 
-    <weight n="4">
-      <name>Compartiment E</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>3000</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
+    <view n="103">
+      <name>Cockpit View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+        <x-offset-m archive="y">  0.000 </x-offset-m> <!--Right-->
+        <y-offset-m archive="y">  0.503 </y-offset-m> <!--Up-->
+        <z-offset-m archive="y"> -7.126 </z-offset-m> <!--Back-->
+        <pitch-offset-deg> -15 </pitch-offset-deg>
+        <default-field-of-view-deg type="double"> 60 </default-field-of-view-deg>
+      </config>
+    </view>
 
-    <weight n="5">
-      <name>Compartiment F</name>
-      <weight-lb>0</weight-lb>
-      <max-lb>2400</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y"> -0.475 </x-offset-m> <!-- Right -->
+        <y-offset-m archive="y">  0.434 </y-offset-m> <!-- Up    -->
+        <z-offset-m archive="y"> -7.965 </z-offset-m> <!-- Back  -->
+        <pitch-offset-deg> -20 </pitch-offset-deg>-->
+        <default-field-of-view-deg> 70 </default-field-of-view-deg>
+        <limits>
+          <enabled type="bool">false</enabled>
+        </limits>
+      </config>
+    </view>
 
-    <!--
-    <weight n="6">
-      <weight-lb>0</weight-lb>
-      <max-lb>1300</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
+    <view n="1">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
 
-    <weight n="7">
-      <weight-lb>0</weight-lb>
-      <max-lb>350</max-lb>
-      <min-lb>0</min-lb>
-    </weight>
-    -->
+    <view n="2">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
 
+    <view n="3">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="4">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="5">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="6">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
   </sim>
 
   <controls>
@@ -249,9 +373,6 @@ Right voltmeter ->
         <cowl-flaps-norm type="double">1</cowl-flaps-norm>
         <cowl-flaps-pos type="double">1</cowl-flaps-pos>
       </engine>
-      <throttle-select type="bool">false</throttle-select>
-      <prop-pitch-select type="bool">false</prop-pitch-select>
-      <mixture-select type="bool">false</mixture-select>
     </engines>
     <fuel>
       <tank-gauge type="int">0</tank-gauge>
@@ -288,6 +409,10 @@ Right voltmeter ->
     <flight>
       <flaps-cmd type="int">0</flaps-cmd>
     </flight>
+    <throttle-coupled type="bool">1</throttle-coupled>
+    <mixture-coupled type="bool">1</mixture-coupled>
+    <prop-coupled type="bool">1</prop-coupled>
+    <movement-scale>0.025</movement-scale>
   </controls>
 
   <consumables>
@@ -340,6 +465,9 @@ Right voltmeter ->
       <file>Aircraft/Douglas-Dc3/Nasal/hydraulic.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/wipers.nas</file>
     </dc3>
+    <chronograph>
+      <file>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/chronograph/chronograph.nas</file>
+    </chronograph>
   </nasal>
 
 </PropertyList>

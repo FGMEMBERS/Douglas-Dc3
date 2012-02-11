@@ -14,7 +14,7 @@
   <text>
     <name>magnetoL</name>
     <type type="string">literal</type>
-    <text type="string">  Left magneto        -     +</text>
+    <text type="string">  Magneto Left        -     +</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.006</character-size>
@@ -37,7 +37,7 @@
   <text>
     <name>magnetoR</name>
     <type type="string">literal</type>
-    <text type="string">Right magneto  +    -</text>
+    <text type="string">Magneto Right   +    -</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.006</character-size>

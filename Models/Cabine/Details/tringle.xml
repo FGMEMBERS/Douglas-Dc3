@@ -34,7 +34,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>colors_gray.png</texture>
+    <texture>Liveries/colors_gray.png</texture>
   </animation>
 
 </PropertyList>

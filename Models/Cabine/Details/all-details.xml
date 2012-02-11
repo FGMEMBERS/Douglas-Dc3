@@ -167,7 +167,7 @@
     <type>rotate</type>
     <object-name>PlaquePorteArriere</object-name>
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> -170 </factor>
+    <factor>  100 </factor>
     <axis>
       <x1-m>  2.037 </x1-m>
       <y1-m> -1.294 </y1-m>
@@ -255,7 +255,7 @@
     <path>Aircraft/Douglas-Dc3/Models/Cabine/Details/rideaugrand.xml</path>
     <offsets>
       <x-m> -7.623 </x-m>
-      <y-m> -0.023 </y-m>
+      <y-m>  0.000 </y-m>
       <z-m>  0.140 </z-m>
       <heading-deg> 180 </heading-deg>
     </offsets>

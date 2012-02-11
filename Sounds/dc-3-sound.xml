@@ -842,48 +842,118 @@
       </volume>
     </click>
 
-<pump>
+    <pump>
         <name>fuel pumpL</name>
         <mode>looped</mode>
         <path>Aircraft/Douglas-Dc3/Sounds/Pompe_gavage.wav</path>
         <condition>
+          <and>
+            <greater-than>
+              <property>systems/electrical/outputs/boost-pump</property>
+              <value>0.1</value>
+            </greater-than>
+            <greater-than>
+              <property>controls/fuel/left-valve</property>
+              <value>0</value>
+            </greater-than>
+          </and>
+        </condition>
+        <volume>
+            <offset>0.5</offset>
+        </volume>
+        <position>
+            <x>-3.5</x>
+            <y>8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>0.5</reference-dist>
+        <max-dist>1.0</max-dist>
+    </pump>
+
+    <pump>
+        <name>fuel pumpL witout fuel</name>
+        <mode>looped</mode>
+        <path>Aircraft/Douglas-Dc3/Sounds/Pompe_gavage_sans_carburant.wav</path>
+        <condition>
+          <and>
             <greater-than>
                 <property>systems/electrical/outputs/boost-pump</property>
                 <value>0.1</value>
             </greater-than>
+            <equals>
+              <property>controls/fuel/left-valve</property>
+              <value>0</value>
+            </equals>
+          </and>
         </condition>
         <volume>
             <offset>0.5</offset>
         </volume>
         <position>
-            <x>-0.5</x>
-            <y>0</y>
+            <x>-3.5</x>
+            <y>8</y>
             <z>0</z>
         </position>
         <reference-dist>0.5</reference-dist>
         <max-dist>1.0</max-dist>
     </pump>
-<pump>
+
+    <pump>
         <name>fuel pumpR</name>
         <mode>looped</mode>
         <path>Aircraft/Douglas-Dc3/Sounds/Pompe_gavage.wav</path>
         <condition>
+          <and>
             <greater-than>
-                <property>systems/electrical/outputs/boost-pump[1]</property>
-                <value>0.1</value>
+              <property>systems/electrical/outputs/boost-pump[1]</property>
+              <value>0.1</value>
             </greater-than>
+            <greater-than>
+              <property>controls/fuel/right-valve</property>
+              <value>0</value>
+            </greater-than>
+          </and>
         </condition>
         <volume>
             <offset>0.5</offset>
         </volume>
         <position>
-            <x>-0.5</x>
-            <y>0</y>
+            <x>-3.5</x>
+            <y>-8</y>
             <z>0</z>
         </position>
         <reference-dist>0.5</reference-dist>
         <max-dist>1.0</max-dist>
     </pump>
+
+    <pump>
+        <name>fuel pumpR witout fuel</name>
+        <mode>looped</mode>
+        <path>Aircraft/Douglas-Dc3/Sounds/Pompe_gavage_sans_carburant.wav</path>
+        <condition>
+          <and>
+            <greater-than>
+                <property>systems/electrical/outputs/boost-pump[1]</property>
+                <value>0.1</value>
+            </greater-than>
+            <equals>
+              <property>controls/fuel/right-valve</property>
+              <value>0</value>
+            </equals>
+          </and>
+        </condition>
+        <volume>
+            <offset>0.5</offset>
+        </volume>
+        <position>
+            <x>-3.5</x>
+            <y>-8</y>
+            <z>0</z>
+        </position>
+        <reference-dist>0.5</reference-dist>
+        <max-dist>1.0</max-dist>
+    </pump>
+
                                           <!-- A tester et a régler
  <gear-warn>
             <name>gear warning</name>

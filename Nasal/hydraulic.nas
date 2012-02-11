@@ -1,3 +1,7 @@
+##########################################################
+#      DE L'HAMAIDE Clément for Douglas DC-3 C47         #
+##########################################################
+
 var EngineState   = ["engines/engine/running", "engines/engine[1]/running"];
 var EngineRpm     = ["engines/engine/rpm", "engines/engine[1]/rpm"];
 var LandingGear   = "controls/gear/gear-down-cmd";

@@ -12,6 +12,57 @@
    <object-name>flap-lev</object-name>
  </animation>
 
+<!-- Civilian red version -->
+ <animation>
+   <type>material</type>
+      <object-name>sol_cent</object-name>
+      <object-name>sol_ext</object-name>
+      <object-name>gear-lev</object-name>
+      <object-name>gear-lev2</object-name>
+      <object-name>flap-lev</object-name>
+   <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-red</value>
+      </equals>
+    </condition>
+    <texture>gear-flaps.png</texture>
+  </animation>
+
+<!-- Civilian gray version -->
+ <animation>
+   <type>material</type>
+     <object-name>sol_cent</object-name>
+     <object-name>sol_ext</object-name>
+     <object-name>gear-lev</object-name>
+     <object-name>gear-lev2</object-name>
+     <object-name>flap-lev</object-name>
+  <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-gray</value>
+      </equals>
+    </condition>
+    <texture>Liveries/gear-flaps-gray.png</texture>
+  </animation>
+
+<!-- Military version -->
+<animation>
+  <type>material</type>
+     <object-name>sol_cent</object-name>
+     <object-name>sol_ext</object-name>
+     <object-name>gear-lev</object-name>
+     <object-name>gear-lev2</object-name>
+     <object-name>flap-lev</object-name>
+   <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>military</value>
+      </equals>
+    </condition>
+    <texture>Liveries/gear-flaps_military.png</texture>
+  </animation>
+
 <!--GEAR-->
 <!--verrouillage (levier au sol) --> 
  <animation>

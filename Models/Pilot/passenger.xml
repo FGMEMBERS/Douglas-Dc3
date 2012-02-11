@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
-  <path>general_pilot.ac</path>
+  <path>passenger.ac</path>
 
   <animation>
     <!-- Objets opaques -->
@@ -116,12 +116,9 @@
       <z> 0.000 </z>
     </axis>
   </animation>
-  
-  
-  
  
-<!-- Tirer sur le manche-->
-<!-- coude-->
+  <!-- Tirer sur le manche-->
+  <!-- coude-->
   <animation>
     <type>rotate</type>
     <object-name>avantbrasG</object-name>

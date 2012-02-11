@@ -1,11 +1,15 @@
+##########################################################
+#      DE L'HAMAIDE Clément for Douglas DC-3 C47         #
+##########################################################
+
 var jumper = aircraft.light.new("controls/paratroopers/trigger", [2,3.5], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
 
 setlistener("controls/paratroopers/trigger/state", func(state){								# On écoute le switch qui déclenche le signal
   if(state.getValue()){													# Si un parachutiste saute
-    if(getprop("instrumentation/doors/cargo/position-norm") < 1){							# Si la porte cargo n'est pas ouverte
+    if(getprop("instrumentation/doors/passenger/position-norm") < 0.75){						# Si la porte cargo n'est pas ouverte
       jumper.switch(0);													# On annule le larguage des parachutistes
       setprop("controls/paratroopers/trigger/state", 0);
-      setprop("sim/messages/copilot", "Cargo doors closed ! Paratroopers can't jump");					# On indique le problème
+      setprop("sim/messages/copilot", "Paratroopers doors closed ! Paratroopers can't jump");				# On indique le problème
     }else{														# Sinon si la porte est ouverte
       var nb_para = getprop("controls/paratroopers/paratroopers") - 1;							# On calcul combien il reste de parachutiste
       setprop("controls/paratroopers/paratroopers", nb_para);								# On attribut le nombre de parachutiste à la propriété

@@ -4,7 +4,8 @@
 ###### Based on Curtis Olson's nasal electrical code #####
 ##########################################################
 ##########################################################
-######## Modified by Clement DE L'HAMAIDE for P92 ########
+######## Modified by Clement DE L'HAMAIDE for DC-3 #######
+########       Modified by PAF team for DC-3       #######
 ##########################################################
 
 var last_time = 0.0;
@@ -381,12 +382,12 @@ var avionics_bus = func(bus_volts) {
         OutPuts.getNode("instrument-lights",1).setValue(0.0);
     }
 
-#    if (props.globals.getNode("/instrumentation/comm/serviceable").getBoolValue() and props.globals.getNode("/sim/failure-manager/instrumentation/comm/serviceable").getBoolValue()){
-#        OutPuts.getNode("comm",1).setValue(bus_volts);
-#        load += 0.00015;
-#    } else {
-#        OutPuts.getNode("comm",1).setValue(0.0);
-#    }
+    if (props.globals.getNode("/instrumentation/comm/serviceable").getBoolValue() and props.globals.getNode("/sim/failure-manager/instrumentation/comm/serviceable").getBoolValue()){
+        OutPuts.getNode("comm",1).setValue(bus_volts);
+        load += 0.00015;
+    } else {
+        OutPuts.getNode("comm",1).setValue(0.0);
+    }
 #
 #    if (props.globals.getNode("/instrumentation/kt76a/mode").getValue() > 0 and props.globals.getNode("/controls/switches/transponder").getBoolValue()){
 #        OutPuts.getNode("transponder",1).setValue(bus_volts);

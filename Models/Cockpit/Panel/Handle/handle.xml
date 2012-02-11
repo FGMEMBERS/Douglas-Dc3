@@ -45,12 +45,10 @@
     <object-name>volantDG</object-name>
     <object-name>clicelevator</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-red</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-red</value>
+      </equals>
     </condition>
     <texture>colors.png</texture>
   </animation>
@@ -68,14 +66,33 @@
     <object-name>volantDG</object-name>
     <object-name>clicelevator</object-name>
     <condition>
-      <and>
         <equals>
           <property>sim/model/config/version</property>
           <value>civilian-gray</value>
         </equals>
-      </and>
     </condition>
-    <texture>colors_gray.png</texture>
+    <texture>Liveries/colors_gray.png</texture>
+  </animation>
+
+  <!-- Military version -->
+  <animation>
+    <type>material</type>
+    <object-name>mancheD</object-name>
+    <object-name>ecrousD</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>ecrousG</object-name>
+    <object-name>volantGG</object-name>
+    <object-name>volantGD</object-name>
+    <object-name>volantDD</object-name>
+    <object-name>volantDG</object-name>
+    <object-name>clicelevator</object-name>
+    <condition>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>military</value>
+        </equals>
+    </condition>
+    <texture>Liveries/colors_military.png</texture>
   </animation>
  
   <animation>
@@ -145,71 +162,6 @@
       <y> -1 </y>
       <z>  0 </z>
     </axis>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>volantGG</object-name>
-    <object-name>volantDG</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>controls/flight/aileron</property>
-        <step>-0.05</step>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>volantGD</object-name>
-    <object-name>volantDD</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>controls/flight/aileron</property>
-        <step>0.05</step>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>clicelevator</object-name>
-    <visible>false</visible>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>controls/flight/elevator</property>
-        <step>-0.05</step>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>mancheD</object-name>
-    <object-name>ecrousD</object-name>
-    <object-name>mancheG</object-name>
-    <object-name>ecrousG</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>controls/flight/elevator</property>
-        <step>0.05</step>
-      </binding>
-    </action>
   </animation>
 
 </PropertyList>

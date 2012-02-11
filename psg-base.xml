@@ -2,9 +2,15 @@
 
 <PropertyList>
 
+<!-- 
+     ************************************************************************
+     Douglas DC-3 C47
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     ************************************************************************
+-->
+
   <sim>
- 
-    <author>BARANGER Emmanuel (3D)</author>
+    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D,FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
 
@@ -23,6 +29,18 @@
         <desc>Open/Close cargo door</desc>
       </key>-->
     </help>
+
+    <model>
+      <config>
+        <show-yokes type="bool">true</show-yokes>
+        <show-pilot type="bool">true</show-pilot>
+        <show-copilot type="bool">true</show-copilot>
+        <details-high type="bool">false</details-high>
+        <glass-reflection type="bool">true</glass-reflection>
+        <light-cone type="bool">true</light-cone>
+        <version type="string">civilian-red</version>
+      </config>
+    </model>
 
     <presets>
       <onground type="bool">false</onground>
@@ -124,14 +142,17 @@
     <doors>
       <file>Aircraft/Douglas-Dc3/Nasal/doors.nas</file>
     </doors>
-    <dc-3>
-      <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
+    <dc3>
+      <!--<file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>
-      <file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>
-    </dc-3>
+      <file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>-->
+      <script>
+        var config_dlg = gui.Dialog.new("/sim/gui/dialogs/config/dialog", "Aircraft/Douglas-Dc3/Dialogs/config.xml");
+      </script>
+    </dc3>
   </nasal>
 
 </PropertyList>

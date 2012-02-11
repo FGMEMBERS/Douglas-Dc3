@@ -64,7 +64,31 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>colors_gray.png</texture>
+    <texture>Liveries/colors_gray.png</texture>
+  </animation>
+
+<!-- Military version -->
+  <animation>
+    <type>material</type>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>ignitiationcadre</object-name>
+    <object-name>boutton</object-name>
+    <object-name>ignitiationface</object-name>
+    <object-name>fondL</object-name>
+    <object-name>keyL</object-name>
+    <object-name>fondR</object-name>
+    <object-name>keyR</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>decreaseL</object-name>
+    <object-name>increaseR</object-name>
+    <object-name>decreaseR</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>military</value>
+      </equals>
+    </condition>
+    <texture>Liveries/colors_military.png</texture>
   </animation>
 
   <animation>

@@ -3,17 +3,24 @@
 <!-- <PropertyList include="dc-3-jsbsim-cnf.xml"> -->
 <PropertyList include="dc-3-yasim-cnf.xml">
 
+<!-- 
+     ***************************************************************************************
+     Douglas DC-3 C47
+     January  2011 generate by helijah  : http://helijah.free.fr / http://embaranger.free.fr
+     January  2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     February 2012 modified Helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     ***************************************************************************************
+-->
+
   <sim>
 
-    <description>Douglas Dc 3/C47 (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM) / PAF Team (3D/System/FDM/</author>
-    <status>beta production</status>
+    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D,FDM)</author>
 
     <rating>
-     <FDM type="int">     4 </FDM>
-     <systems type="int"> 4 </systems>
-     <cockpit type="int"> 4 </cockpit>
-     <model type="int">   4 </model>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   4 </model>
     </rating>
 
   </sim>

@@ -17,7 +17,7 @@
   </animation>
 
   <animation>
-    <type>select</type>
+     <type>select</type>
     <object-name>shadow</object-name>
     <condition>
       <not><property>sim/freeze/replay-state</property></not>
@@ -31,7 +31,12 @@
     <object-name>shadow</object-name>
     <property>orientation/pitch-deg</property>
     <factor> -1 </factor>
-    <axis>
+   <center>
+      <x>-4.3</x>
+      <y>0</y>
+      <z>0</z>
+    </center>
+   <axis>
       <x> 0 </x>
       <y> 1 </y>
       <z> 0 </z>
@@ -55,6 +60,7 @@
   <animation>
    <type>translate</type>
    <object-name>shadow</object-name>
+   <!--<property>position/gear-agl-ft</property>-->
    <property>sim/multiplay/generic/float[2]</property>
    <factor> -1 </factor>
    <axis>

@@ -44,6 +44,22 @@
     <texture>colors_gray.png</texture>
   </animation>
 
+  <!-- Military version -->
+  <animation>
+    <type>material</type>
+    <object-name>moteur</object-name>
+    <object-name>bras</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>military</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors_military.png</texture>
+  </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>bras</object-name>

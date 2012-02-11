@@ -6,9 +6,13 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>cab-interieur</object-name>
-    <object-name>cab-inttour</object-name>
-    <object-name>cab-planchet</object-name>
+    <object-name>cab-interieur</object-name>    
+    <object-name>cab-plancher</object-name>
+    <object-name>cadres-vitres</object-name>
+    <object-name>guide</object-name>
+    <object-name>poignée</object-name>
+    <object-name>verrou</object-name>
+    <object-name>structure</object-name>
 
     <!-- Objets transparents -->
     <object-name>cab-intvitres</object-name>
@@ -40,40 +44,18 @@
   <!-- Civilian red version -->
   <animation>
     <type>material</type>
-    <object-name>cab-interieur</object-name>
-    <object-name>cab-inttour</object-name>
-    <object-name>cab-planchet</object-name>
+    <object-name>cab-interieur</object-name>    
+    <object-name>cab-plancher</object-name>
+    <object-name>cadres-vitres</object-name>
+    <object-name>guide</object-name>
+    <object-name>poignée</object-name>
+    <object-name>verrou</object-name>
+    <object-name>structure</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-red</value>
-        </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>true</value>
-        </equals>
-      </and>
-    </condition>
-    <texture>colorsHigh.png</texture>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>cab-interieur</object-name>
-    <object-name>cab-inttour</object-name>
-    <object-name>cab-planchet</object-name>
-    <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-red</value>
-        </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>false</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-red</value>
+      </equals>
     </condition>
     <texture>colors.png</texture>
   </animation>
@@ -81,61 +63,49 @@
   <!-- Civilian gray version -->
   <animation>
     <type>material</type>
-    <object-name>cab-interieur</object-name>
-    <object-name>cab-inttour</object-name>
-    <object-name>cab-planchet</object-name>
+    <object-name>cab-interieur</object-name>    
+    <object-name>cab-plancher</object-name>
+    <object-name>cadres-vitres</object-name>
+    <object-name>guide</object-name>
+    <object-name>poignée</object-name>
+    <object-name>verrou</object-name>
+    <object-name>structure</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-gray</value>
-        </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>true</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-gray</value>
+      </equals>
     </condition>
-    <texture>colorsHigh_gray.png</texture>
+    <texture>Liveries/colors_gray.png</texture>
   </animation>
 
+  <!-- Military version -->
   <animation>
     <type>material</type>
     <object-name>cab-interieur</object-name>
-    <object-name>cab-inttour</object-name>
-    <object-name>cab-planchet</object-name>
+    
+    <object-name>cab-plancher</object-name>
+    <object-name>cadres-vitres</object-name>
+    <object-name>guide</object-name>
+    <object-name>poignée</object-name>
+    <object-name>verrou</object-name>
+    <object-name>structure</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-gray</value>
-        </equals>
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>false</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>military</value>
+      </equals>
     </condition>
-    <texture>colors_gray.png</texture>
+    <texture>Liveries/colors_military.png</texture>
   </animation>
 
   <!--overhead Panneau Cockpit Supérieur-->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/overhead.xml</path>
     <offsets>
-      <x-m> -0.109 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.518 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Capitonnage -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Capitonnage/capitonnage.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
+      <x-m> -0.03 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>
     </offsets>
   </model>
 
@@ -145,7 +115,7 @@
     <offsets>
       <x-m> -0.200 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.530 </z-m>
+      <z-m> -0.560 </z-m>
     </offsets>
   </model>
 
@@ -180,6 +150,7 @@
   </model>
 
   <!-- Essuies glace -->
+  <!--
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/wipers/wipersL.xml</path>
     <offsets>
@@ -199,6 +170,6 @@
       <heading-deg>  -35 </heading-deg>
     </offsets>
   </model>
-
+-->
 </PropertyList>
 

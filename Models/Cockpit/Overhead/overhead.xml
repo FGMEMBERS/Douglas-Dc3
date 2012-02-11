@@ -4,39 +4,22 @@
 
   <path>overhead.ac</path>
 
+  <!-- LoD -->
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>18</max-m>
+  </animation>
+
   <!-- Civilian red version -->
   <animation>
     <type>material</type>
     <object-name>overhead</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-red</value>
-        </equals> 
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>true</value>
-        </equals>
-      </and>
-    </condition>
-    <texture>colorsHigh.png</texture>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>overhead</object-name>
-    <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-red</value>
-        </equals> 
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>false</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-red</value>
+      </equals>
     </condition>
     <texture>colors.png</texture>
   </animation>
@@ -46,71 +29,72 @@
     <type>material</type>
     <object-name>overhead</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-gray</value>
-        </equals> 
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>true</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>civilian-gray</value>
+      </equals>
     </condition>
-    <texture>colorsHigh_gray.png</texture>
+    <texture>Liveries/colors_gray.png</texture>
   </animation>
 
+  <!-- Military version -->
   <animation>
     <type>material</type>
     <object-name>overhead</object-name>
     <condition>
-      <and>
-        <equals>
-          <property>sim/model/config/version</property>
-          <value>civilian-gray</value>
-        </equals> 
-        <equals>
-          <property>sim/model/config/textures-high</property>
-          <value>false</value>
-        </equals>
-      </and>
+      <equals>
+        <property>sim/model/config/version</property>
+        <value>military</value>
+      </equals>
     </condition>
-    <texture>colors_gray.png</texture>
+    <texture>Liveries/colors_military.png</texture>
   </animation>
 
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/left_overhead.xml</path>
     <offsets>
-      <x-m>  0.132 </x-m>
-      <y-m> -0.351 </y-m>
-      <z-m>  0.907 </z-m>
+      <x-m>  0.095 </x-m>
+      <y-m> -0.315 </y-m>
+      <z-m>  0.460 </z-m>
       <roll-deg>     0.0 </roll-deg>
-      <pitch-deg>   29.0 </pitch-deg>
-      <heading-deg> 35.0 </heading-deg>
+      <pitch-deg>   16.6 </pitch-deg>
+      <heading-deg> 32.8 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/center_overhead.xml</path>
     <offsets>
-      <x-m> -0.037 </x-m>
+      <x-m> -0.088 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.924 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>    19.265 </pitch-deg>
-      <heading-deg>   0.000 </heading-deg>
+      <z-m>  0.410 </z-m>
+      <roll-deg>      0.0 </roll-deg>
+      <pitch-deg>    12.0 </pitch-deg>
+      <heading-deg>   0.0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/right_overhead.xml</path>
     <offsets>
-      <x-m> -0.000 </x-m>
-      <y-m>  0.153 </y-m>
-      <z-m>  0.917 </z-m>
+      <x-m>  0.095 </x-m>
+      <y-m>  0.315 </y-m>
+      <z-m>  0.460 </z-m>
+      <roll-deg>     0.0 </roll-deg>
+      <pitch-deg>   16.6 </pitch-deg>
+      <heading-deg>-32.8 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/VHF-22/ctl22-com1.xml</path>
+    <offsets>
+      <x-m>  0.020 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m>  0.503 </z-m>
       <roll-deg>      0.0 </roll-deg>
-      <pitch-deg>    28.5 </pitch-deg>
-      <heading-deg> -35.0 </heading-deg>
+      <pitch-deg>    75.0 </pitch-deg>
+      <heading-deg>   0.0 </heading-deg>
     </offsets>
   </model>
 
