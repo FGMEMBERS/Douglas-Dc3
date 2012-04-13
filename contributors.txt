@@ -9,6 +9,12 @@
 ##                                                                  ##
 ######################################################################
 
+# 11/04/2012 ==> (Buckaroo)
+
+- New FDM
+
+######################################################################
+
 # 11/02/2012 ==> (Helijah)
 
 - Correction de plusieurs erreurs (normales inversées, textures avec canal alpha etc...)
