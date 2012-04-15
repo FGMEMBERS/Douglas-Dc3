@@ -22,7 +22,7 @@ Before you go flying, you'll need to learn how to start the engines.
       <value>1</value>
     </set>
     <set>
-      <property>controls/gear/brake-parking-pos</property>
+      <property>controls/gear/brake-parking</property>
       <value>0</value>
     </set>
     <set>
@@ -107,24 +107,24 @@ Before you go flying, you'll need to learn how to start the engines.
       <field-of-view>53</field-of-view>
     </view>
     <error>
-	  <message>Click on the red button</message>
+     <message>Click on the red button</message>
       <condition>
-        <greater-than>
-          <property>controls/gear/brake-parking-pos</property>
+        <equals>
+          <property>controls/gear/brake-parking</property>
           <value>0</value>
-        </greater-than>
+        </equals>
       </condition>
     </error>
     <exit> 
       <condition>
-		<equals>
-          <property>controls/gear/brake-parking-pos</property>
+        <equals>
+          <property>controls/gear/brake-parking</property>
           <value>1</value>
         </equals>
       </condition>
-    </exit>  
+    </exit>
   </step>
-  
+
 <!-- Sélection réservoir principal gauche-->
   <step>
     <message>select the main Left tank(Main LH)</message>

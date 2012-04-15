@@ -28,9 +28,9 @@
     <name>OmbreRoues</name>
     <path>Aircraft/Douglas-Dc3/Models/shadow.xml</path>
     <offsets>
-      <x-m> 0.85 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
+      <x-m>  0.85 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -2.40 </z-m>
     </offsets>
   </model>
 
@@ -62,9 +62,9 @@
     <name>OmbreFlotteurs</name>
     <path>Aircraft/Douglas-Dc3/Models/shadowA.xml</path>
     <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> -0.2 </z-m>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -2.8 </z-m>
     </offsets>
   </model>
 
