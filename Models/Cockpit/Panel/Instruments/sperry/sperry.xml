@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList> 
 
@@ -30,8 +30,8 @@
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/sperry/cap/cap.xml</path>
     <offsets>
       <x-m> -0.0011 </x-m>
-      <y-m> -0.116 </y-m>
-      <z-m>  0.014 </z-m>
+      <y-m> -0.1160 </y-m>
+      <z-m>  0.0140 </z-m>
     </offsets>
   </model>
   

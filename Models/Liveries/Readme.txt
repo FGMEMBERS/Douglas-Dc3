@@ -22,3 +22,8 @@ These liveries were made by : Christian THIRIOT (patten) 2011
 
 thanks to him
 
+DC-3SAR
+
+These liveries were made by : Harvey GOLDEN 2012
+
+thanks to him

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -454,9 +454,9 @@
     <object-name>inverter</object-name>
     <object-name>recognition_1</object-name>
     <emission>
-      <red>0.8</red>
-      <green>0.8</green>
-      <blue>0.8</blue>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
     </emission>
   </animation>
 

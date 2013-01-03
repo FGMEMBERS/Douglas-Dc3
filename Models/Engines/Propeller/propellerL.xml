@@ -13,20 +13,12 @@
   <model>
     <name>Blade1</name>
     <path>Aircraft/Douglas-Dc3/Models/Engines/Propeller/bladeL.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <model>
     <name>Blade2</name>
     <path>Aircraft/Douglas-Dc3/Models/Engines/Propeller/bladeL.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
       <roll-deg> 120 </roll-deg>
     </offsets>
   </model>
@@ -35,9 +27,6 @@
     <name>Blade3</name>
     <path>Aircraft/Douglas-Dc3/Models/Engines/Propeller/bladeL.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
       <roll-deg> 240 </roll-deg>
     </offsets>
   </model>

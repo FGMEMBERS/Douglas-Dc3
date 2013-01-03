@@ -1,12 +1,17 @@
 ######################################################################
 ##                          Douglas DC3-C47                         ##
-##                                                                  ## 
+##                                                                  ##
 ##                        Contributors file                         ##
-##  http://equipe-flightgear.forumactif.com/t527-douglas-dc-3-c-47  ##
 ##          http://wiki.flightgear.org/Fr/Douglas_DC-3-C47          ##
 ##                                                                  ##
 ##                        Thanks to PAF team                        ##
 ##                                                                  ##
+######################################################################
+
+# 31/12/2012 ==> (Buckaroo)
+
+- Mise en conformité de toutes les entêtes xml
+
 ######################################################################
 
 # 11/04/2012 ==> (Buckaroo)
@@ -228,3 +233,8 @@
 - Création d'une livery "Linux"
 
 ######################################################################
+
+# Janvier 2011 ==> Helijah
+
+- Modélisation d'un nouveau Dc 3 pour rendre hommage à cet avion légendaire qui
+  n'était vraiment pas mis en valeur dans FG jusque là.

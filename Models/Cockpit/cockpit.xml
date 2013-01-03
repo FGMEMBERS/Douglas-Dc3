@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -150,26 +150,29 @@
   </model>
 
   <!-- Essuies glace -->
-  <!--
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/wipers/wipersL.xml</path>
     <offsets>
-      <x-m> -0.1130 </x-m>
+      <x-m> -0.2070 </x-m>
       <y-m> -0.2940 </y-m>
       <z-m>  0.0732 </z-m>
-      <heading-deg> 35 </heading-deg>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>   17 </pitch-deg>
+      <heading-deg> 36 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/wipers/wipersR.xml</path>
     <offsets>
-      <x-m> -0.1130 </x-m>
+      <x-m> -0.2070 </x-m>
       <y-m>  0.2940 </y-m>
       <z-m>  0.0732 </z-m>
-      <heading-deg>  -35 </heading-deg>
+      <roll-deg>       0 </roll-deg>
+      <pitch-deg>     17 </pitch-deg>
+      <heading-deg>  -36 </heading-deg>
     </offsets>
   </model>
--->
+
 </PropertyList>
 

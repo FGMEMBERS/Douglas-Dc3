@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -68,9 +68,9 @@
     <property>controls/fuel/tank-gauge-pos</property>
     <factor>-90</factor>
     <center>
-      <x-m> 0.000</x-m>
-      <y-m> 0.000</y-m>
-      <z-m>-0.0336</z-m>
+      <x-m>  0.0000 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.0336 </z-m>
     </center>
     <axis> 
       <x> 1 </x>
@@ -85,9 +85,9 @@
     <property>consumables/fuel/needle-gauge</property>
     <factor>-0.69</factor>
     <center>
-      <x-m> 0.000</x-m>
-      <y-m> 0.000</y-m>
-      <z-m> 0.014</z-m>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.014 </z-m>
     </center>
     <axis> 
       <x> 1 </x>

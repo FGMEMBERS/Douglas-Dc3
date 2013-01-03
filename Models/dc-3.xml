@@ -1,15 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <!-- Le fuselage -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/main.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Les roues -->
@@ -50,11 +45,6 @@
   <model>
     <name>LesFlotteurs</name>
     <path>Aircraft/Douglas-Dc3/Models/floats.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Une ombre pour OSG -->
@@ -81,4 +71,3 @@
   </animation>
 
 </PropertyList>
-

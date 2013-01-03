@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -8,6 +6,7 @@
      ************************************************************************
      Douglas DC-3 C47
      January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     December 2012 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
      ************************************************************************
 -->
 
@@ -47,16 +46,13 @@
 
   </init>
 
-
   <step>
     <message>The Douglas DC-3 C-47 is a great plane, I propose to you a little visit of this aircraft</message>
   </step>
  
-
-<!-- Vue de face-->
-
+  <!-- Vue de face-->
   <step>
-  <message>The C-47 is the military version of the DC-3</message>
+    <message>The C-47 is the military version of the DC-3</message>
     <view>
       <heading-offset-deg>200</heading-offset-deg>
       <pitch-offset-deg>0</pitch-offset-deg>
@@ -67,7 +63,6 @@
       <field-of-view>100</field-of-view>
     </view>
   </step>
-
 
   <step>
     <message>During the second world war, he assured the transport of freight,the parachute drop and glider towing</message>
