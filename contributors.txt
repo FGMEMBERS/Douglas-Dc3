@@ -8,9 +8,19 @@
 ##                                                                  ##
 ######################################################################
 
-# 31/12/2012 ==> (Buckaroo)
+# 04/01/2013 ==> (Helijah)
 
-- Mise en conformitÃ© de toutes les entÃªtes xml
+- Correction d'une erreur dans le fichier all-poigneesportes
+
+# ==> (Dany93)
+
+- Animation libre de la roulette de queue
+
+######################################################################
+
+# 31/12/2012 ==> (Helijah)
+
+- Mise en conformité de toutes les entêtes xml
 
 ######################################################################
 
@@ -29,7 +39,8 @@
 ######################################################################
 
 # 13/01/2012 ==> (Patten)
-- Optimisation et texturage des 3 versions du cockpit sélectionnables (Red, Gray, Military), ainsi que tous les éléments qui vont avec (Cockpit, Pedals, handle, overhead, seats, pilots, etc...)
+- Optimisation et texturage des 3 versions du cockpit sélectionnables (Red, Gray, Military),
+  ainsi que tous les éléments qui vont avec (Cockpit, Pedals, handle, overhead, seats, pilots, etc...)
 
 
 # 21/11/2011 ==> (F-Sig)
@@ -75,7 +86,8 @@
 - Création d'une texture cabine "Paras" en vue de l'activation de l'option "Military"
 - Amélioration des sons: cycle de démarrage, son pompe de gavage...
 - Amélioration des effets de fumée due au cycle de démarrage + proche de la réalité (cranking).
-- Texturages divers: wipers, tablettes de sièges en conformité avec les coffres à bagage, texture "center-console" en vue de la version Military.
+- Texturages divers: wipers, tablettes de sièges en conformité avec les coffres à bagage, texture
+  "center-console" en vue de la version Military.
 - Création d'une texture "Paras-prop" pour les hélices de la livrée "Paras".
 - Retouches sur la livrée "Paras" roues, ect...
 
@@ -236,5 +248,5 @@
 
 # Janvier 2011 ==> Helijah
 
-- ModÃ©lisation d'un nouveau Dc 3 pour rendre hommage Ã  cet avion lÃ©gendaire qui
-  n'Ã©tait vraiment pas mis en valeur dans FG jusque lÃ .
+- Modélisation d'un nouveau Dc 3 pour rendre hommage à cet avion légendaire qui
+  n'était vraiment pas mis en valeur dans FG jusque là.
