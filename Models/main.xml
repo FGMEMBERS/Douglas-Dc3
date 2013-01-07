@@ -180,7 +180,9 @@
 
   <animation>
     <type>material</type>
-    <object-name>pale</object-name>
+    <object-name>pale1</object-name>
+    <object-name>pale2</object-name>
+    <object-name>pale3</object-name>
     <object-name>bol</object-name>
 
     <property-base>sim/model/livery-engine</property-base>
