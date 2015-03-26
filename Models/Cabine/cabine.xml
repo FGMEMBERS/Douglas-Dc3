@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -83,7 +83,7 @@
         <property>sim/model/config/details-high</property>
       </and>
     </condition>
-    <texture>Liveries/colors_details.png</texture>
+    <texture>colors_details.png</texture>
   </animation>
 
   <!-- Civilian gray version -->
@@ -109,7 +109,7 @@
         <not><property>sim/model/config/details-high</property></not>
       </and>
     </condition>
-    <texture>Liveries/colors_gray.png</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
   <!-- Civilian gray version -->
@@ -135,7 +135,7 @@
         <property>sim/model/config/details-high</property>
       </and>
     </condition>
-    <texture>Liveries/colors_gray_details.png</texture>
+    <texture>colors_gray_details.png</texture>
   </animation>
 
   <!-- Military version -->
@@ -158,7 +158,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_paras.png</texture>
+    <texture>colors_paras.png</texture>
   </animation>
 
   <!-- Les détails -->
@@ -220,7 +220,7 @@
   <animation>
     <type>rotate</type>
     <object-name>intporteA</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/multiplay/generic/float[0]</property>
     <factor> -170 </factor>
     <axis>
       <x1-m> -7.519 </x1-m>
@@ -235,7 +235,7 @@
   <animation>
     <type>rotate</type>
     <object-name>intporteB</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/multiplay/generic/float[1]</property>
     <factor>  100 </factor>
     <axis>
       <x1-m>  2.037 </x1-m>

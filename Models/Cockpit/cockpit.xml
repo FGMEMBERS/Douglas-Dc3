@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -13,7 +13,6 @@
     <object-name>poignée</object-name>
     <object-name>verrou</object-name>
     <object-name>structure</object-name>
-
     <!-- Objets transparents -->
     <object-name>cab-intvitres</object-name>
   </animation>
@@ -76,7 +75,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_gray.png</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
   <!-- Military version -->
@@ -96,7 +95,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_military.png</texture>
+    <texture>colors_military.png</texture>
   </animation>
 
   <!--overhead Panneau Cockpit Supérieur-->
@@ -150,27 +149,35 @@
   </model>
 
   <!-- Essuies glace -->
+ 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/wipers/wipersL.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Wipers/wip-tube.xml</path>
     <offsets>
-      <x-m> -0.2070 </x-m>
-      <y-m> -0.2940 </y-m>
-      <z-m>  0.0732 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>   17 </pitch-deg>
-      <heading-deg> 36 </heading-deg>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>	  
+    </offsets>
+  </model>
+  
+  <model>   
+  <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Wipers/wipersL.xml</path>
+    <offsets>
+      <x-m> -0.185  </x-m>
+      <y-m> -0.295  </y-m>
+      <z-m>  0.0505 </z-m>
+	  <pitch-deg> 16.7 </pitch-deg>
+      <heading-deg> 35 </heading-deg>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/wipers/wipersR.xml</path>
+  <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Wipers/wipersR.xml</path>
     <offsets>
-      <x-m> -0.2070 </x-m>
-      <y-m>  0.2940 </y-m>
-      <z-m>  0.0732 </z-m>
-      <roll-deg>       0 </roll-deg>
-      <pitch-deg>     17 </pitch-deg>
-      <heading-deg>  -36 </heading-deg>
+      <x-m> -0.185  </x-m>
+      <y-m>  0.295  </y-m>
+      <z-m>  0.0505 </z-m>
+	  <pitch-deg> 16.7 </pitch-deg>
+      <heading-deg> -35 </heading-deg>
     </offsets>
   </model>
 

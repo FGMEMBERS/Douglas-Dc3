@@ -1,47 +1,36 @@
 ######################################################################
 ##                          Douglas DC3-C47                         ##
-##                                                                  ##
+##                                                                  ## 
 ##                        Contributors file                         ##
+##  http://equipe-flightgear.forumactif.com/t527-douglas-dc-3-c-47  ##
 ##          http://wiki.flightgear.org/Fr/Douglas_DC-3-C47          ##
 ##                                                                  ##
 ##                        Thanks to PAF team                        ##
 ##                                                                  ##
 ######################################################################
 
-# 04/01/2013 ==> (Helijah)
-
-- Correction d'une erreur dans le fichier all-poigneesportes
-
-# ==> (Dany93)
-
-- Animation libre de la roulette de queue
-
 ######################################################################
 
-# 31/12/2012 ==> (Helijah)
-
-- Mise en conformité de toutes les entêtes xml
-
-######################################################################
-
-# 11/04/2012 ==> (Buckaroo)
-
-- New FDM
-
-######################################################################
-
-# 11/02/2012 ==> (Helijah)
-
-- Correction de plusieurs erreurs (normales inversÃ©es, textures avec canal alpha etc...)
-- RÃ© organisation des livrÃ©es suplÃ©mentaires dans des dossiers "Liveries"
-- Ajout du systÃ¨me de notation
+# 2012 - 2013 ==> (dany93)
+(FDM JSBSim)
+- Amélioration du FDM
+- CG, Répartition des charges
+- Propulsion : réfection complète motorisation, hélices
+- Conduite et animation roulette de queue
+- Mise en drapeau hélices
+- Reprise gestion carburant
 
 ######################################################################
 
 # 13/01/2012 ==> (Patten)
-- Optimisation et texturage des 3 versions du cockpit sélectionnables (Red, Gray, Military),
-  ainsi que tous les éléments qui vont avec (Cockpit, Pedals, handle, overhead, seats, pilots, etc...)
+- Optimisation et texturage des 3 versions du cockpit sélectionnables (Red, Gray, Military), ainsi que tous les éléments qui vont avec (Cockpit, Pedals, handle, overhead, seats, pilots, etc...)
 
+######################################################################
+
+# 21/11/2011 ==> (Pat)
+- Nouveau FDM Yasim
+
+######################################################################
 
 # 21/11/2011 ==> (F-Sig)
 - Nouveau manche
@@ -55,20 +44,6 @@
 - Création du système hydraulique complet
 - Cowl Flaps visible en MP
 - Correction d'ouverture des portes cargo / para
-
-######################################################################
-# 18/11/2011 ==> Helijah
-- Mise en fonction des gouvernails via la touche "l"
-- Modification du système d'ombre, merci à Bibi :)
-#            ==> Pat
-- Amélioration du FDM
-
-######################################################################
-
-# 09/11/2011 ==> Pat
-- Amélioration du FDM
-#            ==> Alexis
-- Ajout des masses de chargement
 
 ######################################################################
 
@@ -86,8 +61,7 @@
 - Création d'une texture cabine "Paras" en vue de l'activation de l'option "Military"
 - Amélioration des sons: cycle de démarrage, son pompe de gavage...
 - Amélioration des effets de fumée due au cycle de démarrage + proche de la réalité (cranking).
-- Texturages divers: wipers, tablettes de sièges en conformité avec les coffres à bagage, texture
-  "center-console" en vue de la version Military.
+- Texturages divers: wipers, tablettes de sièges en conformité avec les coffres à bagage, texture "center-console" en vue de la version Military.
 - Création d'une texture "Paras-prop" pour les hélices de la livrée "Paras".
 - Retouches sur la livrée "Paras" roues, ect...
 
@@ -245,8 +219,3 @@
 - CrÃ©ation d'une livery "Linux"
 
 ######################################################################
-
-# Janvier 2011 ==> Helijah
-
-- Modélisation d'un nouveau Dc 3 pour rendre hommage à cet avion légendaire qui
-  n'était vraiment pas mis en valeur dans FG jusque là.

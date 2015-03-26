@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -138,7 +138,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PlaquePorteAvant</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/multiplay/generic/float[0]</property>
     <factor> -170 </factor>
     <axis>
       <x1-m> -7.519 </x1-m>
@@ -166,7 +166,7 @@
   <animation>
     <type>rotate</type>
     <object-name>PlaquePorteArriere</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/multiplay/generic/float[1]</property>
     <factor>  100 </factor>
     <axis>
       <x1-m>  2.037 </x1-m>

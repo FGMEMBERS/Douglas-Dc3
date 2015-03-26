@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -6,7 +6,6 @@
      ************************************************************************
      Douglas DC-3 C47
      January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
-     December 2012 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
      ************************************************************************
 -->
 
@@ -32,7 +31,11 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
       <value>0.0</value>
     </set>
     <set>
-      <property>controls/engines/engine/magnetos</property>
+      <property>controls/engines/engine[0]/magnetos</property>
+      <value>0</value>
+    </set>
+    <set>
+      <property>controls/engines/engine[1]/magnetos</property>
       <value>0</value>
     </set>
     <set>
@@ -91,7 +94,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
 
   <step>
-    <message>Bienvenue à bord du DC-3, il est grand temps de démarrer les moteurs !</message>
+    <message>Bienvenue a bord du DC-3, il est grand temps de demarrer les moteurs !</message>
   </step>
   
   <step>
@@ -124,9 +127,9 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     </exit>  
   </step>
   
-<!-- Sélection réservoir principal gauche-->
+<!-- Selection reservoir principal gauche-->
   <step>
-    <message>Selectionnez le réservoir principal gauche(Main LH) </message>
+    <message>Selectionnez le reservoir principal gauche(Main LH) </message>
     <view>
       <heading-offset-deg>-10</heading-offset-deg>
       <pitch-offset-deg>-77</pitch-offset-deg>
@@ -140,8 +143,8 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	<message>Placez l'interrupteur sur la position Main LH</message>
       <condition>
         <less-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </less-than>
       </condition>
     </error>
@@ -149,24 +152,24 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	  <message>Placez l'interrupteur sur la position Main LH</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </greater-than>
       </condition>
     </error>
     <exit> 
       <condition>
 		<equals>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </equals>
       </condition>
     </exit>  
   </step>
   
-<!-- sélection réservoir principal droit-->
+<!-- selection reservoir principal droit-->
   <step>
-    <message>Selectionnez le réservoir principal droit (Main RH) </message>
+    <message>Selectionnez le reservoir principal droit (Main RH) </message>
     <view>
       <heading-offset-deg>0</heading-offset-deg>
       <pitch-offset-deg>-80</pitch-offset-deg>
@@ -180,8 +183,8 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	  <message>Placez l'interrupteur sur la position Main RH</message>
       <condition>
         <less-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </less-than>
       </condition>
     </error>
@@ -189,16 +192,16 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	  <message>Placez l'interrupteur sur la position Main RH</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </greater-than>
       </condition>
     </error>
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </equals>
       </condition>
     </exit>  
@@ -242,7 +245,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -251,7 +254,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
  <!-- Mixture-->
   <step>
-    <message>Placez la manette de richesse sur Auto Rich</message>
+    <message>Placez la manette de richesse un peu au-dessus de Auto Rich</message>
     <view>
       <heading-offset-deg>0</heading-offset-deg>
       <pitch-offset-deg>-65</pitch-offset-deg>
@@ -262,12 +265,12 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
       <field-of-view>55.0</field-of-view>
     </view>
     <error>
-      <message>Placez la souris sur la manette rouge et faites la bouger au clic ou à la molette</message>
-      <message>Augmentez légèrement la richesse</message>
+      <message>Placez la souris sur la manette rouge et faites la bouger au clic ou a la molette</message>
+      <message>Augmentez legerement la richesse</message>
       <condition>
         <less-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.55</value>
+          <value>0.75</value>
         </less-than>
       </condition>
     </error>
@@ -276,7 +279,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
       <condition>
         <greater-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.75</value>
+          <value>0.90</value>
         </greater-than>
       </condition>
     </error>
@@ -285,11 +288,11 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
         <and>
           <greater-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.55</value>
+            <value>0.75</value>
           </greater-than>
           <less-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.75</value>
+            <value>0.90</value>
           </less-than>
         </and>
       </condition>
@@ -298,7 +301,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
 <!-- Gaz -->
   <step>
-    <message>Avancez légèrement la manette des gaz (10%)</message>
+    <message>Avancez legerement la manette des gaz (10%)</message>
     <view>
       <heading-offset-deg>-10</heading-offset-deg>
       <pitch-offset-deg>-85</pitch-offset-deg>
@@ -309,7 +312,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
       <field-of-view>60.0</field-of-view>
     </view>
     <error>
-      <message>Augmentez légèrement les gaz</message>
+      <message>Augmentez legerement les gaz</message>
       <condition>
         <less-than>
           <property>controls/engines/engine[0]/throttle</property>
@@ -344,7 +347,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
 <!-- RPM -->
   <step>
-    <message>Placez la manette du pas de l'hélice entre 70% et 100%</message>
+    <message>Placez la manette du pas de l'helice entre 70% et 100%</message>
     <view>
       <heading-offset-deg>-10</heading-offset-deg>
       <pitch-offset-deg>-85</pitch-offset-deg>
@@ -381,7 +384,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
  <!-- Magneto droit sur both-->
   <step>
-    <message>Placez les magnétos du moteur droit sur both</message>
+    <message>Placez les magnetos du moteur droit sur both</message>
     <view>
       <heading-offset-deg>0</heading-offset-deg>
       <pitch-offset-deg>0</pitch-offset-deg>
@@ -394,7 +397,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[1]/magnetos-pos</property>
+          <property>controls/engines/engine[1]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
@@ -402,7 +405,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
   </step>
 
   <step>
-    <message>Vérifions que personne ne se trouve à proximité de l'hélice</message>
+    <message>Verifions que personne ne se trouve a proximite de l'helice</message>
     <view>
       <heading-offset-deg>-100</heading-offset-deg>
       <pitch-offset-deg>-30</pitch-offset-deg>
@@ -416,7 +419,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
 <!-- start droite-->
   <step>
-    <message>Vous pouvez maintenant démarrer le moteur en maintenant le starter droit enfoncé quelques secondes</message>
+    <message>Vous pouvez maintenant demarrer le moteur en maintenant le starter droit enfonce quelques secondes</message>
     <view>
      <heading-offset-deg>-30</heading-offset-deg>
       <pitch-offset-deg>15</pitch-offset-deg>
@@ -437,7 +440,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
   </step>
 
   <step>
-    <message>Moteur droit démarré !</message>
+    <message>Moteur droit demarre !</message>
     <view>
       <heading-offset-deg>-100</heading-offset-deg>
       <pitch-offset-deg>-30</pitch-offset-deg>
@@ -458,7 +461,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
   </step>
 
 
-<!-- Arrêt boost pump-->
+<!-- Arret boost pump-->
   <step>
     <message>Vous pouvez maintenant stopper la pompe de gavage droite (Booster pump Right)</message>
     <view>
@@ -473,7 +476,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>
@@ -481,7 +484,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
   </step>
 <!--
   <step>
-    <message>La température d'huile doit être comprise entre 70 et 90 C</message>
+    <message>La temperature d'huile doit etre comprise entre 70 et 90 C</message>
     <view>
       <heading-offset-deg>-10</heading-offset-deg>
       <pitch-offset-deg>-50</pitch-offset-deg>
@@ -514,7 +517,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -523,7 +526,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
  <!-- Magneto droit sur both-->
   <step>
-    <message>Placez les magnétos du moteur gauche sur both</message>
+    <message>Placez les magnetos du moteur gauche sur both</message>
     <view>
       <heading-offset-deg>0</heading-offset-deg>
       <pitch-offset-deg>0</pitch-offset-deg>
@@ -536,16 +539,16 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[0]/magnetos-pos</property>
+          <property>controls/engines/engine[0]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
     </exit>
   </step>
 
-  <!-- Vérifications-->
+  <!-- Verifications-->
   <step>
-    <message>Vérifions que rien ne se trouve à proximité de l'hélice</message>
+    <message>Verifions que rien ne se trouve a proximite de l'helice</message>
     <view>
       <heading-offset-deg>95</heading-offset-deg>
       <pitch-offset-deg>-45</pitch-offset-deg>
@@ -559,7 +562,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
  
 <!-- start gauche -->
   <step>
-    <message>Hélice dégagée,nous pouvons démarrer le moteur gauche,maintenez le starter gauche enfoncé quelques secondes</message>
+    <message>Helice degagee,nous pouvons demarrer le moteur gauche,maintenez le starter gauche enfonce quelques secondes</message>
     <view>
      <heading-offset-deg>-30</heading-offset-deg>
       <pitch-offset-deg>15</pitch-offset-deg>
@@ -580,7 +583,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
   </step>
 
   <step>
-    <message>Moteur gauche démarré !</message>
+    <message>Moteur gauche demarre !</message>
     <view>
       <heading-offset-deg>95</heading-offset-deg>
       <pitch-offset-deg>-45</pitch-offset-deg>
@@ -600,7 +603,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     </exit>
   </step>
   
- <!-- Arrêt boost pump-->
+ <!-- Arret boost pump-->
   <step>
     <message>Vous pouvez arreter la pompe de gavage gauche (Boost pump Left)</message>
     <view>
@@ -615,7 +618,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>
@@ -623,6 +626,6 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
   </step>
 
   <end>
-    <message>Félicitation, vous venez de démarrer les moteurs du DC-3</message>
+    <message>Felicitation, vous venez de demarrer les moteurs du DC-3</message>
   </end>
 </PropertyList>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -34,7 +34,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_gray.png</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
   <!-- Military version -->
@@ -47,7 +47,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_military.png</texture>
+    <texture>colors_military.png</texture>
   </animation>
 
   <model>
@@ -68,9 +68,9 @@
       <x-m> -0.088 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.410 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>    12 </pitch-deg>
-      <heading-deg>   0 </heading-deg>
+      <roll-deg>      0.0 </roll-deg>
+      <pitch-deg>    12.0 </pitch-deg>
+      <heading-deg>   0.0 </heading-deg>
     </offsets>
   </model>
 
@@ -80,21 +80,21 @@
       <x-m>  0.095 </x-m>
       <y-m>  0.315 </y-m>
       <z-m>  0.460 </z-m>
-      <roll-deg>      0.0 </roll-deg>
-      <pitch-deg>    16.6 </pitch-deg>
-      <heading-deg> -32.8 </heading-deg>
+      <roll-deg>     0.0 </roll-deg>
+      <pitch-deg>   16.6 </pitch-deg>
+      <heading-deg>-32.8 </heading-deg>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Instruments-3d/VHF-22/ctl22-com1.xml</path>
+    <path>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22-com1.xml</path>
     <offsets>
       <x-m>  0.020 </x-m>
       <y-m> -0.020 </y-m>
       <z-m>  0.503 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>    75 </pitch-deg>
-      <heading-deg>   0 </heading-deg>
+      <roll-deg>      0.0 </roll-deg>
+      <pitch-deg>    75.0 </pitch-deg>
+      <heading-deg>   0.0 </heading-deg>
     </offsets>
   </model>
 

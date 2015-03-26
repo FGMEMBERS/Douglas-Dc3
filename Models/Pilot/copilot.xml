@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0"?>
 
 <PropertyList>
 
@@ -45,7 +45,7 @@
     </condition>
   </animation>
 
-  <!-- Civilian red version -->
+<!-- Civilian red version -->
   <animation>
     <type>material</type>
    <object-name>tete</object-name>
@@ -68,10 +68,10 @@
         <value>civilian-red</value>
       </equals>
     </condition>
-    <texture>general_pilot.png</texture>
+    <texture>general_pilot_red.png</texture>
   </animation>
 
-  <!-- Civilian gray version -->
+<!-- Civilian gray version -->
   <animation>
     <type>material</type>
    <object-name>tete</object-name>
@@ -94,10 +94,10 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/general_pilot_gray.png</texture>
+    <texture>general_pilot_gray.png</texture>
   </animation>
 
-  <!-- Military version -->
+<!-- Military version -->
   <animation>
     <type>material</type>
    <object-name>tete</object-name>
@@ -120,7 +120,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/general_pilot_military.png</texture>
+    <texture>general_pilot_military.png</texture>
   </animation>
 
   <animation>
@@ -129,7 +129,7 @@
     <object-name>visiere</object-name>
   </animation>
 
-  <!-- Visière invisible depuis le cockpit -->
+  <!-- Visiere invisible depuis le cockpit -->
   <animation>
     <type>select</type>
     <object-name>visiere</object-name>
@@ -218,7 +218,7 @@
     </axis>
   </animation>
 
- <!--épaule-->
+ <!--epaule-->
   <animation>
     <type>rotate</type>
     <object-name>avantbrasG</object-name>
@@ -270,12 +270,13 @@
   
 <!-- Tourner le volant-->
 
- <!--épaule gauche-->
+ <!--epaule gauche-->
   <animation>
     <type>rotate</type>
     <object-name>avantbrasG</object-name>
     <object-name>brasG</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
+
     <interpolation>
       <entry><ind>  -1 </ind><dep>  8  </dep></entry>
        <entry><ind>  0 </ind><dep>  0  </dep></entry>
@@ -295,7 +296,7 @@
   </animation>
 
 
- <!--épaule droite-->
+ <!--epaule droite-->
  <animation>
     <type>rotate</type>
     <object-name>avantbrasD</object-name>
@@ -319,7 +320,7 @@
   </animation>
 
   
- <!-- Pédales--> 
+ <!-- Pedales--> 
   <!--gauche-->
   <animation>
     <type>rotate</type>
@@ -327,7 +328,6 @@
     <object-name>jambeG</object-name>
     <object-name>piedG</object-name>
     <property>/controls/flight/rudder</property>
-    <factor> 5 </factor>
     <center>
       <x-m>  0.318 </x-m>
       <y-m>  0.14 </y-m>

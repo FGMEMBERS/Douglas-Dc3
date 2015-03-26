@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -30,11 +30,17 @@
     <object-name>poussoir</object-name>
     <property>controls/engines/engine[0]/propeller-feather-pos</property>
     <factor> -0.01 </factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
     <axis>
       <x>  1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
   </animation>
+
 
 </PropertyList>

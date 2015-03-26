@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -248,7 +248,7 @@
         </equals>
       </and>
     </condition>
-    <texture>Liveries/colors_gray.png</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
   <!-- Military version -->
@@ -334,19 +334,7 @@
         </equals>
       </and>
     </condition>
-    <texture>Liveries/colors_military.png</texture>
-  </animation>
-  
-  <!--juste un essai!-->
-  <animation>
-    <object-name>volantTrim</object-name>
-    <type>material</type>
-    <emission>
-      <!--<factor-prop>instrumentation/mfd/emission</factor-prop>-->
-      <red>   0.9 </red>
-      <green> 0.9 </green>
-      <blue>  0.0 </blue>
-    </emission>
+    <texture>colors_military.png</texture>
   </animation>
 
   <!-- **********  THROTTLE  **********-->
@@ -413,6 +401,15 @@
         </binding>
       </mod-up>
     </action>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("throttle",0,-1,1);</script>
+      </binding>
+    </action>
   </animation>
 
   <animation>
@@ -439,12 +436,6 @@
         </binding>
       </mod-up>
     </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>Throt_G</object-name>
-    <object-name>Throt_D</object-name>
     <action>
       <button>0</button>
       <repeatable>true</repeatable>
@@ -520,6 +511,15 @@
         </binding>
       </mod-up>
     </action>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("prop",0,-1,1);</script>
+      </binding>
+    </action>
   </animation>
 
   <animation>
@@ -546,12 +546,6 @@
         </binding>
       </mod-up>
     </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>Prop_G</object-name>
-    <object-name>Prop_D</object-name>
     <action>
       <button>0</button>
       <repeatable>true</repeatable>
@@ -631,6 +625,15 @@
         </binding>
       </mod-up>
     </action>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("mixture",0,-1,1);</script>
+      </binding>
+    </action>
   </animation>
 
   <animation>
@@ -657,12 +660,6 @@
         </binding>
       </mod-up>
     </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>Mixt_G</object-name>
-    <object-name>Mixt_D</object-name>
     <action>
       <button>0</button>
       <repeatable>true</repeatable>
@@ -722,12 +719,6 @@
         <step>0.01</step>
       </binding>
     </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <visible>true</visible>
-    <object-name>volantTrim</object-name>
     <action>
       <button>4</button>
       <binding>
@@ -937,6 +928,7 @@
     <type>pick</type>
     <visible>false</visible>
     <object-name>rud_trim_r</object-name>
+    <object-name>rud_trim_l</object-name>
     <action>
       <button>3</button>
       <binding>
@@ -951,6 +943,7 @@
    <type>pick</type>
    <visible>false</visible>
    <object-name>rud_trim_r</object-name>
+   <object-name>rud_trim_l</object-name>
    <action>
      <button>4</button>
      <binding>
@@ -967,7 +960,7 @@
     <type>rotate</type>    
     <object-name>fuel_left</object-name>    
     <property>controls/fuel/left-valve-pos</property>
-    <factor> 72 </factor>
+    <factor> 1 </factor>
     <center>
       <x-m>  0.203 </x-m>
       <y-m> -0.135 </y-m>
@@ -980,7 +973,7 @@
     </axis>
   </animation>
 
-  <!-- Ajustage par bt-souris-gauche -->
+  <!-- Ajustage par bt-souris-gauche ou molette -->
   <animation>
     <type>pick</type>
     <visible>false</visible>
@@ -989,12 +982,66 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
         <command>property-adjust</command>
         <property>controls/fuel/left-valve</property>
         <step>1</step>
-        <min>0</min>
-        <max>5</max>
+        <min>-1</min>
+        <max>4</max>
         <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveLeft(72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>decrease mags: scroll</name>
+      <button>3</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/left-valve</property>
+        <step>1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveLeft(72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>increase mags: scroll</name>
+      <button>4</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/left-valve</property>
+        <step>-1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveLeft(-72)</script>
       </binding>
     </action>
   </animation>
@@ -1007,12 +1054,66 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
         <command>property-adjust</command>
           <property>controls/fuel/left-valve</property>
         <step>-1</step>
-        <min>0</min>
-        <max>5</max>
+        <min>-1</min>
+        <max>4</max>
         <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveLeft(-72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>decrease mags: scroll</name>
+      <button>3</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/left-valve</property>
+        <step>1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveLeft(72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>increase mags: scroll</name>
+      <button>4</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/left-valve</property>
+        <step>-1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/left-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveLeft(-72)</script>
       </binding>
     </action>
   </animation>
@@ -1022,7 +1123,7 @@
     <type>rotate</type>
     <object-name>fuel_right</object-name>
     <property>controls/fuel/right-valve-pos</property>
-    <factor> 72 </factor>
+    <factor> 1 </factor>
     <center>
       <x-m>  0.201 </x-m>
       <y-m>  0.144 </y-m>
@@ -1035,7 +1136,7 @@
     </axis>
   </animation>
 
-  <!-- Ajustage par bt-souris-gauche -->
+  <!-- Ajustage par bt-souris-gauche ou molette -->
   <animation>
     <type>pick</type>
     <visible>false</visible>
@@ -1044,12 +1145,66 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
         <command>property-adjust</command>
           <property>controls/fuel/right-valve</property>
         <step>1</step>
-        <min>0</min>
-        <max>5</max>
+        <min>-1</min>
+        <max>4</max>
         <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveRight(72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>decrease mags: scroll</name>
+      <button>3</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/right-valve</property>
+        <step>1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveRight(72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>increase mags: scroll</name>
+      <button>4</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/right-valve</property>
+        <step>-1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveRight(-72)</script>
       </binding>
     </action>
   </animation>
@@ -1062,12 +1217,66 @@
     <button>0</button>
       <repeatable>false</repeatable>
       <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
         <command>property-adjust</command>
         <property>controls/fuel/right-valve</property>
         <step>-1</step>
-        <min>0</min>
-        <max>5</max>
+        <min>-1</min>
+        <max>4</max>
         <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveRight(-72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>decrease mags: scroll</name>
+      <button>3</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/right-valve</property>
+        <step>1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveRight(72)</script>
+      </binding>
+    </action>
+    <action>
+      <name>increase mags: scroll</name>
+      <button>4</button>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/fuel/right-valve</property>
+        <step>-1</step>
+        <min>-1</min>
+        <max>4</max>
+        <wrap>true</wrap>
+      </binding>
+      <binding>
+        <condition>
+          <not><property>controls/fuel/right-valve-lock</property></not>
+        </condition>
+        <command>nasal</command>
+        <script>dc3.FuelValveRight(-72)</script>
       </binding>
     </action>
   </animation>

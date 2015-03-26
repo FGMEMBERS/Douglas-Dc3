@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList> 
+
+  <path>wipers.ac</path>
+
+  <animation> 
+    <!-- Objets opaques --> 	
+    <object-name>corps</object-name>
+    <object-name>reglage</object-name>	
+    <object-name>bras</object-name>
+    <!-- Objets transparents -->
+  </animation>  
+
+  <!-- Civilian red version -->
+  <!--
+  <animation>
+    <type>material</type>
+    <object-name>corps</object-name>
+	<object-name>reglage</object-name>	
+    <object-name>bras</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-red</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors.png</texture>
+  </animation>
+-->
+  <!-- Civilian gray version -->
+  <!--
+  <animation>
+    <type>material</type>
+    <object-name>corps</object-name>
+	<object-name>reglage</object-name>	
+    <object-name>bras</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>sim/model/config/version</property>
+          <value>civilian-gray</value>
+        </equals>
+      </and>
+    </condition>
+    <texture>colors_gray.png</texture>
+  </animation>
+-->
+  <animation>
+    <type>material</type>
+    <object-name>corps</object-name>
+    <object-name>reglage</object-name>	
+    <object-name>bras</object-name>    
+    <texture>wipers.png</texture>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bras</object-name>
+    <property>controls/hydraulic/wipers-left/position-norm</property>
+    <factor> 170 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>reglage</object-name>
+    <property>controls/hydraulic/wipers-left/arc-sec</property>
+    <factor> 15 </factor>
+	<center>
+      <x-m> 0.018 </x-m>
+      <y-m> 0.0   </y-m>
+      <z-m> 0.0   </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>  
+
+  <animation>
+    <type>pick</type>
+    <object-name>reglage</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/hydraulic/wipers-left/switch</property>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/hydraulic/wipers-left/arc-sec</property>
+        <step>1</step>
+        <min>1</min>
+        <max>20</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/hydraulic/wipers-left/arc-sec</property>
+        <step>-1</step>
+        <min>1</min>
+        <max>20</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

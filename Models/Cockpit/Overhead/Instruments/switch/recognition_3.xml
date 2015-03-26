@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -31,6 +31,11 @@
     <object-name>switch</object-name>
     <property>controls/lighting/recognition-lights-pos[2]</property>
     <factor> -50 </factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
     <axis>
       <x>  0 </x>
       <y>  1 </y>

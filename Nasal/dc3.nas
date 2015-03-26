@@ -66,7 +66,7 @@ var CrewDoor = aircraft.door.new("instrumentation/doors/crew", 8.0);
 var CargoDoor = aircraft.door.new("instrumentation/doors/cargo", 10.0);
 var PassengerDoor = aircraft.door.new("instrumentation/doors/passenger", 10.0);
 
-var config_dlg = gui.Dialog.new("/sim/gui/dialogs/config/dialog", "Aircraft/Douglas-Dc3/Dialogs/config.xml");
+var config_dlg = gui.Dialog.new("/sim/gui/dialogs/config/dialog", getprop("/sim/aircraft-dir")~"/Dialogs/config.xml");
 
 var mouse_accel=func{
   msx=getprop("devices/status/mice/mouse/x") or 0;
@@ -116,18 +116,20 @@ setlistener("/sim/model/start-idling", func(idle){
 },0,0);
 
 var Startup = func{
-  setprop("controls/fuel/left-valve", 3);
-  setprop("controls/fuel/right-valve", 2);
+  setprop("controls/fuel/left-valve", 2);
+  setprop("controls/fuel/right-valve", 1);
+  setprop("controls/fuel/left-valve-pos", 216);
+  setprop("controls/fuel/right-valve-pos", 144);
   setprop("controls/fuel/tank/boost-pump", 1);
   setprop("controls/fuel/tank[1]/boost-pump", 1);
   setprop("controls/electric/engine[0]/generator",1);
   setprop("controls/electric/engine[1]/generator",1);
   setprop("/controls/engines/engine[0]/magnetos",3);
   setprop("controls/engines/engine[0]/propeller-pitch",1);
-  setprop("controls/engines/engine[0]/mixture",0.7);
+  setprop("controls/engines/engine[0]/mixture",1);
   setprop("/controls/engines/engine[1]/magnetos",3);
   setprop("controls/engines/engine[1]/propeller-pitch",1);
-  setprop("controls/engines/engine[1]/mixture",0.7);
+  setprop("controls/engines/engine[1]/mixture",1);
   setprop("/controls/gear/brake-parking",0);
   setprop("/instrumentation/doors/crew/position-norm",0);
   setprop("/controls/lighting/instruments-norm",1);
@@ -152,8 +154,10 @@ var Shutdown = func{
   setprop("/instrumentation/doors/crew/position-norm",1);
   setprop("/controls/lighting/instruments-norm",0);
   setprop("controls/electric/battery-switch",0);
-  setprop("controls/fuel/left-valve", 0);
-  setprop("controls/fuel/right-valve", 0);
+  setprop("controls/fuel/left-valve", -1);
+  setprop("controls/fuel/right-valve", -1);
+  setprop("controls/fuel/left-valve-pos", 0);
+  setprop("controls/fuel/right-valve-pos", 0);
   setprop("controls/fuel/tank/boost-pump", 0);
   setprop("controls/fuel/tank[1]/boost-pump", 0);
   setprop("sim/messages/copilot", "Engines are stopped");
@@ -263,7 +267,11 @@ var Engine = {
         ###################################
         #### CYLINDER HEAT TEMPERATURE ####
         ###################################
-	var thr = getprop("/engines/engine["~eng_num~"]/prop-thrust");
+	if(getprop("/sim/aero") == "dc-3-jsbsim"){
+	  var thr = getprop("/engines/engine["~eng_num~"]/thrust_lb");
+	}else{
+	  var thr = getprop("/engines/engine["~eng_num~"]/prop-thrust");
+	}
 	var ct = getprop("/engines/engine["~eng_num~"]/cyl-temp");
 	var cp = getprop("/controls/engines/engine["~eng_num~"]/cowl-flaps-norm");
 	var as = getprop("/velocities/airspeed-kt");
@@ -301,6 +309,39 @@ var Engine = {
 EngineLeft = Engine.new(0);
 EngineRight = Engine.new(1);
 
+var FakeTrim = func {
+  var ElevatorPos = props.globals.getNode("/surface-positions/elevator-pos-norm").getValue();
+  var ElevatorTrim = props.globals.getNode("/controls/flight/elevator-trim").getValue();
+  setprop("/surface-positions/elevator-pos-norm", ElevatorPos - ElevatorTrim);
+
+  if(getprop("sim/aero") != "dc-3-jsbsim"){
+    var AileronPos = props.globals.getNode("/surface-positions/aileron-pos-norm").getValue();
+  }else{
+    var AileronPos = props.globals.getNode("/surface-positions/left-aileron-pos-norm").getValue();
+    props.globals.initNode("/surface-positions/aileron-pos-norm");
+  }
+  var AileronTrim = props.globals.getNode("/controls/flight/aileron-trim").getValue();
+  setprop("/surface-positions/aileron-pos-norm", AileronPos - AileronTrim);
+  setprop("/surface-positions/left-aileron-pos-norm", AileronPos - AileronTrim);
+  setprop("/surface-positions/right-aileron-pos-norm", (-AileronPos) + AileronTrim);
+
+  var RudderPos = props.globals.getNode("/surface-positions/rudder-pos-norm").getValue();
+  var RudderTrim = props.globals.getNode("/controls/flight/rudder-trim").getValue();
+  if(getprop("sim/aero") == "dc-3-jsbsim"){
+    if(RudderTrim < -0.35) RudderTrim = -0.35;
+    if(RudderTrim >  0.35) RudderTrim =  0.35;
+  }
+  setprop("/surface-positions/rudder-pos-norm", RudderPos + RudderTrim);
+}
+
+setlistener("controls/stewardess/enable", func(v){
+  if(v.getBoolValue()){
+    interpolate("controls/stewardess/cabin-to-cockpit", 1, 8);
+    settimer(func { interpolate("controls/stewardess/cabin-to-cockpit", 0, 8); }, 12);
+    setprop("controls/stewardess/enable", 0);
+  }
+});
+
 ###############################################
 ###############################################
 ###############################################
@@ -308,6 +349,8 @@ EngineRight = Engine.new(1);
 var update_system = func{
   EngineLeft.update(0);
   EngineRight.update(1);
+
+  FakeTrim();
 
   if(getprop("/systems/electrical/outputs/starter") > 8){
     setprop("/engines/engine[0]/cranking",1);
@@ -328,3 +371,35 @@ var update_system = func{
   tire.get_rotation("yasim");
   settimer(update_system, 0);
 }
+
+###############################################################
+# PROPELLER PITCH BLADE ANGLE ANIMATION for JSBSim and YASim  #
+#               (added by Daniel DUBREUIL)                    #
+###############################################################
+
+var update_blade_angle = func{
+
+if(getprop("sim/flight-model")=="jsb") {
+var bladeL_angle = getprop("fdm/jsbsim/propulsion/engine[0]/blade-angle");
+var bladeL_3D_angle = 90-bladeL_angle;
+setprop("fdm/jsbsim/propulsion/engine[0]/blade3D-angle", bladeL_3D_angle);
+var bladeR_angle = getprop("fdm/jsbsim/propulsion/engine[1]/blade-angle");
+var bladeR_3D_angle = 90-bladeR_angle;
+setprop("fdm/jsbsim/propulsion/engine[1]/blade3D-angle", bladeR_3D_angle);
+};
+
+if(getprop("sim/flight-model")=="yasim") {
+var propL_pitch = getprop("controls/engines/engine[0]/propeller-pitch");
+var propL_angle = 45-25*propL_pitch;
+var propL_3D_angle = 90-propL_angle;
+setprop("controls/engines/engine[0]/prop3D-angle", propL_3D_angle);
+var propR_pitch = getprop("controls/engines/engine[1]/propeller-pitch");
+var propR_angle = 45-25*propR_pitch;
+var propR_3D_angle = 90-propR_angle;
+setprop("controls/engines/engine[1]/prop3D-angle", propR_3D_angle);
+};
+
+settimer(update_blade_angle, 0);
+};
+
+settimer(update_blade_angle, 0);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="dc-3-jsbsim-cnf.xml">
+
+  <sim>
+    <author>BARANGER Emmanuel, PAF team</author>
+  </sim>
+
+</PropertyList>
+

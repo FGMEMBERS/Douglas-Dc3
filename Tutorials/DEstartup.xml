@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 <!-- 
      ************************************************************************
      Douglas DC-3 C47
      January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
-     December 2012 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
      ************************************************************************
 -->
 
@@ -26,11 +25,15 @@
       <value>0.0</value>
     </set>
     <set>
-      <property>controls/engines/engine/magnetos</property>
+      <property>controls/engines/engine[0]/magnetos</property>
       <value>0</value>
     </set>
     <set>
-      <property>controls/engines/engine/throttle</property>
+      <property>controls/engines/engine[1]/magnetos</property>
+      <value>0</value>
+    </set>
+    <set>
+      <property>controls/engines/engine[0]/throttle</property>
       <value>0.0</value>
     </set>
     <set>
@@ -118,7 +121,7 @@
     </exit>  
   </step>
   
-<!-- Sélection réservoir principal gauche-->
+<!-- Selection reservoir principal gauche-->
   <step>
     <message>Wahlen Sie die Haupt Left Tank (Main LH)</message>
     <view>
@@ -134,8 +137,8 @@
 	<message>Stellen Sie den Schalter auf die Main LH Position</message>
       <condition>
         <less-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </less-than>
       </condition>
     </error>
@@ -143,22 +146,22 @@
 	  <message>Stellen Sie den Schalter auf die Main LH Position</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </greater-than>
       </condition>
     </error>
     <exit> 
       <condition>
 		<equals>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </equals>
       </condition>
     </exit>  
   </step>
   
-<!-- sélection réservoir principal droit-->
+<!-- selection reservoir principal droit-->
   <step>
     <message>Wahlen Sie die Haupt rechts Tank (Main RH)</message>
     <view>
@@ -174,8 +177,8 @@
 	  <message>Stellen Sie den Schalter auf die Main RH Position</message>
       <condition>
         <less-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </less-than>
       </condition>
     </error>
@@ -183,16 +186,16 @@
 	  <message>Stellen Sie den Schalter auf die Main RH Position</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </greater-than>
       </condition>
     </error>
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </equals>
       </condition>
     </exit>  
@@ -236,7 +239,7 @@
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -261,7 +264,7 @@
       <condition>
         <less-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.55</value>
+          <value>0.75</value>
         </less-than>
       </condition>
     </error>
@@ -270,7 +273,7 @@
       <condition>
         <greater-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.75</value>
+          <value>0.90</value>
         </greater-than>
       </condition>
     </error>
@@ -279,11 +282,11 @@
         <and>
           <greater-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.55</value>
+            <value>0.75</value>
           </greater-than>
           <less-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.75</value>
+            <value>0.90</value>
           </less-than>
         </and>
       </condition>
@@ -388,7 +391,7 @@
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[1]/magnetos-pos</property>
+          <property>controls/engines/engine[1]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
@@ -452,7 +455,7 @@
   </step>
 
 
-<!-- Arrêt boost pump-->
+<!-- Arret boost pump-->
   <step>
     <message>Sie konnen jetzt stoppen die Booster-Pumpe rechts (Booster pump Right)</message>
     <view>
@@ -467,7 +470,7 @@
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>
@@ -492,7 +495,7 @@
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -514,14 +517,14 @@
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[0]/magnetos-pos</property>
+          <property>controls/engines/engine[0]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
     </exit>
   </step>
 
-  <!-- Vérifications-->
+  <!-- Verifications-->
   <step>
     <message>Wir uberprufen niemand nahe unserem Propeller ist</message>
     <view>
@@ -578,7 +581,7 @@
     </exit>
   </step>
   
- <!-- Arrêt boost pump-->
+ <!-- Arret boost pump-->
   <step>
     <message>Sie konnen jetzt stoppen die Booster-Pumpe links (Booster pump Right)</message>
     <view>
@@ -593,7 +596,7 @@
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>

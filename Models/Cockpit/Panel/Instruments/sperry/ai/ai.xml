@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList> 
 
@@ -43,6 +43,20 @@
       <x> 1 </x>
       <y> 0 </y>
       <z> 0 </z>
+    </axis>
+  </animation>
+  
+    <animation> 
+    <type>translate</type>
+    <object-name>axe</object-name>
+    <property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
+    <factor>-0.0015</factor>
+    <min-m>-0.025</min-m>
+    <max-m>0.025</max-m>
+    <axis> 
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 

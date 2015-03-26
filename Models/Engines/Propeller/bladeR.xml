@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>blade.ac</path>
+ 
+  <animation>
+    <object-name>pale</object-name>   
+  </animation>   
+
+  <!-- JSBSim animation -->
+  <animation>
+    <type>rotate</type>
+      <condition>
+        <equals>
+          <property>sim/flight-model</property>
+          <value>jsb</value>
+        </equals>
+      </condition>
+    <object-name>pale</object-name>
+    <property>fdm/jsbsim/propulsion/engine[1]/blade3D-angle</property>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <!-- YASim animation -->
+  <animation>
+    <type>rotate</type>
+    <object-name>pale</object-name>
+    <condition>
+      <and>
+        <not>
+          <property>controls/engines/engine[1]/propeller-feather</property>
+        </not>
+        <equals>
+           <property>sim/flight-model</property>
+           <value>yasim</value>
+        </equals>
+      </and>
+    </condition>
+    <property>controls/engines/engine[1]/prop3D-angle</property>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <!-- <animation>
+    <type>rotate</type>
+    <object-name>pale</object-name>
+    <condition>
+      <property>controls/engines/engine[1]/propeller-feather</property>
+    </condition>
+    <property>controls/engines/engine[1]/propeller-feather-pos</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 90 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation> -->
+
+</PropertyList>

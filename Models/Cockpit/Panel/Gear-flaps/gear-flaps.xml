@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
-  <path>gear-flaps.ac</path>
+   <path>gear-flaps.ac</path>
 
-  <animation>
-    <object-name>sol_cent</object-name>
-    <object-name>sol_ext</object-name>
-    <object-name>gear-lev</object-name>
-    <object-name>gear-lev2</object-name>
-    <object-name>flap-lev</object-name>
-  </animation>
+ <animation>
+   <object-name>sol_cent</object-name>
+   <object-name>sol_ext</object-name>
+   <object-name>gear-lev</object-name>
+   <object-name>gear-lev2</object-name>
+   <object-name>flap-lev</object-name>
+ </animation>
 
-  <!-- Civilian red version -->
-  <animation>
-    <type>material</type>
-    <object-name>sol_cent</object-name>
-    <object-name>sol_ext</object-name>
-    <object-name>gear-lev</object-name>
-    <object-name>gear-lev2</object-name>
-    <object-name>flap-lev</object-name>
-    <condition>
+<!-- Civilian red version -->
+ <animation>
+   <type>material</type>
+      <object-name>sol_cent</object-name>
+      <object-name>sol_ext</object-name>
+      <object-name>gear-lev</object-name>
+      <object-name>gear-lev2</object-name>
+      <object-name>flap-lev</object-name>
+   <condition>
       <equals>
         <property>sim/model/config/version</property>
         <value>civilian-red</value>
@@ -29,66 +29,66 @@
     <texture>gear-flaps.png</texture>
   </animation>
 
-  <!-- Civilian gray version -->
-  <animation>
-    <type>material</type>
-    <object-name>sol_cent</object-name>
-    <object-name>sol_ext</object-name>
-    <object-name>gear-lev</object-name>
-    <object-name>gear-lev2</object-name>
-    <object-name>flap-lev</object-name>
-    <condition>
+<!-- Civilian gray version -->
+ <animation>
+   <type>material</type>
+     <object-name>sol_cent</object-name>
+     <object-name>sol_ext</object-name>
+     <object-name>gear-lev</object-name>
+     <object-name>gear-lev2</object-name>
+     <object-name>flap-lev</object-name>
+  <condition>
       <equals>
         <property>sim/model/config/version</property>
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/gear-flaps-gray.png</texture>
+    <texture>gear-flaps.png</texture>
   </animation>
 
-  <!-- Military version -->
-  <animation>
-    <type>material</type>
-    <object-name>sol_cent</object-name>
-    <object-name>sol_ext</object-name>
-    <object-name>gear-lev</object-name>
-    <object-name>gear-lev2</object-name>
-    <object-name>flap-lev</object-name>
-    <condition>
+<!-- Military version -->
+<animation>
+  <type>material</type>
+     <object-name>sol_cent</object-name>
+     <object-name>sol_ext</object-name>
+     <object-name>gear-lev</object-name>
+     <object-name>gear-lev2</object-name>
+     <object-name>flap-lev</object-name>
+   <condition>
       <equals>
         <property>sim/model/config/version</property>
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/gear-flaps_military.png</texture>
+    <texture>gear-flaps_military.png</texture>
   </animation>
 
-  <!--GEAR-->
-  <!--verrouillage (levier au sol) --> 
-  <animation>
-    <type>rotate</type>
-    <object-name>gear-lev</object-name>	
-    <property>controls/gear/gear-down-lock-pos</property>
-    <interpolation>
-      <entry><ind> 1.00 </ind><dep>  0 </dep></entry>
-      <entry><ind> 0.50 </ind><dep> 35 </dep></entry>
-      <entry><ind> 0.00 </ind><dep> 25 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m>  0.580 </x-m>
-      <y-m> -0.109 </y-m>
-      <z-m> -0.364 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y>  1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation> 
+<!--GEAR-->
+<!--verrouillage (levier au sol) --> 
+ <animation>
+   <type>rotate</type>
+   <object-name>gear-lev</object-name>	
+   <property>controls/gear/gear-down-lock-pos</property>
+   <interpolation>
+     <entry><ind> 1.00</ind><dep>0</dep></entry>
+     <entry><ind> 0.50</ind><dep>35</dep></entry>
+     <entry><ind> 0.0</ind><dep>25</dep></entry>
+   </interpolation>
+   <center>
+     <x-m>  0.580 </x-m>
+     <y-m> -0.109 </y-m>
+     <z-m> -0.364 </z-m>
+   </center>
+   <axis>
+     <x>  0 </x>
+     <y>  1 </y>
+     <z>  0 </z>
+   </axis>
+ </animation> 
   
-  <!-- Levier vanne hydraulique -->  
-  <!-- up -->
-  <animation>
+<!-- Levier vanne hydraulique -->  
+<!-- up -->
+ <animation>
     <type>rotate</type>
     <object-name>gear-lev2</object-name>
     <object-name>gear-in</object-name>
@@ -101,10 +101,10 @@
     </condition>
     <property>systems/hydraulics/landing-gear-psi</property>
     <interpolation>
-      <entry><ind>   0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0   </ind><dep> 0  </dep></entry>
       <entry><ind> 300 </ind><dep> 30 </dep></entry>
       <entry><ind> 600 </ind><dep> 30 </dep></entry>	  
-      <entry><ind> 900 </ind><dep>  0 </dep></entry>
+      <entry><ind> 900 </ind><dep> 0  </dep></entry>
     </interpolation>
     <center>
       <x-m>  1.032 </x-m>
@@ -117,8 +117,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-  
-  <!-- down --> 
+ <!-- down --> 
   <animation>
     <type>rotate</type>
     <object-name>gear-lev2</object-name>
@@ -132,10 +131,10 @@
     </condition>
     <property>systems/hydraulics/landing-gear-psi</property>
     <interpolation>
-      <entry><ind>   0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0   </ind><dep> 0  </dep></entry>
       <entry><ind> 300 </ind><dep> 30 </dep></entry>
       <entry><ind> 600 </ind><dep> 30 </dep></entry>	  
-      <entry><ind> 900 </ind><dep>  0 </dep></entry>
+      <entry><ind> 900 </ind><dep> 0  </dep></entry>
     </interpolation>
     <center>
       <x-m>  1.032 </x-m>
@@ -149,7 +148,7 @@
     </axis>
   </animation>
   
-  <!-- commutation par bt-souris-gauche -->
+ <!-- commutation par bt-souris-gauche -->
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -164,7 +163,7 @@
     </action>
   </animation>
 
-  <!--sortie--> 
+<!--sortie--> 
   <animation>
     <type>pick</type>
     <visible>false</visible>
@@ -179,8 +178,7 @@
       </binding>
     </action>
   </animation>
-  
-  <!--rentrée-->
+<!--rentrée-->
   <animation>
     <type>pick</type>
     <visible>false</visible>
@@ -197,52 +195,52 @@
   </animation>	
 
   <!--FLAPS-->
-  <animation>
-    <type>rotate</type>
-    <object-name>flap-lev</object-name>
-    <object-name>flap-in</object-name>
-    <object-name>flap-out</object-name>
-    <property>systems/hydraulics/flaps-down-psi</property>
-    <interpolation>
-      <entry><ind>   0 </ind><dep>  0 </dep></entry>
-      <entry><ind> 800 </ind><dep> 30 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m>  1.032 </x-m>
-      <y-m>  0.276 </y-m>
-      <z-m> -0.049 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y>  1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
+ <animation>
+   <type>rotate</type>
+   <object-name>flap-lev</object-name>
+   <object-name>flap-in</object-name>
+   <object-name>flap-out</object-name>
+   <property>systems/hydraulics/flaps-down-psi</property>
+   <interpolation>
+     <entry><ind> 0   </ind><dep> 0  </dep></entry>
+     <entry><ind> 800 </ind><dep> 30  </dep></entry>
+   </interpolation>
+   <center>
+     <x-m>  1.032 </x-m>
+     <y-m>  0.276 </y-m>
+     <z-m> -0.049 </z-m>
+   </center>
+   <axis>
+     <x>  0 </x>
+     <y>  1 </y>
+     <z>  0 </z>
+   </axis>
+ </animation>
 
-  <animation>
-    <type>rotate</type>
-    <object-name>flap-lev</object-name>
-    <object-name>flap-in</object-name>
-    <object-name>flap-out</object-name>
-    <property>systems/hydraulics/flaps-up-psi</property>
-    <interpolation>
-      <entry><ind>   0 </ind><dep>  0 </dep></entry>
-      <entry><ind> 800 </ind><dep> 30 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m>  1.032 </x-m>
-      <y-m>  0.276 </y-m>
-      <z-m> -0.049 </z-m> 
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation> 
+ <animation>
+   <type>rotate</type>
+   <object-name>flap-lev</object-name>
+   <object-name>flap-in</object-name>
+   <object-name>flap-out</object-name>
+   <property>systems/hydraulics/flaps-up-psi</property>
+   <interpolation>
+     <entry><ind> 0   </ind><dep> 0  </dep></entry>
+     <entry><ind> 800 </ind><dep> 30  </dep></entry>
+   </interpolation>
+   <center>
+     <x-m>  1.032 </x-m>
+     <y-m>  0.276 </y-m>
+     <z-m> -0.049 </z-m> 
+   </center>
+   <axis>
+     <x>  0 </x>
+     <y> -1 </y>
+     <z>  0 </z>
+   </axis>
+ </animation> 
   
-  <!--Ajustage par bt-souris-gauche-->
-  <!--sortie--> 
+ <!--Ajustage par bt-souris-gauche-->
+<!--sortie--> 
   <animation>
     <type>pick</type>
     <visible>false</visible>
@@ -257,8 +255,7 @@
       </binding>
     </action>
   </animation>
-  
-  <!--rentrée-->
+<!--rentrée-->
   <animation>
     <type>pick</type>
     <visible>false</visible>

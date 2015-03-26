@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
   This file is part of FlightGear, the free flight simulator
@@ -30,8 +30,7 @@
        Vent.wav
        Verrouillage_trains.wav
        Volets.wav
-       
-       December 2012 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
+
 -->
 
 <PropertyList>

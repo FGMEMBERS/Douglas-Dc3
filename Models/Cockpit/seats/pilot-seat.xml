@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList> 
 
@@ -12,14 +12,14 @@
     <object-name>coussin</object-name>
   </animation>
 
-  <!-- Civilian red version -->
-  <animation>
-    <type>material</type>
+<!-- Civilian red version -->
+ <animation>
+  <type>material</type>
     <object-name>fond</object-name>
     <object-name>acoudoir</object-name>
     <object-name>structure</object-name>
     <object-name>coussin</object-name>
-    <condition>
+ <condition>
       <equals>
         <property>sim/model/config/version</property>
         <value>civilian-red</value>
@@ -28,37 +28,40 @@
     <texture>colors.png</texture>
   </animation>
 
-  <!-- Civilian gray version -->
-  <animation>
-    <type>material</type>
+<!-- Civilian gray version -->
+ <animation>
+  <type>material</type>
     <object-name>fond</object-name>
     <object-name>acoudoir</object-name>
     <object-name>structure</object-name>
     <object-name>coussin</object-name>
-    <condition>
+ <condition>
       <equals>
         <property>sim/model/config/version</property>
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_gray.png</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
-  <!-- Military version -->
-  <animation>
-    <type>material</type>
+<!-- Military version -->
+ <animation>
+  <type>material</type>
     <object-name>fond</object-name>
     <object-name>acoudoir</object-name>
     <object-name>structure</object-name>
     <object-name>coussin</object-name>
-    <condition>
+ <condition>
       <equals>
         <property>sim/model/config/version</property>
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_military.png</texture>
+    <texture>colors_military.png</texture>
   </animation>
+
+    <!-- Objets transparents -->
+  
 
   <!-- LoD -->
   <animation>

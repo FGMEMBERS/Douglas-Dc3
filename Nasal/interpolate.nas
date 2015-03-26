@@ -271,13 +271,17 @@ setlistener("/controls/engines/engine[1]/magnetos", func(v) {
     interpolate("/controls/engines/engine[1]/magnetos-pos", v.getValue(), 0.25);
 });
 
-setlistener("/controls/fuel/left-valve", func(v) {
-    interpolate("/controls/fuel/left-valve-pos", v.getValue(), 0.25);
-});
+var FuelValveLeft = func(angle){
+  setprop("/controls/fuel/left-valve-lock", 1);
+  interpolate("/controls/fuel/left-valve-pos", getprop("/controls/fuel/left-valve-pos")+angle, 0.25);
+  settimer( func { setprop("/controls/fuel/left-valve-lock", 0);}, 0.25 );
+}
 
-setlistener("/controls/fuel/right-valve", func(v) {
-    interpolate("/controls/fuel/right-valve-pos", v.getValue(), 0.25);
-});
+var FuelValveRight = func(angle){
+  setprop("/controls/fuel/right-valve-lock", 1);
+  interpolate("/controls/fuel/right-valve-pos", getprop("/controls/fuel/right-valve-pos")+angle, 0.25);
+  settimer( func { setprop("/controls/fuel/right-valve-lock", 0);}, 0.25 );
+}
 
 setlistener("/controls/fuel/tank-gauge", func(v) {
     interpolate("/controls/fuel/tank-gauge-pos", v.getValue(), 0.25);
@@ -290,3 +294,15 @@ setlistener("/controls/engines/engine/cowl-flaps-cmd", func(v) {
 setlistener("/controls/engines/engine[1]/cowl-flaps-cmd", func(v) {
     interpolate("/controls/engines/engine[1]/cowl-flaps-pos", v.getValue(), 0.25);
 });
+
+setlistener("controls/engines/engine[0]/propeller-feather", func {
+if(getprop("sim/flight-model")=="jsb") {
+if(!getprop("controls/engines/engine[0]/propeller-feather")) {
+interpolate("fdm/jsbsim/propulsion/engine[0]/blade-angle",0,3);
+}}});
+
+setlistener("controls/engines/engine[1]/propeller-feather", func {
+if(getprop("sim/flight-model")=="jsb") {
+if(!getprop("controls/engines/engine[1]/propeller-feather")) {
+interpolate("fdm/jsbsim/propulsion/engine[1]/blade-angle",0,3);
+}}});

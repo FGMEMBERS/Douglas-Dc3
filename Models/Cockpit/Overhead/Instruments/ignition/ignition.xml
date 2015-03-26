@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -64,7 +64,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_gray.png</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
 <!-- Military version -->
@@ -88,7 +88,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_military.png</texture>
+    <texture>colors_military.png</texture>
   </animation>
 
   <animation>

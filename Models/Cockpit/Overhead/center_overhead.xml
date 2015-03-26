@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Overhead/Instruments/ignition/ignition.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
   </model>
 
   <text>
@@ -81,9 +86,9 @@
     <object-name>magnetoR</object-name>
     <object-name>url</object-name>
     <emission>
-      <red>   0.8 </red>
-      <green> 0.8 </green>
-      <blue>  0.0 </blue>
+      <red>0.8</red>
+      <green>0.8</green>
+      <blue>0.0</blue>
     </emission>
   </animation>
 

@@ -1,10 +1,3 @@
-default
-
-c47
-
-varig
-
-These liveries were made by : Emmanuel BARANGER 2011
 
 aloha-airline / aloha-airline-high
 
@@ -18,12 +11,22 @@ thanks to him
 
 Linux
 
+Baroudeur
+
+Baroudeur_Air_France
+
+C47-D-Day
+
+Paras
+
 These liveries were made by : Christian THIRIOT (patten) 2011
 
-thanks to him
+Thanks to him
 
-DC-3SAR
+Other liveries here:
 
-These liveries were made by : Harvey GOLDEN 2012
+http://liveries.flightgear.org/liveries.php
 
-thanks to him
+
+
+

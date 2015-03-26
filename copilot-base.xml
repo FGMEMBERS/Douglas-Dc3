@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
 <!-- 
      ************************************************************************
      Douglas DC-3 C47
-     January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
-     January  2012 modified by PAF team    : http://http://equipe-flightgear.forumactif.com
-     February 2012 modified Helijah        : http://helijah.free.fr / http://embaranger.free.fr
-     April    2012 New version by Buckaroo : http://www.buckarooshangar.com/flightgear/index.html
-     December 2012 updated  by Helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
      ************************************************************************
 -->
 
@@ -149,8 +145,8 @@
       </engine>
     </engines>
     <fuel>
-      <left-valve type="int">0</left-valve>
-      <right-valve type="int">0</right-valve>
+      <left-valve type="int">-1</left-valve>
+      <right-valve type="int">-1</right-valve>
     </fuel>
     <anti-ice>
       <pitot-heat n="1" type="bool">false</pitot-heat>
@@ -211,6 +207,14 @@
     </engine>
   </engines>
 
+  <systems>
+    <electrical>
+      <outputs>
+        <comm n="0" type="double">0</comm>
+      </outputs>
+    </electrical>
+  </systems>
+
   <input>
     <keyboard include="Nasal/dc-3-keyboard.xml"/>
   </input>
@@ -223,7 +227,7 @@
       <file>Aircraft/Douglas-Dc3/Nasal/paratroopers.nas</file>
     </para>-->
     <dc3>
-      <!--<file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>-->
+      <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/dc3-copilot.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/hydraulic.nas</file>
@@ -232,6 +236,9 @@
       <!--<file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>-->
       <!--<file>Aircraft/Douglas-Dc3/Nasal/fuel.nas</file>-->
     </dc3>
+    <VHF22>
+     <file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
+    </VHF22>
   </nasal>
 
 </PropertyList>

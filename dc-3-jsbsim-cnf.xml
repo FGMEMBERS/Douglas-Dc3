@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+     ************************************************************************
+      Douglas DC-3 C47
+      January 2011 BARANGER Emmanuel
+      January 2012 PAF Team
+     ************************************************************************
+-->
+
+<PropertyList include="dc-3-base.xml">
+
+  <sim>
+    <description>Douglas DC-3/C-47 (JSBsim)</description>
+    <flight-model>jsb</flight-model>
+    <aero>dc-3-jsbsim</aero>
+
+    <startup>
+      <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
+    </startup>
+    
+    <!-- freeze fuel = false: fuel consumption calculated by the FDM -->
+    <freeze>
+      <fuel type="bool">false</fuel>
+    </freeze>
+
+    <model>
+      <path>Aircraft/Douglas-Dc3/Models/dc-3-jsbsim.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay n="0">
+      <generic n="0">
+        <string n="1" type="string">wheels</string>
+      </generic>
+    </multiplay>
+
+    <sound>
+      <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>
+    </sound>
+  </sim>
+
+  <payload>
+     <weight>
+       <name>Compartment A</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+         <max-lb>600</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+    <weight>
+       <name>Compartment B</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+         <max-lb>800</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+    <weight>
+       <name>Compartment C</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
+         <max-lb>1000</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+    <weight>
+       <name>Compartment D</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]"/>
+         <max-lb>3000</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+    <weight>
+       <name>Compartment E</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]"/>
+         <max-lb>3000</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+    <weight>
+       <name>Compartment F</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[5]"/>
+         <max-lb>2300</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+    <weight>
+       <name>Compartment G</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[6]"/>
+         <max-lb>1300</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+    <weight>
+       <name>Compartment H</name>
+         <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[7]"/>
+         <max-lb>520</max-lb>
+         <min-lb>0</min-lb>
+    </weight>
+  </payload>
+
+  <consumables>
+    <fuel>
+       <tank n="4">
+      <name>Carb LH</name>
+        <capacity unit="LBS"> 0.5 </capacity>
+        <contents unit="LBS"> 0 </contents>    
+      </tank>
+      <tank n="5">
+      <name>Carb RH</name>
+        <capacity unit="LBS"> 0.5 </capacity>
+        <contents unit="LBS"> 0 </contents>    
+      </tank>
+    </fuel>
+  </consumables>
+
+  <!-- ################################################### -->
+  <!-- ######## DUAL CONTROL and FUEL Management ######### -->
+  <nasal>    
+    <dual_control_tools>
+      <file>Aircraft/Douglas-Dc3/DualControl/dual-control-tools.nas</file>
+    </dual_control_tools>
+    <aircraft_dual_control>
+      <file>Aircraft/Douglas-Dc3/DualControl/dc-3-dual-control.nas</file>
+    </aircraft_dual_control>
+    <dual_control>
+      <file>Aircraft/Douglas-Dc3/DualControl/pilot-dual-control.nas</file>
+    </dual_control>
+    <fuel>
+      <file>Aircraft/Douglas-Dc3/Nasal/fuel-jsbsim.nas</file>
+    </fuel>
+  </nasal>
+  <!-- ######## DUAL CONTROL and FUEL Management ######### -->
+  <!-- ################################################### -->
+    
+</PropertyList>

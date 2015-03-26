@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
      ************************************************************************
      Douglas DC-3 C47
-     January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
-     January  2012 modified by PAF team    : http://http://equipe-flightgear.forumactif.com
-     February 2012 modified Helijah        : http://helijah.free.fr / http://embaranger.free.fr
-     April    2012 New version by Buckaroo : http://www.buckarooshangar.com/flightgear/index.html
-     December 2012 updated  by Helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     January 2011 BARANGER Emmanuel
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
      ************************************************************************
 -->
 
@@ -15,7 +12,6 @@
 
   <sim>
     <description>Douglas DC-3/C-47 (YASim)</description>
-    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D), Buckaroo (FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>dc-3-yasim</aero>
 
@@ -29,6 +25,66 @@
         <file type="string">default</file>
       </livery>
     </model>
+    
+    <!-- freeze fuel = true: fuel consumption calculated by nasal -->
+    <freeze>
+      <fuel type="bool">true</fuel>
+    </freeze>
+
+    <weight n="0">
+      <name>Compartiment A</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>600</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Compartiment B</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>800</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Compartiment C</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>1000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+
+    <weight n="3">
+      <name>Compartiment D</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>3000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="4">
+      <name>Compartiment E</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>3000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="5">
+      <name>Compartiment F</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>2400</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <!--<weight n="6">
+        <weight-lb>0</weight-lb>
+        <max-lb>1300</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="7">
+        <weight-lb>0</weight-lb>
+        <max-lb>350</max-lb>
+        <min-lb>0</min-lb>
+    </weight>-->
 
     <multiplay n="0">
       <generic n="0">
@@ -41,8 +97,8 @@
     </sound>
   </sim>
 
-  <!-- ############################### -->
-  <!-- ######## DUAL CONTROL ######### -->
+  <!-- ################################################### -->
+  <!-- ######## DUAL CONTROL and FUEL management ######### -->
   <nasal>
     <dual_control_tools>
       <file>Aircraft/Douglas-Dc3/DualControl/dual-control-tools.nas</file>
@@ -53,8 +109,11 @@
     <dual_control>
       <file>Aircraft/Douglas-Dc3/DualControl/pilot-dual-control.nas</file>
     </dual_control>
+    <fuel>
+      <file>Aircraft/Douglas-Dc3/Nasal/fuel-yasim.nas</file>
+    </fuel>
   </nasal>
-  <!-- ######## DUAL CONTROL ######### -->
-  <!-- ############################### -->
+  <!-- ######## DUAL CONTROL and FUEL management ######### -->
+  <!-- ################################################### -->
     
 </PropertyList>

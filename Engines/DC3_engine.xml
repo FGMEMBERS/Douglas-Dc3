@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+  File:     DC3_Engine.xml
+  Author:   Aero-Matic v 0.82
+
+  Inputs:
+    name:           my_engineDC3
+    type:           piston
+    power:          1200 hp
+    augmented?      no
+    injected?       no
+-->
+
+<!--   Pratt and Whitney R-1830 Twin Wasp -->
+
+<piston_engine name="my_engineDC3">
+  <minmp unit="INHG">          10.0 </minmp>
+  <maxmp unit="INHG">         48 </maxmp>
+  <displacement unit="IN3"> 2280.00 </displacement>
+  <maxhp>        1200 </maxhp> <!-- for 1200 HP with full boost at 48 inhg -->
+  <cycles>         4.0 </cycles>
+  <idlerpm>      500.0 </idlerpm>
+  <maxrpm>      2700.0 </maxrpm>
+  <maxthrottle>    1.0 </maxthrottle><!-- Deprecated -->
+  <minthrottle>    0.1 </minthrottle><!-- Deprecated -->
+  <sparkfaildrop>  0.1 </sparkfaildrop>
+  <volumetric-efficiency> 0.85 </volumetric-efficiency>
+
+  <numboostspeeds>1</numboostspeeds>
+  <boostoverride>0</boostoverride>
+  <ratedboost1 unit="INHG">18.1</ratedboost1>
+  <ratedaltitude1>12000</ratedaltitude1>
+  <ratedpower1>1200</ratedpower1>
+  <ratedrpm1>2700</ratedrpm1>
+
+<!-- Optional items that affect engine performance -->
+ <!-- Defining <bsfc> over-rides the built-in horsepower calculations -->
+ <!--<bsfc>           0.45 </bsfc>-->
+ <!--<stroke unit="IN">  4.375  </stroke>-->
+ <!--<bore unit="IN">    5.125 </bore>-->
+ <!--<cylinders>         4.0  </cylinders>-->
+ <!--<compression-ratio> 8.0 </compression-ratio>-->
+
+</piston_engine>
+
+
+
+

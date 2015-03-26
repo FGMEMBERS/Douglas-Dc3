@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -6,7 +6,6 @@
      ************************************************************************
      Douglas DC-3 C47
      January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
-     December 2012 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
      ************************************************************************
 -->
 
@@ -22,7 +21,7 @@ take-off procedure :
 
 
 
-<!-- Configuration au démarrage du tutoriel-->
+<!-- Configuration au demarrage du tutoriel-->
 
   <init>
     <set>
@@ -102,7 +101,7 @@ take-off procedure :
     </exit>
   </step>
   
-<!-- vérification moteurs démarrés-->
+<!-- verification moteurs demarres-->
   <step>
     <message>Everything is going well for the left engine</message>
     <view>

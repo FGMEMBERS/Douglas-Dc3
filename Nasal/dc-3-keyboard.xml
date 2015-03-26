@@ -1,15 +1,13 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
 <!-- 
-     ***************************************************************************************
+     ************************************************************************
      Douglas DC-3 C47
-     January  2011 generate by helijah  : http://helijah.free.fr / http://embaranger.free.fr
-     January  2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
-     February 2012 modified Helijah     : http://helijah.free.fr / http://embaranger.free.fr
-     December 2012 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
-     ***************************************************************************************
+     January 2011 BARANGER Emmanuel
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     ************************************************************************
 -->
 
   <key n="103">
@@ -65,8 +63,8 @@
     </binding>
   </key>
 
-  <key n="10">
-    <name>Ctrl-j</name>
+  <key n="61"> 
+    <name>=</name>
     <desc>Jump signal</desc>
     <binding>
       <command>property-toggle</command>
@@ -75,12 +73,13 @@
     </binding>
   </key>
 
-  <key n="108">
-    <name>l</name>
-    <desc>Toggle tail-wheel lock.</desc>
+  <key n="38"> 
+    <name>&amp;</name>
+    <desc>Call stewardess</desc>
     <binding>
-      <command>property-toggle</command>
-      <property>/controls/gear/tailwheel-lock</property>
+      <command>property-assign</command>
+      <property>controls/stewardess/enable</property>
+      <value>true</value>
     </binding>
   </key>
 
