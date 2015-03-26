@@ -1,0 +1,915 @@
+commit 8922a3dab10be22324abaf6286efff4ddb14203e
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Feb 2 21:41:05 2012 +0100
+
+    Douglas DC3 : Les parties mobiles ne bougent plus en fonction des Trim (dans l'attente de modéliser les trims)
+
+commit 541d7816da8cac9abe7f7b5b14a89de83f9d5187
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Feb 2 01:09:41 2012 +0100
+
+    Douglas DC3 : Nettoyage des essuie-glaces : suppressionn des fichiers inutiles, indentation, suppression canal alpha
+
+commit 2b9ef7de684e59459bdf3da8ef02831a358e0a28
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Feb 2 00:41:54 2012 +0100
+
+    Douglas DC3 : En Dual Control le problème des trims est résolu
+
+commit 4f9b40d096fac53979c08f8e2e3db8ddde95b006
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Feb 1 20:53:18 2012 +0100
+
+    Douglas DC3 : Beaucoup de données d'instruments sont maintenant en Dual Control
+
+commit c724f19cd2900a8605b25cd26f2165e1b26ebd1c
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Feb 1 20:17:55 2012 +0100
+
+    Douglas DC3 : Larotation des hélices sont de nouveaux visible en MP
+
+commit a5ec6100f481614a87f2162096a5e8b68ab1d308
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Feb 1 19:51:16 2012 +0100
+
+    Douglas DC3 : L'éclairage des instruments est désormais en Dual Control
+
+commit 261f33eb16b37a46267145232885e06ab382ec20
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Feb 1 19:37:59 2012 +0100
+
+    Douglas DC3 : La radio est désormais en Dual Control
+
+commit b80dc47063f4b45ad5126fdc9b3e8cf7e7365df8
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Jan 25 21:27:56 2012 +0100
+
+    Douglas DC-3:Mixture à 100% lors de l'autostart
+
+commit 9e04c30afa5857d8974835e094a3b8980cff07bf
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Jan 22 17:23:52 2012 +0100
+
+    Douglas DC3: Les portes parachutistes et équipages sont désoramais en MP + suppression de choses inutiles
+
+commit f215019546c817473aa3e64ae7e6b1137022bb26
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Wed Jan 18 08:51:30 2012 +0100
+
+    DC-3 Modif couleur ds essuie-glace
+
+commit 0d3062e890d88133e7bd57851ab5bcdf7c84af54
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Jan 17 23:06:52 2012 +0100
+
+    Douglas DC3 : suppression des vertice en double sur les essuie-glace + ajout du FDM JSBSIM (avec adaptation nécessaire)
+
+commit 3bf8783bc54b6d8e9ea514a46b1519ac41d585e1
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Tue Jan 17 20:38:12 2012 +0100
+
+    DC-3 Essuie-glace
+
+commit 1311fcfee5bf244a494db3048bcaf3f731188540
+Author: titimint <titimint@titimint.(none)>
+Date:   Sun Jan 15 19:55:03 2012 +0100
+
+    Douglas DC-3 Correction de la texture cockpit red
+
+commit af802dd8c1f5e7ca40c54cc5d9bde74636538921
+Author: titimint <titimint@titimint.(none)>
+Date:   Sun Jan 15 15:54:17 2012 +0100
+
+    Douglas DC-3 Rajout d'une livrée C47-D-Day
+
+commit 9e38716b8ddbd7908dc193f99e661201ba13af71
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Jan 15 12:03:17 2012 +0100
+
+    Douglas DC3: Suppression définitive du capitonnage + ajout de la livrée de bibi
+
+commit df9b5d03ec4333fea2eb406a3d9fe65b8aa7ecef
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Jan 15 11:32:34 2012 +0100
+
+    Douglas DC3: Ajout des textures High dans le sélecteur
+
+commit e8abca3ca1708bd96ad18290dffe770513ace44b
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 23:06:20 2012 +0100
+
+    dc3 :amelioration fuel.ac et cap.ac
+
+commit 4c0ae85de7496914f3ea015043e77679b22caacd
+Author: titimint <titimint@titimint.(none)>
+Date:   Sat Jan 14 22:27:03 2012 +0100
+
+    Douglas DC-3 texturage des longerons (structure)
+
+commit ecadbd9b34850103174b1f7d7beeabc7f4e18c64
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Jan 14 22:10:17 2012 +0100
+
+    Douglas DC3: Correction d'un bug en Dual Control : les trim ne sont plus partagé car ils posent beaucoup de problème
+
+commit 7a4df5b0fbd825ee8826fb908aff7eec6db3d9d6
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Jan 14 21:55:57 2012 +0100
+
+    Douglas DC3: Correction d'un bug en Dual Control : les trim ne sont plus partagé car ils posent beaucoup de problème
+
+commit e1f517dc3b447171d2f1f0cb82ed38646af14f5d
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Jan 14 21:10:58 2012 +0100
+
+    Douglas DC3: Léger déplacement du rideau cockpit pour qu'il reste à l'intérieur
+
+commit 94af5e092db3433767433d98049cf5249a6025c1
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Jan 14 20:16:02 2012 +0100
+
+    Douglas DC3: Ajout des longerons
+
+commit 487fe53174c8a82596adadb4eec463a247593beb
+Author: titimint <titimint@titimint.(none)>
+Date:   Sat Jan 14 17:30:50 2012 +0100
+
+    Douglas DC-3 Ajout de 2 textures cabines pour choix Détails High.Suppression des ombres des accessoires lors du choix inverse.
+
+commit 42a1607528b6b22690f0ddb80f9aca514f3047cb
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 17:25:57 2012 +0100
+
+    dc3 :amelioration des tuto
+
+commit 2ab19633ce7ed36c5227fd1735082ba0b8fed3da
+Author: titimint <titimint@titimint.(none)>
+Date:   Sat Jan 14 16:09:14 2012 +0100
+
+    Douglas DC-3 Ajustement de teintes de la cabine Paras(Sauvegarde de la texture originelle pour test)
+
+commit d02d2eaf70b530b6ef345083bb396c882206f823
+Author: titimint <titimint@titimint.(none)>
+Date:   Sat Jan 14 14:24:02 2012 +0100
+
+    Douglas DC-3 Création d'une texture military pour le bloc Gear flaps.Sélecteur optimisé
+
+commit 1e37eb1da341c19c981560e8643dd2c0a769f4a4
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Sat Jan 14 14:02:25 2012 +0100
+
+    Dc3 cache les anciens essuie-glace
+
+commit 9009cf5a0c298e23ea81926f40de7c624cf66b0c
+Merge: 9099c5d a2f2bef
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 13:08:15 2012 +0100
+
+    dc3 :aelioration des tuto
+
+commit 9099c5d643ff7a790592317a648093713971580b
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 13:02:00 2012 +0100
+
+    dc3 :aelioration des tuto et traduc du TAXI
+
+commit 49cf91b7e5ea9c21423b07f45c729015651bc973
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Jan 14 12:22:29 2012 +0100
+
+    Douglas DC3: Encore un peu d'administratif :)
+
+commit 6e3737d8162bf3ea25255e06db31df35d4c05f7d
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Sat Jan 14 12:22:03 2012 +0100
+
+    DC3 corr fenetres cockpit ext
+
+commit e30dfa8bfe3a93e12695905c7673dc88bb71ad40
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Jan 14 12:16:40 2012 +0100
+
+    Douglas DC3: Ajout de commentaires + mise à jour des auteurs
+
+commit 432afcd42d84e06fb6479d3a4b5f9523ba4d89e2
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 10:20:21 2012 +0100
+
+    dc3 :optimisation moteur
+
+commit bb4130b75b39ea19bb9a2da755cb811c61730229
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 02:44:07 2012 +0100
+
+    dc3 : nettoyage cyl fuelpess hydrpress
+
+commit 7a237b9ef8e6933d8cb4abefa0527ea46fda202a
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 02:23:42 2012 +0100
+
+    dc3 : nettoyage alt mais des problemes persistes
+
+commit 206bf1cc160bf843d1a0fbb3b7849dc812279376
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 14 01:52:55 2012 +0100
+
+    dc3 : nettoyage manifold pressure
+
+commit 6fd0a86ea9432e642a83f917901661489f0a674d
+Author: titimint <titimint@titimint.(none)>
+Date:   Fri Jan 13 23:28:21 2012 +0100
+
+    Douglas DC-3 mise à jour du fichier contributors.txt
+
+commit a71445a284f525c3b6f4b217948273789fac3a17
+Author: clement <clemaez@hotmail.fr>
+Date:   Fri Jan 13 23:24:11 2012 +0100
+
+    Douglas DC3: Corrections de l'animation de la porte parachutiste + correction du système de parachutiste concernant la porte parachutiste
+
+commit 5eaea1d4e0acb6f160a1cc0f71b1eec8f4e44ba0
+Author: clement <clemaez@hotmail.fr>
+Date:   Fri Jan 13 22:53:59 2012 +0100
+
+    Douglas DC3: Nouvelle livrée Air France par bibi
+
+commit 7127c118f5b51c36844a7c6a706ddc9f93e99a54
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Fri Jan 13 22:47:02 2012 +0100
+
+    Dc-3 corr trou carlingue dc3.ac
+
+commit f83822f2b74682ec6ee221f0a24d91021e27cb66
+Author: titimint <titimint@titimint.(none)>
+Date:   Fri Jan 13 21:50:03 2012 +0100
+
+    Douglas DC-3 optimisation du pilote et du copilote en fonction des choix de configuration.Création de passager, en vue d'une modélisation spécifique(sans casque...)
+
+commit dbaae7628dcc72d98f0d5b84cbeed4218b261c95
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Fri Jan 13 18:53:25 2012 +0100
+
+    dc3 : modification de la texture sperry (pilote auto
+
+commit 458df07c766dd580d65686c0fb2bf3f401349e5a
+Author: titimint <titimint@titimint.(none)>
+Date:   Fri Jan 13 18:08:01 2012 +0100
+
+    Douglas DC-3 modification des teintes et suppression du canal alpha sur les textures des sièges
+
+commit a1f7e83a2268fe30411fb5500bca7fae3b1104db
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Fri Jan 13 17:46:29 2012 +0100
+
+    dc3 : correction de la position des manettes train volets
+
+commit d96361413e88518d367ab154e92f7e038987bd5a
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Fri Jan 13 17:11:12 2012 +0100
+
+    dc3 : modif des tuto et traduction du startup en allemand
+
+commit 8df7b158a61d2ca0b3fe8e7ed4f37fa99609f03f
+Author: titimint <titimint@titimint.(none)>
+Date:   Fri Jan 13 15:36:46 2012 +0100
+
+    Douglas DC-3 Affinage de teintes sur les handle. Ajout de poignées
+
+commit 178456f58509fb1d92523f112814fb3e5d593653
+Author: titimint <titimint@titimint.(none)>
+Date:   Fri Jan 13 15:23:07 2012 +0100
+
+    Douglas DC-3 Affinage de l'effet d'usure et de relief sur les sièges. création d'un siège military (texture)
+
+commit f8ba6e357ebe6e97a7f34b2dfce8a135aa483c6e
+Author: titimint <titimint@titimint.(none)>
+Date:   Fri Jan 13 15:05:49 2012 +0100
+
+    Douglas DC-3 Affinage de l'effet d'usure et de relief sur les textures du cockpit
+
+commit cc727084077fb08716a24208dd931dea3277c5ab
+Author: titimint <titimint@titimint.(none)>
+Date:   Fri Jan 13 14:55:03 2012 +0100
+
+    Douglas DC-3 Adaptation des couleurs des magnetos en fonction de la sélection
+
+commit 5c8eb55d5f5cff488cd0ad29949996e01e1c1c7e
+Author: clement <clemaez@hotmail.fr>
+Date:   Fri Jan 13 13:02:28 2012 +0100
+
+    Douglas DC3: Modification du Readme
+
+commit f912ebacd27139504b15729eca3f790156ace7c8
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Jan 11 21:16:28 2012 +0100
+
+    Douglas DC-3 2ème texture cockpit military à tester (usure plus prononcée)
+
+commit dab074ef5ed672c795d3ca5481c105a145fc40b1
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Jan 11 20:42:55 2012 +0100
+
+    Douglas DC3: affectation des textures military aux éléments cité par patten
+
+commit f853ca722cbb70cbb3e9ec1c1d997fa8873d73c7
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Jan 11 20:17:42 2012 +0100
+
+    Douglas DC3: Correction de la position de l'overhead + les signaux lumineux des trains sont désormais opérationnel + ajout des instructions d'utilisation des manettes dans le help
+
+commit ff7b17ffe31d1e1e8065d10acae8928d0def389f
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Jan 11 19:54:40 2012 +0100
+
+    Douglas DC-3 3 textures Wipers adaptées aux intérieurs ( non assignées au sélecteur pour military, idem pour les textures handle et pedestal, overhead)
+
+commit eb0e01a9a99957777103f727e3f4e081a1eeee77
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Jan 11 19:07:35 2012 +0100
+
+    Douglas DC-3 3 textures overhead adaptées aux intérieurs ( non assigné au sélecteur pour military, idem pour handle et pedestal)
+
+commit fcf32757e1ee75fc71f3fc8c87bb040b4be62d16
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Jan 11 17:33:24 2012 +0100
+
+    Douglas DC-3 3 textures pedestal adaptés aux intérieurs ( non assigné au sélecteur pour military, idem pour handle)
+
+commit 7b47e0189d9a49f090b131e2726161c6a01cc746
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Jan 10 23:19:40 2012 +0100
+
+    Douglas DC3: Je continue avec l'ubershader (reflection) mais toujours pas actif
+
+commit b2b523f5bd0cd9893be2fe71981b45a0d423ca3c
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Jan 10 21:54:49 2012 +0100
+
+    Douglas DC3: Déplacement du mano de pression hydraulique pour coller au nouveau intérieur
+
+commit 4f3ebff7744d38c547f61d1a2f51ba46dedefcba
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Jan 10 21:41:30 2012 +0100
+
+    Douglas DC3: Travail sur les ubershaders mais pas encore actif
+
+commit 3d13add42986bcdaa6d727a12282048d2dc9c2aa
+Author: titimint <titimint@titimint.(none)>
+Date:   Tue Jan 10 20:31:00 2012 +0100
+
+    Douglas DC-3 texturage cockpit version Red (2ème version test) handle qui va avec.
+
+commit 40d7979c030de0276deea2962dbd5364d8366cca
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Jan 10 17:03:46 2012 +0100
+
+    Douglas DC3: ajout du fichier cabinePattern.png
+
+commit fbe850f31a7f7d30394728aa8db4a62391e544f0
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Tue Jan 10 09:13:44 2012 +0100
+
+    DC-3 corr noms d'objets cockpit.ac  .xml
+
+commit e191e6dac55fa0ad243cd53c21c149b0dd118c73
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Tue Jan 10 08:42:58 2012 +0100
+
+    DC-3 elevation plafond cockpit
+
+commit 0ab85e2c3c5270ac9a96c614438c1b68cab0eb61
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Jan 9 23:04:21 2012 +0100
+
+    Douglas DC3: suppression d'un fichier de sauvegarde inutile
+
+commit c6fdf7246e542cc6d06251b15a78cc783d7f6e65
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Jan 9 22:39:43 2012 +0100
+
+    Douglas DC3: les sièges sont revisible depuis la vue helico + rajustage de l'UVmap du DC3
+
+commit cdb56a1eecebacd4f786d94378cde0c9fe144d76
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Jan 9 20:05:40 2012 +0100
+
+    Douglas DC3: texture <<military>> du cockpit affectée à la version <<military>>
+
+commit 755c301f09e380896ff284eeef5ab3166cd7b953
+Author: titimint <titimint@titimint.(none)>
+Date:   Mon Jan 9 19:15:57 2012 +0100
+
+    Douglas DC-3 texturage cockpit version Red et Gray, création d'une version Miilitary (Handle et hoverhead assortis à venir, pour red et military)
+
+commit 06e204aeffafb71e6416cac2143036ee6e5ce492
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Mon Jan 9 13:37:37 2012 +0100
+
+    Dc-3 retour cockpitPattern.rgb
+
+commit 91928130bb5621c3275d9a74b1e7ebad96271171
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Mon Jan 9 09:38:30 2012 +0100
+
+    Dc-3 corr haut cockpit
+
+commit ec7fa059f256e2f5294c0bb2eaaa6d34bf670aa0
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Mon Jan 9 08:31:30 2012 +0100
+
+    Dc3 corr nom-objet
+
+commit 600fa85b2643dd83b66f0689d0b89042dd4516cc
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Mon Jan 9 08:11:06 2012 +0100
+
+    dc3 cockpit.ac
+
+commit 402745eeac153b4189ec4d62c51e890f60e8cc71
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Jan 8 23:27:24 2012 +0100
+
+    Douglas DC3: UVmap des fenêtres livrée avec le cockpitPattern.png
+
+commit d8089753e366e3cd77592fc56ec1591111cddc84
+Author: ctesc356 <eteuscher@wanadoo.fr>
+Date:   Sun Jan 8 18:24:55 2012 +0100
+
+    Dc-3 commut "civilian-grey"
+
+commit 573cbbcbb32e29ceec58e6fcbc546a426a36a279
+Author: F-Sig <eteuscher@wanadoo.fr>
+Date:   Sun Jan 8 17:29:35 2012 +0100
+
+    DC-3 Modif cockpit
+    -cadres fenetres int et ext
+    -plancher cockpit
+    -tableau de bord
+
+commit 63eafda88cab2d7fe0c5a2350d590f42ced1885b
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Jan 7 20:43:22 2012 +0100
+
+    Douglas DC3: Suppression des fichiers *-views.xml (intégrer dans les fichiers *-set) + rangement des fichiers de Dual Control dans un dossier séparer + suppression des animations PICK pour les pédales et manches + modification du comportement des manettes de gaz/mixture/propeller
+
+commit b2dc2a0de39b618c4b0c08f5a36f42058ce10eab
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 7 20:24:39 2012 +0100
+
+    dc3 : traduction de l'intro en allemand
+
+commit 93668902880fc8f411d716e8220cd5e57eefdbdb
+Author: titimint <titimint@titimint.(none)>
+Date:   Sat Jan 7 19:43:19 2012 +0100
+
+    dc3 : amelioration et traduction des tuto
+
+commit 8d3eff237ffe454d158afacd50fe091f1e8bf538
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 7 16:27:42 2012 +0100
+
+    dc3 : amelioration et traduction du tuto takeoff
+
+commit 433a448faffb60fd22c1efdca714566964e93c3f
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sat Jan 7 15:24:09 2012 +0100
+
+    dc3 : amelioration des tuto
+
+commit ab7f7ba2e85b10dcd882f2f2353ac3cd390b2f39
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Tue Jan 3 20:42:57 2012 +0100
+
+    dc3 : correction des shader du panel.ac
+
+commit 7042554f8b814d625d045efd8f9e943e76ed0176
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Jan 3 17:33:42 2012 +0100
+
+    Douglas DC3: Nouveau Help
+
+commit fe8d20a10203c3120d1dbfe8ca1ccb42e042e6d5
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sun Jan 1 22:36:56 2012 +0100
+
+    dc3 : Correction du dc-3.ac
+
+commit 75b81fd832611ae51cbd60f89ab3267fe8e61ff6
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Sun Jan 1 21:41:41 2012 +0100
+
+    dc3 : optimisation des moteurs
+
+commit 2dc013fb3946d7fb8a8d90963e9bb59bb02c206c
+Merge: 2848d5f e4acbc0
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Thu Dec 29 19:44:18 2011 +0100
+
+    Merge branch 'master' of gitorious.org:paf/fgdata
+
+commit 2848d5f06f1f2504028f9cb91555ed6a7c19d21a
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Thu Dec 29 19:43:34 2011 +0100
+
+    dc3 : amlioration des moteurs
+
+commit e4acbc0d217607a4d2d057e0c22c836f597bbcae
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 29 18:23:25 2011 +0100
+
+    Douglas DC3 : Ajout d'une vitre au Manifold Pressure
+
+commit bcbc4e2e3a89b0312b5df911c377b0eee3a68320
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 29 17:34:03 2011 +0100
+
+    L39 Breitling: Préparation de l'ajout du sélécteur de liveries. Il faut encore lister les objets.
+
+commit f8f724d20b639b03258cda70566180ab3d7d2ade
+Author: titimint <titimint@titimint.(none)>
+Date:   Thu Dec 29 14:53:36 2011 +0100
+
+    L39 Breitling Livrée du numéro un (leader)
+
+commit 5e994a887418523e4783470d72c44545d44bca56
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 29 03:29:41 2011 +0100
+
+    Douglas DC3 : ajout d'un son de pompe de gavage lorsqu'aucun réservoir n'est sélectionné (donc pas de carburant donc la pompe de gavage force donc ça fait un bruit différent
+
+commit ba1c7854ad43eef59564876eab6453f3a77aaa75
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 29 02:46:46 2011 +0100
+
+    Douglas DC3 : suppression du Moteur.002 suite au travail réalisé par Alexis sur le moteur
+
+commit 65aaee4d0251a20d5f4c0c737e3bf375f613d306
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Thu Dec 29 01:10:58 2011 +0100
+
+    dc3 : nouveau moteurs
+
+commit 4ec1143ff0081f31fc70cba0272281ffc1c23d46
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Dec 28 22:22:08 2011 +0100
+
+    Supression des fichiers de l'ancien overhead
+
+commit 72bf0228f25173a09993f822b2d7bb58d4936bb6
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Dec 28 19:15:47 2011 +0100
+
+    Douglas Dc3 dans l'overhead finalisation dela texture, ajustage de quelques vis
+
+commit 09a58481e9c6f80fdc8dd920746177a87a04d681
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Dec 28 18:46:49 2011 +0100
+
+    Douglas Dc3 dans l'overhead finalisation des textures de l'ensemble
+
+commit fe2afa7e046538fefab2cdf8e360d199157c2462
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Dec 28 15:19:24 2011 +0100
+
+    Douglas Dc3 correction de petites fautes d'orthographe dans les tutos en français
+
+commit aeea0ccd1e412c7c09cb74a0fb23906c34e545ce
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Dec 27 21:48:23 2011 +0100
+
+    L'instrument de pression hydraulique : affinage du XML et nouvelle aiguille
+
+commit 5d48faee768691d86d5975a1667d22f7df10a47b
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Tue Dec 27 19:59:29 2011 +0100
+
+    correction d'un bug dans le tuto frtakeoff.xml
+
+commit 0d39dba207ef0e44046e1c788bb1666d9349f348
+Author: titimint <titimint@titimint.(none)>
+Date:   Tue Dec 27 19:41:03 2011 +0100
+
+    Douglas Dc3 correction de petites fautes de frappe dans les tutos
+
+commit 1528492490c519ce68bd1f8d487f0d92a3ab9da9
+Merge: 803647a 2a08243
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Dec 27 19:39:49 2011 +0100
+
+    Corrige un bug qui empechait le changement de texture des plaques de l'overhead
+
+commit 2a0824331f56eb096e0138c610a3dd47a895c6eb
+Author: titimint <titimint@titimint.(none)>
+Date:   Tue Dec 27 19:26:45 2011 +0100
+
+    Douglas Dc3 texture de test pour l'overhead, correction des xml correspondants
+
+commit 803647af101fa59e19193d2ff5917e0c082e15d8
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Dec 27 17:43:57 2011 +0100
+
+    Corrige un bug qui empechait le changement de texture des plaques de l'overhead
+
+commit f73f7622e9f101c23f281a26b236d1bfb8af0dfe
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Tue Dec 27 16:41:34 2011 +0100
+
+    premiere version des tuto takeoff et taxi
+
+commit 36037fa5d878040cd4ac94adce1c15c0087dc750
+Author: titimint <titimint@titimint.(none)>
+Date:   Mon Dec 26 23:27:12 2011 +0100
+
+    Douglas Dc3 correction d'une faute de frappe sur la texture du hydgear
+
+commit 2495abc176adf1eaede249f38597a5a3373b055e
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Mon Dec 26 22:40:17 2011 +0100
+
+    amelioration du tuto FRtaxi
+
+commit cbd95367ea56d08e7fe11f372618740c426f6c94
+Author: fgalexis <alexis_laille@hotmail.fr>
+Date:   Mon Dec 26 21:50:42 2011 +0100
+
+    modification du tutoriel startup Into et ajout de deux tuto
+
+commit 59accfc6d25b0676c9d6e4843ed7b1c80f92d06c
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 26 20:17:02 2011 +0100
+
+    Nouveau mano de pression hydraulique par F-Sig
+
+commit b994ed8ca330dd031bf037eb795b91b216781e2f
+Author: F-Sig <eteuscher@wanadoo.fr>
+Date:   Sun Dec 25 22:07:12 2011 +0100
+
+    DC3 hydgear  cadrans
+
+commit 5e1303c243727b9783a196714fb347f97415f813
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Dec 25 17:19:48 2011 +0100
+
+    Nouveau overhead + début de texturage + suppression du XML des immat car intégré au DC-3
+
+commit 8f74589707e332834720840abe8710433c455d9d
+Author: F-Sig <eteuscher@wanadoo.fr>
+Date:   Sun Dec 25 00:35:49 2011 +0100
+
+    DC3 Hydgear vitres transparentes
+
+commit f65ffc75295d17dadbbe3368453cd684c42dcad6
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 24 02:23:51 2011 +0100
+
+    Douglas DC3 : Création des mano de pression hydraulique du circuit et du train
+
+commit 06667fb4698a957189310b8ccdf8e3cd03164951
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 22 17:48:14 2011 +0100
+
+    Douglas DC3 : Modification de l'UVmap des vitres de la cabine afin qu'on puisse voir à travers la nuit
+
+commit 1b6007d7f172725e704200607948f334bb8fed28
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Dec 20 23:25:54 2011 +0100
+
+    Mise aux normes des fichiers audio (P92+DC3+R44+Zlin) + Ajout du R44 au dépôt + Nettoyage des XML audio du P92
+
+commit 95dcda005ffe4874d4cbb2373dae3e88b396a7a9
+Author: clement <clemaez@hotmail.fr>
+Date:   Tue Dec 20 19:52:43 2011 +0100
+
+    Douglas DC3 : Les pédales changent de couleur en version militaire + nettoyage du fichier handle.xml
+
+commit fcb41a46303c3c276853fea3329a1f3ed69a3f97
+Author: titimint <titimint@titimint.(none)>
+Date:   Mon Dec 19 19:37:22 2011 +0100
+
+    Douglas Dc3 pédales;création d'une texture colors-green pour les versions military et red
+
+commit a0197a1221d13e0615e425c5d52fb68c02ccdb30
+Author: titimint <titimint@titimint.(none)>
+Date:   Mon Dec 19 18:49:54 2011 +0100
+
+    Douglas Dc3 sur refection des verrous de fenêtre
+
+commit 3e744826500178066198bd23dd47321de3d04dc6
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 18:18:44 2011 +0100
+
+    Douglas DC3 : Les passagers peuvent voir l'interieur du DC3 et le personnaliser avec la même fenêtre d'option que le pilote
+
+commit cd995b73d5a1d174c3acbe8c7f0a31623fd693d6
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 18:12:18 2011 +0100
+
+    Douglas DC3 : Le copilote peut voir l'interieur du DC3 et le personnalisé avec la même fenêtre d'option que le pilote
+
+commit a88a69e29921e7fc85547f673145d97d082765ab
+Author: titimint <titimint@titimint.(none)>
+Date:   Mon Dec 19 18:10:12 2011 +0100
+
+    Douglas Dc3 refection de la texture du plancher coté pilote et copilote
+
+commit 12167b77fee5a6d1e46a6296ecf8018b6836fec7
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 17:48:25 2011 +0100
+
+    Douglas DC3 : Le capitonnage fait désormais des détails
+
+commit f818a6d0be2e6b6dc17d1f35ceca46c977360235
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 17:42:43 2011 +0100
+
+    Douglas DC3 : Suppression des conditions inutile qui concernait les textures haute qualité
+
+commit 0dd1bf691609f8231c6db0647348001967b1b4c1
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 17:35:32 2011 +0100
+
+    Douglas DC3 : Amélioration des paramètres LOD pour que le DC3 soit chargé au minimum en MP
+
+commit 75caf9a03cdbdfadee5e80a10529074c92d297e9
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 16:42:07 2011 +0100
+
+    Douglas DC3 : Les passagers et copilote voient désormais l'interieur du DC-3 (siège, placards...)
+
+commit 5cc96f2b0c43fd0603b3b064f7ccce5510edaa4a
+Merge: 57dd64c fc81370
+Author: titimint <titimint@titimint.(none)>
+Date:   Mon Dec 19 16:28:52 2011 +0100
+
+    Douglas Dc3 texturage des nouvelles pédales, rallongement du trou des pédales au sol
+
+commit 57dd64cd999f162bc1827756e55937e927c1c17e
+Author: titimint <titimint@titimint.(none)>
+Date:   Mon Dec 19 16:13:46 2011 +0100
+
+    Douglas Dc3 texturage des nouvelles pédales, rallongement du trou des pédales au sol
+
+commit fc81370338a1d9d00e49316f2a7bdf9b4a1a09d4
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 14:59:05 2011 +0100
+
+    Douglas DC3 : Correction d'affichage du copilote
+
+commit fe097bc0bbe80aebd23514545e503bd685b921b1
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 14:23:40 2011 +0100
+
+    Douglas DC3 : Amélioration de l'animation du pilote pour le nouveau palonnier
+
+commit 69810d64b8b989679dcfb41a565be2c69dc96f84
+Author: F-Sig <eteuscher@wanadoo.fr>
+Date:   Mon Dec 19 13:32:46 2011 +0100
+
+    Douglas DC3 percement plancher cockpit
+
+commit c33bbd23c418cf439dcd32351cc024b66f14fd1c
+Author: clement <clemaez@hotmail.fr>
+Date:   Mon Dec 19 01:19:15 2011 +0100
+
+    Douglas DC3 : Nouveau palonnier
+
+commit 37c582c792a1bc801a71f0bc6bb2f08fcdabd8dd
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Dec 18 21:38:01 2011 +0100
+
+    Douglas DC3 : La porte parachutiste s'ouvre vers l'intérieur
+
+commit db9d2686a77a8cb7343280b0f65d9e9e98b3f3bf
+Author: titimint <titimint@titimint.(none)>
+Date:   Sun Dec 18 21:33:44 2011 +0100
+
+    Douglas Dc3 passage de stéréo à mono pour Appel_hotesse.wav et Freinage.wav
+
+commit 831f1e24770cba3c81af38fe9a0a1e05cd3119bb
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Dec 18 19:06:24 2011 +0100
+
+    Douglas DC3 : Mouvement du palonnier lors du freinage + suppression de smokecopie.png
+
+commit fdb18d022fa19cbad9c89e339fe9fbeef73ecba7
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Dec 18 16:09:44 2011 +0100
+
+    Douglas DC3 : Les voltmètres fonctionnent désormais + suppression des erreurs concernant vitre et needle2 dans la console
+
+commit 4227b96b4c0ad6aac9b00d69aa483f6857f80dc3
+Author: clement <clemaez@hotmail.fr>
+Date:   Sun Dec 18 13:43:50 2011 +0100
+
+    Douglas DC3 : Corrige quelques chemins de textures + suppression d'une copie de fichier cranking
+
+commit 5bd1048b9fc67501e5791476732e5f8fdf7149db
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 22:07:00 2011 +0100
+
+    Douglas DC3 : Correction du système de carburant
+
+commit 744f279d1b845a2ac2f93f4f4e681c6c0163f33c
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 17:04:32 2011 +0100
+
+    Corrige l'affichage des moteur pour FG 2.4 et précédent
+
+commit 65899a201114d0e8d4fc0cbb0f61cdf4b8441687
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 17:00:27 2011 +0100
+
+    Corrige l'affichage des moteur pour FG 2.4 et précédent
+
+commit 58fe6d5ec737c698149bf3378aeb3226b73d50ab
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 15:36:57 2011 +0100
+
+    Le cockpit complet est désormais invisible au delà de 40 mètres
+
+commit b2527c066a452615241b8cbf33187b85cdf1eb1e
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 14:56:34 2011 +0100
+
+    Les instruments sont désormais invisible au delà de 30 mètres
+
+commit 02f2a13083136474281f19181287b92389fe60ab
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 07:55:31 2011 +0100
+
+    Réorganisation du défilement des vues + suppression de vues inutiles pour les passagers et copilote
+
+commit e55330234b8c4cc7bc3211e9ad7f5162001165f1
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 07:40:32 2011 +0100
+
+    Remplacement des textures Low par les textures High + suppression de l'option <texture high>
+
+commit e62fca2355aecfcab9ed9224ec0e46909b2ded02
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 07:28:38 2011 +0100
+
+    Les moteurs sont invisibles au delà de la limite ai-detailed (View>Adjust LOD Ranges>AI/MP Aircraft)
+
+commit 0d14cf36256714fa9c4edeef844289233fc53597
+Author: clement <clemaez@hotmail.fr>
+Date:   Sat Dec 17 07:15:25 2011 +0100
+
+    Les instruments sont désormais invisible au delà de 12 mètres
+
+commit b3c39494037f56c1fa82af61431f34acef6a917c
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 15 19:46:01 2011 +0100
+
+    Douglas DC3 : amélioration du menu d'aide
+
+commit 4d38298c39285c73f1fcb054bfff61480751ef10
+Author: F-Sig <eteuscher@wanadoo.fr>
+Date:   Thu Dec 15 17:21:53 2011 +0100
+
+    DC3
+    correction faces cachees pedestal
+
+commit 7296917fcf50419617d359e68ec35c0c30f944bb
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 15 14:16:12 2011 +0100
+
+    Douglas DC3 : Les manches changent à nouveau de textures à la demande
+
+commit 74f808d2061c34131362ba5713a197f5d4d37bb8
+Author: F-Sig <TILL@TILL-PC.(none)>
+Date:   Thu Dec 15 11:12:21 2011 +0100
+
+    Douglas DC3
+    Correction position vannes fuel
+    face manquante pedestal
+
+commit c9a728ee9dadb40481b152ebffc101442113e2bf
+Author: clement <clemaez@hotmail.fr>
+Date:   Thu Dec 15 00:12:26 2011 +0100
+
+    Douglas DC3 : ajout des moteurs en LowPoly
+
+commit 52171caf61ca5f574bc021d0cf91ca997b9ff9ca
+Author: clement <clemaez@hotmail.fr>
+Date:   Wed Dec 14 23:41:06 2011 +0100
+
+    Douglas DC3 : Amélioration du sélécteur de détails
+
+commit fdf8466122c5ccf1245b4876a7e6da7e774e5210
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Dec 14 21:15:41 2011 +0100
+
+    Douglas DC3 nettoyage du dossier Sounds
+
+commit abf3208b079a255d182704cd5a691899f8c3c4d2
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Dec 14 20:03:10 2011 +0100
+
+    Douglas DC3 passage de vent.wav du format srereo au format mono
+
+commit d75f43a1647908a02f0da32ff373e55da38e0935
+Author: titimint <titimint@titimint.(none)>
+Date:   Wed Dec 14 16:55:36 2011 +0100
+
+    Amélioration des détails intérieurs,coutures sur tableau et pédestal

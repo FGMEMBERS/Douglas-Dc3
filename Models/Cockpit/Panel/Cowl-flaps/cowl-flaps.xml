@@ -16,6 +16,7 @@
   </animation>
 
   <!-- ANIMATION ROTATE -->
+
   <animation>
     <type>rotate</type>
     <object-name>LH</object-name>

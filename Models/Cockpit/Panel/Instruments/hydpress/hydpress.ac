@@ -8,7 +8,7 @@ OBJECT poly
 name "ALTbezel.034"
 data 12
 ALTbezel.034
-texture "hydpress.png"
+texture "hydpress.dds"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -139,7 +139,7 @@ OBJECT poly
 name "ALTbezel.035"
 data 12
 ALTbezel.035
-texture "hydpress.png"
+texture "hydpress.dds"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -270,7 +270,7 @@ OBJECT poly
 name "ALTbezel.036"
 data 12
 ALTbezel.036
-texture "hydpress.png"
+texture "hydpress.dds"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -401,7 +401,7 @@ OBJECT poly
 name "ALTbezel.037"
 data 12
 ALTbezel.037
-texture "hydpress.png"
+texture "hydpress.dds"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -532,7 +532,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "hydpress.png"
+texture "hydpress.dds"
 texrep 1 1
 crease 45.000000
 numvert 17
@@ -655,7 +655,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "hydpress.png"
+texture "hydpress.dds"
 texrep 1 1
 crease 30.000000
 numvert 320
@@ -2105,7 +2105,7 @@ OBJECT poly
 name "needle"
 data 6
 needle
-texture "hydpress.png"
+texture "hydpress.dds"
 texrep 1 1
 crease 45.000000
 numvert 17

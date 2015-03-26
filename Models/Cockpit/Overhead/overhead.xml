@@ -21,7 +21,7 @@
         <value>civilian-red</value>
       </equals>
     </condition>
-    <texture>colors.png</texture>
+    <texture>colors.dds</texture>
   </animation>
 
   <!-- Civilian gray version -->
@@ -34,7 +34,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_gray.png</texture>
+    <texture>colors_gray.dds</texture>
   </animation>
 
   <!-- Military version -->
@@ -47,7 +47,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/colors_military.png</texture>
+    <texture>colors_military.dds</texture>
   </animation>
 
   <model>
@@ -87,7 +87,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Instruments-3d/VHF-22/ctl22-com1.xml</path>
+    <path>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22-com1.xml</path>
     <offsets>
       <x-m>  0.020 </x-m>
       <y-m> -0.020 </y-m>

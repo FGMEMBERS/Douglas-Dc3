@@ -7,7 +7,7 @@ name "poigneeporte"
 loc 0 0 -0
 data 12
 poigneeporte
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 numvert 163
 0 0.051998 0.006185

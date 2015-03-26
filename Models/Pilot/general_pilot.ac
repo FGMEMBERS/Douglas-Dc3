@@ -7,7 +7,7 @@ name "avantbrasD"
 loc -0.033328 0.120945 -0.043969
 data 10
 avantbrasD
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 175
@@ -1394,7 +1394,7 @@ name "avantbrasG"
 loc 0.072028 0.106992 -0.047589
 data 10
 avantbrasG
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 184
@@ -2902,7 +2902,7 @@ name "brasD"
 loc -0.041761 0.085881 -0.056625
 data 5
 brasD
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 22
@@ -3085,7 +3085,7 @@ name "brasG"
 loc -0.022986 0.105777 -0.047284
 data 5
 brasG
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 32
@@ -3328,7 +3328,7 @@ name "corps"
 loc -0.002351 0 -0.002052
 data 5
 corps
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 145
@@ -4427,7 +4427,7 @@ name "cuisseD"
 loc 0.019746 0.012101 -0.012651
 data 7
 cuisseD
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 30
@@ -4756,7 +4756,7 @@ name "cuisseG"
 loc 0.019746 0.012101 -0.012651
 data 7
 cuisseG
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 30
@@ -5073,7 +5073,7 @@ name "jambeD"
 loc 0.039319 -0.016304 -0.012675
 data 6
 jambeD
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 112
@@ -5907,7 +5907,7 @@ name "jambeG"
 loc 0.039319 -0.016304 -0.012675
 data 6
 jambeG
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 112
@@ -6741,7 +6741,7 @@ name "piedD"
 loc 0.075189 -0.07223 -0.012675
 data 5
 piedD
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 51
@@ -7089,7 +7089,7 @@ name "piedG"
 loc 0.075189 -0.07223 -0.012675
 data 5
 piedG
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 51
@@ -7437,7 +7437,7 @@ name "tete"
 loc -0.002351 0 -0.002052
 data 4
 tete
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 806
@@ -13692,7 +13692,7 @@ name "visiere"
 loc -0.002351 0 -0.002052
 data 7
 visiere
-texture "general_pilot.png"
+texture "general_pilot.dds"
 texrep 1 1
 crease 180.000005
 numvert 40

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -52,38 +52,38 @@
     <object-name>Blade3</object-name>
   </animation>   
 
-  <!-- Mise en place des pales par défaut -->
+  <!-- Mise en place des pales par defaut -->
   <animation>
     <type>select</type>
     <object-name>Blade1</object-name>
     <object-name>Blade2</object-name>   
     <object-name>Blade3</object-name>
     <condition>
-      <or>
+      <!--<or>-->
         <less-than>
           <property>engines/engine[0]/rpm</property>
           <value>1000</value>
         </less-than>
-        <property>controls/engines/engine[0]/propeller-feather</property>
-      </or>
+        <!--<property>controls/engines/engine[0]/propeller-feather</property>
+      </or>-->
     </condition>
   </animation>
 
-  <!-- Sélection Pales/disque en fonction de "RPM" -->
+  <!-- Selection Pales/disque en fonction de "RPM" -->
   <animation>
     <type>select</type>
     <object-name>propdisc</object-name>
     <condition>
-      <and>
+      <!--<and>-->
         <greater-than>
           <property>engines/engine[0]/rpm</property>
           <value>1000</value>
         </greater-than>
-        <equals>
+        <!--<equals>
           <property>controls/engines/engine[0]/propeller-feather</property>
           <value> false </value>
         </equals>
-      </and>
+      </and>-->
     </condition>
   </animation>
 
@@ -91,7 +91,7 @@
     <type>select</type>
     <object-name>propblur</object-name>
     <condition>
-      <and>
+      <!--<and>-->
         <and>
           <greater-than>
             <property>engines/engine[0]/rpm</property>
@@ -102,24 +102,24 @@
             <value>1000.001</value>
           </less-than>
         </and>
-        <equals>
+        <!--<equals>
           <property>controls/engines/engine[0]/propeller-feather</property>
           <value> false </value>
         </equals>
-      </and>
+      </and>-->
     </condition>
   </animation>
 
-  <!-- Rotation de l'hélice -->
+  <!-- Rotation de l'helice -->
   <animation>
     <type>spin</type>
     <object-name>helice</object-name>
-    <condition>
+    <!--<condition>
       <equals>
         <property>controls/engines/engine[0]/propeller-feather</property>
         <value> false </value>
       </equals>
-    </condition>
+    </condition>-->
     <property>engines/engine[0]/rpm</property>
     <factor> -0.479 </factor>
     <axis>

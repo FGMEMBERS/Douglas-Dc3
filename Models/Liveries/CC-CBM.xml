@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Ladeco (CC-CBM)</name>
-        <texture>Liveries/CC-CBM.png</texture>
+        <texture>Liveries/CC-CBM.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/CC-CBM-prop.png</texture>
+        <texture>Liveries/CC-CBM-prop.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

@@ -7,7 +7,7 @@ name "tringle"
 loc 0 0 -0
 data 7
 tringle
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 numvert 18
 0.006114 -0 0.431466

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="dc-3-jsbsim-cnf.xml"> -->
+<PropertyList include="dc-3-yasim-cnf.xml">
+
+<!-- 
+     ************************************************************************
+     Douglas DC-3 C47
+     January 2011 BARANGER Emmanuel
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     ************************************************************************
+-->
+
+  <sim>
+    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D,FDM)</author>
+  </sim>
+
+</PropertyList>
+

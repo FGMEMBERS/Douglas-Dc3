@@ -7,7 +7,7 @@ OBJECT poly
 name "doors.open"
 data 10
 doors.open
-texture "warning.png"
+texture "warning.dds"
 texrep 1 1
 crease 30.000000
 numvert 97
@@ -530,7 +530,7 @@ OBJECT poly
 name "heat.left"
 data 9
 heat.left
-texture "warning.png"
+texture "warning.dds"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -810,7 +810,7 @@ OBJECT poly
 name "heat.right"
 data 10
 heat.right
-texture "warning.png"
+texture "warning.dds"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -1090,7 +1090,7 @@ OBJECT poly
 name "text"
 data 4
 text
-texture "warning.png"
+texture "warning.dds"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -1155,7 +1155,7 @@ OBJECT poly
 name "wheels.locked"
 data 13
 wheels.locked
-texture "warning.png"
+texture "warning.dds"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -1413,7 +1413,7 @@ OBJECT poly
 name "wheels.unlock"
 data 13
 wheels.unlock
-texture "warning.png"
+texture "warning.dds"
 texrep 1 1
 crease 30.000000
 numvert 60

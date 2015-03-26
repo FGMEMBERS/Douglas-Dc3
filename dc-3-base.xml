@@ -3,13 +3,11 @@
 <PropertyList>
 
 <!-- 
-     ***************************************************************************************
+     ************************************************************************
      Douglas DC-3 C47
-     January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
-     January  2012 modified by PAF team    : http://http://equipe-flightgear.forumactif.com
-     February 2012 modified Helijah        : http://helijah.free.fr / http://embaranger.free.fr
-     April    2012 New version by Buckaroo : http://www.buckarooshangar.com/flightgear/index.html
-    ***************************************************************************************
+     January 2011 BARANGER Emmanuel
+     January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     ************************************************************************
 -->
 
   <sim> 
@@ -33,61 +31,6 @@
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/Douglas-Dc3/Models/Effects/Submodels/submodels.xml</path>
     </submodels>
-    
-    <weight n="0">
-      <name>Compartiment A</name>
-        <weight-lb>0</weight-lb>
-        <max-lb>600</max-lb>
-        <min-lb>0</min-lb>
-    </weight>
-
-    <weight n="1">
-      <name>Compartiment B</name>
-        <weight-lb>0</weight-lb>
-        <max-lb>800</max-lb>
-        <min-lb>0</min-lb>
-    </weight>
-
-    <weight n="2">
-      <name>Compartiment C</name>
-        <weight-lb>0</weight-lb>
-        <max-lb>1000</max-lb>
-        <min-lb>0</min-lb>
-    </weight>
-
-
-    <weight n="3">
-      <name>Compartiment D</name>
-        <weight-lb>0</weight-lb>
-        <max-lb>3000</max-lb>
-        <min-lb>0</min-lb>
-    </weight>
-
-    <weight n="4">
-      <name>Compartiment E</name>
-        <weight-lb>0</weight-lb>
-        <max-lb>3000</max-lb>
-        <min-lb>0</min-lb>
-    </weight>
-
-    <weight n="5">
-      <name>Compartiment F</name>
-        <weight-lb>0</weight-lb>
-        <max-lb>2400</max-lb>
-        <min-lb>0</min-lb>
-    </weight>
-
-    <!--<weight n="6">
-        <weight-lb>0</weight-lb>
-        <max-lb>1300</max-lb>
-        <min-lb>0</min-lb>
-    </weight>
-
-    <weight n="7">
-        <weight-lb>0</weight-lb>
-        <max-lb>350</max-lb>
-        <min-lb>0</min-lb>
-    </weight>-->
 
     <help>
       <title>Douglas DC-3 C47</title>
@@ -104,8 +47,12 @@
         <desc>Open/Close cargo door</desc>
       </key>
       <key>
-        <name>Ctrl-j</name>
+        <name>=</name>
         <desc>Parachutist</desc>
+      </key>
+      <key>
+        <name>&amp;</name>
+        <desc>Stewardess</desc>
       </key>
         <line/>
         <line>========== Engines Start Checklist ==========</line>
@@ -127,7 +74,7 @@
         <line>========== Engines Autostart ==========</line>
         <line>1 - Open Douglas DC-3 C47 dialog (Douglas DC-3 C47 > Options)</line>
         <line>2 - Click on Autostart button</line>
-        <line>3 - Press key "s"</line>
+        <line>3 - Press "s" key</line>
         <line/>
         <line>========== Engines Stop Checklist ==========</line>
         <line>1 - Mixture -> IDLE - CUT OFF</line>
@@ -136,12 +83,12 @@
         <line>4 - Master battery -> OFF</line>
         <line/>
         <line>========== Procedures ==========</line>
-        <line>Takeoff -> no flaps, rotate at 75 KIAS</line>
-        <line>Climbout -> no flaps, 80 KIAS</line>
-        <line>Cruise -> trim down, 165 KIAS</line>
-        <line>Landing -> full flaps, 75 KIAS</line>
-        <line>Landing gear handle -> unlock* Gear Lock, pull/push Gear Handle, lock* Gear Lock</line>
-        <line>*: click on it</line>
+        <line>Takeoff ->Full throttle (48" Hg), Prop pitch for high RPM (2700 RPM), 1 mn. No flaps, rotate at 84 KIAS</line>
+        <line>Climbout -> Throttle for 41-42" Hg, Prop pitch for 2550 RPM, no flaps, 115 KIAS</line>
+        <line>Cruise -> trim down, Throttle for 31-33" Hg, Prop pitch for 2050 RPM</line>
+        <line>Approach and Landing -> full flaps, 105 ... 84 KIAS (1.3 VS0 = 75 KIAS)</line>
+        <line>Landing gear -> pull / push Gear Handle or press g / G key</line>
+        <line>Tail Gear lock / unlock -> click on handle or press "l" (L) toggle key</line>
         <line/>
         <line>========== Dual Control ==========</line>
         <line>For a best experience, pilot and copilot need to be connected on the same server</line>
@@ -311,8 +258,8 @@
         <x-offset-m archive="y"> -0.475 </x-offset-m> <!-- Right -->
         <y-offset-m archive="y">  0.434 </y-offset-m> <!-- Up    -->
         <z-offset-m archive="y"> -7.965 </z-offset-m> <!-- Back  -->
-        <pitch-offset-deg> -20 </pitch-offset-deg>-->
-        <default-field-of-view-deg> 70 </default-field-of-view-deg>
+        <pitch-offset-deg> -15.9 </pitch-offset-deg>-->
+        <default-field-of-view-deg> 90 </default-field-of-view-deg>
         <limits>
           <enabled type="bool">false</enabled>
         </limits>
@@ -414,6 +361,10 @@
     <mixture-coupled type="bool">1</mixture-coupled>
     <prop-coupled type="bool">1</prop-coupled>
     <movement-scale>0.025</movement-scale>
+    <stewardess>
+      <enable type="bool">0</enable>
+      <cabin-to-cockpit type="double">0</cabin-to-cockpit>
+    </stewardess>
   </controls>
 
   <consumables>
@@ -467,8 +418,11 @@
       <file>Aircraft/Douglas-Dc3/Nasal/wipers.nas</file>
     </dc3>
     <chronograph>
-      <file>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/chronograph/chronograph.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/chronograph.nas</file>
     </chronograph>
+    <VHF22>
+     <file>Aircraft/Generic/DualControl/Instruments/VHF-22/ctl22.nas</file>
+    </VHF22>
   </nasal>
 
 </PropertyList>

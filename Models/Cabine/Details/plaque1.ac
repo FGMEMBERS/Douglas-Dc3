@@ -7,7 +7,7 @@ name "plaque1"
 loc 0 0 -0
 data 7
 plaque1
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 numvert 8
 0.002535 0.078917 0.078917

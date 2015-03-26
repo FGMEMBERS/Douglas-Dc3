@@ -8,7 +8,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "cyl.png"
+texture "cyl.dds"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -131,7 +131,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "cyl.png"
+texture "cyl.dds"
 texrep 1 1
 crease 30.000000
 numvert 192
@@ -1453,7 +1453,7 @@ OBJECT poly
 name "fond2"
 data 5
 fond2
-texture "cyl.png"
+texture "cyl.dds"
 texrep 1 1
 crease 30.000000
 numvert 94
@@ -1977,7 +1977,7 @@ OBJECT poly
 name "needleL"
 data 7
 needleL
-texture "cyl.png"
+texture "cyl.dds"
 texrep 1 1
 crease 30.000000
 numvert 21
@@ -2056,7 +2056,7 @@ OBJECT poly
 name "needleR"
 data 7
 needleR
-texture "cyl.png"
+texture "cyl.dds"
 texrep 1 1
 crease 30.000000
 numvert 21
@@ -2135,7 +2135,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "cyl.png"
+texture "cyl.dds"
 texrep 1 1
 crease 30.000000
 numvert 68

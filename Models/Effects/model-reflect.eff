@@ -13,7 +13,7 @@
     <reflection-correction type="float"> -0.01 </reflection-correction>
     <reflection-dynamic type="int"> 1 </reflection-dynamic>
     <texture n="4">
-      <image>Aircraft/Douglas-Dc3/Models/Effects/Textures/dc3_refl_alu.png</image>
+      <image>Aircraft/Douglas-Dc3/Models/Effects/Textures/dc3_refl_alu.dds</image>
       <filter>linear-mipmap-linear</filter>
       <wrap-s>clamp</wrap-s>
       <wrap-t>clamp</wrap-t>

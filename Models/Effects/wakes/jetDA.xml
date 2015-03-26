@@ -5,7 +5,7 @@
   <particlesystem>
     <name>JetD</name>
 
-    <texture>wake.png</texture>
+    <texture>wake.dds</texture>
 
     <emissive>false</emissive>
     <lighting>true</lighting>

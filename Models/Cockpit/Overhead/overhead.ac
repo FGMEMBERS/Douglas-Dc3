@@ -8,7 +8,7 @@ OBJECT poly
 name "detail"
 data 6
 detail
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 923
@@ -7791,7 +7791,7 @@ OBJECT poly
 name "overhead"
 data 8
 overhead
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 79
@@ -8397,7 +8397,7 @@ OBJECT poly
 name "radio"
 data 5
 radio
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 56

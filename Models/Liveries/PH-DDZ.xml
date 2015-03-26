@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Martin's Air Charter</name>
-        <texture>Liveries/PH-DDZ.png</texture>
+        <texture>Liveries/PH-DDZ.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
            <livery-engine>
-        <texture>Liveries/PH-DDZ-propeller.png</texture>
+        <texture>Liveries/PH-DDZ-propeller.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

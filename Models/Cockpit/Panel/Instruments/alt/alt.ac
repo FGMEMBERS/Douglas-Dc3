@@ -8,7 +8,7 @@ OBJECT poly
 name "alt-Needle1"
 data 11
 alt-Needle1
-texture "alt.png"
+texture "alt.dds"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -334,7 +334,7 @@ OBJECT poly
 name "alt-Needle2"
 data 11
 alt-Needle2
-texture "alt.png"
+texture "alt.dds"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -660,7 +660,7 @@ OBJECT poly
 name "alt-Needle3"
 data 11
 alt-Needle3
-texture "alt.png"
+texture "alt.dds"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -986,7 +986,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "alt.png"
+texture "alt.dds"
 texrep 1 1
 crease 30.000000
 numvert 17
@@ -1109,7 +1109,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "alt.png"
+texture "alt.dds"
 texrep 1 1
 crease 30.000000
 numvert 188
@@ -2411,7 +2411,7 @@ OBJECT poly
 name "ingh"
 data 4
 ingh
-texture "alt.png"
+texture "alt.dds"
 texrep 1 1
 crease 30.000000
 numvert 25
@@ -2640,7 +2640,7 @@ OBJECT poly
 name "vissses"
 data 7
 vissses
-texture "alt.png"
+texture "alt.dds"
 texrep 1 1
 crease 30.000000
 numvert 51

@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Baroudeur Air France</name>
-        <texture>Liveries/Baroudeur_Air_France.png</texture>
+        <texture>Liveries/Baroudeur_Air_France.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
 	  	        <livery-engine>
-        <texture>Liveries/baroudeur_Air_France-prop.png</texture>
+        <texture>Liveries/baroudeur_Air_France-prop.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

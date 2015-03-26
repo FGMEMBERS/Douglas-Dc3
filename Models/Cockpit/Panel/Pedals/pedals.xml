@@ -34,7 +34,7 @@
         </equals>
       </or>
     </condition>
-    <texture>colors.png</texture>
+    <texture>colors.dds</texture>
   </animation>
 
   <!-- military version -->
@@ -52,7 +52,7 @@
           <value>military</value>
         </equals>
     </condition>
-    <texture>Liveries/colors_green.png</texture>
+    <texture>colors_green.dds</texture>
   </animation>
 
   <animation>
@@ -85,51 +85,51 @@
     <type>rotate</type>
     <object-name>pedalsL</object-name>
     <property>controls/gear/brake-left</property>
-    <factor> -20 </factor>
-    <center>
-      <x-m> 0.00 </x-m>
-      <y-m> 0.00 </y-m>
-      <z-m> 0.07 </z-m>
-    </center>
+    <factor>-20</factor>
     <axis>
       <x>  0 </x>
       <y>  1 </y>
       <z>  0 </z>
     </axis>
+    <center>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.07 </z-m>
+    </center>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>pedalsR</object-name>
     <property>controls/gear/brake-right</property>
-    <factor> -20 </factor>
-    <center>
-      <x-m> 0.00 </x-m>
-      <y-m> 0.00 </y-m>
-      <z-m> 0.07 </z-m>
-    </center>
+    <factor>-20</factor>
     <axis>
       <x>  0 </x>
       <y>  1 </y>
       <z>  0 </z>
     </axis>
+    <center>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.07 </z-m>
+    </center>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>brakeL</object-name>
     <property>controls/flight/rudder</property>
-    <factor> 16 </factor>
-    <center>
-      <x-m>-0.076 </x-m>
-      <y-m> 0.036 </y-m>
-      <z-m>-0.137 </z-m>
-    </center>
+    <factor>16</factor>
     <axis>
       <x>  0 </x>
       <y>  1 </y>
       <z>  0 </z>
     </axis>
+    <center>
+      <x-m>-0.076 </x-m>
+      <y-m> 0.036 </y-m>
+      <z-m>-0.137 </z-m>
+    </center>
   </animation>
 
   <animation>
@@ -137,16 +137,16 @@
     <object-name>brakeR</object-name>
     <property>controls/flight/rudder</property>
     <factor>-16</factor>
-    <center>
-      <x-m>-0.076 </x-m>
-      <y-m> 0.036 </y-m>
-      <z-m>-0.137 </z-m>
-    </center>
     <axis>
       <x>  0 </x>
       <y>  1 </y>
       <z>  0 </z>
     </axis>
+    <center>
+      <x-m>-0.076 </x-m>
+      <y-m> 0.036 </y-m>
+      <z-m>-0.137 </z-m>
+    </center>
   </animation>
 
   <animation>

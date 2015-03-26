@@ -8,7 +8,7 @@ OBJECT poly
 name "Ail_trim_needle"
 data 15
 Ail_trim_needle
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -259,7 +259,7 @@ OBJECT poly
 name "Aileron_trim"
 data 12
 Aileron_trim
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 409
@@ -3365,7 +3365,7 @@ OBJECT poly
 name "Grad_mixt"
 data 9
 Grad_mixt
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -3754,7 +3754,7 @@ OBJECT poly
 name "Mixt_D"
 data 6
 Mixt_D
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 140
@@ -4921,7 +4921,7 @@ OBJECT poly
 name "Mixt_G"
 data 6
 Mixt_G
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 141
@@ -6096,7 +6096,7 @@ OBJECT poly
 name "Prop_D"
 data 6
 Prop_D
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 181
@@ -7616,7 +7616,7 @@ OBJECT poly
 name "Prop_G"
 data 6
 Prop_G
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 179
@@ -9125,7 +9125,7 @@ OBJECT poly
 name "Rud_trim_needle"
 data 15
 Rud_trim_needle
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -9376,7 +9376,7 @@ OBJECT poly
 name "Rudder_trim"
 data 11
 Rudder_trim
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 409
@@ -12482,7 +12482,7 @@ OBJECT poly
 name "Throt_D"
 data 7
 Throt_D
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 143
@@ -13666,7 +13666,7 @@ OBJECT poly
 name "Throt_G"
 data 7
 Throt_G
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 143
@@ -14888,7 +14888,7 @@ OBJECT poly
 name "aileron"
 data 7
 aileron
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -14909,7 +14909,7 @@ OBJECT poly
 name "aileron-trim"
 data 12
 aileron-trim
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -15344,7 +15344,7 @@ OBJECT poly
 name "axe"
 data 3
 axe
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -15462,7 +15462,7 @@ OBJECT poly
 name "brake_parking"
 data 13
 brake_parking
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 248
@@ -17688,7 +17688,7 @@ OBJECT poly
 name "brake_throttle"
 data 14
 brake_throttle
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 304
@@ -20242,7 +20242,7 @@ OBJECT poly
 name "carter-trim"
 data 11
 carter-trim
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 104
@@ -21147,7 +21147,7 @@ OBJECT poly
 name "cons_bas"
 data 9
 panel.001
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 76
@@ -21667,7 +21667,7 @@ OBJECT poly
 name "corps-haut"
 data 10
 corps-haut
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 196
@@ -22871,7 +22871,7 @@ OBJECT poly
 name "corps-milieu"
 data 12
 corps-milieu
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -23063,7 +23063,7 @@ OBJECT poly
 name "elev_trim"
 data 9
 elev_trim
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -23123,7 +23123,7 @@ OBJECT poly
 name "elev_trim_index"
 data 15
 elev_trim_index
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 10
@@ -23201,7 +23201,7 @@ OBJECT poly
 name "fuel_left"
 data 9
 fuel_left
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -23917,7 +23917,7 @@ OBJECT poly
 name "fuel_right"
 data 10
 fuel_right
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -24633,7 +24633,7 @@ OBJECT poly
 name "guideM"
 data 6
 guideM
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 84
@@ -25258,7 +25258,7 @@ OBJECT poly
 name "guideM2"
 data 7
 guideM2
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 84
@@ -25883,7 +25883,7 @@ OBJECT poly
 name "guideP"
 data 6
 guideP
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -26083,7 +26083,7 @@ OBJECT poly
 name "guideP2"
 data 7
 guideP2
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -26283,7 +26283,7 @@ OBJECT poly
 name "guideT"
 data 6
 guideT
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -26572,7 +26572,7 @@ OBJECT poly
 name "guideT2"
 data 7
 guideT2
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 48
@@ -26861,7 +26861,7 @@ OBJECT poly
 name "lev1"
 data 4
 lev1
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -27534,7 +27534,7 @@ OBJECT poly
 name "levierM_D"
 data 9
 levierM_D
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 112
@@ -28638,7 +28638,7 @@ OBJECT poly
 name "levierM_G"
 data 9
 levierM_G
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 110
@@ -29737,7 +29737,7 @@ OBJECT poly
 name "manette1"
 data 8
 manette1
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 149
@@ -30976,7 +30976,7 @@ OBJECT poly
 name "manette2"
 data 8
 manette2
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 149
@@ -32225,7 +32225,7 @@ OBJECT poly
 name "manette3"
 data 8
 manette3
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 151
@@ -33480,7 +33480,7 @@ OBJECT poly
 name "onoff"
 data 5
 onoff
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 13
@@ -33575,7 +33575,7 @@ OBJECT poly
 name "plaque"
 data 9
 Plane.001
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -33634,7 +33634,7 @@ OBJECT poly
 name "rudder"
 data 6
 rudder
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -33655,7 +33655,7 @@ OBJECT poly
 name "rudder-trim"
 data 11
 rudder-trim
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -34090,7 +34090,7 @@ OBJECT poly
 name "souslevierM_D"
 data 13
 souslevierM_D
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 63
@@ -34610,7 +34610,7 @@ OBJECT poly
 name "souslevierM_G"
 data 13
 souslevierM_G
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -35127,7 +35127,7 @@ OBJECT poly
 name "support"
 data 7
 support
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 86
@@ -35615,7 +35615,7 @@ OBJECT poly
 name "tailwheel_lock"
 data 16
 Aileron_trim.001
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 238
@@ -37506,7 +37506,7 @@ OBJECT poly
 name "textmanL"
 data 8
 textmanL
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 19
@@ -37643,7 +37643,7 @@ OBJECT poly
 name "textmanR"
 data 8
 textmanR
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 19
@@ -37780,7 +37780,7 @@ OBJECT poly
 name "volantTrim"
 data 10
 volantTrim
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 570

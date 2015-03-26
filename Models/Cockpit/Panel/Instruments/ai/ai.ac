@@ -8,7 +8,7 @@ name "ai"
 loc 0.000965 -0.000188 0.025395
 data 2
 ai
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 8
 0.000232 -0.000866 0.032536
@@ -61,7 +61,7 @@ name "cadran"
 loc 0.002483 0.000275 0.025642
 data 6
 cadran
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 149
 -0.00229 -0.000935 0.000842
@@ -999,7 +999,7 @@ name "contour"
 loc 0.002779 0.000388 0.025772
 data 7
 contour
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 128
 -0.00344 0.009151 0.045646
@@ -1809,7 +1809,7 @@ name "face"
 loc 0.000829 0.000101 0.025731
 data 4
 face
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 17
 0 -0 -0.042904
@@ -1932,7 +1932,7 @@ name "fond"
 loc 0.003236 -0.001796 0.011947
 data 4
 fond
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 78
 0.002426 -0.0032 0.063941
@@ -2525,7 +2525,7 @@ name "interrupteur"
 loc 0.012966 -0.049384 -0.027147
 data 12
 interrupteur
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 66
 -0.006723 0.005842 0.012696
@@ -3023,7 +3023,7 @@ name "intocage"
 loc 0.009382 -0.057434 0.026453
 data 8
 intocage
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 129
 0.001401 0.000719 -0.002189
@@ -4026,7 +4026,7 @@ name "visses"
 loc 0.006005 -0.000682 0.012196
 data 6
 visses
-texture "ai.png"
+texture "ai.dds"
 texrep 1 1
 numvert 119
 0.000379 0.059102 0.059824

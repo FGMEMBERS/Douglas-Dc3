@@ -8,7 +8,7 @@ name "background"
 loc 0.006784 -0 -0
 data 10
 background
-texture "turn.png"
+texture "turn.dds"
 texrep 1 1
 numvert 8
 -0.001951 -0.000069 -0.03557
@@ -61,7 +61,7 @@ name "ball"
 loc 0.006784 -0 -0
 data 4
 ball
-texture "turn.png"
+texture "turn.dds"
 texrep 1 1
 numvert 37
 -0.001718 -0.016634 0.000048
@@ -304,7 +304,7 @@ name "face"
 loc 0.006784 -0 -0
 data 4
 face
-texture "turn.png"
+texture "turn.dds"
 texrep 1 1
 numvert 56
 -0.000503 -0.00001 -0.037464
@@ -619,7 +619,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "turn.png"
+texture "turn.dds"
 texrep 1 1
 numvert 192
 0.007228 -0.031831 0.021269
@@ -1941,7 +1941,7 @@ name "needle"
 loc 0.006784 -0.024101 0
 data 6
 needle
-texture "turn.png"
+texture "turn.dds"
 texrep 1 1
 numvert 32
 0.00028 0.049577 -0.001598
@@ -2179,7 +2179,7 @@ name "visses"
 loc 0.007515 -0.030077 0.029784
 data 6
 visses
-texture "turn.png"
+texture "turn.dds"
 texrep 1 1
 numvert 68
 0.000319 0.060541 -0

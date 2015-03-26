@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<system name="fake_shadow">
+
+  <channel name="shadow">
+    <fcs_function name="systems/shadow">
+      <function>
+        <product>
+          <sum>
+            <property>position/h-agl-ft</property>
+            <value>-7.7</value> 
+          </sum>
+          <value>0.3048</value> <!--ft to m -->
+        </product>
+      </function>
+      <output>/position/gear-agl-m</output>
+    </fcs_function>
+ 
+    <fcs_function name="systems/gear-agl-ft">
+      <function>
+        <sum>
+          <property>position/h-agl-ft</property>
+          <value>-7.7</value> 
+        </sum>
+      </function>
+      <output>/position/gear-agl-ft</output>
+    </fcs_function>
+  </channel>
+
+</system>

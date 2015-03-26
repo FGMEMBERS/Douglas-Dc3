@@ -290,3 +290,15 @@ setlistener("/controls/engines/engine/cowl-flaps-cmd", func(v) {
 setlistener("/controls/engines/engine[1]/cowl-flaps-cmd", func(v) {
     interpolate("/controls/engines/engine[1]/cowl-flaps-pos", v.getValue(), 0.25);
 });
+
+setlistener("controls/engines/engine[0]/propeller-feather", func {
+if(getprop("sim/flight-model")=="jsb") {
+if(!getprop("controls/engines/engine[0]/propeller-feather")) {
+interpolate("fdm/jsbsim/propulsion/engine[0]/blade-angle",0,3);
+}}});
+
+setlistener("controls/engines/engine[1]/propeller-feather", func {
+if(getprop("sim/flight-model")=="jsb") {
+if(!getprop("controls/engines/engine[1]/propeller-feather")) {
+interpolate("fdm/jsbsim/propulsion/engine[1]/blade-angle",0,3);
+}}});

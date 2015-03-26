@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -16,7 +16,7 @@ With the help of this tutorial, you will be able to taxi your DC-3.
   </description>
 
 
-<!-- Configuration au démarrage du tutoriel-->
+<!-- Configuration au demarrage du tutoriel-->
 
   <init>
     <set>

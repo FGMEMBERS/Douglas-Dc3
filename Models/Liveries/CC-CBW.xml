@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Aerocor (CC-CBW)</name>
-        <texture>Liveries/CC-CBW.png</texture>
+        <texture>Liveries/CC-CBW.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/CC-CBW-prop.png</texture>
+        <texture>Liveries/CC-CBW-prop.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

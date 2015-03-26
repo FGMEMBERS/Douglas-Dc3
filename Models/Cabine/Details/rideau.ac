@@ -7,7 +7,7 @@ name "rideau"
 loc 0 0 -0
 data 6
 rideau
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 numvert 980
 -0.006207 -0.097715 0.404445

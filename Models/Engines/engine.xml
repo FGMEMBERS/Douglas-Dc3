@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <model>
+   <path>Aircraft/Douglas-Dc3/Models/Engines/r1830.ac</path>
+    <offsets>
+      <roll-deg> 0 </roll-deg>
+    </offsets>
+ </model>
+ 
+  <model>
+   <path>Aircraft/Douglas-Dc3/Models/Engines/r1830.ac</path>
+    <offsets>
+      <roll-deg> 51.429 </roll-deg>
+    </offsets>
+ </model>
+
+  <model>
+   <path>Aircraft/Douglas-Dc3/Models/Engines/r1830.ac</path>
+    <offsets>
+      <roll-deg> 102.857 </roll-deg>
+    </offsets>
+ </model>
+
+  <model>
+   <path>Aircraft/Douglas-Dc3/Models/Engines/r1830.ac</path>
+    <offsets>
+      <roll-deg> 154.28 </roll-deg>
+    </offsets>
+ </model>
+
+  <model>
+   <path>Aircraft/Douglas-Dc3/Models/Engines/r1830.ac</path>
+    <offsets>
+      <roll-deg> 205.714 </roll-deg>
+    </offsets>
+ </model>
+
+  <model>
+   <path>Aircraft/Douglas-Dc3/Models/Engines/r1830.ac</path>
+    <offsets>
+      <roll-deg> 257.144 </roll-deg>
+    </offsets>
+ </model>
+
+  <model>
+   <path>Aircraft/Douglas-Dc3/Models/Engines/r1830.ac</path>
+    <offsets>
+      <roll-deg> 308.571  </roll-deg>
+    </offsets>
+ </model>
+
+ <animation>
+    <!-- Objets opaques -->
+    <object-name>bloc</object-name>
+    <object-name>caches</object-name>
+    <object-name>cames</object-name>
+    <object-name>pistons</object-name>
+    <object-name>ecrous</object-name>
+    <object-name>bougies</object-name>
+    <object-name>tuyaux</object-name>
+    <object-name>echappes</object-name>
+    <object-name>souflets</object-name>
+    <object-name>moteurlow</object-name>
+  </animation>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-property>/sim/rendering/static-lod/ai-detailed</max-property>
+  </animation>
+
+  <animation>
+    <name>HighPoly</name>
+    <object-name>bloc</object-name>
+    <object-name>caches</object-name>
+    <object-name>cames</object-name>
+    <object-name>pistons</object-name>
+    <object-name>ecrous</object-name>
+    <object-name>bougies</object-name>
+    <object-name>tuyaux</object-name>
+    <object-name>echappes</object-name>
+    <object-name>souflets</object-name>
+  </animation>
+
+  <animation>
+    <name>LowPoly</name>
+    <object-name>moteurlow</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>HighPoly</object-name>
+    <condition>
+      <property>sim/model/config/details-high</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LowPoly</object-name>
+    <condition>
+      <not><property>sim/model/config/details-high</property></not>
+    </condition>
+  </animation>
+
+</PropertyList>
+

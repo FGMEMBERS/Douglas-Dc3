@@ -7,14 +7,14 @@ OBJECT poly
 name "shadow"
 data 6
 shadow
-texture "shadow.png"
+texture "shadow.dds"
 texrep 1 1
 crease 30.000000
 numvert 4
-9.85 0 -14.5
-9.85 0 14.5
--9.85 0 14.5
--9.85 0 -14.5
+9.85 -2.400289 -14.499991
+9.85 -2.400292 14.499999
+-9.85 -2.400292 14.499995
+-9.849997 -2.400289 -14.499999
 numsurf 1
 SURF 0x10
 mat 1

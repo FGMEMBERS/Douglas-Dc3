@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -22,7 +22,7 @@ Before you go flying, you'll need to learn how to start the engines.
       <value>1</value>
     </set>
     <set>
-      <property>controls/gear/brake-parking</property>
+      <property>controls/gear/brake-parking-pos</property>
       <value>0</value>
     </set>
     <set>
@@ -107,25 +107,25 @@ Before you go flying, you'll need to learn how to start the engines.
       <field-of-view>53</field-of-view>
     </view>
     <error>
-     <message>Click on the red button</message>
+	  <message>Click on the red button</message>
       <condition>
-        <equals>
+		<equals>
           <property>controls/gear/brake-parking</property>
           <value>0</value>
-        </equals>
+		</equals>
       </condition>
     </error>
-    <exit> 
+    <exit>
       <condition>
-        <equals>
+		<equals>
           <property>controls/gear/brake-parking</property>
           <value>1</value>
         </equals>
       </condition>
-    </exit>
+    </exit>  
   </step>
-
-<!-- Sélection réservoir principal gauche-->
+  
+<!-- Left tank -->
   <step>
     <message>select the main Left tank(Main LH)</message>
     <view>
@@ -166,7 +166,7 @@ Before you go flying, you'll need to learn how to start the engines.
     </exit>  
   </step>
   
-<!-- sélection réservoir principal droit-->
+<!-- right tank-->
   <step>
     <message>select the main right tank(Main RH)</message>
     <view>
@@ -461,7 +461,7 @@ Before you go flying, you'll need to learn how to start the engines.
   </step>
 
 
-<!-- Arrêt boost pump-->
+<!-- stop boost pump-->
   <step>
     <message>You can switch off the right booster pump</message>
     <view>
@@ -530,7 +530,7 @@ Before you go flying, you'll need to learn how to start the engines.
     </exit>
   </step>
 
-  <!-- Vérifications-->
+  <!-- verif-->
   <step>
     <message>Check the propeller area</message>
     <view>
@@ -587,7 +587,7 @@ Before you go flying, you'll need to learn how to start the engines.
     </exit>
   </step>
   
- <!-- Arrêt boost pump-->
+ <!-- stop boost pump-->
   <step>
     <message>You can switch off the left booster pump</message>
     <view>

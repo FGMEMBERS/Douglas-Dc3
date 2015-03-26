@@ -47,7 +47,7 @@
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>texture.png</texture>
+    <texture>texture.dds</texture>
 
     <specular>
       <red-prop>specular/red</red-prop>

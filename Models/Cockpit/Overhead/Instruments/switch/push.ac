@@ -7,7 +7,7 @@ OBJECT poly
 name "poussoir"
 data 8
 poussoir
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 385
@@ -3058,7 +3058,7 @@ OBJECT poly
 name "tour"
 data 4
 tour
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 266

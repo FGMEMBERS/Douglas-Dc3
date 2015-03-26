@@ -8,7 +8,7 @@ name "face"
 loc 0.0062522 9.98378e-008 -9.10998e-005
 data 4
 face
-texture "oil.png"
+texture "oil.dds"
 crease 45.000000
 numvert 17
 -0.000216 -1.2e-006 0.0011544
@@ -131,7 +131,7 @@ name "fond"
 loc -0.0009631 0 0
 data 4
 fond
-texture "oil.png"
+texture "oil.dds"
 crease 45.000000
 numvert 192
 0.0086736 -0.0381972 0.0255228
@@ -1453,7 +1453,7 @@ name "needle1"
 loc 0.0003458 9.98378e-008 -4.18999e-005
 data 7
 needle1
-texture "oil.png"
+texture "oil.dds"
 crease 45.000000
 numvert 128
 0.007032 -0.0121692 0.0063564
@@ -2271,7 +2271,7 @@ name "needle2"
 loc 0.0003458 9.98378e-008 -4.18999e-005
 data 11
 needle1.001
-texture "oil.png"
+texture "oil.dds"
 crease 45.000000
 numvert 128
 0.0080016 0.004974 -0.0021336
@@ -3089,7 +3089,7 @@ name "visses"
 loc 0.0074426 -0.0360923 -0.0361895
 data 6
 visses
-texture "oil.png"
+texture "oil.dds"
 crease 45.000000
 numvert 68
 0.000382801 0 0.0718884

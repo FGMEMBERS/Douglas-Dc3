@@ -7,7 +7,7 @@ OBJECT poly
 name "acoudoir"
 data 8
 acoudoir
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -159,7 +159,7 @@ OBJECT poly
 name "coussin"
 data 7
 coussin
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 44
@@ -481,7 +481,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 44
@@ -815,7 +815,7 @@ OBJECT poly
 name "structure"
 data 9
 structure
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 142

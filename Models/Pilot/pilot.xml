@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0"?>
 
 <PropertyList>
 
@@ -45,7 +45,7 @@
     </condition>
   </animation>
 
-  <!-- Civilian red version -->
+ <!-- Civilian red version -->
   <animation>
     <type>material</type>
    <object-name>tete</object-name>
@@ -68,10 +68,10 @@
         <value>civilian-red</value>
       </equals>
     </condition>
-    <texture>general_pilot.png</texture>
+    <texture>general_pilot_red.png</texture>
   </animation>
 
-  <!-- Civilian gray version -->
+<!-- Civilian gray version -->
   <animation>
     <type>material</type>
    <object-name>tete</object-name>
@@ -94,10 +94,10 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>Liveries/general_pilot_gray.png</texture>
+    <texture>general_pilot_gray.dds</texture>
   </animation>
 
-  <!-- Military version -->
+<!-- Military version -->
   <animation>
     <type>material</type>
    <object-name>tete</object-name>
@@ -120,7 +120,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>Liveries/general_pilot_military.png</texture>
+    <texture>general_pilot_military.dds</texture>
   </animation>
 
   <animation>
@@ -129,7 +129,7 @@
     <object-name>visiere</object-name>
   </animation>
 
-  <!-- Visière invisible depuis le cockpit -->
+  <!-- Visiere invisible depuis le cockpit -->
   <animation>
     <type>select</type>
     <object-name>visiere</object-name>
@@ -191,9 +191,12 @@
       <z> 0.000 </z>
     </axis>
   </animation>
-   
-  <!-- Tirer sur le manche-->
-  <!-- coude-->
+  
+  
+  
+ 
+<!-- Tirer sur le manche-->
+<!-- coude-->
   <animation>
     <type>rotate</type>
     <object-name>avantbrasG</object-name>
@@ -215,7 +218,7 @@
     </axis>
   </animation>
 
-  <!--épaule-->
+ <!--epaule-->
   <animation>
     <type>rotate</type>
     <object-name>avantbrasG</object-name>
@@ -224,13 +227,13 @@
     <object-name>brasD</object-name>
     <property>controls/flight/elevator</property>
     <interpolation>
-      <entry><ind> -1 </ind><dep> -18 </dep></entry>
-      <entry><ind>  0 </ind><dep>   0 </dep></entry>
-      <entry><ind>  1 </ind><dep>  17 </dep></entry>
+	    <entry><ind>  -1 </ind><dep>  -18  </dep></entry>
+        <entry><ind>  0  </ind><dep>  0    </dep></entry>
+        <entry><ind>  1  </ind><dep>  17   </dep></entry>
     </interpolation>
-    <center>
+	<center>
       <x-m>  0.417 </x-m>
-      <y-m>  0.000  </y-m>
+      <y-m>  0.00  </y-m>
       <z-m>  0.325 </z-m>
     </center>
     <axis>
@@ -240,10 +243,10 @@
     </axis>
   </animation>
 
-  <!--Bassin-->
-  <animation>
+<!--Bassin-->
+    <animation>
     <type>rotate</type>
-    <object-name>avantbrasG</object-name>
+	<object-name>avantbrasG</object-name>
     <object-name>avantbrasD</object-name>
     <object-name>brasG</object-name>
     <object-name>brasD</object-name>
@@ -254,64 +257,69 @@
     <factor> 5 </factor>
     <center>
       <x-m>  0.365 </x-m>
-      <y-m>  0.000 </y-m>
+      <y-m>  0.00  </y-m>
       <z-m> -0.042 </z-m>
     </center>
     <axis>
-      <x>  0 </x>
+      <x> 0 </x>
       <y> -1 </y>
-      <z>  0 </z>
+      <z> 0 </z>
     </axis>
   </animation>
   
-  <!-- Tourner le volant-->
-  <!--épaule gauche-->
+  
+<!-- Tourner le volant-->
+
+ <!--epaule gauche-->
   <animation>
     <type>rotate</type>
     <object-name>avantbrasG</object-name>
     <object-name>brasG</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
     <interpolation>
-      <entry><ind> -1 </ind><dep> 8 </dep></entry>
-      <entry><ind>  0 </ind><dep> 0 </dep></entry>
-      <entry><ind>  1 </ind><dep> 3 </dep></entry>
+      <entry><ind>  -1 </ind><dep>  8  </dep></entry>
+       <entry><ind>  0 </ind><dep>  0  </dep></entry>
+      <entry><ind>  1  </ind><dep> 3  </dep></entry>
     </interpolation>
+
     <center>
       <x-m>  0.425 </x-m>
-      <y-m>  0.190 </y-m>
+      <y-m>  0.19  </y-m>
       <z-m>  0.344 </z-m>
     </center>
     <axis>
-      <x>  0.8 </x>
+      <x> 0.8 </x>
       <y> -1.2 </y>
-      <z>  0.0 </z>
+      <z> 0 </z>
     </axis>
   </animation>
 
-  <!--épaule droite-->
-  <animation>
+
+ <!--epaule droite-->
+ <animation>
     <type>rotate</type>
     <object-name>avantbrasD</object-name>
     <object-name>brasD</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
     <interpolation>
-      <entry><ind> -1 </ind><dep>  -2 </dep></entry>
-      <entry><ind>  0 </ind><dep>   0 </dep></entry>
-      <entry><ind>  1 </ind><dep> -10 </dep></entry>
+      <entry><ind>  -1 </ind><dep>  -2  </dep></entry>
+       <entry><ind>  0 </ind><dep>  0  </dep></entry>
+      <entry><ind>  1  </ind><dep>  -10  </dep></entry>
     </interpolation>
     <center>
-      <x-m>   0.400   </x-m>
+      <x-m>   0.40   </x-m>
       <y-m>  -0.165  </y-m>
       <z-m>   0.315  </z-m>
     </center>	
     <axis>
       <x> 0.8 </x>
       <y> 1.2 </y>
-      <z> 0.0 </z>
+      <z> 0 </z>
     </axis>
   </animation>
+
   
-  <!-- Pédales--> 
+ <!-- Pedales--> 
   <!--gauche-->
   <animation>
     <type>rotate</type>
@@ -322,7 +330,7 @@
     <factor> 5 </factor>
     <center>
       <x-m>  0.318 </x-m>
-      <y-m>  0.140 </y-m>
+      <y-m>  0.14 </y-m>
       <z-m> -0.077 </z-m>
     </center>
     <axis>
@@ -339,8 +347,8 @@
     <property>/controls/flight/rudder</property>
     <factor> 14</factor>
     <center>
-      <x-m> -0.120 </x-m>
-      <y-m>  0.080 </y-m>
+      <x-m> -0.12 </x-m>
+      <y-m>  0.08 </y-m>
       <z-m> -0.047 </z-m>
     </center>
     <axis>
@@ -367,6 +375,7 @@
     </axis>
   </animation>
   
+  
   <!--droite-->
   <animation>
     <type>rotate</type>
@@ -377,7 +386,7 @@
     <factor> 5 </factor>
     <center>
       <x-m>  0.318 </x-m>
-      <y-m> -0.140 </y-m>
+      <y-m> -0.14 </y-m>
       <z-m> -0.077 </z-m>
     </center>
     <axis>
@@ -458,4 +467,3 @@
   </animation>
   
  </PropertyList>
-

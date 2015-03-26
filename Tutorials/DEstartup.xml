@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 <!-- 
@@ -117,7 +117,7 @@
     </exit>  
   </step>
   
-<!-- Sélection réservoir principal gauche-->
+<!-- Selection reservoir principal gauche-->
   <step>
     <message>Wahlen Sie die Haupt Left Tank (Main LH)</message>
     <view>
@@ -157,7 +157,7 @@
     </exit>  
   </step>
   
-<!-- sélection réservoir principal droit-->
+<!-- selection reservoir principal droit-->
   <step>
     <message>Wahlen Sie die Haupt rechts Tank (Main RH)</message>
     <view>
@@ -451,7 +451,7 @@
   </step>
 
 
-<!-- Arrêt boost pump-->
+<!-- Arret boost pump-->
   <step>
     <message>Sie konnen jetzt stoppen die Booster-Pumpe rechts (Booster pump Right)</message>
     <view>
@@ -520,7 +520,7 @@
     </exit>
   </step>
 
-  <!-- Vérifications-->
+  <!-- Verifications-->
   <step>
     <message>Wir uberprufen niemand nahe unserem Propeller ist</message>
     <view>
@@ -577,7 +577,7 @@
     </exit>
   </step>
   
- <!-- Arrêt boost pump-->
+ <!-- Arret boost pump-->
   <step>
     <message>Sie konnen jetzt stoppen die Booster-Pumpe links (Booster pump Right)</message>
     <view>

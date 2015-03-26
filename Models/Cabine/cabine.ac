@@ -8,7 +8,7 @@ OBJECT poly
 name "bagageD"
 data 7
 bagageD
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 58
@@ -428,7 +428,7 @@ OBJECT poly
 name "bagageG"
 data 7
 bagageG
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 51
@@ -800,7 +800,7 @@ OBJECT poly
 name "cloisons"
 data 8
 cloisons
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 130
@@ -1659,7 +1659,7 @@ OBJECT poly
 name "intcargoA"
 data 9
 intcargoA
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 232
@@ -2635,7 +2635,7 @@ OBJECT poly
 name "intcargoB"
 data 9
 intcargoB
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 72
@@ -2993,7 +2993,7 @@ OBJECT poly
 name "interieur"
 data 9
 interieur
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 469
@@ -6178,7 +6178,7 @@ OBJECT poly
 name "intporteA"
 data 9
 intporteA
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 73
@@ -6498,7 +6498,7 @@ OBJECT poly
 name "intporteB"
 data 9
 intporteB
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 47
@@ -6765,7 +6765,7 @@ OBJECT poly
 name "inttour"
 data 7
 inttour
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 450
@@ -8624,7 +8624,7 @@ OBJECT poly
 name "planchet"
 data 8
 planchet
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 crease 30.000000
 numvert 45

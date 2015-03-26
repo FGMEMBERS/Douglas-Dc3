@@ -7,7 +7,7 @@ OBJECT poly
 name "LH"
 data 2
 LH
-texture "cowl-flaps.png"
+texture "cowl-flaps.dds"
 texrep 1 1
 crease 30.000000
 numvert 86
@@ -649,7 +649,7 @@ OBJECT poly
 name "RH"
 data 2
 RH
-texture "cowl-flaps.png"
+texture "cowl-flaps.dds"
 texrep 1 1
 crease 30.000000
 numvert 86
@@ -1367,7 +1367,7 @@ OBJECT poly
 name "plaque"
 data 6
 plaque
-texture "cowl-flaps.png"
+texture "cowl-flaps.dds"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -1620,7 +1620,7 @@ OBJECT poly
 name "vanne"
 data 5
 vanne
-texture "cowl-flaps.png"
+texture "cowl-flaps.dds"
 texrep 1 1
 crease 30.000000
 numvert 144

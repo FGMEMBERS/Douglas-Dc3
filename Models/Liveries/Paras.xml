@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Paras</name>
-        <texture>Liveries/Paras.png</texture>
+        <texture>Liveries/Paras.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/Paras-prop.png</texture>
+        <texture>Liveries/Paras-prop.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

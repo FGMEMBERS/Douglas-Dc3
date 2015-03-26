@@ -7,7 +7,7 @@ name "ImatFuselageL1"
 loc 0 0 -0
 data 14
 ImatFuselageL1
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 6
 5.493493 0.04676 0.852795
@@ -37,7 +37,7 @@ name "ImatFuselageL2"
 loc 0 0 -0
 data 14
 ImatFuselageL2
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 6
 5.639334 0.372435 0.766773
@@ -67,7 +67,7 @@ name "ImatFuselageL3"
 loc 0 0 -0
 data 14
 ImatFuselageL3
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 7
 5.785331 0.046761 0.803716
@@ -104,7 +104,7 @@ name "ImatFuselageL4"
 loc 0 0 -0
 data 14
 ImatFuselageL4
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 8
 5.9306 0.046761 0.778156
@@ -143,7 +143,7 @@ name "ImatFuselageL5"
 loc 0 0 -0
 data 14
 ImatFuselageL5
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 8
 6.0767 0.046761 0.753319
@@ -182,7 +182,7 @@ name "ImatFuselageL6"
 loc 0 0 -0
 data 14
 ImatFuselageL6
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 8
 6.2228 0.345304 0.672955
@@ -221,7 +221,7 @@ name "ImatFuselageR1"
 loc 0 0 -0
 data 14
 ImatFuselageR1
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 8
 6.2228 0.345304 -0.672951
@@ -260,7 +260,7 @@ name "ImatFuselageR2"
 loc 0 0 -0
 data 14
 ImatFuselageR2
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 8
 6.0767 0.046761 -0.753315
@@ -299,7 +299,7 @@ name "ImatFuselageR3"
 loc 0 0 -0
 data 14
 ImatFuselageR3
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 8
 5.9306 0.046761 -0.778152
@@ -338,7 +338,7 @@ name "ImatFuselageR4"
 loc 0 0 -0
 data 14
 ImatFuselageR4
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 7
 5.785331 0.046761 -0.803712
@@ -375,7 +375,7 @@ name "ImatFuselageR5"
 loc 0 0 -0
 data 14
 ImatFuselageR5
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 6
 5.639334 0.372435 -0.766769
@@ -405,7 +405,7 @@ name "ImatFuselageR6"
 loc 0 0 -0
 data 14
 ImatFuselageR6
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 6
 5.493493 0.04676 -0.852791
@@ -435,7 +435,7 @@ name "ImatWingBottomL1"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomL1
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -2.942584 -1.373508 4.737191
@@ -483,7 +483,7 @@ name "ImatWingBottomL2"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomL2
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -1.662132 -1.141276 5.900624
@@ -531,7 +531,7 @@ name "ImatWingBottomL3"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomL3
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -1.662132 -1.141276 5.900624
@@ -579,7 +579,7 @@ name "ImatWingBottomL4"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomL4
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -1.662132 -1.053452 6.472919
@@ -627,7 +627,7 @@ name "ImatWingBottomL5"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomL5
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 11
 -2.458984 -0.898783 7.639775
@@ -682,7 +682,7 @@ name "ImatWingBottomL6"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomL6
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 11
 -2.835949 -0.894581 7.638914
@@ -737,7 +737,7 @@ name "ImatWingBottomR1"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomR1
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 11
 -2.835949 -0.894583 -7.638914
@@ -792,7 +792,7 @@ name "ImatWingBottomR2"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomR2
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 11
 -2.458984 -0.898785 -7.639775
@@ -847,7 +847,7 @@ name "ImatWingBottomR3"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomR3
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -1.662132 -1.053452 -6.472919
@@ -895,7 +895,7 @@ name "ImatWingBottomR4"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomR4
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -1.662132 -1.141276 -5.900624
@@ -943,7 +943,7 @@ name "ImatWingBottomR5"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomR5
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -1.662132 -1.141276 -5.900624
@@ -991,7 +991,7 @@ name "ImatWingBottomR6"
 loc -0 -0.002868 0
 data 16
 ImatWingBottomR6
-texture "immat.png"
+texture "immat.dds"
 texrep 1 1
 numvert 10
 -2.942584 -1.373508 -4.737191

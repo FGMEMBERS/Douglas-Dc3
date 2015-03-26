@@ -15,7 +15,7 @@ Avec l'aide de ce tutoriel, vous serez capables de faire un roulage au sol avec 
 
   </description>
 
-  <!-- La procédure devra être complétée au fil du temps et de l'avancement du DC-3. Vous avez la possibilité d'ajouter vos avis et critiques à la suite de ce texte et me donner ainsi une todoList de tout ce que je dois faire et corriger :
+  <!-- La procedure devra être completee au fil du temps et de l'avancement du DC-3. Vous avez la possibilite d'ajouter vos avis et critiques à la suite de ce texte et me donner ainsi une todoList de tout ce que je dois faire et corriger :
   
   Todo List :
 
@@ -34,7 +34,7 @@ Avec l'aide de ce tutoriel, vous serez capables de faire un roulage au sol avec 
 	
   -->
 
-<!-- Configuration au démarrage du tutoriel-->
+<!-- Configuration au demarrage du tutoriel-->
 
   <init>
     <set>

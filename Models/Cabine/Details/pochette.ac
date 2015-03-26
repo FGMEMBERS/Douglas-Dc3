@@ -7,7 +7,7 @@ name "pochette"
 loc 0 0 -0
 data 8
 pochette
-texture "colors.png"
+texture "colors.dds"
 texrep 1 1
 numvert 46
 0.002261 0.136414 -0.091423

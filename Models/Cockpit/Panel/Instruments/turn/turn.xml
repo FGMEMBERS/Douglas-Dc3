@@ -41,16 +41,20 @@
     </emission>
   </animation>
 
+<!-- Slip ball for JSBSim -->
   <animation>
     <type>rotate</type>
     <object-name>ball</object-name>
+    <condition>
+      <equals>
+        <property>sim/flight-model</property>
+        <value>jsb</value>
+      </equals>
+    </condition>
     <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
-    <min>-1.1</min>
-    <max>1.1</max>
-    <interpolation>
-      <entry><ind> -1.1 </ind><dep> -6.2 </dep></entry>
-      <entry><ind>  1.1 </ind><dep>  6.2 </dep></entry>
-    </interpolation>
+    <factor>5.64</factor>
+    <min-deg> -6.2 </min-deg>
+    <max-deg>  6.2 </max-deg>
     <center>
       <x-m> 0.00 </x-m>
       <y-m> 0.00 </y-m>
@@ -62,7 +66,32 @@
       <z>  0 </z>
     </axis>
   </animation>
-  
+
+<!-- Slip ball for YASim -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ball</object-name>
+    <condition>
+      <equals>
+        <property>sim/flight-model</property>
+        <value>yasim</value>
+      </equals>
+    </condition>
+    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <factor>15</factor>
+    <min-deg> -6.2 </min-deg>
+    <max-deg>  6.2 </max-deg>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.22 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>  
 
   <animation>
     <type>rotate</type>

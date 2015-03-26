@@ -8,7 +8,7 @@ name "face"
 loc 0.0063665 0 -4.92e-005
 data 4
 face
-texture "rpm.png"
+texture "rpm.dds"
 crease 45.000000
 numvert 17
 -0.000216 -1.2e-006 0.0011544
@@ -131,7 +131,7 @@ name "fond"
 loc -0.0009703 0 0
 data 4
 fond
-texture "rpm.png"
+texture "rpm.dds"
 crease 45.000000
 numvert 192
 0.0086736 -0.0381972 0.0255228
@@ -1453,7 +1453,7 @@ name "needle1"
 loc 0.0019541 0 0
 data 7
 needle1
-texture "rpm.png"
+texture "rpm.dds"
 crease 45.000000
 numvert 128
 0.0070284 -0.0108228 0.0032172
@@ -2271,7 +2271,7 @@ name "needle2"
 loc 0.0019541 0 0
 data 7
 needle2
-texture "rpm.png"
+texture "rpm.dds"
 crease 45.000000
 numvert 128
 0.0061032 0.0052692 -0.0012348
@@ -3089,7 +3089,7 @@ name "visses"
 loc 0.0080477 -0.0360924 -0.0361476
 data 6
 visses
-texture "rpm.png"
+texture "rpm.dds"
 crease 45.000000
 numvert 68
 0.000382801 0 0.0718884

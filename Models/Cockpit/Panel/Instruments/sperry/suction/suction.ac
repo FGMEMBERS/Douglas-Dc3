@@ -8,7 +8,7 @@ name "face"
 loc 0.009174 0.000168 0.00014
 data 4
 face
-texture "suction.png"
+texture "suction.dds"
 texrep 1 1
 numvert 100
 -0.006475 -0.000092 -0.033846
@@ -573,7 +573,7 @@ name "fond"
 loc 0.003386 0.000168 0.00014
 data 4
 fond
-texture "suction.png"
+texture "suction.dds"
 texrep 1 1
 numvert 129
 0.001678 -0.025388 -0.016804
@@ -1384,7 +1384,7 @@ name "needle"
 loc 0.001324 0.000168 0.00014
 data 6
 needle
-texture "suction.png"
+texture "suction.dds"
 texrep 1 1
 numvert 10
 0.000362 0.003034 -0.000325

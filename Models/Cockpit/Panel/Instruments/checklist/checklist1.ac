@@ -7,7 +7,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "checklist.png"
+texture "checklist.dds"
 texrep 1 1
 numvert 16
 0.002564 0.049782 -0.029916
@@ -110,7 +110,7 @@ name "texte"
 loc 0 0 -0
 data 5
 texte
-texture "checklist.png"
+texture "checklist.dds"
 texrep 1 1
 numvert 4
 -0.002808 0.049782 -0.027232

@@ -9,7 +9,7 @@ name "Ldamper"
 loc -9.624232 -4.096942 2.668361
 data 7
 Ldamper
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 84
@@ -314,7 +314,7 @@ name "Lstrut1"
 loc -9.690713 -3.127292 2.668362
 data 7
 Lstrut1
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 50
@@ -527,7 +527,7 @@ name "Lstrut2"
 loc -9.741632 -3.645601 2.668361
 data 7
 Lstrut2
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 86
@@ -874,7 +874,7 @@ name "Rdamper"
 loc -9.624232 -4.096942 -2.668
 data 7
 Rdamper
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 84
@@ -1179,7 +1179,7 @@ name "Rstrut1"
 loc -9.690713 -3.127292 -2.668
 data 7
 Rstrut1
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 50
@@ -1392,7 +1392,7 @@ name "Rstrut2"
 loc -9.741632 -3.645601 -2.668
 data 7
 Rstrut2
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 86
@@ -1739,7 +1739,7 @@ name "axeFD"
 loc -2.322154 -4.126787 -2.668
 data 5
 axeFD
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 50.000000
 numvert 32
@@ -1859,7 +1859,7 @@ name "axeFG"
 loc -2.322154 -4.126787 2.668364
 data 5
 axeFG
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 50.000000
 numvert 32
@@ -1979,7 +1979,7 @@ name "flotteurs"
 loc -3.121661 -3.442654 0
 data 9
 flotteurs
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 1288
@@ -8778,7 +8778,7 @@ name "gouvernailD"
 loc 3.730653 -2.6299 -2.668
 data 11
 gouvernailD
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 numvert 66
 0.230262 -0.362881 -0.020248
@@ -9302,7 +9302,7 @@ name "gouvernailG"
 loc 3.730653 -2.6299 2.668
 data 11
 gouvernailG
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 numvert 66
 0.230262 -0.362881 -0.020248
@@ -9826,7 +9826,7 @@ name "roueAD"
 loc -9.544924 -4.302437 -2.668
 data 6
 roueAD
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 1250
@@ -16847,7 +16847,7 @@ name "roueAG"
 loc -9.544924 -4.302437 2.668362
 data 6
 roueAG
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 30.000001
 numvert 1250
@@ -23868,7 +23868,7 @@ name "roueFD"
 loc -2.111527 -4.175046 -2.668
 data 6
 roueFD
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 50.000000
 numvert 2378
@@ -37777,7 +37777,7 @@ name "roueFG"
 loc -2.111527 -4.175046 2.66836
 data 6
 roueFG
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 crease 50.000000
 numvert 2378
@@ -51686,7 +51686,7 @@ name "structure"
 loc -2.252336 -2.226012 0
 data 9
 structure
-texture "texture.png"
+texture "texture.dds"
 texrep 1 1
 numvert 704
 2.475698 0.858278 0.928738

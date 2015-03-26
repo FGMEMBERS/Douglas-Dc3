@@ -4,29 +4,6 @@
 
   <path>dc-3.ac</path>
 
-  <nasal>
-    <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Douglas-Dc3/Models/Liveries", 10);
-
-      var self = cmdarg();
-
-      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
-      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
-
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-
-      crew_door.alias(float_0);
-      passenger_door.alias(float_1);
-    </load>
-
-    <unload>
-      livery_update.stop();
-      crew_door.unalias();
-      passenger_door.unalias();
-    </unload>
-  </nasal>
-
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
@@ -82,7 +59,7 @@
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>texture.png</texture>
+    <texture>texture.dds</texture>
 <!--
     <diffuse>
       <red-prop>diffuse/red</red-prop>
@@ -114,9 +91,6 @@
 -->
   </animation>
 
-<!--
-    <inherits-from>Aircraft/Douglas-Dc3/Models/Effects/model-reflect</inherits-from>
--->
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
@@ -138,6 +112,28 @@
     <object-name>cargoB</object-name>
     <object-name>antennes</object-name>
   </effect>
+
+  <!--<effect>
+    <inherits-from>Aircraft/Douglas-Dc3/Models/Effects/model-reflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>air</object-name>
+    <object-name>porteA</object-name>
+    <object-name>porteB</object-name>
+    <object-name>cargoA</object-name>
+    <object-name>cargoB</object-name>
+    <object-name>antennes</object-name>
+  </effect>-->
 
   <animation>
     <type>shader</type>
@@ -203,7 +199,7 @@
 
     <property-base>sim/model/livery-engine</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>Engines/Propeller/propeller.png</texture>
+    <texture>Engines/Propeller/propeller.dds</texture>
 <!--
     <diffuse>
       <red-prop>diffuse/red</red-prop>
@@ -422,7 +418,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteA</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/multiplay/generic/float[0]</property>
     <factor> -170 </factor>
     <axis>
       <x1-m> -7.519 </x1-m>
@@ -437,7 +433,7 @@
   <animation>
     <type>rotate</type>
     <object-name>porteB</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/multiplay/generic/float[1]</property>
     <factor>  100 </factor>
     <axis>
       <x1-m>  2.037 </x1-m>

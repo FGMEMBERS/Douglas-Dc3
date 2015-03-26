@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">C-47</name>
-        <texture>Liveries/c47.png</texture>
+        <texture>Liveries/c47.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/c47-prop.png</texture>
+        <texture>Liveries/c47-prop.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

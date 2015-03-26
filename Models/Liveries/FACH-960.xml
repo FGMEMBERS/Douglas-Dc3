@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">FACH 960 (Anctartic)</name>
-        <texture>Liveries/FACH-960.png</texture>
+        <texture>Liveries/FACH-960.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/FACH-960-prop.png</texture>
+        <texture>Liveries/FACH-960-prop.dds</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
