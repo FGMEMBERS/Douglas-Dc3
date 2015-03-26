@@ -1522,7 +1522,7 @@ OBJECT poly
 name "Cone-texture"
 data 12
 Cone-texture
-texture "light-gradient-lamp.dds"
+texture "light-gradient-lamp.png"
 texrep 1 1
 crease 45.000000
 numvert 193

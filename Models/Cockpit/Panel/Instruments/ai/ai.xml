@@ -17,7 +17,7 @@
 	
     <!-- Objets transparents -->
     <object-name>vitre</object-name>
-  </animation>
+  </animation> 
 
   <animation>
     <type>shader</type>
@@ -55,20 +55,20 @@
     </axis>
   </animation>
 
-<!--
-  <animation> 
+
+  <animation>
     <type>translate</type>
     <object-name>ai</object-name>
     <property>instrumentation/attitude-indicator/indicated-pitch-deg</property>
-    <factor>0.0005</factor>
-    <max>30</max>
-    <min>-30</min>
+    <factor>-0.0015</factor>
+    <max-m>0.025</max-m>
+    <min-m>-0.025</min-m>
     <axis> 
       <x> 0 </x>
       <y> 0 </y>
       <z> 1 </z>
     </axis>
   </animation>
--->
+
 
 </PropertyList>

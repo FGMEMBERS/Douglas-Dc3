@@ -13,7 +13,7 @@ kids 8
 OBJECT poly
 name "face"
 loc -0.00256703 -0.00197778 -0.00158848
-texture "chronograph.dds"
+texture "chronograph.png"
 crease 45.000000
 numvert 36
 0.000495784 -0.0152644 0.0365342
@@ -180,7 +180,7 @@ kids 4
 OBJECT poly
 name "ElapsedMinutesHand"
 loc -0.00117145 0.00151093 -0.0122219
-texture "chronograph.dds"
+texture "chronograph.png"
 crease 45.000000
 numvert 12
 0 0.00404666 -0.000811864
@@ -218,7 +218,7 @@ kids 0
 OBJECT poly
 name "HourHand"
 loc -0.00186758 -0.00699221 0.0105561
-texture "chronograph.dds"
+texture "chronograph.png"
 crease 61.000000
 numvert 6
 0 0.00457645 -0.0201988
@@ -251,7 +251,7 @@ kids 0
 OBJECT poly
 name "MinuteHand"
 loc -0.00151765 0.0047306 0.00464886
-texture "chronograph.dds"
+texture "chronograph.png"
 crease 61.000000
 numvert 6
 0 0.00310791 -0.0151694
@@ -284,7 +284,7 @@ kids 0
 OBJECT poly
 name "SecondHand"
 loc -0.000924609 -0.00911315 -0.00315552
-texture "chronograph.dds"
+texture "chronograph.png"
 crease 61.000000
 numvert 4
 0 -0.00281029 -0.00848345
@@ -321,7 +321,7 @@ kids 0
 OBJECT poly
 name "mount"
 loc -0.00457466 -0.00187932 -0.00167524
-texture "chronometer-mount.dds"
+texture "chronometer-mount.png"
 crease 45.000000
 numvert 46
 -0.00252733 0.0454409 -0.043121
@@ -615,7 +615,7 @@ kids 0
 OBJECT poly
 name "disk"
 loc -0.000260808 -0.00307512 -0.0017649
-texture "chronometer-mount.dds"
+texture "chronometer-mount.png"
 crease 45.000000
 numvert 9
 0 0 0
@@ -680,7 +680,7 @@ kids 0
 OBJECT poly
 name "knob"
 loc 0.00840048 -0.0353533 0.0298267
-texture "chronometer-mount.dds"
+texture "chronometer-mount.png"
 crease 95.000000
 numvert 17
 0.00775883 0 0
@@ -809,7 +809,7 @@ kids 0
 OBJECT poly
 name "button"
 loc 0.00575881 0.0308165 -0.0329345
-texture "chronometer-mount.dds"
+texture "chronometer-mount.png"
 crease 96.000000
 numvert 17
 0.0042461 0.00451957 0.00446714

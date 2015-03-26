@@ -30,7 +30,11 @@ Before you go flying, you'll need to learn how to start the engines.
       <value>0.0</value>
     </set>
     <set>
-      <property>controls/engines/engine/magnetos</property>
+      <property>controls/engines/engine[0]/magnetos</property>
+      <value>0</value>
+    </set>
+    <set>
+      <property>controls/engines/engine[1]/magnetos</property>
       <value>0</value>
     </set>
     <set>
@@ -142,8 +146,8 @@ Before you go flying, you'll need to learn how to start the engines.
 	<message>Turn the switch on the main LH position</message>
       <condition>
         <less-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </less-than>
       </condition>
     </error>
@@ -151,16 +155,16 @@ Before you go flying, you'll need to learn how to start the engines.
 	  <message>Turn the switch on the main LH position</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </greater-than>
       </condition>
     </error>
     <exit> 
       <condition>
 		<equals>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </equals>
       </condition>
     </exit>  
@@ -182,8 +186,8 @@ Before you go flying, you'll need to learn how to start the engines.
 	  <message>Turn the switch on the main RH position</message>
       <condition>
         <less-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </less-than>
       </condition>
     </error>
@@ -191,16 +195,16 @@ Before you go flying, you'll need to learn how to start the engines.
 	  <message>Turn the switch on the main RH position</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </greater-than>
       </condition>
     </error>
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </equals>
       </condition>
     </exit>  
@@ -244,7 +248,7 @@ Before you go flying, you'll need to learn how to start the engines.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -253,7 +257,7 @@ Before you go flying, you'll need to learn how to start the engines.
 
  <!-- Mixture-->
   <step>
-    <message>Mixture on Auto Rich</message>
+    <message>Mixture a bit higher than Auto Rich</message>
     <view>
       <heading-offset-deg>0</heading-offset-deg>
       <pitch-offset-deg>-65</pitch-offset-deg>
@@ -269,7 +273,7 @@ Before you go flying, you'll need to learn how to start the engines.
       <condition>
         <less-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.55</value>
+          <value>0.75</value>
         </less-than>
       </condition>
     </error>
@@ -278,7 +282,7 @@ Before you go flying, you'll need to learn how to start the engines.
       <condition>
         <greater-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.75</value>
+          <value>0.90</value>
         </greater-than>
       </condition>
     </error>
@@ -287,11 +291,11 @@ Before you go flying, you'll need to learn how to start the engines.
         <and>
           <greater-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.55</value>
+            <value>0.75</value>
           </greater-than>
           <less-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.75</value>
+            <value>0.90</value>
           </less-than>
         </and>
       </condition>
@@ -397,7 +401,7 @@ Before you go flying, you'll need to learn how to start the engines.
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[1]/magnetos-pos</property>
+          <property>controls/engines/engine[1]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
@@ -476,7 +480,7 @@ Before you go flying, you'll need to learn how to start the engines.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>
@@ -501,7 +505,7 @@ Before you go flying, you'll need to learn how to start the engines.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -523,7 +527,7 @@ Before you go flying, you'll need to learn how to start the engines.
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[0]/magnetos-pos</property>
+          <property>controls/engines/engine[0]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
@@ -602,7 +606,7 @@ Before you go flying, you'll need to learn how to start the engines.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>

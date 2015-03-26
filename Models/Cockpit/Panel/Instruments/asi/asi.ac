@@ -8,7 +8,7 @@ name "face"
 loc 0.0034421 -0.000187 -5.62e-005
 data 4
 face
-texture "asi.dds"
+texture "asi.png"
 crease 45.000000
 numvert 17
 -0.000216 -1.19999e-006 0.0011544
@@ -131,7 +131,7 @@ name "fond"
 loc -0.0009703 -0.000187 -7.00004e-006
 data 4
 fond
-texture "asi.dds"
+texture "asi.png"
 crease 45.000000
 numvert 192
 0.0086736 -0.0381972 0.0255228
@@ -1453,7 +1453,7 @@ name "needle"
 loc 0.0034997 -0.000187 -7.00004e-006
 data 6
 needle
-texture "asi.dds"
+texture "asi.png"
 crease 45.000000
 numvert 47
 7.31999e-005 0.0334536 0.0010344
@@ -1779,7 +1779,7 @@ name "visses"
 loc 0.0080477 -0.0362794 0.0357338
 data 6
 visses
-texture "asi.dds"
+texture "asi.png"
 crease 45.000000
 numvert 68
 0.000382801 0 0

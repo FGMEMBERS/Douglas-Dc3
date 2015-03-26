@@ -8,7 +8,7 @@ name "face"
 loc 0.002307 0.000002 -0
 data 4
 face
-texture "deicepress.dds"
+texture "deicepress.png"
 texrep 1 1
 numvert 17
 0.003057 -0.000001 -0.000003
@@ -131,7 +131,7 @@ name "fond"
 loc 0 0.000001 0.000002
 data 4
 fond
-texture "deicepress.dds"
+texture "deicepress.png"
 texrep 1 1
 numvert 192
 0.006318 -0.027822 0.01859
@@ -1453,7 +1453,7 @@ name "needle"
 loc 0.000976 0.000002 -0
 data 6
 needle
-texture "deicepress.dds"
+texture "deicepress.png"
 texrep 1 1
 numvert 34
 0.004909 -0.001022 0.015242
@@ -1671,7 +1671,7 @@ name "visses"
 loc 0 0.000001 0.000002
 data 6
 visses
-texture "deicepress.dds"
+texture "deicepress.png"
 texrep 1 1
 numvert 68
 0.006847 -0.026289 0.026033

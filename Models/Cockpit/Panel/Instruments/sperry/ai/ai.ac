@@ -8,7 +8,7 @@ name "axe"
 loc 0.002299 -0.001194 -0.000002
 data 3
 axe
-texture "ai.dds"
+texture "ai.png"
 texrep 1 1
 numvert 8
 -0.00096 -0.000566 0.044419
@@ -61,7 +61,7 @@ name "cadran"
 loc 0.002617 -0 -0.000002
 data 6
 cadran
-texture "ai.dds"
+texture "ai.png"
 texrep 1 1
 numvert 143
 -0.000872 -0.000865 0.000896
@@ -963,7 +963,7 @@ name "face"
 loc -0.001793 0 -0.000002
 data 4
 face
-texture "ai.dds"
+texture "ai.png"
 texrep 1 1
 numvert 17
 0.001046 -0.000332 -0.053506
@@ -1086,7 +1086,7 @@ name "fond"
 loc -0.000269 0 -0.000002
 data 4
 fond
-texture "ai.dds"
+texture "ai.png"
 texrep 1 1
 numvert 128
 -0.00081 0.011429 0.056894

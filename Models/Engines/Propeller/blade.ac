@@ -7,7 +7,7 @@ name "pale"
 loc 0 0.153242 -0
 data 5
 pale
-texture "propeller.dds"
+texture "propeller.png"
 texrep 1 1
 numvert 417
 0 0.145086 -0.027824

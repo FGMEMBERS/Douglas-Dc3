@@ -7,7 +7,7 @@ name "rideaugrand"
 loc 0 0 -0
 data 11
 rideaugrand
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 numvert 490
 -0.003456 0.365287 0.565458

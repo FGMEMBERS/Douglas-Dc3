@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">FACH 951 (Camouflage)</name>
-        <texture>Liveries/FACH-951.dds</texture>
+        <texture>Liveries/FACH-951.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/FACH-951-prop.dds</texture>
+        <texture>Liveries/FACH-951-prop.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

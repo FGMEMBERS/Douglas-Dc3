@@ -8,7 +8,7 @@ name "Compass"
 loc 0 0 -0
 data 7
 Compass
-texture "compass.dds"
+texture "compass.png"
 texrep 1 1
 crease 45.000001
 numvert 32
@@ -163,7 +163,7 @@ name "box"
 loc 0 0 -0
 data 3
 box
-texture "compass.dds"
+texture "compass.png"
 texrep 1 1
 crease 45.000001
 numvert 20
@@ -229,7 +229,7 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "compass.dds"
+texture "compass.png"
 texrep 1 1
 crease 30.000001
 numvert 39
@@ -497,7 +497,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "compass.dds"
+texture "compass.png"
 texrep 1 1
 crease 45.000001
 numvert 193
@@ -1373,7 +1373,7 @@ name "knob"
 loc 0 0 -0
 data 4
 knob
-texture "compass.dds"
+texture "compass.png"
 texrep 1 1
 crease 45.000001
 numvert 46

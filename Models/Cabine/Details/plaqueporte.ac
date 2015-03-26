@@ -7,7 +7,7 @@ name "plaqueporte"
 loc 0 0 -0
 data 11
 plaqueporte
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 numvert 30
 -0.005068 0.063492 -0.196339

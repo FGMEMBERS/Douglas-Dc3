@@ -57,7 +57,7 @@
         <not><property>sim/model/config/details-high</property></not>
       </and>
     </condition>
-    <texture>colors.dds</texture>
+    <texture>colors.png</texture>
   </animation>
 
   <!-- Civilian red version -->
@@ -83,7 +83,7 @@
         <property>sim/model/config/details-high</property>
       </and>
     </condition>
-    <texture>colors_details.dds</texture>
+    <texture>colors_details.png</texture>
   </animation>
 
   <!-- Civilian gray version -->
@@ -109,7 +109,7 @@
         <not><property>sim/model/config/details-high</property></not>
       </and>
     </condition>
-    <texture>colors_gray.dds</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
   <!-- Civilian gray version -->
@@ -135,7 +135,7 @@
         <property>sim/model/config/details-high</property>
       </and>
     </condition>
-    <texture>colors_gray_details.dds</texture>
+    <texture>colors_gray_details.png</texture>
   </animation>
 
   <!-- Military version -->
@@ -158,7 +158,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>colors_paras.dds</texture>
+    <texture>colors_paras.png</texture>
   </animation>
 
   <!-- Les détails -->

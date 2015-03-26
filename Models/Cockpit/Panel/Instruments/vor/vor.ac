@@ -8,7 +8,7 @@ name "ALTbezel"
 loc -0.00307494 0 0
 data 8
 ALTbezel
-texture "vor.dds"
+texture "vor.png"
 crease 30.000002
 numvert 17
 0.011281 0.0438682 -0.0433771
@@ -139,7 +139,7 @@ name "ALTbezel.001"
 loc -0.00307494 0 0
 data 12
 ALTbezel.001
-texture "vor.dds"
+texture "vor.png"
 crease 30.000002
 numvert 17
 0.011281 -0.0433109 -0.0433771
@@ -270,7 +270,7 @@ name "ALTbezel.002"
 loc -0.00307494 0 0
 data 12
 ALTbezel.002
-texture "vor.dds"
+texture "vor.png"
 crease 30.000002
 numvert 17
 0.011281 0.0438682 0.042889
@@ -401,7 +401,7 @@ name "VOR.FR"
 loc -0.00307494 0 0
 data 6
 VOR.FR
-texture "vor.dds"
+texture "vor.png"
 crease 45.000000
 numvert 4
 0.00765648 0.00150912 -0.0289051
@@ -422,7 +422,7 @@ name "VOR.GlidescopeNeedle"
 loc -0.00307494 0 0
 data 20
 VOR.GlidescopeNeedle
-texture "vor.dds"
+texture "vor.png"
 crease 45.000000
 numvert 26
 0.007596 -0.00076608 0.00710208
@@ -514,7 +514,7 @@ name "VOR.LocalizerNeedle"
 loc -0.00307494 0 0
 data 19
 VOR.LocalizerNeedle
-texture "vor.dds"
+texture "vor.png"
 crease 45.000000
 numvert 26
 0.0071064 -0.028535 0.00076608
@@ -606,7 +606,7 @@ name "VOR.NAV"
 loc -0.00307494 0 0
 data 7
 VOR.NAV
-texture "vor.dds"
+texture "vor.png"
 crease 45.000000
 numvert 4
 0.00756576 0.00954576 -0.0235901
@@ -627,7 +627,7 @@ name "VOR.TO"
 loc -0.00307494 0 0
 data 6
 VOR.TO
-texture "vor.dds"
+texture "vor.png"
 crease 45.000000
 numvert 4
 0.0076752 0.00190656 -0.0285221
@@ -688,7 +688,7 @@ name "VOR.face"
 loc -0.00307494 0 0
 data 8
 VOR.face
-texture "vor.dds"
+texture "vor.png"
 crease 30.000002
 numvert 33
 0.00696384 -0.0302328 -0.0302328
@@ -923,7 +923,7 @@ name "VOR.knob"
 loc -0.00307494 0 0
 data 8
 VOR.knob
-texture "vor.dds"
+texture "vor.png"
 crease 30.000002
 numvert 97
 0.0100786 -0.0476813 0.0392054
@@ -1446,7 +1446,7 @@ name "VOR.ring"
 loc 0.00427338 -0.000665987 0
 data 8
 VOR.ring
-texture "vor.dds"
+texture "vor.png"
 crease 30.000002
 numvert 64
 0 -0.0353887 -0.0363629
@@ -1744,7 +1744,7 @@ name "fond"
 loc -0.00307494 0 0
 data 4
 fond
-texture "vor.dds"
+texture "vor.png"
 crease 30.000002
 numvert 320
 0.0104083 -0.0458366 0.0306274

@@ -155,9 +155,9 @@
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.013 </x-m> <!-- initial -0.01 -->
+      <x-m> -0.013 </x-m> <!-- -0.01 -->
       <y-m> -0.256  </y-m>
-      <z-m>  0.36 </z-m> <!-- initial 0.381 -->
+      <z-m>  0.36 </z-m> <!-- 0.381 -->
     </offsets>
   </model>
 
@@ -208,8 +208,8 @@
     <path>Aircraft/Douglas-Dc3/Models/Cockpit/Panel/Instruments/rmi/rmi.xml</path>
     <offsets>
       <x-m> -0.013 </x-m>
-      <y-m> -0.291 </y-m>  <!-- initial -0.264 -->
-      <z-m>  0.485 </z-m> <!-- initial 0.507 -->
+      <y-m> -0.291 </y-m> <!-- -0.264 -->
+      <z-m>  0.485 </z-m> <!-- 0.507 -->
     </offsets>
   </model>
   

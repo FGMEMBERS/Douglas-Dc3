@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Varig</name>
-        <texture>Liveries/varig.dds</texture>
+        <texture>Liveries/varig.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/varig-prop.dds</texture>
+        <texture>Liveries/varig-prop.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

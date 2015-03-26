@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">RAF Transport Command</name>
-        <texture>Liveries/KK116.dds</texture>
+        <texture>Liveries/KK116.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
            <livery-engine>
-        <texture>Liveries/KK116-propeller.dds</texture>
+        <texture>Liveries/KK116-propeller.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

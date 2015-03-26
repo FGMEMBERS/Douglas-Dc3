@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Lan Chile (1946)</name>
-        <texture>Liveries/CC-CLDT.dds</texture>
+        <texture>Liveries/CC-CLDT.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/CC-CLDT-prop.dds</texture>
+        <texture>Liveries/CC-CLDT-prop.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

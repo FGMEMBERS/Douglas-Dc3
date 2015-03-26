@@ -7,7 +7,7 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "fond.dds"
+texture "fond.png"
 texrep 1 1
 crease 45.000001
 numvert 192
@@ -882,7 +882,7 @@ name "lampoff"
 loc 0 0 -0
 data 7
 lampoff
-texture "Light1.dds"
+texture "Light1.png"
 texrep 1 1
 crease 30.000001
 numvert 513
@@ -4958,7 +4958,7 @@ name "lampon"
 loc 0 0 -0
 data 6
 lampon
-texture "Light1.dds"
+texture "Light1.png"
 texrep 1 1
 crease 30.000001
 numvert 513

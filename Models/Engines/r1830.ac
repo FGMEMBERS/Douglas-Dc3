@@ -7,7 +7,7 @@ OBJECT poly
 name "bloc"
 data 4
 bloc
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 83
@@ -564,7 +564,7 @@ OBJECT poly
 name "bougies"
 data 7
 bougies
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 474
@@ -4188,7 +4188,7 @@ OBJECT poly
 name "caches"
 data 6
 caches
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 476
@@ -8154,7 +8154,7 @@ OBJECT poly
 name "cames"
 data 5
 cames
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 641
@@ -12604,7 +12604,7 @@ OBJECT poly
 name "echappes"
 data 8
 echappes
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 120
@@ -13322,7 +13322,7 @@ OBJECT poly
 name "ecrous"
 data 6
 ecrous
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 492
@@ -15072,7 +15072,7 @@ OBJECT poly
 name "moteurlow"
 data 9
 moteurlow
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 703
@@ -19781,7 +19781,7 @@ OBJECT poly
 name "pistons"
 data 7
 pistons
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 3094
@@ -47665,7 +47665,7 @@ OBJECT poly
 name "souflets"
 data 8
 souflets
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 1368
@@ -58547,7 +58547,7 @@ OBJECT poly
 name "tuyaux"
 data 6
 tuyaux
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 1271

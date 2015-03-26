@@ -27,7 +27,7 @@
         </equals>
       </and>
     </condition>
-    <texture>colors.dds</texture>
+    <texture>colors.png</texture>
   </animation>
 -->
   <!-- Civilian gray version -->
@@ -45,7 +45,7 @@
         </equals>
       </and>
     </condition>
-    <texture>colors_gray.dds</texture>
+    <texture>colors_gray.png</texture>
   </animation>
   -->
   <animation>
@@ -53,7 +53,7 @@
     <object-name>corps</object-name>
 	<object-name>reglage</object-name>	
     <object-name>bras</object-name>    
-    <texture>wipers.dds</texture>
+    <texture>wipers.png</texture>
   </animation>
 
   <animation>

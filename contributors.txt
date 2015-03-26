@@ -9,6 +9,16 @@
 ##                                                                  ##
 ######################################################################
 
+######################################################################
+
+# 2012 - 2013 ==> (dany93)
+(FDM JSBSim)
+- Amélioration du FDM
+- CG, Répartition des charges
+- Propulsion : réfection complète motorisation, hélices
+- Conduite et animation roulette de queue
+- Mise en drapeau hélices
+- Reprise gestion carburant
 
 ######################################################################
 

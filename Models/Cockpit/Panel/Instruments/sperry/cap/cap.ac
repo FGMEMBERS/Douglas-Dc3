@@ -9,7 +9,7 @@ OBJECT poly
 name "box"
 data 3
 box
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 45.000000
 numvert 20
@@ -74,7 +74,7 @@ OBJECT poly
 name "compass"
 data 7
 compass
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 45.000000
 numvert 32
@@ -228,7 +228,7 @@ OBJECT poly
 name "conserv"
 data 7
 conserv
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 45.000000
 numvert 32
@@ -382,7 +382,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -610,7 +610,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 45.000000
 numvert 129

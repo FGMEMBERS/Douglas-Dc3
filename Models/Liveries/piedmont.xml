@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">piedmont-airline</name>
-        <texture>Liveries/piedmont-airlines.dds</texture>
+        <texture>Liveries/piedmont-airlines.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/propeller.dds</texture>
+        <texture>Liveries/propeller.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

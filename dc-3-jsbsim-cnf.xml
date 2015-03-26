@@ -18,6 +18,11 @@
     <startup>
       <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
     </startup>
+    
+    <!-- freeze fuel = false: fuel consumption calculated by the FDM -->
+    <freeze>
+      <fuel type="bool">false</fuel>
+    </freeze>
 
     <model>
       <path>Aircraft/Douglas-Dc3/Models/dc-3-jsbsim.xml</path>
@@ -36,7 +41,7 @@
       <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>
     </sound>
   </sim>
-  
+
   <payload>
      <weight>
        <name>Compartment A</name>
@@ -88,9 +93,24 @@
     </weight>
   </payload>
 
-  <!-- ############################### -->
-  <!-- ######## DUAL CONTROL ######### -->
-  <nasal>
+  <consumables>
+    <fuel>
+       <tank n="4">
+      <name>Carb LH</name>
+        <capacity unit="LBS"> 0.5 </capacity>
+        <contents unit="LBS"> 0 </contents>    
+      </tank>
+      <tank n="5">
+      <name>Carb RH</name>
+        <capacity unit="LBS"> 0.5 </capacity>
+        <contents unit="LBS"> 0 </contents>    
+      </tank>
+    </fuel>
+  </consumables>
+
+  <!-- ################################################### -->
+  <!-- ######## DUAL CONTROL and FUEL Management ######### -->
+  <nasal>    
     <dual_control_tools>
       <file>Aircraft/Douglas-Dc3/DualControl/dual-control-tools.nas</file>
     </dual_control_tools>
@@ -100,8 +120,11 @@
     <dual_control>
       <file>Aircraft/Douglas-Dc3/DualControl/pilot-dual-control.nas</file>
     </dual_control>
+    <fuel>
+      <file>Aircraft/Douglas-Dc3/Nasal/fuel-jsbsim.nas</file>
+    </fuel>
   </nasal>
-  <!-- ######## DUAL CONTROL ######### -->
-  <!-- ############################### -->
+  <!-- ######## DUAL CONTROL and FUEL Management ######### -->
+  <!-- ################################################### -->
     
 </PropertyList>

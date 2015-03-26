@@ -103,7 +103,7 @@
         <line/>
         <line>========== HowTo use engines handle ==========</line>
         <line>Hold Left Mouse Button on engine handle and up/down your mouse in order to adjust setting of 2 engines</line>
-        <line>Hold Scrool mouse Button on engine handle and up/down your mouse in order to adjust setting of 1 engine</line>
+        <line>Hold Scroll Mouse Button on engine handle and up/down your mouse in order to adjust setting of 1 engine</line>
         <line/>
     </help>
 
@@ -111,10 +111,10 @@
       <start-idling type="bool">false</start-idling>
       <config>
         <show-yokes type="bool">true</show-yokes>
-        <show-pilot type="bool">true</show-pilot>
+        <show-pilot type="bool">false</show-pilot>
         <show-copilot type="bool">true</show-copilot>
         <details-high type="bool">false</details-high>
-        <glass-reflection type="bool">true</glass-reflection>
+        <glass-reflection type="bool">false</glass-reflection>
         <light-cone type="bool">true</light-cone>
         <version type="string">civilian-red</version>
       </config>
@@ -125,10 +125,6 @@
         <ai-detailed>1500</ai-detailed>
       </static-lod>
     </rendering>
-
-    <freeze>
-      <fuel type="bool">true</fuel>
-    </freeze>
 
     <menubar include="Dialogs/dc-3-menu.xml"/>
 
@@ -258,8 +254,8 @@
         <x-offset-m archive="y"> -0.475 </x-offset-m> <!-- Right -->
         <y-offset-m archive="y">  0.434 </y-offset-m> <!-- Up    -->
         <z-offset-m archive="y"> -7.965 </z-offset-m> <!-- Back  -->
-        <pitch-offset-deg> -15.9 </pitch-offset-deg>-->
-        <default-field-of-view-deg> 90 </default-field-of-view-deg>
+        <pitch-offset-deg> -15.9 </pitch-offset-deg>--> <!-- -20 -->
+        <default-field-of-view-deg> 90 </default-field-of-view-deg> <!-- 70 -->
         <limits>
           <enabled type="bool">false</enabled>
         </limits>
@@ -324,9 +320,14 @@
     </engines>
     <fuel>
       <tank-gauge type="int">0</tank-gauge>
-      <left-valve type="int">0</left-valve>
-      <right-valve type="int">0</right-valve>
+      <left-valve type="int">-1</left-valve>
+      <right-valve type="int">-1</right-valve>
       <long-range type="bool">false</long-range>
+      <selected-tank type="int">0</selected-tank>
+      <left-valve-lock type="bool">0</left-valve-lock>
+      <right-valve-lock type="bool">0</right-valve-lock>
+      <left-valve-pos type="double">0</left-valve-pos>
+      <right-valve-pos type="double">0</right-valve-pos>
     </fuel>
     <paratroopers>
       <paratroopers type="float">26</paratroopers>
@@ -370,15 +371,19 @@
   <consumables>
     <fuel>
       <tank n="0">
+        <name>AUX RH</name>
         <unusable-gal_us>5.0</unusable-gal_us>
       </tank>
       <tank n="1">
+      <name>MAIN RH</name>
         <unusable-gal_us>5.0</unusable-gal_us>
       </tank>
       <tank n="2">
+      <name>MAIN LH</name>
         <unusable-gal_us>5.0</unusable-gal_us>
       </tank>
       <tank n="3">
+      <name>AUX LH</name>
         <unusable-gal_us>5.0</unusable-gal_us>
       </tank>
     </fuel>
@@ -388,10 +393,12 @@
     <engine n="0">
       <engine-num type="int">0</engine-num>
       <running type="bool">false</running>
+      <fuel-psi-norm type="double">0</fuel-psi-norm>
     </engine>
     <engine n="1">
       <engine-num type="int">1</engine-num>
       <running type="bool">false</running>
+      <fuel-psi-norm type="double">0</fuel-psi-norm>
     </engine>
   </engines>
 
@@ -407,13 +414,12 @@
       <file>Aircraft/Douglas-Dc3/Nasal/paratroopers.nas</file>
     </para>
     <dc3>
-      <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>
-      <file>Aircraft/Douglas-Dc3/Nasal/fuel.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/hydraulic.nas</file>
       <file>Aircraft/Douglas-Dc3/Nasal/wipers.nas</file>
     </dc3>

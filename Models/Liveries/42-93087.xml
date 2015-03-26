@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">42-93087 - Camel Caravan To Berlin</name>
-        <texture>Liveries/42-93087.dds</texture>
+        <texture>Liveries/42-93087.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
            <livery-engine>
-        <texture>Liveries/42-93087-propeller.dds</texture>
+        <texture>Liveries/42-93087-propeller.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

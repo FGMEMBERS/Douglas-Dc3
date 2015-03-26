@@ -41,7 +41,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle1</object-name>
-    <property>engines/engine/fuel-psi-norm</property>
+    <property>engines/engine[1]/fuel-psi-norm</property>
     <interpolation>
       <entry><ind>  0  </ind><dep> 0 </dep></entry>
       <entry><ind>  2  </ind><dep> 0 </dep></entry>
@@ -59,7 +59,7 @@
     <animation>
     <type>rotate</type>
     <object-name>needle2</object-name>
-    <property>engines/engine[1]/fuel-psi-norm</property>
+    <property>engines/engine[0]/fuel-psi-norm</property>
     <interpolation>
       <entry><ind>  0  </ind><dep> 0 </dep></entry>
       <entry><ind>  2  </ind><dep> 0 </dep></entry>

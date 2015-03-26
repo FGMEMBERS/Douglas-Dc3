@@ -145,8 +145,8 @@
       </engine>
     </engines>
     <fuel>
-      <left-valve type="int">0</left-valve>
-      <right-valve type="int">0</right-valve>
+      <left-valve type="int">-1</left-valve>
+      <right-valve type="int">-1</right-valve>
     </fuel>
     <anti-ice>
       <pitot-heat n="1" type="bool">false</pitot-heat>

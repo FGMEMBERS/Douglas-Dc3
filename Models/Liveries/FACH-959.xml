@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">FACH 959 (Ambulance)</name>
-        <texture>Liveries/FACH-959.dds</texture>
+        <texture>Liveries/FACH-959.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/FACH-959-prop.dds</texture>
+        <texture>Liveries/FACH-959-prop.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

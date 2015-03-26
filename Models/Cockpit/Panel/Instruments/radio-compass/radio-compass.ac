@@ -8,7 +8,7 @@ name "ALTbezel.003"
 loc 0.007515 -0.030264 0.029777
 data 12
 ALTbezel.003
-texture "radio-compass.dds"
+texture "radio-compass.png"
 texrep 1 1
 numvert 68
 0.000319 0 -0
@@ -502,7 +502,7 @@ name "face"
 loc 0.003677 -0.000187 -0.000048
 data 4
 face
-texture "radio-compass.dds"
+texture "radio-compass.png"
 texrep 1 1
 numvert 17
 -0.00018 -0.000001 0.000962
@@ -625,7 +625,7 @@ name "fond"
 loc 0 -0.000187 -0.000007
 data 4
 fond
-texture "radio-compass.dds"
+texture "radio-compass.png"
 texrep 1 1
 numvert 192
 0.007228 -0.031831 0.021269
@@ -1947,7 +1947,7 @@ name "needle"
 loc 0.00563 -0.000187 -0.000007
 data 6
 needle
-texture "radio-compass.dds"
+texture "radio-compass.png"
 texrep 1 1
 numvert 47
 0.000062 0.027878 0.000862

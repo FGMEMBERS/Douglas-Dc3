@@ -5,7 +5,7 @@
   <particlesystem>
     <name>wakeG</name>
 
-    <texture>wake.dds</texture>
+    <texture>wake.png</texture>
 
     <emissive>false</emissive>
     <lighting>true</lighting>

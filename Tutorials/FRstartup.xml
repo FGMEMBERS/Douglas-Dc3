@@ -31,7 +31,11 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
       <value>0.0</value>
     </set>
     <set>
-      <property>controls/engines/engine/magnetos</property>
+      <property>controls/engines/engine[0]/magnetos</property>
+      <value>0</value>
+    </set>
+    <set>
+      <property>controls/engines/engine[1]/magnetos</property>
       <value>0</value>
     </set>
     <set>
@@ -139,8 +143,8 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	<message>Placez l'interrupteur sur la position Main LH</message>
       <condition>
         <less-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </less-than>
       </condition>
     </error>
@@ -148,16 +152,16 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	  <message>Placez l'interrupteur sur la position Main LH</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </greater-than>
       </condition>
     </error>
     <exit> 
       <condition>
 		<equals>
-          <property>controls/fuel/left-valve-pos</property>
-          <value>3</value>
+          <property>controls/fuel/left-valve</property>
+          <value>2</value>
         </equals>
       </condition>
     </exit>  
@@ -179,8 +183,8 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	  <message>Placez l'interrupteur sur la position Main RH</message>
       <condition>
         <less-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </less-than>
       </condition>
     </error>
@@ -188,16 +192,16 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 	  <message>Placez l'interrupteur sur la position Main RH</message>
       <condition>
         <greater-than>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </greater-than>
       </condition>
     </error>
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/right-valve-pos</property>
-          <value>2</value>
+          <property>controls/fuel/right-valve</property>
+          <value>1</value>
         </equals>
       </condition>
     </exit>  
@@ -241,7 +245,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -250,7 +254,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
 
  <!-- Mixture-->
   <step>
-    <message>Placez la manette de richesse sur Auto Rich</message>
+    <message>Placez la manette de richesse un peu au-dessus de Auto Rich</message>
     <view>
       <heading-offset-deg>0</heading-offset-deg>
       <pitch-offset-deg>-65</pitch-offset-deg>
@@ -266,7 +270,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
       <condition>
         <less-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.55</value>
+          <value>0.75</value>
         </less-than>
       </condition>
     </error>
@@ -275,7 +279,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
       <condition>
         <greater-than>
           <property>controls/engines/engine[1]/mixture</property>
-          <value>0.75</value>
+          <value>0.90</value>
         </greater-than>
       </condition>
     </error>
@@ -284,11 +288,11 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
         <and>
           <greater-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.55</value>
+            <value>0.75</value>
           </greater-than>
           <less-than>
             <property>controls/engines/engine[1]/mixture</property>
-            <value>0.75</value>
+            <value>0.90</value>
           </less-than>
         </and>
       </condition>
@@ -393,7 +397,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[1]/magnetos-pos</property>
+          <property>controls/engines/engine[1]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
@@ -472,7 +476,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[1]/boost-pump-pos</property>
+          <property>controls/fuel/tank[1]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>
@@ -513,7 +517,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>1</value>
         </equals>
       </condition>
@@ -535,7 +539,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/engines/engine[0]/magnetos-pos</property>
+          <property>controls/engines/engine[0]/magnetos</property>
           <value>3</value>
         </equals>
       </condition>
@@ -614,7 +618,7 @@ Ce tutoriel va vous apprendre la procedure de demarrage les moteurs du DC-3.
     <exit>
       <condition>
 		<equals>
-          <property>controls/fuel/tank[0]/boost-pump-pos</property>
+          <property>controls/fuel/tank[0]/boost-pump</property>
           <value>0</value>
         </equals>
       </condition>

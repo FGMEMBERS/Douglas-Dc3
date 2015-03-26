@@ -7,7 +7,7 @@ name "lampes"
 loc 0 0 -0
 data 6
 lampes
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 numvert 322
 0 -0.029421 0.047418

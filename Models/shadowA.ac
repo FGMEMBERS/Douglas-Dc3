@@ -7,7 +7,7 @@ name "shadowA"
 loc 0 -1.407247 -0
 data 7
 shadowA
-texture "shadowA.dds"
+texture "shadowA.png"
 texrep 1 1
 crease 30.000001
 numvert 4

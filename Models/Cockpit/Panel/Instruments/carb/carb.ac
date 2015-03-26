@@ -8,7 +8,7 @@ name "face"
 loc 0.003107 0.000019 0.000173
 data 4
 face
-texture "carb.dds"
+texture "carb.png"
 texrep 1 1
 numvert 17
 -0.00018 -0.000001 0.000962
@@ -131,7 +131,7 @@ name "fond"
 loc 0 0.000019 0.000214
 data 4
 fond
-texture "carb.dds"
+texture "carb.png"
 texrep 1 1
 numvert 192
 0.007228 -0.021269 0.031831
@@ -1453,7 +1453,7 @@ name "fond2"
 loc 0.001231 0.000019 0.000214
 data 5
 fond2
-texture "carb.dds"
+texture "carb.png"
 texrep 1 1
 numvert 94
 0.004857 0.001093 -0.014388
@@ -1977,7 +1977,7 @@ name "needleL"
 loc 0.002656 -0.001921 -0.00004
 data 7
 needleL
-texture "carb.dds"
+texture "carb.png"
 texrep 1 1
 numvert 21
 0.001054 -0.014092 0.015297
@@ -2056,7 +2056,7 @@ name "needleR"
 loc 0.002656 0.000019 0.000214
 data 7
 needleR
-texture "carb.dds"
+texture "carb.png"
 texrep 1 1
 numvert 21
 0.000444 -0.014992 -0.012631
@@ -2135,7 +2135,7 @@ name "visses"
 loc 0.007515 -0.030058 0.029998
 data 6
 visses
-texture "carb.dds"
+texture "carb.png"
 texrep 1 1
 numvert 68
 0.000319 0 -0

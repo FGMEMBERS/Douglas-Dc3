@@ -8,7 +8,7 @@ OBJECT poly
 name "bras"
 data 4
 bras
-texture "wipers.dds"
+texture "wipers.png"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -583,7 +583,7 @@ OBJECT poly
 name "corps"
 data 8
 Cylinder
-texture "wipers.dds"
+texture "wipers.png"
 texrep 1 1
 crease 30.000000
 numvert 649
@@ -6240,7 +6240,7 @@ OBJECT poly
 name "reglage"
 data 12
 Cylinder.011
-texture "wipers.dds"
+texture "wipers.png"
 texrep 1 1
 crease 30.000000
 numvert 282

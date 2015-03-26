@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Derby Airways</name>
-        <texture>Liveries/G-AOFZ.dds</texture>
+        <texture>Liveries/G-AOFZ.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
            <livery-engine>
-        <texture>Liveries/G-AOFZ-propeller.dds</texture>
+        <texture>Liveries/G-AOFZ-propeller.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

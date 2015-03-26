@@ -7,7 +7,7 @@ OBJECT poly
 name "ailette1"
 data 8
 ailette1
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -67,7 +67,7 @@ OBJECT poly
 name "ailette10"
 data 9
 ailette10
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -163,7 +163,7 @@ OBJECT poly
 name "ailette11"
 data 9
 ailette11
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -255,7 +255,7 @@ OBJECT poly
 name "ailette12"
 data 9
 ailette12
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -347,7 +347,7 @@ OBJECT poly
 name "ailette13"
 data 9
 ailette13
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -439,7 +439,7 @@ OBJECT poly
 name "ailette14"
 data 9
 ailette14
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -531,7 +531,7 @@ OBJECT poly
 name "ailette15"
 data 9
 ailette15
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -623,7 +623,7 @@ OBJECT poly
 name "ailette16"
 data 9
 ailette16
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -683,7 +683,7 @@ OBJECT poly
 name "ailette2"
 data 8
 ailette2
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -775,7 +775,7 @@ OBJECT poly
 name "ailette3"
 data 8
 ailette3
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -867,7 +867,7 @@ OBJECT poly
 name "ailette4"
 data 8
 ailette4
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -959,7 +959,7 @@ OBJECT poly
 name "ailette5"
 data 8
 ailette5
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -1051,7 +1051,7 @@ OBJECT poly
 name "ailette6"
 data 8
 ailette6
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -1143,7 +1143,7 @@ OBJECT poly
 name "ailette7"
 data 8
 ailette7
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -1235,7 +1235,7 @@ OBJECT poly
 name "ailette8"
 data 8
 ailette8
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -1379,7 +1379,7 @@ OBJECT poly
 name "ailette9"
 data 8
 ailette9
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -1523,7 +1523,7 @@ OBJECT poly
 name "ailetteG1.003"
 data 13
 ailetteG1.011
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000000
 numvert 4

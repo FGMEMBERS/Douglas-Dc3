@@ -26,7 +26,7 @@
         <value>civilian-red</value>
       </equals>
     </condition>
-    <texture>gear-flaps.dds</texture>
+    <texture>gear-flaps.png</texture>
   </animation>
 
 <!-- Civilian gray version -->
@@ -43,7 +43,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>gear-flaps.dds</texture>
+    <texture>gear-flaps.png</texture>
   </animation>
 
 <!-- Military version -->
@@ -60,7 +60,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>gear-flaps_military.dds</texture>
+    <texture>gear-flaps_military.png</texture>
   </animation>
 
 <!--GEAR-->

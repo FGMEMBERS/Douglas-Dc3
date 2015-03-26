@@ -7,7 +7,7 @@ OBJECT poly
 name "ecrousD"
 data 12
 Cylinder.003
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 207
 0.243264 0.022864 -0.660192
@@ -1471,7 +1471,7 @@ OBJECT poly
 name "ecrousG"
 data 12
 Cylinder.001
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 207
 0.243264 0.022864 0.660192
@@ -2935,7 +2935,7 @@ OBJECT poly
 name "mancheD"
 data 11
 mancheG.003
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 694
 0.301903 -0.35802 -0.649809
@@ -7977,7 +7977,7 @@ OBJECT poly
 name "mancheG"
 data 11
 mancheG.006
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 697
 0.301903 -0.35802 0.649809
@@ -13016,7 +13016,7 @@ OBJECT poly
 name "volantDD"
 data 12
 volantGG.004
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 530
 0.325127 0.236651 -0.375642
@@ -16807,7 +16807,7 @@ OBJECT poly
 name "volantDG"
 data 12
 volantGD.004
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 470
 0.334842 0.384122 -0.360786
@@ -20066,7 +20066,7 @@ OBJECT poly
 name "volantGD"
 data 8
 volantGD
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 470
 0.334842 0.380846 0.362537
@@ -23325,7 +23325,7 @@ OBJECT poly
 name "volantGG"
 data 8
 volantGG
-texture "colors.dds"
+texture "colors.png"
 crease 30.000000
 numvert 536
 0.325127 0.236651 0.375642

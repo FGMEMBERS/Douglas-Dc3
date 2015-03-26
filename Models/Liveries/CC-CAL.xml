@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Lan Chile (ENAP-CORFO service)</name>
-        <texture>Liveries/CC-CAL.dds</texture>
+        <texture>Liveries/CC-CAL.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/CC-CAL-prop.dds</texture>
+        <texture>Liveries/CC-CAL-prop.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

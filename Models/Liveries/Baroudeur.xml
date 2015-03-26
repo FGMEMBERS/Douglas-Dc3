@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Baroudeur</name>
-        <texture>Liveries/Baroudeur.dds</texture>
+        <texture>Liveries/Baroudeur.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
 	        <livery-engine>
-        <texture>Liveries/baroudeur-prop.dds</texture>
+        <texture>Liveries/baroudeur-prop.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

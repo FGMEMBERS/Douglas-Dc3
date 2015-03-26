@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">aloha-airline-high</name>
-        <texture>Liveries/aloha-airline-high.dds</texture>
+        <texture>Liveries/aloha-airline-high.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/propeller.dds</texture>
+        <texture>Liveries/propeller.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

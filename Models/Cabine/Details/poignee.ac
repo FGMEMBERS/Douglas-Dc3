@@ -7,7 +7,7 @@ name "poignee"
 loc 0 0 -0
 data 7
 poignee
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 numvert 142
 0.029874 -0.007624 -0.024324
@@ -1133,7 +1133,7 @@ name "support"
 loc 0 0 -0
 data 7
 support
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 numvert 65
 0.072052 -0.015198 -0.013009

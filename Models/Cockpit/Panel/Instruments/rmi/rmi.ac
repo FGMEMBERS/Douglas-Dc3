@@ -8,7 +8,7 @@ name "RMI.Needle1"
 loc 0.0072374 0 0
 data 11
 RMI.Needle1
-texture "rmi.dds"
+texture "rmi.png"
 crease 45.000000
 numvert 14
 0.00132 -0.0398574 -0.000859327
@@ -94,7 +94,7 @@ name "RMI.Needle2"
 loc 0.0072374 0 0
 data 11
 RMI.Needle2
-texture "rmi.dds"
+texture "rmi.png"
 crease 45.000000
 numvert 28
 0.00066 0.0214922 0.0036762
@@ -276,7 +276,7 @@ name "face"
 loc 0.0066896 9.6774e-012 -5.412e-005
 data 4
 face
-texture "rmi.dds"
+texture "rmi.png"
 crease 45.000000
 numvert 17
 -0.000237599 -1.32e-006 -2.376e-005
@@ -399,7 +399,7 @@ name "fond"
 loc -0.00155248 0 0
 data 4
 fond
-texture "rmi.dds"
+texture "rmi.png"
 crease 45.000000
 numvert 192
 0.00954096 -0.0420169 0.0280751
@@ -1721,7 +1721,7 @@ name "visses"
 loc 0.00836732 -0.0397016 -0.0397624
 data 6
 visses
-texture "rmi.dds"
+texture "rmi.png"
 crease 45.000000
 numvert 68
 0.000421081 -1.86265e-008 0.0790772

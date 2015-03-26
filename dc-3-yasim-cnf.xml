@@ -25,6 +25,11 @@
         <file type="string">default</file>
       </livery>
     </model>
+    
+    <!-- freeze fuel = true: fuel consumption calculated by nasal -->
+    <freeze>
+      <fuel type="bool">true</fuel>
+    </freeze>
 
     <weight n="0">
       <name>Compartiment A</name>
@@ -92,8 +97,8 @@
     </sound>
   </sim>
 
-  <!-- ############################### -->
-  <!-- ######## DUAL CONTROL ######### -->
+  <!-- ################################################### -->
+  <!-- ######## DUAL CONTROL and FUEL management ######### -->
   <nasal>
     <dual_control_tools>
       <file>Aircraft/Douglas-Dc3/DualControl/dual-control-tools.nas</file>
@@ -104,8 +109,11 @@
     <dual_control>
       <file>Aircraft/Douglas-Dc3/DualControl/pilot-dual-control.nas</file>
     </dual_control>
+    <fuel>
+      <file>Aircraft/Douglas-Dc3/Nasal/fuel-yasim.nas</file>
+    </fuel>
   </nasal>
-  <!-- ######## DUAL CONTROL ######### -->
-  <!-- ############################### -->
+  <!-- ######## DUAL CONTROL and FUEL management ######### -->
+  <!-- ################################################### -->
     
 </PropertyList>

@@ -9,7 +9,7 @@ OBJECT poly
 name "cab-interieur"
 data 12
 fuselage.002
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 44
@@ -913,7 +913,7 @@ OBJECT poly
 name "cab-plancher"
 data 12
 fuselage.004
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 272
@@ -3007,7 +3007,7 @@ OBJECT poly
 name "cadres-vitres"
 data 12
 fuselage.014
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 1306
@@ -12478,7 +12478,7 @@ OBJECT poly
 name "guide"
 data 12
 fuselage.003
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 412
@@ -15442,7 +15442,7 @@ OBJECT poly
 name "poignee"
 data 12
 fuselage.008
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 488
@@ -19660,7 +19660,7 @@ OBJECT poly
 name "structure"
 data 9
 structure
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 56
@@ -19894,7 +19894,7 @@ OBJECT poly
 name "verrou"
 data 8
 Cube.001
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 108

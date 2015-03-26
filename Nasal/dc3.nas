@@ -116,8 +116,10 @@ setlistener("/sim/model/start-idling", func(idle){
 },0,0);
 
 var Startup = func{
-  setprop("controls/fuel/left-valve", 3);
-  setprop("controls/fuel/right-valve", 2);
+  setprop("controls/fuel/left-valve", 2);
+  setprop("controls/fuel/right-valve", 1);
+  setprop("controls/fuel/left-valve-pos", 216);
+  setprop("controls/fuel/right-valve-pos", 144);
   setprop("controls/fuel/tank/boost-pump", 1);
   setprop("controls/fuel/tank[1]/boost-pump", 1);
   setprop("controls/electric/engine[0]/generator",1);
@@ -152,8 +154,10 @@ var Shutdown = func{
   setprop("/instrumentation/doors/crew/position-norm",1);
   setprop("/controls/lighting/instruments-norm",0);
   setprop("controls/electric/battery-switch",0);
-  setprop("controls/fuel/left-valve", 0);
-  setprop("controls/fuel/right-valve", 0);
+  setprop("controls/fuel/left-valve", -1);
+  setprop("controls/fuel/right-valve", -1);
+  setprop("controls/fuel/left-valve-pos", 0);
+  setprop("controls/fuel/right-valve-pos", 0);
   setprop("controls/fuel/tank/boost-pump", 0);
   setprop("controls/fuel/tank[1]/boost-pump", 0);
   setprop("sim/messages/copilot", "Engines are stopped");

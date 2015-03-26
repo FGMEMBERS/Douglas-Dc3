@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">intra-high</name>
-        <texture>Liveries/intra-high.dds</texture>
+        <texture>Liveries/intra-high.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/propeller.dds</texture>
+        <texture>Liveries/propeller.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

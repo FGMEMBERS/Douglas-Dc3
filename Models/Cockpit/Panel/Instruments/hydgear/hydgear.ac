@@ -9,7 +9,7 @@ OBJECT poly
 name "Plane"
 data 5
 Plane
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -30,7 +30,7 @@ OBJECT poly
 name "bloc"
 data 4
 bloc
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 61
@@ -365,7 +365,7 @@ OBJECT poly
 name "faceL"
 data 5
 faceL
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 80.000000
 numvert 33
@@ -600,7 +600,7 @@ OBJECT poly
 name "faceR"
 data 5
 faceR
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 80.000000
 numvert 33
@@ -835,7 +835,7 @@ OBJECT poly
 name "fondL"
 data 5
 fondL
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 80.000000
 numvert 96
@@ -1389,7 +1389,7 @@ OBJECT poly
 name "fondR"
 data 5
 fondR
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 80.000000
 numvert 96
@@ -1943,7 +1943,7 @@ OBJECT poly
 name "needleL"
 data 7
 needleL
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 75
@@ -2492,7 +2492,7 @@ OBJECT poly
 name "needleR"
 data 7
 needleR
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 75

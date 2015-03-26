@@ -299,7 +299,7 @@
       <roll>   0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
-    <feed>0</feed>
+    <feed>4</feed>
     <thruster file="DC3_prop">
      <location unit="IN">
        <x> 136 </x>
@@ -325,7 +325,7 @@
       <roll>   0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
-    <feed>1</feed>
+    <feed>5</feed>
     <thruster file="DC3_prop">
      <location unit="IN">
        <x> 136 </x>
@@ -342,11 +342,11 @@
 
   <tank type="FUEL" number="0">
      <location unit="IN">
-       <x> 245 </x>
-       <y> -200 </y>
+       <x> 275.9 </x>
+       <y> 200 </y>
        <z> -34 </z>
      </location>
-     <capacity unit="LBS"> 1210 </capacity>
+     <capacity unit="LBS"> 1202 </capacity>
      <contents unit="LBS"> 600 </contents>
   </tank>
 
@@ -362,24 +362,45 @@
 
   <tank type="FUEL" number="2">
      <location unit="IN">
-       <x> 275.9 </x>
+       <x> 245 </x>
        <y> -200 </y>
        <z> -34 </z>
      </location>
-     <capacity unit="LBS"> 1202 </capacity>
-     <contents unit="LBS"> 0 </contents>
+     <capacity unit="LBS"> 1210 </capacity>
+     <contents unit="LBS"> 600 </contents>
   </tank>
 
   <tank type="FUEL" number="3">
      <location unit="IN">
        <x> 275.9 </x>
-       <y> 200 </y>
+       <y> -200 </y>
        <z> -34 </z>
      </location>
      <capacity unit="LBS"> 1202 </capacity>
+     <contents unit="LBS"> 600 </contents>
+  </tank>
+
+  <tank type="FUEL" number="4">
+     <!-- Collector Tank (left engine) -->
+     <location unit="IN">
+       <x> 245 </x>
+       <y> -200 </y>
+       <z> -34 </z>
+     </location>
+     <capacity unit="LBS"> 0.5 </capacity>
      <contents unit="LBS"> 0 </contents>
   </tank>
 
+  <tank type="FUEL" number="5">
+     <!-- Collector Tank (right engine) -->
+     <location unit="IN">
+       <x> 245 </x>
+       <y> 200 </y>
+       <z> -34 </z>
+     </location>
+     <capacity unit="LBS"> 0.5 </capacity>
+     <contents unit="LBS"> 0 </contents>
+  </tank>
 
  </propulsion>
 
@@ -1046,7 +1067,7 @@
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>fcs/rudder-pos-rad</property>
-           <value>-0.2</value>
+           <value>-0.2</value> <!-- -0.15 -->
        </product>
     </function>
 
@@ -1067,6 +1088,7 @@
  
  <system file="shadow-tweak"/>
  <system file="tail-wheel.xml"/>
+ <system file="fuel-jsbsim"/>
 
 </fdm_config>
 

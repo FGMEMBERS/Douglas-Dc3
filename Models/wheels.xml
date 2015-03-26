@@ -41,7 +41,7 @@
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>texture.dds</texture>
+    <texture>texture.png</texture>
 <!--
     <diffuse>
       <red-prop>diffuse/red</red-prop>

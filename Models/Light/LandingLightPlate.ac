@@ -7,7 +7,7 @@ OBJECT poly
 name "LHLNDlight"
 data 10
 LHLNDlight
-texture "lights.dds"
+texture "lights.png"
 texrep 1 1
 crease 30.000000
 numvert 4

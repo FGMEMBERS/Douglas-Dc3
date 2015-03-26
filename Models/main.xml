@@ -59,7 +59,7 @@
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>texture.dds</texture>
+    <texture>texture.png</texture>
 <!--
     <diffuse>
       <red-prop>diffuse/red</red-prop>
@@ -84,14 +84,14 @@
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
+
     <shininess>
       <shininess-prop>shininess</shininess-prop>
     </shininess>
--->
+
   </animation>
 
-  <effect>
+  <!--effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
@@ -111,7 +111,7 @@
     <object-name>cargoA</object-name>
     <object-name>cargoB</object-name>
     <object-name>antennes</object-name>
-  </effect>
+  </effect-->
 
   <!--<effect>
     <inherits-from>Aircraft/Douglas-Dc3/Models/Effects/model-reflect</inherits-from>
@@ -199,7 +199,7 @@
 
     <property-base>sim/model/livery-engine</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>Engines/Propeller/propeller.dds</texture>
+    <texture>Engines/Propeller/propeller.png</texture>
 <!--
     <diffuse>
       <red-prop>diffuse/red</red-prop>

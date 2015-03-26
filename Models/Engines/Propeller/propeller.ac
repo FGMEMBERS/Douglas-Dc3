@@ -8,7 +8,7 @@ name "bol"
 loc -0.11465 0 -0
 data 3
 bol
-texture "propeller.dds"
+texture "propeller.png"
 texrep 1 1
 numvert 964
 0.128784 0.090403 -0.086189
@@ -7574,7 +7574,7 @@ name "propblur"
 loc 0 0 -0
 data 8
 propblur
-texture "prop.dds"
+texture "prop.png"
 texrep 1 1
 crease 30.000001
 numvert 48
@@ -7759,7 +7759,7 @@ name "propdisc"
 loc 0 0 -0
 data 8
 propdisc
-texture "prop.dds"
+texture "prop.png"
 texrep 1 1
 crease 30.000001
 numvert 459

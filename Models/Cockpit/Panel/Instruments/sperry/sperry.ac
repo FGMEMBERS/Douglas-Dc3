@@ -7,7 +7,7 @@ OBJECT poly
 name "Ail"
 data 3
 Ail
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -536,7 +536,7 @@ OBJECT poly
 name "Conserv"
 data 7
 Conserv
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -1065,7 +1065,7 @@ OBJECT poly
 name "Ele"
 data 3
 Ele
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -1594,7 +1594,7 @@ OBJECT poly
 name "OnOff"
 data 5
 OnOff
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -2094,7 +2094,7 @@ OBJECT poly
 name "Rud"
 data 3
 Rud
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -2623,7 +2623,7 @@ OBJECT poly
 name "marker"
 data 6
 marker
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 81
@@ -3102,7 +3102,7 @@ OBJECT poly
 name "sensitivity1"
 data 12
 sensitivity1
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -3226,7 +3226,7 @@ OBJECT poly
 name "sensitivity2"
 data 12
 sensitivity2
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -3350,7 +3350,7 @@ OBJECT poly
 name "sensitivity3"
 data 12
 sensitivity3
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -3474,7 +3474,7 @@ OBJECT poly
 name "sperry"
 data 6
 sperry
-texture "sperry.dds"
+texture "sperry.png"
 texrep 1 1
 crease 30.000000
 numvert 68

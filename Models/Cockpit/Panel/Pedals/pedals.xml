@@ -34,7 +34,7 @@
         </equals>
       </or>
     </condition>
-    <texture>colors.dds</texture>
+    <texture>colors.png</texture>
   </animation>
 
   <!-- military version -->
@@ -52,7 +52,7 @@
           <value>military</value>
         </equals>
     </condition>
-    <texture>colors_green.dds</texture>
+    <texture>colors_green.png</texture>
   </animation>
 
   <animation>

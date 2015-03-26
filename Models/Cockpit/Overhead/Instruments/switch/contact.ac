@@ -8,7 +8,7 @@ OBJECT poly
 name "bouton"
 data 6
 bouton
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 121

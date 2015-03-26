@@ -5,7 +5,7 @@
     <model>
       <livery>
         <name type="string">Linux</name>
-        <texture>Liveries/Linux.dds</texture>
+        <texture>Liveries/Linux.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -39,7 +39,7 @@
 -->
       </livery>
       <livery-engine>
-        <texture>Liveries/Linux-prop.dds</texture>
+        <texture>Liveries/Linux-prop.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>

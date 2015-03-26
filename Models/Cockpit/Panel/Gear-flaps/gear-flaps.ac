@@ -8,7 +8,7 @@ OBJECT poly
 name "Plane"
 data 5
 Plane
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -61,7 +61,7 @@ OBJECT poly
 name "Tube"
 data 8
 Tube.002
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 60
@@ -411,7 +411,7 @@ OBJECT poly
 name "Tube.001"
 data 8
 Tube.003
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 54
@@ -813,7 +813,7 @@ OBJECT poly
 name "ap-press"
 data 4
 lev1
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 90
@@ -1486,7 +1486,7 @@ OBJECT poly
 name "coude-jauge"
 data 4
 Tube
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 192
@@ -2808,7 +2808,7 @@ OBJECT poly
 name "flap-in"
 data 12
 Cylinder.010
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -2926,7 +2926,7 @@ OBJECT poly
 name "flap-lev"
 data 12
 Cylinder.003
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 141
@@ -4080,7 +4080,7 @@ OBJECT poly
 name "flap-out"
 data 12
 Cylinder.009
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -4198,7 +4198,7 @@ OBJECT poly
 name "gear-in"
 data 12
 Cylinder.004
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -4316,7 +4316,7 @@ OBJECT poly
 name "gear-lev"
 data 12
 Cylinder.008
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 147
@@ -5589,7 +5589,7 @@ OBJECT poly
 name "gear-lev2"
 data 12
 Cylinder.011
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 105
@@ -6455,7 +6455,7 @@ OBJECT poly
 name "gear-out"
 data 12
 Cylinder.005
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -6573,7 +6573,7 @@ OBJECT poly
 name "hyd"
 data 8
 Cube.002
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 28
@@ -6790,7 +6790,7 @@ OBJECT poly
 name "hyd-vanne"
 data 12
 Cylinder.018
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 398
@@ -9462,7 +9462,7 @@ OBJECT poly
 name "hyd-vanne.001"
 data 12
 Cylinder.006
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 398
@@ -12134,7 +12134,7 @@ OBJECT poly
 name "hyd-vanne.002"
 data 12
 Cylinder.007
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 398
@@ -14806,7 +14806,7 @@ OBJECT poly
 name "hyd-vanne.003"
 data 12
 Cylinder.014
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 398
@@ -17478,7 +17478,7 @@ OBJECT poly
 name "hydpumps-lev"
 data 12
 Cylinder.019
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 105
@@ -18344,7 +18344,7 @@ OBJECT poly
 name "plaque-jauge"
 data 6
 Circle
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -18653,7 +18653,7 @@ OBJECT poly
 name "raccord-jauge"
 data 8
 Tube.008
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 60
@@ -18975,7 +18975,7 @@ OBJECT poly
 name "sol_cent"
 data 8
 Cube.003
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -19078,7 +19078,7 @@ OBJECT poly
 name "sol_ext"
 data 8
 Cube.005
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -19181,7 +19181,7 @@ OBJECT poly
 name "sup-jauge"
 data 8
 Tube.007
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 56
@@ -19631,7 +19631,7 @@ OBJECT poly
 name "tube-ext"
 data 8
 Tube.004
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -19838,7 +19838,7 @@ OBJECT poly
 name "tube-int"
 data 8
 Tube.001
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -19992,7 +19992,7 @@ OBJECT poly
 name "vanne"
 data 12
 Cylinder.016
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 57
@@ -20359,7 +20359,7 @@ OBJECT poly
 name "vis-jauge"
 data 8
 Cylinder
-texture "gear-flaps.dds"
+texture "gear-flaps.png"
 texrep 1 1
 crease 30.000000
 numvert 56

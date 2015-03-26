@@ -7,7 +7,7 @@ OBJECT poly
 name "avantbrasD"
 data 10
 avantbrasD
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 175
@@ -1393,7 +1393,7 @@ OBJECT poly
 name "avantbrasG"
 data 10
 avantbrasG
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 184
@@ -2900,7 +2900,7 @@ OBJECT poly
 name "brasD"
 data 5
 brasD
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 22
@@ -3082,7 +3082,7 @@ OBJECT poly
 name "brasG"
 data 5
 brasG
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 32
@@ -3324,7 +3324,7 @@ OBJECT poly
 name "corps"
 data 5
 corps
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 145
@@ -4422,7 +4422,7 @@ OBJECT poly
 name "cuisseD"
 data 7
 cuisseD
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 30
@@ -4750,7 +4750,7 @@ OBJECT poly
 name "cuisseG"
 data 7
 cuisseG
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 30
@@ -5066,7 +5066,7 @@ OBJECT poly
 name "jambeD"
 data 6
 jambeD
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 112
@@ -5899,7 +5899,7 @@ OBJECT poly
 name "jambeG"
 data 6
 jambeG
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 112
@@ -6732,7 +6732,7 @@ OBJECT poly
 name "piedD"
 data 5
 piedD
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 51
@@ -7079,7 +7079,7 @@ OBJECT poly
 name "piedG"
 data 5
 piedG
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 51
@@ -7426,7 +7426,7 @@ OBJECT poly
 name "tete"
 data 4
 tete
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 806
@@ -13680,7 +13680,7 @@ OBJECT poly
 name "visiere"
 data 7
 visiere
-texture "passenger.dds"
+texture "passenger.png"
 texrep 1 1
 crease 80.000000
 numvert 40

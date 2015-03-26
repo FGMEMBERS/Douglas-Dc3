@@ -7,7 +7,7 @@ name "extincteur"
 loc 0 0 -0
 data 10
 extincteur
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 numvert 161
 -0.015087 -0.245308 -0.036422

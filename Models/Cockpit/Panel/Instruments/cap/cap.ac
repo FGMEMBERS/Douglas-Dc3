@@ -8,7 +8,7 @@ OBJECT poly
 name "Compass.Ball"
 data 12
 Compass.Ball
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -356,7 +356,7 @@ OBJECT poly
 name "Compass.Case"
 data 12
 Compass.Case
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -464,7 +464,7 @@ OBJECT poly
 name "Compass.Index"
 data 13
 Compass.Index
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -539,7 +539,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 30.000000
 numvert 92
@@ -1129,7 +1129,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "cap.dds"
+texture "cap.png"
 texrep 1 1
 crease 30.000000
 numvert 96

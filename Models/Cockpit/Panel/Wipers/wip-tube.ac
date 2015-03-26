@@ -8,7 +8,7 @@ OBJECT poly
 name "racCenter"
 data 10
 Circle.001
-texture "wipers.dds"
+texture "wipers.png"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -798,7 +798,7 @@ OBJECT poly
 name "racD"
 data 10
 Circle.014
-texture "wipers.dds"
+texture "wipers.png"
 texrep 1 1
 crease 30.000000
 numvert 336
@@ -3442,7 +3442,7 @@ OBJECT poly
 name "racG"
 data 6
 Circle
-texture "wipers.dds"
+texture "wipers.png"
 texrep 1 1
 crease 30.000000
 numvert 348

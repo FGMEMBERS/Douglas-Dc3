@@ -13,7 +13,7 @@ OBJECT poly
 name "pedalsR"
 data 7
 pedalsR
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 56.000000
 numvert 214
@@ -1628,7 +1628,7 @@ OBJECT poly
 name "axeL"
 data 4
 axeL
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 35.000000
 numvert 422
@@ -5212,7 +5212,7 @@ OBJECT poly
 name "axeR"
 data 4
 axeR
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 35.000000
 numvert 422
@@ -8796,7 +8796,7 @@ OBJECT poly
 name "brakeL"
 data 6
 brakeL
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -9480,7 +9480,7 @@ OBJECT poly
 name "brakeR"
 data 6
 brakeR
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 66
@@ -10164,7 +10164,7 @@ OBJECT poly
 name "guide-pieds"
 data 9
 Plane.002
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -10402,7 +10402,7 @@ OBJECT poly
 name "mec-freins"
 data 6
 Circle
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -11044,7 +11044,7 @@ OBJECT poly
 name "pedalsL"
 data 7
 pedalsL
-texture "colors.dds"
+texture "colors.png"
 texrep 1 1
 crease 56.000000
 numvert 214

@@ -7,7 +7,7 @@ name "axeA"
 loc 0 0 -0
 data 4
 axeA
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 948
@@ -5274,7 +5274,7 @@ name "axeA2"
 loc 6.642966 -0.558595 -0
 data 5
 axeA2
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 numvert 130
 -0 -0.0949 -0.051668
@@ -6246,7 +6246,7 @@ name "axeA3"
 loc 6.967208 -0.73303 -0
 data 5
 axeA3
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 numvert 225
 0.021917 -0.031433 -0.020728
@@ -8017,7 +8017,7 @@ name "axeD1"
 loc 0 0 -0
 data 5
 axeD1
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 1058
@@ -13054,7 +13054,7 @@ name "axeD2"
 loc 0 0 -0
 data 5
 axeD2
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 1958
@@ -21975,7 +21975,7 @@ name "axeD3"
 loc 0 0 -0
 data 5
 axeD3
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 806
@@ -26084,7 +26084,7 @@ name "axeD4"
 loc 0 0 -0
 data 5
 axeD4
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 968
@@ -31251,7 +31251,7 @@ name "axeG1"
 loc 0 0 -0
 data 5
 axeG1
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 1058
@@ -36288,7 +36288,7 @@ name "axeG2"
 loc 0 0 -0
 data 5
 axeG2
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 1958
@@ -45209,7 +45209,7 @@ name "axeG3"
 loc 0 0 -0
 data 5
 axeG3
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 810
@@ -49322,7 +49322,7 @@ name "axeG4"
 loc 0 0 -0
 data 5
 axeG4
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 968
@@ -54489,7 +54489,7 @@ name "roueA"
 loc 0 0 -0
 data 5
 roueA
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 1250
@@ -61510,7 +61510,7 @@ name "roueD"
 loc 0 0 -0
 data 5
 roueD
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 1250
@@ -68531,7 +68531,7 @@ name "roueG"
 loc 0 0 -0
 data 5
 roueG
-texture "texture.dds"
+texture "texture.png"
 texrep 1 1
 crease 30.000001
 numvert 1250

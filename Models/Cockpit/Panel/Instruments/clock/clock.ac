@@ -8,7 +8,7 @@ name "face"
 loc 0.0033068 -0.0009918 0.0018654
 data 4
 face
-texture "clock.dds"
+texture "clock.png"
 crease 45.000000
 numvert 17
 0 -2.40002e-006 0
@@ -131,7 +131,7 @@ name "fond"
 loc 0.0058964 -0.000993 0.000981
 data 4
 fond
-texture "clock.dds"
+texture "clock.png"
 crease 45.000000
 numvert 192
 0.0009912 -0.0305568 0.020418
@@ -1453,7 +1453,7 @@ name "heure"
 loc 0.0061376 -0.0020214 0.0009774
 data 5
 heure
-texture "clock.dds"
+texture "clock.png"
 crease 45.000000
 numvert 47
 0.0002172 0.0159252 0.0013728
@@ -1779,7 +1779,7 @@ name "ingh"
 loc 0.0112112 -0.0298674 0.0295734
 data 4
 ingh
-texture "clock.dds"
+texture "clock.png"
 crease 45.000000
 numvert 25
 -0.0041448 -0.0028188 -0.0028188
@@ -1970,7 +1970,7 @@ name "minute"
 loc 0.0056324 -0.001773 0.0009762
 data 6
 minute
-texture "clock.dds"
+texture "clock.png"
 crease 45.000000
 numvert 47
 0.0002664 0.0226164 0.0012084
@@ -2296,7 +2296,7 @@ name "seconde"
 loc 0.0051236 -0.001143 0.0009762
 data 7
 seconde
-texture "clock.dds"
+texture "clock.png"
 crease 45.000000
 numvert 47
 0.0002904 0.0269136 0.0007596
@@ -2622,7 +2622,7 @@ name "visses"
 loc 0.007106 0.0088794 -0.0087666
 data 6
 visses
-texture "clock.dds"
+texture "clock.png"
 crease 45.000000
 numvert 51
 0.0003648 -0.0387468 -0.0191712

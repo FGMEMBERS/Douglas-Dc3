@@ -94,7 +94,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>general_pilot_gray.dds</texture>
+    <texture>general_pilot_gray.png</texture>
   </animation>
 
 <!-- Military version -->
@@ -120,7 +120,7 @@
         <value>military</value>
       </equals>
     </condition>
-    <texture>general_pilot_military.dds</texture>
+    <texture>general_pilot_military.png</texture>
   </animation>
 
   <animation>

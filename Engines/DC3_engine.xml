@@ -15,9 +15,9 @@
 
 <piston_engine name="my_engineDC3">
   <minmp unit="INHG">          10.0 </minmp>
-  <maxmp unit="INHG">         48 </maxmp> <!-- for 1200 HP with full boost at 48 inhg -->
+  <maxmp unit="INHG">         48 </maxmp>
   <displacement unit="IN3"> 2280.00 </displacement>
-  <maxhp>        1200 </maxhp>
+  <maxhp>        1200 </maxhp> <!-- for 1200 HP with full boost at 48 inhg -->
   <cycles>         4.0 </cycles>
   <idlerpm>      500.0 </idlerpm>
   <maxrpm>      2700.0 </maxrpm>

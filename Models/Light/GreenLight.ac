@@ -7,7 +7,7 @@ OBJECT poly
 name "Light"
 data 4
 Mesh
-texture "lights.dds"
+texture "lights.png"
 texrep 1 1
 crease 45.000000
 numvert 12

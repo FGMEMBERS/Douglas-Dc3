@@ -21,7 +21,7 @@
         <value>civilian-red</value>
       </equals>
     </condition>
-    <texture>colors.dds</texture>
+    <texture>colors.png</texture>
   </animation>
 
   <!-- Civilian gray version -->
@@ -34,7 +34,7 @@
         <value>civilian-gray</value>
       </equals>
     </condition>
-    <texture>colors_gray.dds</texture>
+    <texture>colors_gray.png</texture>
   </animation>
 
 </PropertyList>
