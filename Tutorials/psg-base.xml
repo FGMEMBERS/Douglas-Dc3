@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<!-- 
+     ************************************************************************
+     Douglas DC-3 C47
+     January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     January  2012 modified by PAF team    : http://http://equipe-flightgear.forumactif.com
+     February 2012 modified Helijah        : http://helijah.free.fr / http://embaranger.free.fr
+     April    2012 New version by Buckaroo : http://www.buckarooshangar.com/flightgear/index.html
+     December 2012 updated  by Helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     ************************************************************************
+-->
+
+  <sim>
+    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D,FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <help>
+      <title>Douglas DC-3/C4-7 Passenger</title>
+      <!--<key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close passenger door</desc>
+      </key>
+      <key>
+        <name>E</name>
+        <desc>Open/Close cargo door</desc>
+      </key>-->
+    </help>
+
+    <model>
+      <config>
+        <show-yokes type="bool">true</show-yokes>
+        <show-pilot type="bool">true</show-pilot>
+        <show-copilot type="bool">true</show-copilot>
+        <details-high type="bool">false</details-high>
+        <glass-reflection type="bool">true</glass-reflection>
+        <light-cone type="bool">true</light-cone>
+        <version type="string">civilian-red</version>
+      </config>
+    </model>
+
+    <presets>
+      <onground type="bool">false</onground>
+      <altitude-agl-ft type="double">30</altitude-agl-ft>
+    </presets>
+
+    <menubar include="Dialogs/copilot-menu.xml"/>
+
+    <!-- ############################### -->
+    <!-- ######## DUAL CONTROL ######### -->
+    <remote>
+     <pilot-callsign type="string"/>
+    </remote>
+
+    <multiplay>
+      <generic>
+      </generic>
+    </multiplay>
+    <!-- ######## DUAL CONTROL ######### -->
+    <!-- ############################### -->
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <surface-positions>
+    <flap-pos-norm type="float"/>
+  </surface-positions>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <rpm>500</rpm>
+      <running>0</running>
+      <cranking>0</cranking>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+      <cranking>0</cranking>
+    </engine>
+  </engines>
+
+  <dual-control>
+    <pilot>
+      <controls>
+        <flight>
+          <flaps>0</flaps>
+          <elevator-trim>0</elevator-trim>
+          <aileron>0</aileron>
+          <elevator>0</elevator>
+          <rudder>0</rudder>
+        </flight>
+        <gear>
+          <brake-parking></brake-parking>
+          <brake-left></brake-left>
+          <brake-right></brake-right>
+        </gear>
+        <electric>
+          <battery-switch></battery-switch>
+        </electric>
+        <lighting>
+          <instrument-lights></instrument-lights>
+        </lighting>
+        <engines>
+          <engine n="0">
+            <throttle>0</throttle>
+            <magnetos></magnetos>
+            <mixture></mixture>
+            <propeller-pitch></propeller-pitch>
+            <starter></starter>
+          </engine>
+          <engine n="1">
+            <throttle>0</throttle>
+            <magnetos></magnetos>
+            <mixture></mixture>
+            <propeller-pitch></propeller-pitch>
+            <starter></starter>
+          </engine>
+        </engines>
+      </controls>
+    </pilot>
+  </dual-control>
+
+  <input>
+    <keyboard include="Nasal/dc-3-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/Douglas-Dc3/Nasal/doors.nas</file>
+    </doors>
+    <dc3>
+      <!--<file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/dc3.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>-->
+      <script>
+        var config_dlg = gui.Dialog.new("/sim/gui/dialogs/config/dialog", "Aircraft/Douglas-Dc3/Dialogs/config.xml");
+      </script>
+    </dc3>
+  </nasal>
+
+</PropertyList>
+

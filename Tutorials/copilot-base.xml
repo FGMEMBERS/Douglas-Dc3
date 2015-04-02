@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<!-- 
+     ************************************************************************
+     Douglas DC-3 C47
+     January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     January  2012 modified by PAF team    : http://http://equipe-flightgear.forumactif.com
+     February 2012 modified Helijah        : http://helijah.free.fr / http://embaranger.free.fr
+     April    2012 New version by Buckaroo : http://www.buckarooshangar.com/flightgear/index.html
+     December 2012 updated  by Helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     ************************************************************************
+-->
+
+  <sim> 
+    <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D,FDM)</author>
+    <aircraft-version>1.0</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.50</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </flaps>
+
+    <help>
+      <title>Douglas DC-3/C4-7</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close passenger door</desc>
+      </key>
+      <key>
+        <name>E</name>
+        <desc>Open/Close cargo door</desc>
+      </key>
+    </help>
+
+    <presets>
+      <onground type="bool">false</onground>
+      <altitude-agl-ft type="double">30</altitude-agl-ft>
+    </presets>
+
+    <menubar include="Dialogs/copilot-menu.xml"/>
+
+    <!-- ############################### -->
+    <!-- ######## DUAL CONTROL ######### -->
+    <remote>
+     <pilot-callsign type="string"></pilot-callsign>
+    </remote>
+
+    <model>
+      <config>
+        <show-yokes type="bool">true</show-yokes>
+        <show-pilot type="bool">true</show-pilot>
+        <show-copilot type="bool">true</show-copilot>
+        <details-high type="bool">false</details-high>
+        <glass-reflection type="bool">true</glass-reflection>
+        <light-cone type="bool">true</light-cone>
+        <version type="string">civilian-red</version>
+      </config>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+	<int n="0" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Switch)-->
+	<int n="9" type="int">  0 </int>  <!-- RESERVED FOR DUAL CONTROL (Boolean Light Switch)-->
+	<float n="3" alias="/controls/flight/elevator-trim"/>
+	<float n="4" alias="/controls/flight/rudder-trim"/>
+	<float n="5" alias="/controls/flight/aileron-trim"/>
+	<float n="6" alias="/controls/engines/engine[0]/throttle"/>
+	<float n="7" alias="/controls/engines/engine[1]/throttle"/>
+	<float n="8" alias="/controls/engines/engine[0]/mixture"/>
+	<float n="9" alias="/controls/engines/engine[1]/mixture"/>
+	<float n="10" alias="/controls/engines/engine[0]/propeller-pitch"/>
+	<float n="11" alias="/controls/engines/engine[1]/propeller-pitch"/>
+	<float n="12" alias="/controls/gear/brake-left"/>
+	<float n="13" alias="/controls/gear/brake-right"/>
+	<float n="14" alias="/controls/flight/elevator"/>
+	<float n="15" alias="/controls/flight/rudder"/>
+	<float n="16" alias="/controls/flight/aileron"/>
+        <string n="0" type="string"></string> <!-- RESERVED FOR DUAL CONTROL (Analog Switch - TDM)-->
+      </generic>
+    </multiplay>
+    <!-- ######## DUAL CONTROL ######### -->
+    <!-- ############################### -->
+
+    <chase-distance-m type="double" archive="y"> -30 </chase-distance-m>
+
+    <view n="0">
+      <name>Copilot Views</name>
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y">  0.475 </x-offset-m> <!-- Right -->
+        <y-offset-m archive="y">  0.434 </y-offset-m> <!-- Up    -->
+        <z-offset-m archive="y"> -7.965 </z-offset-m> <!-- Back  -->
+        <pitch-offset-deg> -20 </pitch-offset-deg>
+        <default-field-of-view-deg> 70 </default-field-of-view-deg>
+      </config>
+    </view>
+
+    <view n="1">
+      <config>
+        <target-z-offset-m archive="y" type="double">0</target-z-offset-m>
+      </config>
+    </view>
+
+    <view n="102">
+      <name>Tail Camera View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+        <x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
+        <y-offset-m archive="y"> 3.600 </y-offset-m> <!--Up-->
+        <z-offset-m archive="y"> 8.290 </z-offset-m> <!--Back-->
+        <pitch-offset-deg> -5 </pitch-offset-deg>
+        <default-field-of-view-deg type="double"> 50 </default-field-of-view-deg>
+      </config>
+    </view>
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos type="int" value="0" />
+        <oil-dilution type="bool">false</oil-dilution>
+        <cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+        <cowl-flaps-norm type="double">1</cowl-flaps-norm>
+        <cowl-flaps-pos type="double">1</cowl-flaps-pos>
+      </engine>
+      <engine n="1">
+        <magnetos type="int" value="0" />
+        <oil-dilution type="bool">false</oil-dilution>
+        <cowl-flaps-cmd type="int">1</cowl-flaps-cmd>
+        <cowl-flaps-norm type="double">1</cowl-flaps-norm>
+        <cowl-flaps-pos type="double">1</cowl-flaps-pos>
+      </engine>
+    </engines>
+    <fuel>
+      <left-valve type="int">0</left-valve>
+      <right-valve type="int">0</right-valve>
+    </fuel>
+    <anti-ice>
+      <pitot-heat n="1" type="bool">false</pitot-heat>
+      <prop-heat n="1" type="bool">false</prop-heat>
+    </anti-ice>
+    <lighting>
+      <passing-lights type="bool">false</passing-lights>
+      <running-lights type="bool">false</running-lights>
+      <tail-lights type="bool">false</tail-lights>
+      <cabin-lights type="bool">false</cabin-lights>
+      <landing-lights n="0" type="bool">false</landing-lights>
+      <landing-lights n="1" type="bool">false</landing-lights>
+      <recognition-lights n="0" type="bool">false</recognition-lights>
+      <recognition-lights n="1" type="bool">false</recognition-lights>
+      <recognition-lights n="2" type="bool">false</recognition-lights>
+      <compass-lights type="bool">false</compass-lights>
+      <formation-lights type="bool">false</formation-lights>
+    </lighting>
+    <paratroopers>
+      <jump-signal type="bool">false</jump-signal>
+    </paratroopers>
+    <flight>
+      <flaps type="double">0</flaps>
+      <flaps-cmd type="int">0</flaps-cmd>
+      <flaps-cmd-pos type="double">0</flaps-cmd-pos>
+    </flight>
+    <gear>
+      <tailwheel-lock type="bool">true</tailwheel-lock>
+      <tailwheel-lock-pos type="double">1</tailwheel-lock-pos>
+      <brake-parking type="bool">true</brake-parking>
+      <brake-parking-pos type="double">1</brake-parking-pos>
+      <gear-down-cmd type="int">1</gear-down-cmd>
+      <gear-down-lock type="bool">true</gear-down-lock>
+      <gear-down-lock-pos type="double">1</gear-down-lock-pos>
+    </gear>
+    <throttle-coupled type="bool">1</throttle-coupled>
+    <mixture-coupled type="bool">1</mixture-coupled>
+    <prop-coupled type="bool">1</prop-coupled>
+    <movement-scale>0.025</movement-scale>
+  </controls>
+
+  <surface-positions>
+    <flap-pos-norm type="float" value="0"/>
+  </surface-positions>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <rpm type="double">0</rpm>
+      <running type="bool">false</running>
+      <cranking type="bool">false</cranking>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <rpm type="double">0</rpm>
+      <running type="bool">false</running>
+      <cranking type="bool">false</cranking>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/dc-3-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <!--<doors>
+      <file>Aircraft/Douglas-Dc3/Nasal/doors.nas</file>
+    </doors>
+    <para>
+      <file>Aircraft/Douglas-Dc3/Nasal/paratroopers.nas</file>
+    </para>-->
+    <dc3>
+      <!--<file>Aircraft/Douglas-Dc3/Nasal/electrical.nas</file>-->
+      <file>Aircraft/Douglas-Dc3/Nasal/dc3-copilot.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/interpolate.nas</file>
+      <file>Aircraft/Douglas-Dc3/Nasal/hydraulic.nas</file>
+      <!--<file>Aircraft/Douglas-Dc3/Nasal/liveries.nas</file>-->
+      <!--<file>Aircraft/Douglas-Dc3/Nasal/light.nas</file>-->
+      <!--<file>Aircraft/Douglas-Dc3/Nasal/immat.nas</file>-->
+      <!--<file>Aircraft/Douglas-Dc3/Nasal/fuel.nas</file>-->
+    </dc3>
+  </nasal>
+
+</PropertyList>
+

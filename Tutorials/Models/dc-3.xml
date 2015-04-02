@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/Douglas-Dc3/Models/main.xml</path>
+  </model>
+
+  <!-- Les roues -->
+  <model>
+    <name>LesRoues</name>
+    <path>Aircraft/Douglas-Dc3/Models/wheels.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>OmbreRoues</name>
+    <path>Aircraft/Douglas-Dc3/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.85 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -2.40 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>LesRoues</object-name>
+    <object-name>OmbreRoues</object-name>
+    <condition>
+      <equals>
+        <property>sim/multiplay/generic/string[1]</property>
+        <value>wheels</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- Les flotteurs -->
+  <model>
+    <name>LesFlotteurs</name>
+    <path>Aircraft/Douglas-Dc3/Models/floats.xml</path>
+  </model>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>OmbreFlotteurs</name>
+    <path>Aircraft/Douglas-Dc3/Models/shadowA.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -2.8 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>LesFlotteurs</object-name>
+    <object-name>OmbreFlotteurs</object-name>
+    <condition>
+      <equals>
+        <property>sim/multiplay/generic/string[1]</property>
+        <value>amphibius</value>
+      </equals>
+    </condition>
+  </animation>
+
+</PropertyList>
