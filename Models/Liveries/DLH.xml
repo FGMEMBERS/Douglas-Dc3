@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <sim>
+    
+    <model>
+      <livery>
+        <name type="string">Deutsche Lufthansa</name>
+        <texture>Liveries/DLH.png</texture>
+        <specular>
+          <red>   0.2 </red>
+          <green> 0.2 </green>
+          <blue>  0.2 </blue>
+        </specular>
+        <emission>
+          <red>   0.1 </red>
+          <green> 0.1 </green>
+          <blue>  0.1 </blue>
+        </emission>
+      </livery>
+      <livery-engine>
+        <texture>Liveries/DLH-prop.png</texture>
+        <specular>
+          <red>   0.2 </red>
+          <green> 0.2 </green>
+          <blue>  0.2 </blue>
+        </specular>
+        <emission>
+          <red>   0.1 </red>
+          <green> 0.1 </green>
+          <blue>  0.1 </blue>
+        </emission>
+      </livery-engine>
+    </model>
+    
+  </sim>
+  
+</PropertyList>
