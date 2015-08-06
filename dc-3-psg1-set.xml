@@ -3,7 +3,7 @@
 <!-- <PropertyList include="dc-3-copilot-jsbsim-cnf.xml"> -->
 <PropertyList include="psg-base.xml">
 
-<!-- 
+<!--
      ************************************************************************
      Douglas DC-3 C47
      January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
@@ -18,7 +18,8 @@
     <description>Douglas DC-3/C-47 Passenger 1</description>
     <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D), Buckaroo (FDM)</author>
     <flight-model>null</flight-model>
-
+    <variant-of>dc-3</variant-of>
+    
     <startup>
       <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
     </startup>

@@ -3,7 +3,7 @@
 <!-- <PropertyList include="dc-3-copilot-jsbsim-cnf.xml"> -->
 <PropertyList include="dc-3-copilot-yasim-cnf.xml">
 
-<!-- 
+<!--
      ************************************************************************
      Douglas DC-3 C47
      January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
@@ -16,9 +16,8 @@
 
   <sim>
     <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D), Buckaroo (FDM)</author>
-
+    <variant-of>dc-3</variant-of>
     <mode type="string">wheels</mode>
   </sim>
 
 </PropertyList>
-
