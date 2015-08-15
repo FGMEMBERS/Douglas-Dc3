@@ -3,7 +3,7 @@
 <!-- <PropertyList include="dc-3A-jsbsim-cnf.xml"> -->
 <PropertyList include="dc-3A-yasim-cnf.xml">
 
-<!-- 
+<!--
      ***************************************************************************************
      Douglas DC-3 C47
      January  2011 generate by helijah     : http://helijah.free.fr / http://embaranger.free.fr
@@ -18,6 +18,7 @@
 
     <description>Douglas DC-3/C-47 Amphibius (YASim)</description>
     <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D), Buckaroo (FDM)</author>
+    <variant-of>dc-3</variant-of>
 
     <rating>
       <FDM type="int">     4 </FDM>
@@ -29,4 +30,3 @@
   </sim>
 
 </PropertyList>
-
