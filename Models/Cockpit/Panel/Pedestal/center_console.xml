@@ -393,6 +393,15 @@
     <type>pick</type>
     <object-name>Throt_G</object-name>
     <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("throttle",0,-1,1);</script>
+      </binding>
+    </action>
+    <action>
       <button>1</button>
       <repeatable>true</repeatable>
       <interval-sec>0.05</interval-sec>
@@ -418,6 +427,15 @@
   <animation>
     <type>pick</type>
     <object-name>Throt_D</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("throttle",0,-1,1);</script>
+      </binding>
+    </action>
     <action>
       <button>1</button>
       <repeatable>true</repeatable>
@@ -441,21 +459,6 @@
     </action>
   </animation>
 
-  <animation>
-    <type>pick</type>
-    <object-name>Throt_G</object-name>
-    <object-name>Throt_D</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <interval-sec>0.05</interval-sec>
-      <binding>
-        <command>nasal</command>
-        <script>dc3.set_levers("throttle",0,-1,1);</script>
-      </binding>
-    </action>
-  </animation>
-  
   <!-- **********PROPELLER PITCH********** -->
   <animation>
     <type>rotate</type>
@@ -500,6 +503,15 @@
     <type>pick</type>
     <object-name>Prop_G</object-name>
     <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("prop",0,-1,1);</script>
+      </binding>
+    </action>
+    <action>
       <button>1</button>
       <repeatable>true</repeatable>
       <interval-sec>0.05</interval-sec>
@@ -525,6 +537,15 @@
   <animation>
     <type>pick</type>
     <object-name>Prop_D</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("prop",0,-1,1);</script>
+      </binding>
+    </action>
     <action>
       <button>1</button>
       <repeatable>true</repeatable>
@@ -545,21 +566,6 @@
           <value>1</value>
         </binding>
       </mod-up>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>Prop_G</object-name>
-    <object-name>Prop_D</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <interval-sec>0.05</interval-sec>
-      <binding>
-        <command>nasal</command>
-        <script>dc3.set_levers("prop",0,-1,1);</script>
-      </binding>
     </action>
   </animation>
 
@@ -611,6 +617,15 @@
     <type>pick</type>
     <object-name>Mixt_G</object-name>
     <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("mixture",0,-1,1);</script>
+      </binding>
+    </action>
+    <action>
       <button>1</button>
       <repeatable>true</repeatable>
       <interval-sec>0.05</interval-sec>
@@ -636,6 +651,15 @@
   <animation>
     <type>pick</type>
     <object-name>Mixt_D</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.set_levers("mixture",0,-1,1);</script>
+      </binding>
+    </action>
     <action>
       <button>1</button>
       <repeatable>true</repeatable>
@@ -656,21 +680,6 @@
           <value>1</value>
         </binding>
       </mod-up>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>Mixt_G</object-name>
-    <object-name>Mixt_D</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <interval-sec>0.05</interval-sec>
-      <binding>
-        <command>nasal</command>
-        <script>dc3.set_levers("mixture",0,-1,1);</script>
-      </binding>
     </action>
   </animation>
 
@@ -709,35 +718,6 @@
     </axis>
   </animation>
 
-  <!-- Ajustage par molette -->
-  <animation>
-    <type>pick</type>
-    <visible>true</visible>
-    <object-name>volantTrim</object-name>
-    <action>
-      <button>3</button>
-      <binding>
-        <command>property-adjust</command>
-        <property>controls/flight/elevator-trim</property>
-        <step>0.01</step>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <visible>true</visible>
-    <object-name>volantTrim</object-name>
-    <action>
-      <button>4</button>
-      <binding>
-        <command>property-adjust</command>
-        <property>controls/flight/elevator-trim</property>
-        <step>-0.01</step>
-      </binding>
-    </action>
-  </animation>
-
   <!--Ajustage par bt-souris-gauche-->
   <animation>
     <type>pick</type>
@@ -752,6 +732,22 @@
         <step>0.01</step>
       </binding>
     </action>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/elevator-trim</property>
+        <step>0.01</step>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/elevator-trim</property>
+        <step>-0.01</step>
+      </binding>
+    </action>
   </animation>
 
   <animation>
@@ -761,6 +757,22 @@
     <action>
       <button>0</button>
       <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/elevator-trim</property>
+        <step>-0.01</step>
+      </binding>
+    </action>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/elevator-trim</property>
+        <step>0.01</step>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
       <binding>
         <command>property-adjust</command>
         <property>controls/flight/elevator-trim</property>
