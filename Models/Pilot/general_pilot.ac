@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite.004" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 13
 OBJECT poly
@@ -8,7 +8,7 @@ loc -0.033328 0.120945 -0.043969
 data 10
 avantbrasD
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 175
 0.000541 0.125199 -0.134391
@@ -1395,7 +1395,7 @@ loc 0.072028 0.106992 -0.047589
 data 10
 avantbrasG
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 184
 -0.070204 0.031459 0.182814
@@ -2903,7 +2903,7 @@ loc -0.041761 0.085881 -0.056625
 data 5
 brasD
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 22
 0.479883 0.195639 -0.14823
@@ -3086,7 +3086,7 @@ loc -0.022986 0.105777 -0.047284
 data 5
 brasG
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 32
 0.482877 0.224308 0.254577
@@ -3329,7 +3329,7 @@ loc -0.002351 0 -0.002052
 data 5
 corps
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 145
 0.291028 0.360919 -0.010502
@@ -4428,7 +4428,7 @@ loc 0.019746 0.012101 -0.012651
 data 7
 cuisseD
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 30
 -0.12338 -0.025348 -0.036788
@@ -4757,7 +4757,7 @@ loc 0.019746 0.012101 -0.012651
 data 7
 cuisseG
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 30
 -0.079515 -0.06593 0.173637
@@ -5074,7 +5074,7 @@ loc 0.039319 -0.016304 -0.012675
 data 6
 jambeD
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 112
 -0.100415 -0.043514 -0.091656
@@ -5908,7 +5908,7 @@ loc 0.039319 -0.016304 -0.012675
 data 6
 jambeG
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 112
 -0.078933 -0.05313 0.12409
@@ -6742,7 +6742,7 @@ loc 0.075189 -0.07223 -0.012675
 data 5
 piedD
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 51
 -0.548194 -0.118705 -0.090688
@@ -7090,7 +7090,7 @@ loc 0.075189 -0.07223 -0.012675
 data 5
 piedG
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 51
 -0.546806 -0.124506 0.096431
@@ -7438,7 +7438,7 @@ loc -0.002351 0 -0.002052
 data 4
 tete
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 806
 0.359577 0.505111 0.068873
@@ -13693,7 +13693,7 @@ loc -0.002351 0 -0.002052
 data 7
 visiere
 texture "general_pilot.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 180.000005
 numvert 40
 0.298516 0.574276 -0.087623

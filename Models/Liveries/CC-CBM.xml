@@ -7,30 +7,20 @@
     <model>
       <livery>
         <name type="string">Ladeco (CC-CBM)</name>
-        <texture>Liveries/CC-CBM.png</texture>
+        <texture>Liveries/2048x2048/CC-CBM.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
-        <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
-        </emission>
       </livery>
       <livery-engine>
-        <texture>Liveries/CC-CBM-prop.png</texture>
+        <texture>Liveries/Propeller/CC-CBM-prop.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
-        <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
-        </emission>
       </livery-engine>
     </model>
     

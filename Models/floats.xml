@@ -30,7 +30,7 @@
     <type>material</type>
     <object-name>flotteurs</object-name>
     <object-name>structure</object-name>
-
+    
     <object-name>gouvernailG</object-name>
     <object-name>roueAG</object-name>
     <object-name>Ldamper</object-name>
@@ -38,7 +38,7 @@
     <object-name>Lstrut1</object-name>
     <object-name>roueFG</object-name>
     <object-name>axeFG</object-name>
-
+    
     <object-name>gouvernailD</object-name>
     <object-name>roueAD</object-name>
     <object-name>Rdamper</object-name>
@@ -46,7 +46,7 @@
     <object-name>Rstrut1</object-name>
     <object-name>roueFD</object-name>
     <object-name>axeFD</object-name>
-
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -55,14 +55,8 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
-
+  
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>flotteurs</object-name>
@@ -112,81 +106,25 @@
 
   <!-- Trainee gauche -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/wakeGA.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/wakeG.xml</path>
     <offsets>
       <x-m> -1.658 </x-m>
       <y-m> -2.668 </y-m>
       <z-m> -3.938 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
   <!-- Trainee droite -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/wakeDA.xml</path>
+    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/wakeD.xml</path>
     <offsets>
       <x-m> -1.658 </x-m>
       <y-m>  2.668 </y-m>
       <z-m> -3.938 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
-
-  <!-- Eclaboussures, avant gauche -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/jetGA.xml</path>
-    <offsets>
-      <x-m> -9.515 </x-m>
-      <y-m> -2.668 </y-m>
-      <z-m> -3.638 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, avant droite -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/jetDA.xml</path>
-    <offsets>
-      <x-m> -9.515 </x-m>
-      <y-m>  2.668 </y-m>
-      <z-m> -3.638 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, centre gauche -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/jetmGA.xml</path>
-    <offsets>
-      <x-m> -2.620 </x-m>
-      <y-m> -2.668 </y-m>
-      <z-m> -4.011 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, centre droite -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/wakes/jetmDA.xml</path>
-    <offsets>
-      <x-m> -2.620 </x-m>
-      <y-m>  2.668 </y-m>
-      <z-m> -4.011 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model>
 
   <animation>
     <name>EnsembleAvantG</name>
@@ -439,4 +377,3 @@
   </animation>
 
 </PropertyList>
-

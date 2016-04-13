@@ -6,16 +6,16 @@
     
     <model>
       <livery>
-        <name type="string">Baroudeur</name>
-        <texture>Liveries/1024x1024/Baroudeur.png</texture>
+        <name type="string">ALCI Mia</name>
+        <texture>Liveries/2048x2048/ALCI-Mia.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
       </livery>
-        <livery-engine>
-        <texture>Liveries/Propeller/baroudeur-prop.png</texture>
+      <livery-engine>
+        <texture>Liveries/Propeller/ALCI-prop.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>

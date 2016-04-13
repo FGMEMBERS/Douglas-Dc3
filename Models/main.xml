@@ -4,6 +4,11 @@
 
   <path>dc-3.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Douglas-Dc3/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Douglas-Dc3/Models/Liveries", 10);
@@ -50,9 +55,9 @@
 
     <object-name>sorties</object-name>
     <object-name>trous</object-name>
-
-    <!-- Objets transparents -->
     <object-name>cables</object-name>
+    
+    <!-- Objets transparents -->
     <object-name>vitres</object-name>
   </animation>
 
@@ -79,7 +84,8 @@
 
     <object-name>sorties</object-name>
     <object-name>trous</object-name>
-
+    <object-name>cables</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -88,17 +94,11 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
-<!--
+  <!--
     <inherits-from>Aircraft/Douglas-Dc3/Models/Effects/model-reflect</inherits-from>
--->
+  -->
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
@@ -121,19 +121,17 @@
     <object-name>antennes</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Douglas-Dc3/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>cables</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitres</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Immatriculatoin -->
   <model>
     <path>Aircraft/Douglas-Dc3/Models/Immat/immat.xml</path>
@@ -141,22 +139,7 @@
 
   <!-- Cabine -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Cabine/cabine.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Cockpit -->
-  <model>
-    <path>Aircraft/Douglas-Dc3/Models/Cockpit/cockpit.xml</path>
-    <offsets>
-      <x-m> -8.346 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.185 </z-m>
-    </offsets>
+    <path>Aircraft/Douglas-Dc3/Models/Interior/cabine.xml</path>
   </model>
 
   <!-- Moteurs -->
@@ -193,12 +176,6 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <!-- Ailettes -->
@@ -228,7 +205,6 @@
       <x-m> -4.873 </x-m>
       <y-m> -3.393 </y-m>
       <z-m> -1.559 </z-m>
-      <roll-deg>      0 </roll-deg>
       <pitch-deg>    35 </pitch-deg>
       <heading-deg> -10 </heading-deg>
     </offsets>
@@ -240,7 +216,6 @@
       <x-m> -4.873 </x-m>
       <y-m>  3.393 </y-m>
       <z-m> -1.559 </z-m>
-      <roll-deg>     0 </roll-deg>
       <pitch-deg>   35 </pitch-deg>
       <heading-deg> 10 </heading-deg>
     </offsets>
@@ -256,7 +231,7 @@
     <type>rotate</type>
     <object-name>direction</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor> -25 </factor>
+    <factor> -15 </factor>
     <center>
      <x-m> 8.076 </x-m>
      <y-m> 0.000 </y-m>
@@ -274,7 +249,7 @@
     <type>rotate</type>
     <object-name>profondeur</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 30 </factor>
+    <factor> 15 </factor>
     <center>
       <x-m> 8.724 </x-m>
       <y-m> 0.000 </y-m>
@@ -491,4 +466,3 @@
   </animation>
 
 </PropertyList>
-

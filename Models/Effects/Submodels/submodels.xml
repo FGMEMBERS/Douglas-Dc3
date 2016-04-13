@@ -4,15 +4,7 @@
 
   <submodel> 
     <name>parachutist</name>
-    <model>Models/Geometry/parachuter.xml</model>
-    <!--
-    <condition>
-      <equals>
-        <property>instrumentation/doors/passenger/position-norm</property>
-        <value>1</value>
-      </equals>
-    </condition>
-    -->
+    <model>Aircraft/Douglas-Dc3/Models/Effects/Submodels/Parachuter/parachuter.xml</model>
     <trigger>controls/paratroopers/trigger/state</trigger>
     <speed> 0 </speed>
     <repeat> true </repeat>
