@@ -38,7 +38,7 @@
     <object-name>axeA2</object-name>
     <object-name>axeA3</object-name>
     <object-name>roueA</object-name>
-
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -47,14 +47,8 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
-
+  
   <!-- Effets sur le sol -->
   <!-- Roue gauche -->
   <model>

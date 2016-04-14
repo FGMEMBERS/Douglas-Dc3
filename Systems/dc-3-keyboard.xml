@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- ***************************************************************************************
+     Douglas DC-3 C47
+     
+     January  2011 generate by helijah  : http://helijah.free.fr / http://embaranger.free.fr
+     January  2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
+     February 2012 modified Helijah     : http://helijah.free.fr / http://embaranger.free.fr
+     December 2012 updated  by Helijah  : http://helijah.free.fr / http://embaranger.free.fr
+     April    2016 updated  by Helijah  : http://helijah.free.fr / http://embaranger.free.fr
+     ***************************************************************************************
+-->
+<PropertyList>
+  
+  <keyboard>
+    
+    <key n="103">
+      <name>g</name>
+      <desc>Landing Gear Up</desc>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop("controls/gear/gear-down-lock", 0);
+          setprop("controls/gear/gear-down-cmd", 0);
+          settimer(func{setprop("controls/gear/gear-down-lock", 1);}, 6);
+        </script>
+      </binding>
+    </key>
+    
+    <key n="100">
+      <name>d</name>
+      <desc>Crew door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.CrewDoor.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="71">
+      <name>G</name>
+      <desc>Landing Gear Down</desc>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop("controls/gear/gear-down-lock", 0);
+          setprop("controls/gear/gear-down-cmd", 1);
+          settimer(func{setprop("controls/gear/gear-down-lock", 1);}, 6);
+        </script>
+      </binding>
+    </key>
+    
+    <key n="68">
+      <name>D</name>
+      <desc>Passanger door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.PassengerDoor.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="69">
+      <name>E</name>
+      <desc>Cargo door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>dc3.CargoDoor.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="106">
+      <name>j</name>
+      <desc>Jump signal</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/paratroopers/jump-signal</property>
+        <value>true</value>
+      </binding>
+    </key>
+    
+    <key n="108">
+      <name>l</name>
+      <desc>Toggle tail-wheel lock.</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/gear/tailwheel-lock</property>
+      </binding>
+    </key>
+    
+  </keyboard>
+  
+</PropertyList>

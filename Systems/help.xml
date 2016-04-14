@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <title>Douglas DC-3 C47</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close crew door</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close passenger door</desc>
+  </key>
+  <key>
+    <name>E</name>
+    <desc>Open/Close cargo door</desc>
+  </key>
+  <key>
+    <name>j</name>
+    <desc>Parachutist</desc>
+  </key>
+  <line/>
+  <line>========== Engines Start Checklist ==========</line>
+  <line>1 - Left tank selector -> LH</line>
+  <line>2 - Right tank selector -> RH</line>
+  <line>3 - Master battery -> ON</line>
+  <line>4 - Left booster pump -> ON (Fuel Pressure increase over 12 PSI)</line>
+  <line>5 - Right booster pump -> ON (Fuel Pressure increase over 12 PSI)</line>
+  <line>6 - Mixture -> Full Rich</line>
+  <line>7 - Throttle -> 10%</line>
+  <line>8 - Propeller-pitch -> 100%</line>
+  <line>9 - Left magneto -> BOTH</line>
+  <line>10- Right magneto -> BOTH</line>
+  <line>11- Left engine starter -> Left engine start</line>
+  <line>12- Right engine starter -> Right engine start</line>
+  <line>13- Left booster pump -> OFF</line>
+  <line>14- Right booster pump -> OFF</line>
+  <line/>
+  <line>========== Engines Autostart ==========</line>
+  <line>1 - Open Douglas DC-3 C47 dialog (Douglas DC-3 C47 > Options)</line>
+  <line>2 - Click on Autostart button</line>
+  <line>3 - Press key "s"</line>
+  <line/>
+  <line>========== Engines Stop Checklist ==========</line>
+  <line>1 - Mixture -> IDLE - CUT OFF</line>
+  <line>2 - Left magneto -> OFF</line>
+  <line>3 - Right magneto -> OFF</line>
+  <line>4 - Master battery -> OFF</line>
+  <line/>
+  <line>========== Procedures ==========</line>
+  <line>Takeoff -> no flaps, rotate at 75 KIAS</line>
+  <line>Climbout -> no flaps, 80 KIAS</line>
+  <line>Cruise -> trim down, 165 KIAS</line>
+  <line>Landing -> full flaps, 75 KIAS</line>
+  <line>Landing gear handle -> unlock* Gear Lock, pull/push Gear Handle, lock* Gear Lock</line>
+  <line>*: click on it</line>
+  <line/>
+  <line>========== Dual Control ==========</line>
+  <line>For a best experience, pilot and copilot need to be connected on the same server</line>
+  <line>=== Pilot select copilot ===</line>
+  <line>1 - Open Pilot dialog (Douglas DC-3 C47 > Select MP-copilot)</line>
+  <line>2 - Select one copilot available</line>
+  <line>3 - Close Pilot dialog</line>
+  <line>=== Copilot select pilot ===</line>
+  <line>1 - Open Copilot dialog (Douglas DC-3 C47 > Select MP-pilot)</line>
+  <line>2 - Select one pilot available</line>
+  <line>3 - Close Copilot dialog</line>
+  <line/>
+  <line>========== HowTo use engines handle ==========</line>
+  <line>Hold Left Mouse Button on engine handle and up/down your mouse in order to adjust setting of 2 engines</line>
+  <line>Hold Scrool mouse Button on engine handle and up/down your mouse in order to adjust setting of 1 engine</line>
+  <line/>
+  
+</PropertyList>

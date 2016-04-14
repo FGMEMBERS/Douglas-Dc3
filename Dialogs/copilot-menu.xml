@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<PropertyList>
-
-<!-- 
-     ************************************************************************
+<!-- ************************************************************************
      Douglas DC-3 C47
+     
      January 2012 modified by PAF team : http://http://equipe-flightgear.forumactif.com
      December 2012 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
+     April    2016 updated  by Helijah : http://helijah.free.fr / http://embaranger.free.fr
      ************************************************************************
 -->
+<PropertyList>
 
   <default>
     <menu n="10">
@@ -34,6 +34,3 @@
   </default>
 
 </PropertyList>
-
-
-

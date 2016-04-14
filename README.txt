@@ -31,7 +31,10 @@ PAF team
 ===============
 BARANGER Emmanuel
 January, 29, 2011
+April, 09, 2016
+
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 PAF team
@@ -70,11 +73,13 @@ Team de la PAF
 
 ===============
 BARANGER Emmanuel
-January, 29, 2011
+29 Janvier 2011
+09 Avril 2016
+
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 PAF team
-January, 14, 2012
+14 Janvier 2012
 http://equipe-flightgear.forumactif.com
-

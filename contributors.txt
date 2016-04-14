@@ -8,6 +8,15 @@
 ##                                                                  ##
 ######################################################################
 
+# 09/04/2016 ==> (Helijah)
+
+- RÃ©organisation des dossiers et fichiers
+- RÃ©vision du FDM
+- CompatibilitÃ© Rembrandt accrue
+- Nouveau modÃ¨le 3D pour les parachutistes
+
+######################################################################
+
 # 04/01/2013 ==> (Helijah)
 
 - Correction d'une erreur dans le fichier all-poigneesportes
@@ -41,7 +50,6 @@
 # 13/01/2012 ==> (Patten)
 - Optimisation et texturage des 3 versions du cockpit sélectionnables (Red, Gray, Military),
   ainsi que tous les éléments qui vont avec (Cockpit, Pedals, handle, overhead, seats, pilots, etc...)
-
 
 # 21/11/2011 ==> (F-Sig)
 - Nouveau manche
