@@ -154,7 +154,7 @@
     <texture>Liveries/colors_paras.png</texture>
   </animation>
 
-  <!-- Les dÃ©tails -->
+  <!-- Les détails -->
   <model>
     <name>AllDetails</name>
     <path>Aircraft/Douglas-Dc3/Models/Interior/Details/all-details.xml</path>
@@ -186,7 +186,7 @@
     </condition>
   </animation>
 
-  <!-- Les siÃ¨ges -->
+  <!-- Les sièges -->
   <model>
     <name>AllSeats</name>
     <path>Aircraft/Douglas-Dc3/Models/Interior/seats/all-seats.xml</path>
