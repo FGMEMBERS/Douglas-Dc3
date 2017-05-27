@@ -14,7 +14,7 @@
 <PropertyList include="Systems/psg-base.xml">
 
 
-  <sim include="views-psg2.xml">
+  <sim include="Systems/views-psg2.xml">
     
     <description>Douglas DC-3/C-47 Passenger 2</description>
     <author>BARANGER Emmanuel (3D/FDM), PAF Team (Systems,3D), Buckaroo (FDM)</author>
