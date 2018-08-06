@@ -20,8 +20,6 @@
     
     <variant-of>dc-3</variant-of>
     
-    <mode type="string">wheels</mode>
-    
     <flight-model>null</flight-model>
     
     <startup>

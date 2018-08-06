@@ -23,13 +23,6 @@
     
     <variant-of>dc-3</variant-of>
     
-    <rating>
-      <FDM type="int">     4 </FDM>
-      <systems type="int"> 4 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   4 </model>
-    </rating>
-
     <type type="string">seaplane</type>
     
     <startup>
@@ -38,6 +31,7 @@
     
     <model>
       <path>Aircraft/Douglas-Dc3/Models/dc-3.xml</path>
+      <variant type="int">1</variant>
       <livery>
         <file type="string">default</file>
       </livery>
@@ -46,12 +40,6 @@
     <sound>
       <path>Aircraft/Douglas-Dc3/Sounds/dc-3A-sound.xml</path>
     </sound>
-    
-    <multiplay n="0">
-      <generic n="0">
-        <string n="1" type="string">amphibius</string>
-      </generic>
-    </multiplay>
     
   </sim>
 

@@ -53,8 +53,8 @@
     <object-name>OmbreRoues</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>wheels</value>
+        <property>sim/model/variant</property>
+        <value>0</value>
       </equals>
     </condition>
   </animation>
@@ -82,8 +82,8 @@
     <object-name>OmbreFlotteurs</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>amphibius</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
   </animation>

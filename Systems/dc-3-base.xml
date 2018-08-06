@@ -17,6 +17,31 @@
     
     <fuel-fraction>0.8</fuel-fraction>
 
+    <rating>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    <tags>
+      <tag>cargo</tag>
+      <tag>transport</tag>
+      <tag>bush-plane</tag>
+      <tag>douglas</tag>
+      <tag>1930s</tag>
+      <tag>1940s</tag>
+      <tag>amphibious</tag>
+      <tag>castering-wheel</tag>
+      <tag>retractable-gear</tag>
+      <tag>tail-dragger</tag>
+      <tag>propeller</tag>
+      <tag>piston</tag>
+      <tag>twin-engine</tag>
+      <tag>variable-pitch</tag>
+      <tag>dual-controls</tag>
+      <tag>rembrandt</tag>
+    </tags>
+
     <tutorials include="../Tutorials/dc-3-tutorials.xml"/>
   
     <submodels>

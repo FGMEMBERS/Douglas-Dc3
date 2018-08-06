@@ -21,19 +21,13 @@
     <flight-model>yasim</flight-model>
     <aero>Systems/dc-3-yasim</aero>
     
-    <rating>
-      <FDM type="int">     4 </FDM>
-      <systems type="int"> 4 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   4 </model>
-    </rating>
-
     <startup>
       <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
     </startup>
     
     <model>
       <path>Aircraft/Douglas-Dc3/Models/dc-3.xml</path>
+      <variant type="int">0</variant>
       <livery>
         <file type="string">default</file>
       </livery>
@@ -42,12 +36,6 @@
     <sound>
       <path>Aircraft/Douglas-Dc3/Sounds/dc-3-sound.xml</path>
     </sound>
-    
-    <multiplay n="0">
-      <generic n="0">
-        <string n="1" type="string">wheels</string>
-      </generic>
-    </multiplay>
     
   </sim>
 
