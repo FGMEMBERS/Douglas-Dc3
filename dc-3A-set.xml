@@ -29,8 +29,6 @@
       <cockpit type="int"> 4 </cockpit>
       <model type="int">   4 </model>
     </rating>
-
-    <type type="string">seaplane</type>
     
     <startup>
       <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
@@ -49,7 +47,7 @@
     
     <multiplay n="0">
       <generic n="0">
-        <string n="1" type="string">amphibius</string>
+        <string n="1" type="string">amphibious</string>
       </generic>
     </multiplay>
     
