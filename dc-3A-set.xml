@@ -20,7 +20,7 @@
     
     <flight-model>yasim</flight-model>
     <aero>Systems/dc-3A-yasim</aero>
-    
+    <type type="string">amphibious</type>    
     <variant-of>dc-3</variant-of>
     
     <rating>
