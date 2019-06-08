@@ -17,8 +17,20 @@
     <desc>Open/Close cargo door</desc>
   </key>
   <key>
+    <name>f/F</name>
+    <desc>Open/Close cowl flaps (right of the copilot; TRAIL=automatic)</desc>
+  </key>
+  <key>
     <name>j</name>
     <desc>Parachutist</desc>
+  </key>
+  <key>
+    <name>o</name>
+    <desc>Lock aerotow-hook</desc>
+  </key>
+  <key>
+    <name>O</name>
+    <desc>Open aerotow-hook</desc>
   </key>
   <line/>
   <line>========== Engines Start Checklist ==========</line>

@@ -420,4 +420,10 @@
   -->
   <ballast x="8" y="0.0" z="-1" mass="4650"/>
 
+  <!-- hitch -->
+  <hitch name="aerotow" x="-9.7" y="0" z="0.084" force-is-calculated-by-other="1">
+    <tow length="120" weight-per-meter="0.035" elastic-constant="9000" break-force="100000" mp-auto-connect-period="1.0"/>
+    <winch max-tow-length="1000" min-tow-length="60" initial-tow-length="120"/>
+  </hitch>
+
 </airplane>

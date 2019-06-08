@@ -15,7 +15,7 @@
   
   <sim>
 
-    <description>Douglas DC-3/C-47 Amphibius (YASim)</description>
+    <description>Douglas DC-3/C-47 Amphibious (YASim)</description>
     <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D), Buckaroo (FDM)</author>
     
     <flight-model>yasim</flight-model>
