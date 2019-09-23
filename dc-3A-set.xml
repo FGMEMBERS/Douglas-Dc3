@@ -15,20 +15,15 @@
   
   <sim>
 
-    <description>Douglas DC-3/C-47 Amphibius (YASim)</description>
+    <description>Douglas DC-3/C-47 Amphibious (YASim)</description>
     <author>BARANGER Emmanuel (3D), PAF Team (Systems,3D), Buckaroo (FDM)</author>
     
     <flight-model>yasim</flight-model>
     <aero>Systems/dc-3A-yasim</aero>
-    <type type="string">amphibious</type>    
+    
     <variant-of>dc-3</variant-of>
     
-    <rating>
-      <FDM type="int">     4 </FDM>
-      <systems type="int"> 4 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   4 </model>
-    </rating>
+    <type type="string">seaplane</type>
     
     <startup>
       <splash-texture>Aircraft/Douglas-Dc3/dc-3-splash.png</splash-texture>
@@ -36,6 +31,7 @@
     
     <model>
       <path>Aircraft/Douglas-Dc3/Models/dc-3.xml</path>
+      <variant type="int">1</variant>
       <livery>
         <file type="string">default</file>
       </livery>
@@ -44,12 +40,6 @@
     <sound>
       <path>Aircraft/Douglas-Dc3/Sounds/dc-3A-sound.xml</path>
     </sound>
-    
-    <multiplay n="0">
-      <generic n="0">
-        <string n="1" type="string">amphibious</string>
-      </generic>
-    </multiplay>
     
   </sim>
 

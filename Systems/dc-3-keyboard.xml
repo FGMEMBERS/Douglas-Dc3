@@ -51,7 +51,7 @@
     
     <key n="68">
       <name>D</name>
-      <desc>Passanger door</desc>
+      <desc>Passenger door</desc>
       <binding>
         <command>nasal</command>
         <script>dc3.PassengerDoor.toggle();</script>
@@ -66,7 +66,49 @@
         <script>dc3.CargoDoor.toggle();</script>
       </binding>
     </key>
+
+    <key n="70">
+      <name>F</name>
+      <desc>Close cowl flaps</desc>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/cowl-flaps-cmd</property>
+        <step>1</step>
+        <min>0</min>
+        <max>4</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/cowl-flaps-cmd</property>
+        <step>1</step>
+        <min>0</min>
+        <max>4</max>
+        <wrap>false</wrap>
+      </binding>
+    </key>
     
+    <key n="102">
+      <name>f</name>
+      <desc>Open cowl flaps</desc>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/cowl-flaps-cmd</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>4</max>
+        <wrap>false</wrap>
+      </binding>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/cowl-flaps-cmd</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>4</max>
+        <wrap>false</wrap>
+      </binding>
+    </key>
+
     <key n="106">
       <name>j</name>
       <desc>Jump signal</desc>

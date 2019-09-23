@@ -1,77 +1,29 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
+  
   <sim>
+    
     <model>
       <livery>
         <name type="string">Ansett</name>
-        <texture>Liveries/VH-ANH.png</texture>
-<!--
-        <diffuse>
-          <red>   0.5 </red>
-          <green> 0.5 </green>
-          <blue>  0.5 </blue>
-        </diffuse>
-
-        <ambient>
-          <red>   0.5 </red>
-          <green> 0.5 </green>
-          <blue>  0.5 </blue>
-        </ambient>
--->
+        <texture>Liveries/2048x2048/VH-ANH.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
-
-        <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
-        </emission>
-<!--
-        <transparency>
-          <alpha> 0.0 </alpha>
-        </transparency>
-
-        <shininess>10</shininess>
--->
       </livery>
-           <livery-engine>
-        <texture>Liveries/VH-ANH-propeller.png</texture>
-<!--
-        <diffuse>
-          <red>   0.5 </red>
-          <green> 0.5 </green>
-          <blue>  0.5 </blue>
-        </diffuse>
-
-        <ambient>
-          <red>   0.5 </red>
-          <green> 0.5 </green>
-          <blue>  0.5 </blue>
-        </ambient>
--->
+      <livery-engine>
+        <texture>Liveries/Propeller/VH-ANH-propeller.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
-
-        <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
-        </emission>
-<!--
-        <transparency>
-          <alpha> 0.0 </alpha>
-        </transparency>
-
-        <shininess>10</shininess>
--->
       </livery-engine>
     </model>
+    
   </sim>
+  
 </PropertyList>

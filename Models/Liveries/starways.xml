@@ -7,30 +7,20 @@
     <model>
       <livery>
         <name type="string">starways</name>
-        <texture>Liveries/starways.png</texture>
+        <texture>Liveries/1024x1024/starways.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
-        <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
-        </emission>
       </livery>
       <livery-engine>
-        <texture>Liveries/propeller.png</texture>
+        <texture>Liveries/Propeller/propeller.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
-        <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
-        </emission>
       </livery-engine>
     </model>
     
